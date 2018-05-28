@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Карточка компании</title>
+<meta name="description" content="" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="js/chosen.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/chosen.js"></script>
+<script type="text/javascript" src="js/jcarousellite.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/sticky.min.js"></script>
+</head>
+<body>
+<div id="to_top" title="Наверх">↑</div>
+<div id="header">
+	<div class="place">
+		<a href="/" id="logo"><img src="img/logo.png" alt="Интернет-выставка Производство России">
+		<strong>Производство России<br><small>интернет-выставка</small></strong>
+		</a>
+		<div class="prc_score">
+			<div class="left">
+				<b>1 302</b>
+				<span>Российских производителей</span>
+			</div>
+			<div class="center"><img src="img/flag.png" alt=""></div>
+			<div class="right">
+				<b>17 196</b>
+				<span>Товаров производства России</span>
+			</div>
+		</div>
+		<div class="personal">
+			<a href="#" class="cp"><i>&nbsp;</i>Личный кабинет<span></span></a>
+			<br>
+			<a href="#" class="exit"><i>&nbsp;</i>Выйти<span></span></a>
+		</div>
+	</div>
+</div>
+<div class="main_menu">
+	<div class="place">
+		<ul>
+			<li class="active"><a href="#">Производство России</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">О проекте</a></li>
+			<li class="search"><input type="search" id="srch" placeholder="Поиск товаров и производителей"><button><i>&nbsp;</i>Найти</button></li>
+		</ul>
+		<div class="sub_menu">
+			<a href="#">Товары</a>
+			<span>&nbsp;</span>
+			<a href="#">Производители</a>
+			<span>&nbsp;</span>
+			<a href="#">Промышленная карта</a>
+			<span>&nbsp;</span>
+			<a href="#" class="add_btn"><i></i>Добавить продукцию</a>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+<div class="place">
+    <ul class="crumbs">    
+        <li class="crumb"><a href="/" class="home_link" title="">&nbsp;</a></li>
+                        <li class="crumb  "><div><a href="/producers">Российские производители</a></div>
+                                </li>
+                            <li class="crumb extra short"><div><a href="/producers/r-novosibirskaia-obl-195">Новосибирская область</a></div>
+                <ul class="crumbs_list with_score">                <li><a href="/producers/r-moskovskaia-obl-191">Московская область</a><span>2447</span></li>
+                                <li><a href="/producers/r-lieningradskaia-obl-186">Ленинградская область</a><span>750</span></li>
+                                <li><a href="/producers/r-svierdlovskaia-obl-209">Свердловская область</a><span>310</span></li>
+                                <li><a href="/producers/r-rostovskaia-obl-203">Ростовская область</a><span>294</span></li>
+                                <li><a href="/producers/r-chieliabinskaia-obl-224">Челябинская область</a><span>292</span></li>
+                                <li><a href="/producers/r-nizhiegorodskaia-obl-193">Нижегородская область</a><span>281</span></li>
+                                <li><a href="/producers/r-ivanovskaia-obl-168">Ивановская область</a><span>276</span></li>
+                </ul>                </li>
+                            <li class="crumb extra "><div><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294">Новосибирск</a></div>
+                <ul class="crumbs_list with_score">                <li><a href="/producers/r-novosibirskaia-obl-195/c-bierdsk-3277">Бердск</a><span>27</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-iskitim-3282">Искитим</a><span>7</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-bolotnoie-3278">Болотное</a><span>2</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-kolyvan-3285">Колывань</a><span>1</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-ob-3295">Обь</a><span>1</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-toguchin-3300">Тогучин</a><span>1</span></li>
+                </ul>                </li>
+                            <li class="crumb extra short"><div><a href="/producers/catalog-drugiie-tovary-48">Другие товары</a></div>
+                <ul class="crumbs_list with_score">                <li><a href="/producers/catalog-produkty-pitaniia-45">Продукты питания</a><span>1889</span></li>
+                                <li><a href="/producers/catalog-stroitielstvo-i-riemont-43">Строительство и ремонт</a><span>1617</span></li>
+                                <li><a href="/producers/catalog-miebiel-42">Мебель</a><span>890</span></li>
+                                <li><a href="/producers/catalog-odiezhda-34">Одежда</a><span>886</span></li>
+                                <li><a href="/producers/catalog-promyshliennoie-oborudovaniie-29">Промышленное оборудование</a><span>830</span></li>
+                                <li><a href="/producers/catalog-tovary-dlia-doma-35">Товары для дома</a><span>789</span></li>
+                                <li><a href="/producers/catalog-torgovoie-oborudovaniie-30">Торговое оборудование</a><span>692</span></li>
+                </ul>                </li>
+                            <li class="crumb  "><div><a href="/producers/catalog-drugiie-tovary-165">Другие товары</a></div>
+                                </li>
+                            <li class="crumb extra short"><div><a href="/producers/r-novosibirskaia-obl-195/catalog-drugiie-tovary-48">Другие товары в Новосибирская область</a></div>
+                <ul class="crumbs_list with_score">                <li><a href="/producers/r-novosibirskaia-obl-195/catalog-produkty-pitaniia-45">Продукты питания, Новосибирская область</a><span>66</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/catalog-odiezhda-34">Одежда, Новосибирская область</a><span>61</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/catalog-stroitielstvo-i-riemont-43">Строительство и ремонт, Новосибирская область</a><span>52</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/catalog-torgovoie-oborudovaniie-30">Торговое оборудование, Новосибирская область</a><span>31</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/catalog-dietskaia-odiezhda-231">Детская одежда, Новосибирская область</a><span>26</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/catalog-tovary-dlia-doma-35">Товары для дома, Новосибирская область</a><span>25</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/catalog-miebiel-42">Мебель, Новосибирская область</a><span>22</span></li>
+                </ul>                </li>
+                            <li class="crumb extra short"><div><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-drugiie-tovary-48">Другие товары в г.Новосибирск</a></div>
+                <ul class="crumbs_list with_score">                <li><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-odiezhda-34">Одежда, Новосибирск</a><span>59</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-produkty-pitaniia-45">Продукты питания, Новосибирск</a><span>57</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-stroitielstvo-i-riemont-43">Строительство и ремонт, Новосибирск</a><span>47</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-torgovoie-oborudovaniie-30">Торговое оборудование, Новосибирск</a><span>29</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-dietskaia-odiezhda-231">Детская одежда, Новосибирск</a><span>22</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-tovary-dlia-doma-35">Товары для дома, Новосибирск</a><span>22</span></li>
+                                <li><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-promyshliennoie-oborudovaniie-29">Промышленное оборудование, Новосибирск</a><span>18</span></li>
+                </ul>                </li>
+                            <li class="crumb  short"><div><a href="/producers/r-novosibirskaia-obl-195/catalog-drugiie-tovary-165">Другие товары в Новосибирская область</a></div>
+                                </li>
+                            <li class="crumb  short"><div><a href="/producers/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-drugiie-tovary-165">Другие товары в г.Новосибирск</a></div>
+                                </li>
+                            <li class="crumb"><div>Компания «Stagetop»</div></li>      
+                    
+    </ul> 
+    
+        <!--noindex-->      
+        <div class="rating_block_v2" id="rating"><div class="vote-wrap"><div class="vote-hover" style="padding: 0px 4px; height: 22px; width: 110px;"><div class="vote-block"><div class="vote-stars" style="height: 22px; width: 110px; background: url(&quot;/img/stars-22.png&quot;) left top;"></div><div class="vote-active" style="height: 22px; width: 81.4px; background: url(&quot;/img/stars-22.png&quot;) left bottom;"></div></div></div><div class="vote-result"></div><div class="vote-success"></div></div></div>
+        <!--/noindex--> 
+                
+            
+        <h1 class="cfix">Компания «Stagetop», г.Новосибирск</h1>
+                   
+</div>
+
+
+<div class="place">
+<div class="view_space item">
+<div class="vs_right">
+<div class="item_tabs">
+<input id="tab_description" type="radio" name="tabs" checked="">
+<label class="description" for="tab_description">О компании</label>
+<input id="tab_contacts" type="radio" name="tabs">
+<label class="contacts" for="tab_contacts">Контакты</label> --&gt;
+<div class="border"></div>
+<div class="box" id="box_description">
+<div class="order_bar cfix">
+<!--noindex-->
+<a rel="nofollow" href="#post_area" class="ask_me" id="ask_me">
+<span class="ask_face"><img src="/images/246551--166x166a.jpg" alt="Задать вопрос"></span>
+<span class="ask_button"><i>&nbsp;</i>Задать вопрос</span>
+</a><br>
+<!--/noindex-->
+<div class="item_info order">
+<div>
+<form action="#" id="order-item" method="post">
+<p>Заказать продукцию</p>
+<!--noindex--><span class="ob_info red" style="display: none;">Пожалуйста, заполните выделенные поля.</span><!--/noindex-->
+<label><small>Имя</small>
+<input type="text" name="name" value="" placeholder="Ваше имя"></label>
+<label><small>Телефон</small>
+<input type="tel" name="phone" value="" placeholder="Номер телефона"></label>
+<label><small>Эл. почта</small>
+<input type="email" name="email" value="" placeholder="Адрес эл. почты"></label>
+<label><small>Комментарий</small>
+<textarea name="details" placeholder="Пожелания к заказу..."></textarea></label>
+<input type="hidden" name="producer_id" value="9093">
+<!--noindex-->
+<small class="ob_info" style="margin: 0px 0 15px; line-height: 8px;"><input type="checkbox" checked="checked" style="height: 13px; width: 13px; vertical-align: middle; " id="privacy-policy"><span>&nbsp;&nbsp;Я соглашаюсь с <a rel="nofollow" target="_blank" href="/pages/politika-konfidencialnosti">политикой конфиденциальности</a></span></small>
+<!--/noindex-->
+<button type="submit" id="send-order-3" class="btn green">Отправить заказ</button></form>
+<!--noindex-->
+<div class="inform" style="display: none;">
+<div class="inform_img">&nbsp;</div>
+<div class="inform_text">Ваша заявка успешно отправлена!</div></div>
+<!--/noindex--></div></div>
+</div>
+<div class="box_text">
+<p>Полное название компании - Стейджтоп</p>
+
+<p>История предприятия - Компания stagetop образована из команды профессионалов в 2016 году, ранее мы основали крупную компанию по производству и поставке сборных сцен, которая стала лидером в своем сегменте на сибирском рынке, а в последствии и на территории всей России.</p>
+
+<p>Ассортимент - Сборно-разборные сцены, театральные станки и подиумы, LED-панели</p>
+
+<p>Преимущества - мы соблюдаем все нормы перевозок, профессионально подходим к оформлению необходимых документов, взаимодействие с нами происходит максимально понятно и прозрачно, а благодаря гибкому графику и огромному опыту в работе на дистанции, связаться с компанией StageTop возможно практически в любое время</p>
+
+<p>Число сотрудников - от 5 до 10</p>
+
+<p>Достижения - крупные поставки металлоконструкций на Сахалин, Владивосток, Мурманск, Норильск и прочие труднодоступные регионы, изготовление индивидуальных конструкций для крупных российских моллов, создание собственных интернет-магазинов и современный подход к реализации заказов и взаимодействию с клиентами.</p>
+
+<p>Известные клиенты - ИКЕА, Роснефть, 2Гис</p><p>Условия сотрудничества - соблюдение условий договора, предоплата минимум 50%.</p>
+
+<p>География продаж - по всей России и странам СНГ.</p>
+
+<p>Условия для дистрибьюции - индивидуальная скидка.</p>
+
+<p>Условия доставки - оплачивается отдельно, выполняется в кратчайшие сроки.</p></div></div>
+<div class="box" id="box_contacts" itemscope="" itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Компания «Stagetop»">
+<div style="display:none" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+<span itemprop="ratingValue">3.7</span>
+<span itemprop="bestRating">5</span>
+<span itemprop="worstRating">1</span>
+<span itemprop="reviewCount">3</span></div>
+<div class="bc_text">
+<ul>
+<li itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><strong>Адрес</strong>:&nbsp;<span itemprop="addressRegion">Новосибирская область</span>, <span itemprop="addressLocality">Новосибирск</span>, <span itemprop="streetAddress"></span></li>
+<li><strong>Телефон</strong>:&nbsp;<span itemprop="telephone">+7 913 477 4661</span></li>
+<script type="text/javascript">
+var goalParams =  {producer_id_9093: 1, send_letter_to_producer: 1};</script>
+<li><strong>Электронная почта</strong>:&nbsp;<a onclick="yaCounter156713.reachGoal('send_letter2producer', goalParams); return true;" target="_blank" href="mailto:stagetop@yandex.ru?cc=info@productcenter.ru"><span itemprop="email">stagetop@yandex.ru</span></a></li>
+<li><strong>Официальный сайт</strong>:&nbsp;<a rel="nofollow" itemprop="url" id="producer_link" href="/producers/site/9093" target="_blank">stagetop.ru</a></li></ul>
+<!--noindex-->
+<p class="no-spam-warning">Внимание! Нас не интересуют сертификация, упаковка, транспортировка и прочий спам!</p>
+<!--/noindex-->
+</div>
+<div class="bc_map">
+<div id="map" style="width: 650px; height: 400px;"></div>
+<p><a target="_blank" href="/map/r-novosibirskaia-obl-195/c-novosibirsk-3294/catalog-drugiie-tovary-165">Карта производителей прочих товаров Новосибирска</a></p>
+</div>
+</div></div>
+<div class="border">
+<p class="p_h2">Обратиться к производителю</p></div>
+<div class="comments">
+<div data-comment-id="66332" class="post comment  cfix" id="comment-66332">
+<div class="avatar">
+<img src="/img/no_avatar.png" alt="Аватар пользователя" title=""></div>
+<div class="p_head">
+<div class="name"><b>Нурлан</b>&nbsp;<small>12.06.2017 09:57</small></div>
+<div class="p_rating"><i class="plus">&nbsp;</i><span class="score good">0</span><i class="minus">&nbsp;</i></div>
+<div class="p_contacts">
+</div></div>
+<div class="p_text">
+<p>Здравствуйте! Отправте ваши контакты</p>
+<div class="comment-geo">
+Казахстан, г.Астана</div>
+</div></div>
+<div data-comment-id="66335" class="post comment answer cfix" id="comment-66335">
+<div class="avatar">
+<img src="/images/246550-usercover-140x140a.jpg" alt="Аватар пользователя" title=""></div>
+<div class="p_head">
+<div class="name"><b><a href="/account/details/17465">StageTop</a></b>&nbsp;<small>12.06.2017 10:55</small></div>
+<div class="p_rating"><i class="plus">&nbsp;</i><span class="score good">0</span><i class="minus">&nbsp;</i></div>
+<div class="p_contacts">
+</div></div>
+<div class="p_text">
+<p>Доброго дня, ответили на почту!</p>
+</div></div>
+<div data-comment-id="60897" class="post comment  cfix" id="comment-60897">
+<div class="avatar">
+<img src="/img/no_avatar.png" alt="Аватар пользователя" title=""></div>
+<div class="p_head">
+<div class="name"><b>Andrey</b>&nbsp;<small>23.04.2017 09:23</small></div>
+<div class="p_rating"><i class="plus">&nbsp;</i><span class="score good">0</span><i class="minus">&nbsp;</i></div>
+<div class="p_contacts">
+</div></div>
+<div class="p_text">
+<p>Здравствуйте!<br>
+Вышлите прайс пожалуйста и ваши условия!</p>
+<div class="comment-geo">
+Россия, г.Новосибирск</div>
+</div></div>
+<div data-comment-id="45233" class="post comment  cfix" id="comment-45233">
+<div class="avatar">
+<img src="/img/no_avatar.png" alt="Аватар пользователя" title=""></div>
+<div class="p_head">
+<div class="name"><b>Светлана</b>&nbsp;<small>13.01.2017 10:21</small></div>
+<div class="p_rating"><i class="plus">&nbsp;</i><span class="score good">0</span><i class="minus">&nbsp;</i></div>
+<div class="p_contacts">
+</div></div>
+<div class="p_text">
+<p>Добрый день! Работаете ли Вы по схеме дропшиппинга? Спасибо!</p>
+<div class="comment-geo">
+Россия, г.Красноярск</div>
+</div></div>
+<div data-comment-id="47166" class="post comment answer cfix" id="comment-47166">
+<div class="avatar">
+<img src="/images/246550-usercover-140x140a.jpg" alt="Аватар пользователя" title=""></div>
+<div class="p_head">
+<div class="name"><b><a href="/account/details/17465">StageTop</a></b>&nbsp;<small>25.01.2017 12:03</small></div>
+<div class="p_rating"><i class="plus">&nbsp;</i><span class="score good">0</span><i class="minus">&nbsp;</i></div>
+<div class="p_contacts">
+</div></div>
+<div class="p_text">
+<p>Здравствуйте, Светлана! Да, работаем</p>
+</div></div>
+<!--noindex-->
+<div class="post add_form" id="comment_answer">
+<form>
+<div class="avatar">
+<img src="/img/no_avatar.png" alt="Аватар пользователя"></div>
+<div class="p_head">
+<div class="input"><input type="text" name="name" value="" placeholder="Ваше имя"></div>
+<div class="input"><input type="text" name="email" value="" placeholder="Эл. почта (для ответов)"></div>
+<div class="input"><input type="tel" name="phone" id="author_tel" value="" placeholder="Телефон (заказать звонок)"></div></div>
+<div class="p_text">
+<textarea name="content" placeholder="Текст сообщения..."></textarea>
+<div class="pt_water">
+<small>Только вопросы о закупке продукции.</small>
+<small>Укажите компанию и примерный объем заказа — это ускорит ответ.</small>
+<small>Контакты в тексте, критика, претензии и спам удаляются.</small>
+<small>Отзывы и коммерческие предложения публикуйте на форуме.</small></div>
+<button class="btn publish click">Опубликовать</button>
+<span class="p_text_info">Адрес электронной почты и телефон будут видны только производителю.</span>
+<input type="hidden" name="id" value="9093">
+<input type="hidden" name="type" value="1">
+<input type="hidden" name="parent_id" value="0"></div></form></div>
+<!--/noindex-->
+<!--noindex-->
+<div class="post add_form cfix answer" style="display: none;" id="comment_answer_reply">
+<form>
+<div class="avatar">
+<img src="/img/no_avatar.png" alt="Аватар пользователя"></div>
+<div class="p_head">
+<div class="input"><input type="text" name="name" value="" placeholder="Ваше имя"></div>
+<div class="input"><input type="text" name="email" value="" placeholder="Эл. почта (для ответов)"></div></div>
+<div class="p_text">
+<textarea name="content" placeholder="Текст сообщения..."></textarea>
+<div class="pt_water">
+<small>Контакты посетителя в Личном кабинете компании.</small>
+<small>Ссылки из ответов удаляются.</small>
+<small>Ответ — полезная для клиента информация, а не предложение поискать в другом месте.</small>
+<small>Не оставляйте вопросы без ответов — показывайте, что вы действующая компания.</small></div>
+<button class="btn publish click">Опубликовать</button>
+<input type="hidden" name="id" value="9093">
+<input type="hidden" name="type" value="1">
+<input type="hidden" name="parent_id" value="0"></div></form></div>
+<!--/noindex--></div>
+</div>
+<div class="vs_left cfix">
+<div class="image">
+<a class="fancybox" data-fancybox-group="producer" href="/images/258825-kompaniia-stagetop-1280x768.jpg"><img src="/images/258825-kompaniia-stagetop-540x480.jpg" title="Фото №1 на стенде Компания «Stagetop», г.Новосибирск. 258825 картинка из каталога «Производство России»." alt="Фото №1 на стенде Компания «Stagetop», г.Новосибирск. 258825 картинка из каталога «Производство России»."></a></div>
+
+
+
+
+<div class="border">
+<h2>Продукция компании</h2>
+</div>
+<div class="items">
+    <h3 class="cat_name">Другие товары&nbsp;—&nbsp;3 товара</h3>
+    <div class="mini_items_list"> 
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>    
+        <button type="button" class="show_more">Показать больше товаров</button>
+    </div>
+
+    <h3 class="cat_name">Спортивные сетки&nbsp;—&nbsp;5 товаров</h3>
+    <div class="mini_items_list">
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+        <div class="mini_item goods">
+            <div class="mi_images">
+                <div class="img_list">
+                    <div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                        <div>
+                            <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                        </div>
+                    </div>
+                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+                </div>
+            </div>
+            <span class="price"><small>Цена от</small>&nbsp;<b>4 791</b>&nbsp;<span class="rubler" title="Рублей">&nbsp;</span></span>
+            <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        </div>  
+    </div>
+
+    <p class="link_view_all_items"><a href="" class="red">Посмотреть все товары производителя →</a></p>    
+</div>
+
+
+<div class="border">
+<p class="p_h2">Похожие производители</p></div>
+<div class="items">
+	<div class="mini_item vip">
+		<div class="mi_images">
+			<div class="img_list">
+				<div>
+					<div>
+						<a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+					</div>
+					<div>
+						<a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+					</div>
+					<div>
+						<a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+					</div>
+					<div>
+						<a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+					</div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+				</div>
+				<span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+		</div>
+		<a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+		<span class="n_goods"><small>3 товара</small></span>
+		<span class="city">Москва</span>
+	</div>
+    <div class="mini_item ">
+        <div class="mi_images">
+            <div class="img_list">
+                <div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                </div>
+                <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+        </div>
+        <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        <span class="n_goods"><small>3 товара</small></span>
+        <span class="city">Москва</span>
+    </div>
+    <div class="mini_item">
+        <div class="mi_images">
+            <div class="img_list">
+                <div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                </div>
+                <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+        </div>
+        <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        <span class="n_goods"><small>3 товара</small></span>
+        <span class="city">Москва</span>
+    </div>
+    <div class="mini_item">
+        <div class="mi_images">
+            <div class="img_list">
+                <div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                </div>
+                <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+        </div>
+        <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        <span class="n_goods"><small>3 товара</small></span>
+        <span class="city">Москва</span>
+    </div>
+    <div class="mini_item">
+        <div class="mi_images">
+            <div class="img_list">
+                <div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/220173-vostochnyi-karavan-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246147-griaziezashchitnoie-pokrytiie-topwell-riezina-shchietka-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246164-riezinovoie-pokrytiie-oktava-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href=""><img src="https://productcenter.ru/images/246161-griaziezashchitnyi-vlagovpityvaiushchii-kovier-shatwell-200x150.jpg" alt="Производственная компания «GAPA»" title="Производственная компания «GAPA»"></a>
+                    </div>
+                </div>
+                <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+        </div>
+        <a target="_blank" href="" class="link">Производственная компания «GAPA»</a>
+        <span class="n_goods"><small>3 товара</small></span>
+        <span class="city">Москва</span>
+    </div>
+</div>
+</div>
+
+<div id="footer" class="cfix">
+	<div class="place">
+		<div class="f_share">
+			<strong>Поделиться</strong>
+			<script type="text/javascript" src="http://yandex.st/share/share.js"charset="utf-8"></script>
+			<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,gplus" data-yashareTheme="counter" data-yasharetype="small"></div> 
+		</div>
+		<div class="f_help">
+			<strong>Справка</strong>
+			<ul>
+				<li><a href="#">Политика конфендециальности</a></li>
+				<li><a href="#">Правила площадки</a></li>
+				<li><a href="#">Пользовательское соглашение</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="f_prc">
+			<strong>ПродуктЦентр</strong>
+			<ul>
+				<li><a href="#">Товары</a></li>
+				<li><a href="#">Производители</a></li>
+				<li><a href="#">Промышленная карта</a></li>
+				<li><a href="#">Новости</a></li>
+			</ul>
+		</div>
+		<div class="f_copy">
+			<span class="btn"></span>
+			<p>©&nbsp;«Производство России», 2008—2014</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

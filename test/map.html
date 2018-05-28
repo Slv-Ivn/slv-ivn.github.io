@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Промышленная карта</title>
+<meta name="description" content="" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="js/chosen.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/chosen.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="to_top" title="Наверх">↑</div>
+<div id="header">
+	<div class="place">
+		<a href="/" id="logo"><img src="img/logo.png" alt="Интернет-выставка Производство России">
+		<strong>Производство России<br><small>интернет-выставка</small></strong>
+		</a>
+		<div class="prc_score">
+			<div class="left">
+				<b>5 100</b>
+				<span>Российских производителей</span>
+			</div>
+			<div class="center"><img src="img/flag.png" alt=""></div>
+			<div class="right">
+				<b>90 800</b>
+				<span>Товаров производства России</span>
+			</div>
+		</div>
+		<div class="personal">
+			<a href="#" class="enter"><i>&nbsp;</i>Войти</a>
+			<br>
+			<a href="#" class="reg"><i>&nbsp;</i>Зарегистрироваться</a>
+		</div>
+	</div>
+</div>
+<div class="main_menu">
+	<div class="place">
+		<ul>
+			<li class="active"><a href="#">Производство России</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">О проекте</a></li>
+			<li class="search"><input type="search" id="srch" placeholder="Поиск товаров и производителей"><button><i>&nbsp;</i>Найти</button></li>
+		</ul>
+		<div class="sub_menu">
+			<a href="#">Товары</a>
+			<span>&nbsp;</span>
+			<a href="#">Производители</a>
+			<span>&nbsp;</span>
+			<a href="#">Промышленная карта</a>
+			<span>&nbsp;</span>
+			<a href="#" class="add_btn"><i></i>Добавить продукцию</a>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div class="place cfix">
+		<div class="crumbs">
+			<a href="#" class="home_link">&nbsp;</a> <i>»</i> <span>Промышленная карта</span> 
+		</div>
+		<h1>Промышленная карта России</h1>
+		<strong class="normal_weight for_map">Производители России на удобной интерактивной карте: <b>10160</b> промышленных предприятий, производств, фабрик, заводов, ферм. Поиск по отраслям и регионам России в верхнем правом углу карты.</strong>
+	</div>
+	<div class="big_map">
+		<!-- <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=6g_p18yX5IXIIvd6iHnNSgBIeKIL6ioC&width=100%&height=500"></script> -->
+		<div class="place cfix">
+			<div class="map_find">
+				<h2>Отобрать по</h2>
+				<strong>Региону</strong>
+				<select class="chosen-select">
+					<option>Выберите регион</option>
+					<option>...</option>
+				</select>
+				<hr class="cline">
+				<strong>Категории товаров</strong>
+				<select class="chosen-select">
+					<option>Выберите категорию</option>
+					<option>...</option>
+				</select>
+			</div>
+
+<!-- Карточка товара на карте -->
+
+			<div id="balloon-10250" class="map_card" style="min-height:216px">
+				<strong style="text-align:left;font: 600 14px 'Helvetica Neue', 'Arial';line-height: 1.5;color: #3a444a;">Информация о компании</strong><span class="close">×</span>     
+	   			<div class="mc_left">
+		   			<div class="item_images">
+		       			<div class="img_list">
+		           			<div>
+			                    <div>
+			                    	<a href=""><img src="https://productcenter.ru/images/264907-ao-miasoprodukty-280x210.jpg"></a>
+			                    </div>
+			                    <div>
+			                    	<a href=""><img src="https://productcenter.ru/images/264908-kopchieno-varienyi-okorok-iz-olieniny-280x210.jpg"></a>
+			                    </div>
+			                    <div>
+			                    	<a href=""><img src="https://productcenter.ru/images/264909-vietchina-priemium-klassa-280x210.jpg"></a>
+			                    </div>
+			                    <div>
+			                    	<a href=""><img src="https://productcenter.ru/images/264910-vietchina-priemium-klassa-280x210.jpg"></a>
+			                    </div> 
+			                    <div>
+			                   		<a href=""><img src="https://productcenter.ru/images/264911-kolbasy-iz-olieniny-280x210.jpg"></a>
+			                    </div>
+		                    </div>
+		                    <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>
+		       			</div>
+		  			</div>
+		  		</div>
+	  			<div class="mc_right">
+					<a target="_blank" href="" class="link">АО «Мясопродукты»</a>
+					<span class="city">г. Нарьян-Мар</span>
+					<span class="rating"><div class="rating-stars"></div><div class="rating-active" style="width: 0px"></div></span>
+					<strong>Продукция:</strong>
+					<span class="cat_link">Гастрономия</span>
+					<span class="cat_link">Ветчина</span>
+					<span class="cat_link">Колбасы</span>
+					<a href="" class="items_link" title="Все товары производителя"><b>3</b> товара</a>
+	    		</div>
+    		</div>
+
+<!-- Конец карточки -->
+
+
+		</div>
+	</div>
+<!--noindex-->
+<noindex>
+	<div class="main_updates">
+		<div class="place">
+
+			<div class="mu_items">
+				<h2>Новинки продукции</h2>
+
+				<div class="item cfix">
+					<div class="image">
+						<a href="#"><img src="img/item.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">Вездеход-амфибия ВИКИНГ 29031</a>
+						<span class="cat"><a href="#">Спецтехника</a></span>
+						<span class="company"><a href="#">ООО «АТОН ИМПУЛЬС»</a></span>
+						<span class="city">Набережные Челны</span>
+					</div>
+				</div>
+
+				<div class="item cfix">
+					<div class="image">
+						<a href="#"><img src="img/item3.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">Куртка «Эребус» мужская. Артикул: КУР515</a>
+						<span class="cat"><a href="#">Мужская одежда и аксессуары</a></span>
+						<span class="company"><a href="#">Торговый дом «Аленка»</a></span>
+						<span class="city">Санкт-Петербург</span>
+					</div>
+				</div>
+
+				<div class="item cfix">
+					<div class="image">
+						<a href="#"><img src="img/item2.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">КамАЗ 44108 с Краном Манипулятором</a>
+						<span class="cat"><a href="#">Транспорт, техника, запчасти</a></span>
+						<span class="company"><a href="#">«НижСпецАвто»</a></span>
+						<span class="city">Нижний Новгород</span>
+					</div>
+				</div>
+
+				<div class="item cfix">
+					<div class="image">
+						<a href="#"><img src="img/item4.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">Кантователь сборно-сварочный КЦР-8</a>
+						<span class="cat"><a href="#">Промышленное оборудование</a></span>
+						<span class="company"><a href="#">ООО «СИТЕК»</a></span>
+						<span class="city">Барнаул</span>
+					</div>
+				</div>
+
+				<div class="item cfix">
+					<div class="image">
+						<a href="#"><img src="img/item3.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">Куртка «Эребус» мужская. Артикул: КУР515</a>
+						<span class="cat"><a href="#">Мужская одежда и аксессуары</a></span>
+						<span class="company"><a href="#">Торговый дом «Аленка»</a></span>
+						<span class="city">Санкт-Петербург</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="mu_firms">
+				<h2>Новые производители</h2>
+
+				<div class="firm cfix">
+					<div class="image">
+						<a href="#"><img src="img/1.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">Инженерная компания Поликон</a>
+						<span class="goods"><a href="#">12 товаров</a></span>
+						<span class="city">Владивосток</span>
+					</div>
+				</div>
+
+				<div class="firm cfix">
+					<div class="image">
+						<a href="#"><img src="img/2.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">ООО «Союз Продукты Питания»</a>
+						<span class="goods"><a href="#">4 товарa</a></span>
+						<span class="city">Москва</span>
+					</div>
+				</div>
+
+				<div class="firm cfix">
+					<div class="image">
+						<a href="#"><img src="img/3.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">ООО «КвасКо Боттлерз»</a>
+						<span class="goods"><a href="#">19 товаров</a></span>
+						<span class="city">Сасово</span>
+					</div>
+				</div>
+
+				<div class="firm cfix">
+					<div class="image">
+						<a href="#"><img src="img/4.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">Производственная компания «Kayros»</a>
+						<span class="goods"><a href="#">34 товара</a></span>
+						<span class="city">Нижний Новгород</span>
+					</div>
+				</div>
+
+				<div class="firm cfix">
+					<div class="image">
+						<a href="#"><img src="img/2.jpg" alt="" title=""></a>
+					</div>
+					<div class="txt">
+						<a href="#" class="link">ООО «Союз Продукты Питания»</a>
+						<span class="goods"><a href="#">4 товарa</a></span>
+						<span class="city">Москва</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="mu_comments">
+				<h2>Последнии обсуждения</h2>
+
+				<div class="comment cfix">
+					<div class="image">
+						<a href="#"><img src="img/item.jpg" alt="" title=""></a>
+						<span class="numbers">127</span>
+					</div>
+					<div class="text">
+						<a href="">Спред растительно-сливочный ТМ «Альпийская коровка»</a>
+						<p>Цена стандартной комплектации 269000 рублей, упрощенной 249000 рублей. При покупке мотора цена корпуса на 20000 рублей дешевле, установка за наш счет. Стоимость доставки зависит от выбираемого Вами способа доставки и времени отгрузки. Ориентировочно 55000 рублей.</p>
+						<hr>
+						<span class="author">Маргарита Сергеевна</span> <span class="time">9 часов назад</span>
+					</div>
+				</div>
+
+				<div class="comment cfix">
+					<div class="image">
+						<a href="#"><img src="img/item2.jpg" alt="" title=""></a>
+						<span class="numbers">46</span>
+					</div>
+					<div class="text">
+						<a href="">КамАЗ 44108 с Краном Манипулятором</a>
+						<p>Внешне очень хорошо Навыки делать стильную внешность у запада переняли.Осталось перенять умение делать качественную технику. Ничего хорошего из деталей ГАЗ сделать в принципе невозможно.</p>
+						<hr>
+						<span class="author">Октавиан Август</span> <span class="time">13 часов назад</span>
+					</div>
+				</div>
+
+				<div class="comment cfix">
+					<div class="image">
+						<a href="#"><img src="img/item4.jpg" alt="" title=""></a>
+						<span class="numbers">173</span>
+					</div>
+					<div class="text">
+						<a href="">Кантователь сборно-сварочный КЦР-8</a>
+						<p>Здравствуйте. Сегодня поставил заряжать АБ через Катунь 501. Вроде ничего не напутал, плюс к плюсу — минус к минусу, но стрелка как была на «0» так и находится на нем, хотя регулятор тока крутил на максимум. Почему стрелка АЗПУ не двигается?</p>
+						<hr>
+						<span class="author">Лилия Шнайдер</span> <span class="time">24.03.2014</span>
+					</div>
+				</div>
+
+				<div class="comment cfix">
+					<div class="image">
+						<a href="#"><img src="img/item.jpg" alt="" title=""></a>
+						<span class="numbers">127</span>
+					</div>
+					<div class="text">
+						<a href="">Спред растительно-сливочный ТМ «Альпийская коровка»</a>
+						<p>Цена стандартной комплектации 269000 рублей, упрощенной 249000 рублей. При покупке мотора цена корпуса на 20000 рублей дешевле, установка за наш счет. Стоимость доставки зависит от выбираемого Вами способа доставки и времени отгрузки. Ориентировочно 55000 рублей.</p>
+						<hr>
+						<span class="author">Маргарита Сергеевна</span> <span class="time">9 часов назад</span>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="main_news">
+		<div class="place cfix">
+
+			<div class="mn world">
+				<h2>Свежие новости</h2>
+
+				<div class="today_news cfix">
+					<div class="image">
+						<img src="img/n1.jpg" alt="" title="">
+					</div>
+					<div class="text">
+						<span class="date">Сегодня</span>
+						<h3><a href="#">Простая технология переработки пластиковых отходов в жидкое топливо</a></h3>
+						<p>Индийские учёные изобрели простую технологию преобразования отходов любого пластика в жидкое топливо, не требующей дорогостоящего оборудования и специальных катализаторов.</p>
+					</div>
+				</div>
+
+				<div class="old_news">
+					<span class="date">17 февраля 2014</span>
+					<h4><a href="#">Ракета с плазменным двигателем VASIMR долетит до Марса за 39 дней</a></h4>
+					<p>VASIMR (Variable Specific Impulse Magnetoplasma Rocket) — самый мощный на сегодняшний день плазменный двигатель в мире.</p>
+				</div>
+				<div class="old_news">
+					<span class="date">16 февраля 2014</span>
+					<h4><a href="#">Термоядерный синтез впервые дал прирост энергии</a></h4>
+					<p>Ученые впервые, в ходе опытов по изучению управляемого термоядерного синтеза, получили больше энергии, чем было затрачено на ее инициацию.</p>
+				</div>
+
+			</div>
+
+			<div class="mn firms">
+				<h2>Новости производителей</h2>
+
+				<div class="today_news cfix">
+					<div class="image">
+						<img src="img/n2.jpg" alt="" title="">
+					</div>
+					<div class="text">
+						<span class="date">14 февраля 2014</span>
+						<h3><a href="#">Liquid Optical Systems — новая технология компании ФОКУС</a></h3>
+						<p>Компания ФОКУС представляет новую технологию производства светодиодных светильников, которая называется Liquid Optical Systems, сокращенно LIQUOS.</p><span class="firm"><a href="#">Компания «Фокус»</a></span>
+					</div>
+				</div>
+
+				<div class="old_news">
+					<span class="date">27 января 2014</span>
+					<h4><a href="#">Новые светодиодные светильники: уличные, промышленные, офисные</a></h4>
+					<p>Произошло обновление основных серий осветительных приборов, которые разработаны с использованием светодиодов японской компании Nichia.</p>
+					<span class="firm"><a href="#">Компания «Солнечный миф»</a></span>
+				</div>
+				<div class="old_news">
+					<span class="date">6 декабря 2014</span>
+					<h4><a href="#">Обновление линейки промышленных светильников Premium класса</a></h4>
+					<p>Запущено производство промышленных линейных светильников ДСП02-20-001 и ДСП02-30-001.</p>
+					<span class="firm"><a href="#">ООО «БаррусГрупп»</a></span>
+				</div>
+
+			</div>
+		
+		</div>
+	</div>
+</noindex>
+<!--/noindex-->
+</div>
+<div id="footer" class="cfix">
+	<div class="place">
+		<div class="f_share">
+			<strong>Поделиться</strong>
+			<!-- <script type="text/javascript" src="http://yandex.st/share/share.js"charset="utf-8"></script> -->
+			<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareQuickServices="vkontakte,facebook,twitter,odnoklassniki,gplus" data-yashareTheme="counter" data-yasharetype="small"></div> 
+		</div>
+		<div class="f_help">
+			<strong>Справка</strong>
+			<ul>
+				<li><a href="#">Политика конфендециальности</a></li>
+				<li><a href="#">Правила площадки</a></li>
+				<li><a href="#">Пользовательское соглашение</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="f_prc">
+			<strong>ПродуктЦентр</strong>
+			<ul>
+				<li><a href="#">Товары</a></li>
+				<li><a href="#">Производители</a></li>
+				<li><a href="#">Промышленная карта</a></li>
+				<li><a href="#">Новости</a></li>
+			</ul>
+		</div>
+		<div class="f_copy">
+			<span class="btn"></span>
+			<p>©&nbsp;«Производство России», 2008—2014</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

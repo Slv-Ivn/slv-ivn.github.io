@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>#</title>
+	<link rel="stylesheet" href="https://www.38samuraev.ru/css/style.css">
+	<link rel="stylesheet" href="datepicker.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="datepicker.min.js"></script>
+</head>
+<body>
+
+<script>
+
+$(document).ready(function(){
+	
+	$('.calc_booking').click(function(){
+        $(this).toggleClass('active');
+        $('.rest_booking').toggleClass('active');
+    });
+
+    $('.rest_booking span.close').click(function(){
+        $('.rest_booking').removeClass('active');
+        $('.calc_booking').removeClass('active');
+        $('.rest_booking .rb_calc_form').fadeIn(0);
+    	$('.rest_booking .rb_order_form, .rest_booking .rb_sent_msg').fadeOut(0);
+    });
+
+    $.fn.datepicker.setDefaults({
+    	language: 'ru-RU',
+    	format: 'dd.mm.YYYY',
+	    days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+	    daysShort: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+	    daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+	    months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+	    monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+	    weekStart: 1,
+	    offset: '5',
+    });
+
+    $('.rest_booking').ready(function(){
+    	$('input[name="date_in"]').datepicker({ trigger: $('input[name="date_in"]').siblings('.show_calendar') });
+    	$('input[name="date_out"]').datepicker({ trigger: $('input[name="date_out"]').siblings('.show_calendar') });
+    });
+
+    $('.rest_booking .rb_calculation').on('click', function(){
+    	$('.rest_booking .rb_calc_form').fadeOut(0);
+    	$('.rest_booking .rb_order_form').fadeIn(800);
+    });
+
+    $('.rest_booking .rb_send_order').on('click', function(){
+    	$('.rest_booking .rb_calc_form').fadeOut(0);
+    	$('.rest_booking .rb_order_form').fadeOut(0);
+    	$('.rest_booking .rb_sent_msg').fadeIn(800);
+    });
+
+});
+
+</script>
+
+<!-- Калькулятор -->
+
+<div class="rest_booking">
+
+	<form action="" method="" class="rb_calc_form">
+		<strong class="title">Расчитать цену отдыха</strong>
+		<div class="descriptor">Заполните форму необходимыми данными для расчёта стоимости отдыха.</div>
+		<span class="close" title="Закрыть"></span>
+		<hr class="s_line">
+		<div class="errors_msg">
+			<p>Необходимо указать период проживания.</p>
+			<p>Необходимо указать количество бронируемых номеров.</p>
+		</div>
+		<div class="rb_date">
+			<h3>Период проживания</h3>
+			<div class="inline calendar">
+				<div class="input">
+					<input type="text" name="date_in" placeholder="Дата заезда" data-toggle="datepicker"><span class="show_calendar"></span>
+				</div>
+				<div class="input">
+					<input type="text" name="date_out" placeholder="Дата выезда" data-toggle="datepicker"><span class="show_calendar"></span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="rb_residence">
+			<h3>Количество бронируемых номеров</h3>
+			<div class="inline">
+				<div class="input">«Стандарт» (до 4-х человек)
+					<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
+				</div>
+				<div class="input">«Семейный» (до 6-х человек) 
+					<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="rb_food">
+			<h3>Трёхразовое питание</h3>
+			<div class="inline">
+				<div class="input">Количество детей
+					<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
+				</div>
+				<div class="input">Количество взрослых
+					<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
+				</div>
+			</div>
+		</div>
+
+		<button type="button" class="rb_calculation">Расчитать стоимость</button>
+	</form>
+
+	<form action="" method="" class="rb_order_form" style="display: none;">
+		<strong class="title">Бронирование</strong>
+		<div class="descriptor">Укажите контактные данные, отправьте заявку и администратор свяжется с вами.</div>
+		<span class="close" title="Закрыть"></span>
+		<hr class="s_line">
+   <!-- <div class="errors_msg">
+			<p>Необходимо указать контактный номер телефона.</p>
+		</div> /-->
+		<div class="inline">
+			<div class="total_money">
+				<strong>42 800 ₽</strong>
+				<p><b>Итоговая сумма отдыха</b></p>
+			</div>
+			<div>
+				<strong>12 суток отдыха</strong>
+				<p>10.07.2018—22.07.2018</p>
+			</div>
+
+			<div>
+				<strong>Без питания</strong>
+				<p>Цена за трёхразовое питание</p>
+			</div>
+		</div>
+		<div class="rb_personal">
+			<h3>Контактные данные</h3>
+			<input type="text" name="" placeholder="Фамилия, Имя и Отчество">
+			<input type="tel" name="" placeholder="Номер телефона">
+		</div>
+		<button type="button" class="rb_send_order">Отправить заявку на бронирование</button>
+	</form>
+
+
+	<div class="rb_sent_msg" style="display: none;">
+		<strong class="title">Отлично!</strong>
+		<div class="descriptor">Сообщение успешно отправлено.<br>В ближайшее время администратор усадьбы с вами свяжется.</div>
+		<span class="close" title="Закрыть"></span>
+	</div>
+
+</div>
+
+<div class="calc_booking">Калькулятор<i>стоимости отдыха</i></div>
+
+</body>
+</html>

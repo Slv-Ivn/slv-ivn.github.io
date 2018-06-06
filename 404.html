@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ошибка 404 — запрашиваемая страница не существует</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        html,body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            font: normal 16px/1.4 'Arial', sans-serif;
+            color: #3a444a;
+            box-sizing: border-box;
+        }
+        a, a:visited {
+            text-decoration: none;
+            color: #2980b9;
+        }
+        a:hover { color: #d02d2d; }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            max-width: 640px;
+            margin-bottom: 20%;
+        }
+        .content .p_404 { width: 230px; }
+        .content .p_404 .numbers {
+            font-size: 128px;
+            font-weight: bold;
+            line-height: 1;
+            opacity: .08;
+        }
+        .content .p_404 > p {
+            margin: 0;
+            font-size: 12px;
+            opacity: .5;
+        }
+        .content .main {
+            width: 340px;
+            margin-left: 40px;
+            padding-left: 40px;
+            border-left: 2px solid #f5f5f5;
+        }
+        .content .main .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .content .main .logo strong {
+            margin-left: 15px;
+            font-size: 17px;
+        }
+        .content .main .links { 
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .content .main .links a:not(:last-child) { margin-right: 15px; }
+        .content .main .search form { display: flex; }
+        .content .main .search input {
+            width: 100%;
+            height: 34px;
+            padding: 0 10px;
+            border: 1px solid #ffcf3a;
+            border-right: none;
+            border-radius: 2px 0 0 2px;
+            outline-style: none;
+            font-size: 14px;
+            -webkit-appearance: none;
+        }
+        .content .main .search input:focus { box-shadow: 0 0 12px 1px rgba(255,207,58,.5); }
+        .content .main .search button {
+            height: 34px;
+            padding: 4px 10px;
+            background: #ffcf3a;
+            border: 1px solid #ffcf3a;
+            border-radius: 0 2px 2px 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #785400;
+            cursor: pointer;
+        }
+        .content .main .search button:hover { background: #ffdc3a; }
+    </style>
+</head>
+
+<body>
+
+<section class="content">
+    <div class="p_404">
+        <div class="numbers">404</div>
+        <p>Ошибка — запрашиваемая страница не существует.</p>
+    </div>
+    <div class="main">
+        <div class="logo">
+            <a href="/"><img src="https://productcenter.ru/img/logos/logo.svg" alt="Интернет-выставка Производство России" title=""></a>
+            <strong>Производство России<br><small>интернет-выставка</small></strong>
+        </div>
+        <div class="links">
+            <a href="">Главная</a>
+            <a href="">Производители</a>
+            <a href="">Товары</a>
+        </div>
+        <div class="search">
+            <form action="">
+                <input name="q" type="search" id="srch" placeholder="Поиск товаров и производителей" value="" autocomplete="off">
+                <button type="submit">Найти</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

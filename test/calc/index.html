@@ -28,6 +28,10 @@ $(document).ready(function(){
     	$('.rest_booking .rb_order_form, .rest_booking .rb_sent_msg').fadeOut(0);
     });
 
+     $('.calc_booking_helper span.close, .calc_booking').click(function(){
+    	$('.calc_booking_helper').fadeOut(800);
+    });
+
     $.fn.datepicker.setDefaults({
     	language: 'ru-RU',
     	format: 'dd.mm.YYYY',
@@ -71,7 +75,7 @@ $(document).ready(function(){
 		<hr class="s_line">
 		<div class="errors_msg">
 			<p>Необходимо указать период проживания.</p>
-			<p>Необходимо указать количество бронируемых номеров.</p>
+			<p>Необходимо выбрать тип бронируемого номера.</p>
 		</div>
 		<div class="rb_date">
 			<h3>Период проживания</h3>
@@ -85,7 +89,7 @@ $(document).ready(function(){
 			</div>
 		</div>
 		
-		<div class="rb_residence">
+<!-- 		<div class="rb_residence">
 			<h3>Количество бронируемых номеров</h3>
 			<div class="inline">
 				<div class="input">«Стандарт» (до 4-х человек)
@@ -95,15 +99,29 @@ $(document).ready(function(){
 					<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
 				</div>
 			</div>
+		</div> -->
+
+		<div class="rb_residence">
+			<h3>Тип бронируемого номера</h3>
+			<div class="inline">
+				<div class="input">
+					<input type="radio" id="standart_room" name="select_room">
+    				<label for="standart_room">Стандартный номер<small>до 4-х человек</small></label>
+				</div>
+				<div class="input">
+					<input type="radio" id="family_room" name="select_room">
+    				<label for="family_room">Семейный номер<small>до 6-х человек</small></label>
+				</div>
+			</div>
 		</div>
 
 		<div class="rb_food">
 			<h3>Трёхразовое питание</h3>
 			<div class="inline">
-				<div class="input">Количество детей
+				<div class="input">количество взрослых
 					<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
 				</div>
-				<div class="input">Количество взрослых
+				<div class="input">количество детей
 					<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
 				</div>
 			</div>
@@ -121,18 +139,17 @@ $(document).ready(function(){
 			<p>Необходимо указать контактный номер телефона.</p>
 		</div> /-->
 		<div class="inline">
+			<div>
+				<strong>25&thinsp;500&thinsp;₽</strong>
+				<p>проживание: 5 дней × 1250&thinsp;₽ + 3 дня × 4500&thinsp;₽</p>
+			</div>
+			<div>
+				<strong>16&thinsp;300&thinsp;₽</strong>
+				<p>питание: 8 дней × (2 взр. × 650&thinsp;₽ + 1 реб. × 540&thinsp;₽)</p>
+			</div>
 			<div class="total_money">
-				<strong>42 800 ₽</strong>
-				<p><b>Итоговая сумма отдыха</b></p>
-			</div>
-			<div>
-				<strong>12 суток отдыха</strong>
-				<p>10.07.2018—22.07.2018</p>
-			</div>
-
-			<div>
-				<strong>Без питания</strong>
-				<p>Цена за трёхразовое питание</p>
+				<strong>51&thinsp;800&thinsp;₽</strong>
+				<p><b>итоговая сумма отдыха</b></p>
 			</div>
 		</div>
 		<div class="rb_personal">
@@ -153,6 +170,7 @@ $(document).ready(function(){
 </div>
 
 <div class="calc_booking">Калькулятор<i>стоимости отдыха</i></div>
+<div class="calc_booking_helper">Расчитайте цену на отдых<span class="close" title="Закрыть"></span></div>
 
 </body>
 </html>

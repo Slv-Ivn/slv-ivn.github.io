@@ -5,6 +5,8 @@ $(document).ready(function(){
     $(".chosen-select").chosen();
 
     $('.tipso').tipso();
+    $('.tip').tipr();
+
 
     //Каталог
     $('#items_regions, #firms_rubrics, #firms_regions').hide()

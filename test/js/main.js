@@ -4,7 +4,9 @@ $(document).ready(function(){
 
     $(".chosen-select").chosen();
 
-    $('.tipso').tipso();
+    $('.tipso').tipso({
+        tooltipHover: true
+    });
     $('.tip').tipr();
 
 

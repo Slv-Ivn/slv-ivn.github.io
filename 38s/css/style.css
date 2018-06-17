@@ -2047,9 +2047,9 @@ input:focus, textarea:focus {
 
 
 
-/* Как добраться */
+/* Калькулятор стоимости отдыха */
 
-.section.calculation { padding-top: 40px; }
+.section.calculation { padding: 40px 0; }
 
 .section.calculation .place {
 	position: relative;
@@ -2100,93 +2100,88 @@ input:focus, textarea:focus {
 	text-align: right; 
 }
 
-.section.calculation form {
+.rest_booking {
 	position: relative;
-	top: 6px;
-	margin-right: 50px;
+	margin: 8px 0 0;
+	max-width: 420px;
 }
 
-.section.calculation form h4 { margin: 0 0 6px; }
-.section.calculation form > div { margin-bottom: 20px; }
-.section.calculation form > div > div:nth-of-type(1) { margin-right: 15px; }
+::-webkit-input-placeholder { color: #555; }
+::-moz-placeholder { color: #555; }
+:-ms-input-placeholder { color: #555; }
 
-.section.calculation .room_type .rt_item {
+.rest_booking input {
 	position: relative;
-	display: inline-block;
-	height: 60px;
-	width: 210px;
-	padding: 9px 15px;
-	background: #f0faff;
-	border: 2px solid #dff1fa;
-	border-radius: 3px;
-	line-height: 1;
-	cursor: pointer;
-}
-
-.section.calculation .room_type .rt_item b { 
-	display: block;
-	color: #0e77cc;
-}
-
-.section.calculation .room_type .rt_item small { font-size: 16px; }
-
-.section.calculation .room_type .rt_item .svg {
-	position: absolute;
-	display: none;
-}
-
-.section.calculation .room_type .rt_item.check {
-	background: #50aafe;
-	border: 0;
-	font-weight: 600;
-	color: #fff;
-    text-shadow: 0 1px 1px rgba(0,0,0,.05);
-}
-
-.section.calculation .room_type .rt_item.check:after {
-	position: absolute;
-	content: '';
-	right: -10px;
-	top: -10px;
-	width: 32px;
-	height: 32px;
-	border-radius: 100px;
-	background: #fff;
-	border: 2px solid #50aafe;
-}
-
-.section.calculation .room_type .rt_item.check b { color: #fff; }
-
-.section.calculation .room_type .rt_item.check .svg {
-	display: block;
-	top: -2px;
-	right: -2px;
-	width: 16px;
-	height: 16px;
-	fill: #88d228;
-	z-index: 10;
-}
-
-.section.calculation .date_rest .dt_item {
-	position: relative;
-	display: inline-block;
-	width: 210px;
-}
-
-.section.calculation .date_rest .dt_item input { 
+	height: 50px;
 	width: 100%; 
-	padding-right: 50px;
+	margin: 4px 0;
 }
 
-.section.calculation .date_rest .dt_item .error_msg {
-	position: absolute;
-	bottom: -12px;
-	left: 0;
+/*
+Стилизация радио-кнопок
+*/
+
+.rest_booking [type="radio"]:checked,
+.rest_booking [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.rest_booking [type="radio"]:checked + label,
+.rest_booking [type="radio"]:not(:checked) + label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 4px 0 8px 12px;
+    background: #f0faff;
+    border: 2px solid #dff1fa;
+    border-radius: 3px;
+    line-height: 1.25;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+.rest_booking [type="radio"]:checked + label {
+	border-color: #50aafe;
+	background: #fff;
+}
+
+.rest_booking .rb_residence label > small { 
+	display: block;
 	font-size: 14px;
-	color: #ee1515;
 }
 
-.section.calculation .date_rest .dt_item .show_calendar {
+.rest_booking h3 {
+	margin: 25px 0 10px;
+	font-size: 18px;
+}
+
+.rest_booking .rb_food h3 { margin-bottom: 0; }
+
+.rest_booking .inline {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	margin: 0 0 10px; 
+} 
+
+.rest_booking .input,
+.rest_booking .combined { 
+	position: relative;
+	width: 100%;
+	max-width: 200px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.rest_booking .inline.calendar input { 
+	margin: 0;
+	padding-right: 40px;
+}
+
+.rest_booking .show_calendar {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -2195,37 +2190,77 @@ input:focus, textarea:focus {
 	cursor: pointer;
 }
 
-.section.calculation .date_rest .dt_item .show_calendar .svg {
+.rest_booking .inline.calendar .svg {
 	width: 24px;
 	height: 22px;
 	fill: #50aafe;
 	margin: 18px 0 0 5px;
 }
 
-.section.calculation .date_rest .dt_item .show_calendar:hover .svg { fill: #ee1515; }
+.rest_booking .inline.calendar:hover .svg { fill: #ee1515; }
 
-.section.calculation .full_food .ff_item {
-	position: relative;
-	display: inline-block;
-	width: 210px;
-}
-
-.section.calculation .full_food .ff_item input {
-	width: 100%;
-	padding-right: 150px;
-}
-
-.section.calculation .full_food .ff_item span {
-	position: absolute;
-	top: 7px;
-	right: 2px;
-	height: 46px;
-	width: 100px;
-	padding: 10px 0;
-	background: #dff1fa;
+.rest_booking .inline .combined input {
 	text-align: center;
-    font-weight: 600;
-    font-size: 16px;
+	padding: 0 40px;
+}
+
+.rest_booking .combined > span {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 50px;
+	height: 50px;
+	background: #dff1fa;
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
+	z-index: 999;
+	transition: all .2s;
+}
+
+.rest_booking .combined > span.plus {
+	left: auto;
+	right: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.rest_booking .combined > span:after {
+	position: relative;
+	content: '−';
+	top: -2px;
+	font-size: 26px;
+    line-height: 0;
+    font-weight: bold;
+    color: #387be4;
+}
+
+.rest_booking .combined > span.plus:after { content: '+'; }
+.rest_booking .combined > span:hover:after { color: #e3533c; }
+
+.rest_booking .rb_order_form .inline .total_money {	
+	margin: 0;
+	color: #00a03d; 
+}
+
+.rest_booking .rb_personal input { width: 100%; }
+
+.rest_booking .errors_msg {
+	width: 100%;
+	margin: 20px 0;
+	padding: 6px 12px;
+	background: #fff0f0;
+	border-radius: 3px;
+}
+
+.rest_booking .errors_msg p {
+	margin: 5px 0;
+	padding: 1px 0 1px 10px;
+	border-left: 2px solid #ffabab;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #922;
 }
 
 .section.calculation form .btn {
@@ -2649,12 +2684,14 @@ input:focus, textarea:focus {
 Окно бронирования
 */
 
-.mod_window.fast_booking {
+.mod_window.fast_booking,
+.mod_window.order_booking {
 	max-width: 620px;
 	height: auto;
 }
 
-.mod_window.fast_booking .box {
+.mod_window.fast_booking .box,
+.mod_window.order_booking .box {
 	display: -ms-flexbox;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -2663,14 +2700,16 @@ input:focus, textarea:focus {
 	padding: 12px 20px 25px;
 }
 
-.mod_window.fast_booking .left {
+.mod_window.fast_booking .left,
+.mod_window.order_booking .left {
 	width: 50%;
 	padding-right: 20px;
 	line-height: 1; 
 }
 
-.mod_window.fast_booking .left h3 {
-	font-size: 20px;
+.mod_window.fast_booking .left h3,
+.mod_window.order_booking .left h3 {
+	font-size: 18px;
 	max-width: 80%;
 	margin-bottom: 15px;
 	color: #668696;
@@ -2684,6 +2723,8 @@ input:focus, textarea:focus {
 	margin: 12px 0;
 }
 
+.mod_window.order_booking .left .msg_line { margin: 12px 0; }
+
 .mod_window.fast_booking .left .msg_line .room,
 .mod_window.fast_booking .left .msg_line .adult,
 .mod_window.fast_booking .left .msg_line .pay_day { 
@@ -2691,24 +2732,23 @@ input:focus, textarea:focus {
 	margin-right: 12px; 
 }
 
-.mod_window.fast_booking .left .msg_line b { font: 600 18px 'Neris'; }
-.mod_window.fast_booking .left .msg_line b > span { font-size: 14px; }
-.mod_window.fast_booking .left .msg_line small { display: block; }
+.mod_window.fast_booking .left .msg_line b,
+.mod_window.order_booking .left .msg_line b { font: 600 18px 'Neris'; }
 
-.mod_window.fast_booking .left .msg_line .all_pay { 
-	color: #64b100; 
+.mod_window.fast_booking .left .msg_line b > span,
+.mod_window.order_booking .left .msg_line b > span  { font-size: 14px; }
+
+.mod_window.fast_booking .left .msg_line small,
+.mod_window.order_booking .left .msg_line small { display: block; }
+
+.mod_window.fast_booking .left .msg_line .all_pay,
+.mod_window.order_booking .left .msg_line.total_money { 
+	color: #3cb709; 
 	font-weight: 600;
+	text-shadow: 0 1px 2px rgba(0,0,0,.05);
 }
 
-.mod_window.fast_booking .left .msg_line .all_pay b { 
-	font-weight: 900;
-	text-shadow: 0 1px 2px rgba(0,0,0,.1);
-}
-
-.mod_window.fast_booking .left .msg_line .all_pay b > span {
-	font-weight: 600;
-	text-shadow: none;
-}
+.mod_window.order_booking .left .msg_line.total_money b { font-weight: 900; }
 
 .adm_block {
 	position: relative;
@@ -2742,16 +2782,19 @@ input:focus, textarea:focus {
 	font-family: 'Quiza Pro' 
 }
 
-.mod_window.fast_booking .right {
+.mod_window.fast_booking .right,
+.mod_window.order_booking .right {
 	width: 50%;
 	padding-left: 20px;
 	border-left: 2px solid #dff1fa;
 	text-align: center;
 }
 
-.mod_window.fast_booking .right form input { width: 100%; }
+.mod_window.fast_booking .right form input,
+.mod_window.order_booking .right form input { width: 100%; }
 
-.mod_window.fast_booking .right .img {
+.mod_window.fast_booking .right .img,
+.mod_window.order_booking .right .img {
 	display: block;
 	max-width: 100%;
 	height: 80px;

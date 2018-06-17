@@ -942,51 +942,64 @@
 		</div>
 	</section>
 
-<!-- 	<section class="section calculation">
+	<section class="section calculation">
 		<div class="place">
 			
 			<h2 class="up_text">Рассчитать цену<br><span class="rcolor">отдыха</span></h2>
 
-			<form action="" method="">
-				<div class="room_type">
-					<h4 class="up_text">Тип номера</h4>
-					<div class="rt_item check">
-						<b>Семейный номер</b><small>до 6 человек</small>
-						<svg class="svg _okey"><use xlink:href="#svg_okey"></use></svg>
+			<div class="rest_booking">
+				<form action="" method="" class="rb_calc_form">
+					<div class="descriptor">Заполните форму необходимыми данными для расчёта стоимости отдыха.</div>
+					<div class="errors_msg">
+						<p>Необходимо указать период проживания.</p>
+						<p>Необходимо выбрать тип бронируемого номера.</p>
 					</div>
-					<div class="rt_item">
-						<b>Стандартный номер</b><small>до 4 человек</small>
-						<svg class="svg _okey"><use xlink:href="#svg_okey"></use></svg>
+					<div class="rb_date">
+						<h3>Период проживания</h3>
+						<div class="inline calendar">
+							<div class="input">
+								<input type="text" name="date_in" placeholder="Дата заезда" data-toggle="datepicker">
+								<span class="show_calendar"><svg class="svg _calendar"><use xlink:href="#svg_calendar"></use></svg></span>
+							</div>
+							<div class="input">
+								<input type="text" name="date_out" placeholder="Дата выезда" data-toggle="datepicker">
+								<span class="show_calendar"><svg class="svg _calendar"><use xlink:href="#svg_calendar"></use></svg></span>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="date_rest">
-					<h4 class="up_text">Период отдыха</h4>
-					<div class="dt_item">
-						<input type="text" name="" placeholder="Дата заезда">
-						<span class="show_calendar"><svg class="svg _calendar"><use xlink:href="#svg_calendar"></use></svg></span>
+					
+					<div class="rb_residence">
+						<h3>Тип бронируемого номера</h3>
+						<div class="inline">
+							<div class="input">
+								<input type="radio" id="standart_room" name="select_room">
+			    				<label for="standart_room">Стандартный номер<small>до 4-х человек</small></label>
+							</div>
+							<div class="input">
+								<input type="radio" id="family_room" name="select_room">
+			    				<label for="family_room">Семейный номер<small>до 6-х человек</small></label>
+							</div>
+						</div>
 					</div>
-					<div class="dt_item">
-						<input type="text" class="error" name="" placeholder="Дата выезда">
-						<span class="show_calendar"><svg class="svg _calendar"><use xlink:href="#svg_calendar"></use></svg></span>
-						<i class="error_msg">Заполните поле ↑</i>
+
+					<div class="rb_food">
+						<h3>Трёхразовое питание <sup>(не обязательно)</sup></h3>
+						<div class="inline">
+							<div class="input">количество взрослых
+								<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
+							</div>
+							<div class="input">количество детей
+								<div class="combined"><span class="minus"></span><input type="text" name="" value="0"><span class="plus"></span></div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="full_food">
-					<h4 class="up_text">Трёхразовое питание</h4>
-					<div class="ff_item">
-						<input type="text" name="" placeholder="0">
-						<span>Взрослых</span>
-					</div>
-					<div class="ff_item">
-						<input type="text" name="" placeholder="0">
-						<span>Детей</span>
-					</div>
-				</div>
-				<button type="button" class="btn green with_line booking">Расчитать стоимость</button>
-			</form>
+
+					<button type="button" class="btn green with_line calc_booking">Расчитать стоимость</button>
+				</form>
+			</div>
 
 		</div>
-	</section> -->
+	</section>
 
 	<section class="section beach_map">
 		<div class="place">
@@ -1001,31 +1014,6 @@
 			</div>
 		</div>
 	</section>
-
-	<style type="text/css">
-		
-		.section.beach_map .map_image {
-			max-width: 100%;
-			max-height: 600px;
-			margin-top: 40px;
-		}
-
-		.section.beach_map .map_image .image {
-		    position: relative;
-		    display: block;
-		    max-width: 100%;
-		    height: 100%;
-		    transition: all .3s ease-in-out;
-		}
-
-		.section.beach_map .map_image .image img { max-width: 100%; }
-		
-		.section.beach_map .map_image .image:hover {
-		     transform: scale(.9);
-		     opacity: .8;
-		}
-
-	</style>
 
 	<section class="section way_to_us">
 		<div class="place">
@@ -1161,6 +1149,49 @@
 			</div>
 		</div>
 
+		<div class="mod_window order_booking">
+			<div class="head">
+				<b class="head_name">Бронирование</b>
+				<span class="close"></span>
+			</div>
+			<hr class="s_line">
+			<div class="box">
+				<div class="left">
+					<div class="msg">
+						<h3>Расчёт стоимости отдыха</h3>
+						<div class="msg_line">
+							<b>25&thinsp;500&nbsp;<span>рублей</span></b>
+							<small>проживание: 5 дней × 1250&nbsp;руб. + 3 дня × 4500&nbsp;руб.</small>
+						</div>
+						<div class="msg_line">
+							<b>16&thinsp;300&nbsp;<span>рублей</span></b>
+							<small>питание: 8 дней × (2 взр. × 650&nbsp;руб. + 1 реб. × 540&nbsp;руб.)</small>
+						</div>
+						<div class="msg_line total_money">
+							<b>51&thinsp;800&nbsp;<span>рублей</span></b>
+							<small><strong>итоговая сумма отдыха</strong></small>
+						</div>
+					</div>
+					<div class="adm_block">
+						<div class="avatar" style="background-image:url('img/ava.png');"></div>
+						<div class="text">
+							<b>Дарья</b>
+							<small>администратор</small>
+							<span><a class="phone_link" href="tel:+79146576625">+7 914 657-66-25</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<span class="img"></span>
+					<form action="" method="">
+						<input type="text" name="" placeholder="Фамилия, Имя и Отчество">
+						<input type="text" name="" placeholder="Телефон или эл. почта">
+						<button type="button" class="btn green">Отправить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
 		<div class="mod_window uni_msg good">
 			<span class="close"></span>
 			<div class="msg_block">
@@ -1199,9 +1230,9 @@
 	</defs>
 </svg>
 
-<link rel="stylesheet" property="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" property="stylesheet" href="css/style.css">
 <script src="js/jquery.js"></script>
-<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/scrollyeah.min.js"></script>
 <style>
 .header .menu li a .svg._beach_map { width: 28px; }

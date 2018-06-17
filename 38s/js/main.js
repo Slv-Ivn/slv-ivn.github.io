@@ -30,6 +30,11 @@ $(document).ready(function(){
         $('.modal_windows, .mod_window.fast_booking').addClass('active');
     });
 
+    $('.calc_booking').click(function(){
+        $('.modal_windows, .mod_window.order_booking').removeClass('active');
+        $('.modal_windows, .mod_window.order_booking').addClass('active');
+    });
+
 //
     $('.menu .menu_show').click(function(){
         $(this).toggleClass('active');

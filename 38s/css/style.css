@@ -2190,14 +2190,14 @@ input:focus, textarea:focus {
 	cursor: pointer;
 }
 
-.rest_booking .inline.calendar .svg {
+.rest_booking .inline.calendar .show_calendar .svg {
 	width: 24px;
 	height: 22px;
 	fill: #50aafe;
-	margin: 18px 0 0 5px;
+	margin: 14px 0 0 2px;
 }
 
-.rest_booking .inline.calendar:hover .svg { fill: #ee1515; }
+.rest_booking .inline.calendar .show_calendar:hover .svg { fill: #ee1515; }
 
 .rest_booking .inline .combined input {
 	text-align: center;

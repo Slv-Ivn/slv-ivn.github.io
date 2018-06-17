@@ -4,11 +4,6 @@ $(document).ready(function(){
 
     $(".chosen-select").chosen();
 
-    $('.tipso').tipso({
-        tooltipHover: true
-    });
-    $('.tip').tipr();
-
 
     //Каталог
     $('#items_regions, #firms_rubrics, #firms_regions').hide()

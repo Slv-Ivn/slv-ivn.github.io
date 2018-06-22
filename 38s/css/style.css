@@ -625,6 +625,8 @@ input:focus, textarea:focus {
 	fill-rule: evenodd;
 }
 
+.menu li a .svg._beach_map { width: 28px; }
+
 .menu li a:hover:after {
 	width: 100%;
 }
@@ -797,6 +799,8 @@ input:focus, textarea:focus {
 	height: 20px;
 	margin: 3px 0 4px 0;
 }
+
+.header.fixed .menu li a .svg._beach_map { width: 26px; }
 
 .header.fixed  .top_buttons .booking {
 	height: 50px;

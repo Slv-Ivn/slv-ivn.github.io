@@ -2294,7 +2294,7 @@ input:focus, textarea:focus {
 .section.beach_map .map_image .image img { max-width: 100%; }
 
 .section.beach_map .map_image .image:hover {
-     transform: scale(.95);
+     transform: scale(.98);
      opacity: .9;
 }
 
@@ -2656,6 +2656,11 @@ input:focus, textarea:focus {
 	font-size: 17px;
 }
 
+.mod_window.call_back form textarea {
+	width: 100%;
+	margin: 10px 0 0;
+}
+
 .mod_window.call_back form .btn {
 	position: relative;
     bottom: -35px;
@@ -2796,6 +2801,12 @@ input:focus, textarea:focus {
 
 .mod_window.fast_booking .right form input,
 .mod_window.order_booking .right form input { width: 100%; }
+
+.mod_window.fast_booking .right form textarea,
+.mod_window.order_booking .right form textarea {
+	width: 100%;
+	margin: 10px 0 0;
+}
 
 .mod_window.fast_booking .right .img,
 .mod_window.order_booking .right .img {
@@ -3216,12 +3227,17 @@ input:focus, textarea:focus {
 	.section.ask_us .left { max-width: 100%; }
 	.section.ask_us .right { max-width: 90%; margin: 50px 0 0; }
 
-	.mod_window.fast_booking { max-width: 420px; }
-	.mod_window.fast_booking .box { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
-	.mod_window.fast_booking .left { width: 100%; padding: 0; }
-	.mod_window.fast_booking .right .img { display: none; }
+	.mod_window.fast_booking,
+	.mod_window.order_booking { max-width: 420px; }
+	.mod_window.fast_booking .box,
+	.mod_window.order_booking .box { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+	.mod_window.fast_booking .left,
+	.mod_window.order_booking .left { width: 100%; padding: 0; }
+	.mod_window.fast_booking .right .img,
+	.mod_window.order_booking .right .img { display: none; }
 
-	.mod_window.fast_booking .right { 
+	.mod_window.fast_booking .right,
+	.mod_window.order_booking .right { 
 		width: 100%;
 		margin-top: 20px;
 		padding: 20px 0 0 0;
@@ -3246,12 +3262,12 @@ input:focus, textarea:focus {
 	.color_splash { display: none; }
 
 	.section.calculation { overflow: hidden; }
+	.section.calculation .place { padding-left: 15px; padding-right: 15px; }
 	.section.calculation h2.up_text { margin-bottom: 25px; }
-
+	.section.calculation .rest_booking .input,
+	.section.calculation .rest_booking .combined { max-width: 100%; margin: 5px 0; }
 	.section.calculation form > div > div {
-		display: block !important;
-		width: 240px !important;
-		margin-top: 10px;
+		
 	}
 
 }

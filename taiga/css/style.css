@@ -162,7 +162,7 @@ h4, .h4 { font-size: 17px; }
 
 p { margin: 12px 0; }
 
-small, .small_text { font-size: 14px; }
+small, .small_text { font-size: 13px; }
 
 .big_text { font-size: 140%; }
 
@@ -268,7 +268,7 @@ span.close:hover { opacity: 1; }
 	left: 20px;
 	right: 20px;
 	bottom: 20px;
-	font: 600 17px 'IBMPS';
+	font: 600 17px/1.24 'IBMPS';
 	color: #fff;
 	text-shadow: 0 2px 2px rgba(0,0,0,.1);
 }
@@ -362,7 +362,7 @@ button, .btn, .big_btn {
 	color: #fff;
 	font-family: inherit;
 	line-height: inherit;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -428,6 +428,7 @@ input, textarea {
     background: #FFFFFF;
 	border: 2px solid rgba(197,93,236,.4);
 	box-shadow: 0px 2px 8px rgba(175,30,229,.15);
+	font-family: 'IBMPS', sans-serif;
     font-size: 16px;
     transition: all .25s;
 }
@@ -443,7 +444,14 @@ textarea {
 	resize: vertical;
 }
 
-input[placeholder] { text-overflow: ellipsis; }
+input[placeholder] { 
+	text-overflow: ellipsis;
+	font-family: 'IBMPS', sans-serif;
+}
+
+textarea[placeholder] {
+	font-family: 'IBMPS', sans-serif;
+}
 
 input:focus, textarea:focus { 
 	background: #fff !important;
@@ -649,7 +657,7 @@ input:focus, textarea:focus {
 .header .menu ul li a {
 	position: relative;
 	padding: 8px 0;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -998,7 +1006,7 @@ input:focus, textarea:focus {
 	position: relative;
 	padding: 0 20px;
 	background: #fff;
-	font-size: 14px;
+	font-size: 15px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;

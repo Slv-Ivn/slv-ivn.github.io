@@ -16,7 +16,10 @@ $(document).ready(function(){
     });
 
     $('[data-fancybox="mod_win"]').fancybox({
-        touch: false
+        touch: false,
+        arrows: false,
+        infobar: false,
+        keyboard: false,
     });
 
 

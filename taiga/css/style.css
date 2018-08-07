@@ -871,7 +871,6 @@ input:focus, textarea:focus {
 }
 
 .header.fixed .top_buttons button {
-	top: -2px;
 	height: 32px;
 	margin: 0;
 	padding: 0 8px;
@@ -880,18 +879,18 @@ input:focus, textarea:focus {
 	border-radius: 0;
 	box-shadow: -20px 0 0 4px rgba(0,0,0,.05);
 	color: #2FBF5F;
-	line-height: 0;
+	line-height: 32px;
 	cursor: pointer;
 	transition: all .2s ease-in-out;
 }
 
 .header.fixed .top_buttons .fast_call_btn {
-	top: 2px;
 	box-shadow: none;
 	z-index: 2;
 }
 
 .header.fixed .top_buttons .fast_call_btn .svg {
+	top: 3px;
 	width: 18px;
 	height: 18px;
 	fill: #c55dec;

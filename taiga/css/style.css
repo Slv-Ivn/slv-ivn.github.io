@@ -2439,6 +2439,11 @@ input:focus, textarea:focus {
 		flex-wrap: wrap;
 	}
 
+	.ecotour_days .et_day .left .image_box {
+		width: 240px;
+		height: 168px;
+	}
+
 	.ecotour_days .et_day .right {
 		margin: 0;
 	}
@@ -2549,11 +2554,27 @@ input:focus, textarea:focus {
 
 	.sec_top_around .gallery {
 		margin-top: 10px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	
+	.gallery {
+		margin-left: -20px !important;
+		margin-right: -20px !important;
+	}
+
+	.ecotour_content .gallery {
+		width: calc(100% + 40px);
+		margin: 0 -20px;
 	}
 
 	.g_space.scrollyeah .image_link {
 		width: 240px;
 		height: 168px
+	}
+
+	.g_space.scrollyeah .image_link:first-child {
+		margin-left: 20px;
 	}
 
 	.ecotour_content,
@@ -2620,6 +2641,10 @@ input:focus, textarea:focus {
 	}
 
 	.mod_win {
+		padding: 20px;
+	}
+
+	.mod_win.mw_food_rubric {
 		padding: 20px;
 	}
 

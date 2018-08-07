@@ -18,6 +18,7 @@
 			<div class="header_content">
 				<div class="logo"></div>
 				<nav class="menu">
+					<b class="menu_icon"></b>
 				  <ul>
 				    <li><a href="#">Туры</a></li>
 				    <li><a href="#">Проживание</a></li>
@@ -30,6 +31,10 @@
 				<div class="social">
 					<a href="#" title="Страница в Инстаграме"><svg class="svg _instagram"><use xlink:href="#svg_instagram"></use></svg></a>
 					<a href="#" title="Страница на Фейсбуке"><svg class="svg _facebook"><use xlink:href="#svg_facebook"></use></svg></a>
+				</div>
+				<div class="top_buttons">
+					<button class="fast_call_btn" data-fancybox="mod_win" data-src="#mwCall"><svg class="svg _phone"><use xlink:href="#svg_phone"></use></svg></button>
+					<button class="fast_booking_btn" data-fancybox="mod_win" data-src="#mwBooking">Бронировать</button>
 				</div>
 			</div>
 		</header>
@@ -65,7 +70,7 @@
 						<img class="image" src="img/test_image.jpg" alt="" title="">
 						<div class="overbox">
 							<svg class="svg _zoom"><use xlink:href="#svg_zoom"></use></svg>
-							<span class="image_text">Короткое описание фото</span>
+							<span class="image_text">Какое-то очень длинное описание фото, которое будет сокращаться или обрезаться...</span>
 						</div>
 					</a>
 					<a href="" class="image_link" title="">
@@ -181,10 +186,6 @@
 			</div>
 
 			<div class="tour_info">
-				<div class="tour_descriptor">
-					<h3>Коротко о туре</h3>
-					<p>Экотур по системе «всё включено» для тех, кто любит нестандартный, насыщенный и очень красивый, но уютный отдых.</p>
-				</div>
 				<div class="tour_indicators">
 					<div class="tour_money">
 						<strong>84 000 ₽</strong><span>цена с одного человека</span>
@@ -192,6 +193,10 @@
 					<div class="tour_days">
 						<strong>7 <small>дней</small> <small>—</small> 6 <small>ночей</small></strong><span>продолжительность тура</span>
 					</div>
+				</div>
+				<div class="tour_descriptor">
+					<h3>Коротко о туре</h3>
+					<p>Экотур по системе «всё включено» для тех, кто любит нестандартный, насыщенный и очень красивый, но уютный отдых.</p>
 				</div>
 				<div class="tour_included">
 					<h3>Включено в тур</h3>
@@ -792,7 +797,7 @@
 
 </div>
 
-<div class="traps_box" style="margin-top: 200px;">
+<div class="traps_box" style="margin-top: 200px; display: none;">
 
 	<big>—————————— → Блоки с формами «захвата» ↓</big>
 	
@@ -851,12 +856,14 @@
 
 </div>
 
+<div class="to_top" title="Вернуться наверх ↑"></div>
+
 <link rel="stylesheet" property="stylesheet" href="css/fancybox.css">
 <link rel="stylesheet" property="stylesheet" href="css/style.css">
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 <script src="js/fancybox.js"></script>
-<script src="js/scrollyeah.min.js"></script>
+<script src="js/scrollyeah.js"></script>
 
 </body>
 </html>

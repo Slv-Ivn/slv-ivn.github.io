@@ -239,7 +239,47 @@ span.close {
 
 span.close:hover { opacity: 1; }
 
-.image_box .overbox {
+.to_top {
+	width: 42px;
+	height: 42px;
+	background: #c55dec;
+	border-radius: 80px;
+	box-shadow: 0 6px 18px -2px rgba(0,0,0,.15);
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+	opacity: .5;
+}
+
+.to_top:before,
+.to_top:after {
+	position: absolute;
+	content: '';
+	top: 14px;
+	left: 16px;
+	width: 4px;
+	height: 12px;
+	background: #fff;
+	border-radius: 4px;
+	transform: rotate(40deg);
+}
+
+.to_top:after {
+	left: 22px;
+	transform: rotate(-40deg);
+}
+
+.to_top.fixed {
+	position: fixed;
+	bottom: 4%;
+	right: 2%;
+	z-index: 100;
+}
+
+.to_top:hover {
+	opacity: 1;
+}
+
+.image_link .overbox {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -252,7 +292,7 @@ span.close:hover { opacity: 1; }
 	transition: all .25s ease;
 }
 
-.image_box .overbox .svg {
+.image_link .overbox .svg {
 	position: absolute;
 	top: 20px;
 	left: 20px;
@@ -263,7 +303,7 @@ span.close:hover { opacity: 1; }
 	transition: all .25s ease;
 }
 
-.image_box .overbox .image_text {
+.image_link .overbox .image_text {
 	position: absolute;
 	left: 20px;
 	right: 20px;
@@ -273,40 +313,41 @@ span.close:hover { opacity: 1; }
 	text-shadow: 0 2px 2px rgba(0,0,0,.1);
 }
 
-.image_box .overbox.static {
-	background: linear-gradient(190deg,rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,.4) 100%);
+.image_link .overbox.static,
+.g_space.scrollyeah .image_link .overbox {
+	background: linear-gradient(190deg,rgba(0,0,0,0) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,.4) 80%);
 	opacity: 1;
 	z-index: 20;
 }
 
-.image_box .overbox.static .svg {
+.image_link .overbox.static .svg {
 	opacity: 0;
 }
 
-.image_box .image_link:hover .overbox {
+.image_link:hover .overbox {
 	opacity: 1;
 	z-index: 20;
 }
 
-.image_box .image_link:hover .overbox.static {
+.image_link:hover .overbox.static {
 	opacity: 1;
 	z-index: 20;
 	background: rgba(47,191,95,.6);
 }
 
-.image_box .image_link:hover .overbox .svg,
-.image_box .image_link:hover .overbox.static .svg {
+.image_link:hover .overbox .svg,
+.image_link:hover .overbox.static .svg {
 	transform: scale(1);
 	opacity: 1;
 }
 
-.image_box .image_link.video .overbox {
+.image_link.video .overbox {
 	background: none;
 	opacity: 1;
 	z-index: 20;
 }
 
-.image_box .image_link.video .overbox:after {
+.image_link.video .overbox:after {
 	position: absolute;
 	content: '';
 	top: calc(50% - 34px);
@@ -316,28 +357,41 @@ span.close:hover { opacity: 1; }
 	background: #fff;
 	border-radius: 80px;
 	box-shadow: 0 0 0 20px rgba(0,0,0,.05);
+	z-index: 10;
 }
 
-.image_box .image_link.video .overbox .svg {
+.image_link.video .overbox .svg {
 	position: absolute;
 	top: calc(50% - 10px);
 	left: calc(50% - 10px);
 	width: 24px;
 	height: 24px;
 	transform: none;
-	z-index: 10;
+	z-index: 12;
 }
 
-.image_box .image_link.video .overbox .image_text {
+.image_link.video .overbox .image_text {
 	opacity: 0;
 }
 
-.image_box .image_link.video:hover .overbox {
+.image_link.video:hover .overbox {
 	background: rgba(47,191,95,.6);
 }
 
-.image_box .image_link.video:hover .overbox .image_text {
+.image_link.video:hover .overbox .image_text {
 	opacity: 1;
+}
+
+.g_space.scrollyeah .image_link .overbox .image_text,
+.g_space.scrollyeah .image_link.video .overbox .image_text {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	opacity: 1;
+}
+
+.g_space.scrollyeah .image_link .overbox .svg._zoom {
+	display: none !important;
 }
 
 
@@ -508,7 +562,7 @@ input:focus, textarea:focus {
 
 
 
-/* --- Топ секция-галерея ----------------------------------------------------------------------------- */
+/* --- Галерея ----------------------------------------------------------------------------- */
 
 
 .gallery, .gallery .g_space { position: relative; }
@@ -536,6 +590,7 @@ input:focus, textarea:focus {
 	display: block;
 	height: 100%;
 	width: 100%;
+	box-shadow: 0px 8px 24px rgba(0,0,0,.15);
 }
 
 .gallery .g_space .image_box.pack .image_link { margin-bottom: 10px; }
@@ -544,17 +599,16 @@ input:focus, textarea:focus {
 
 .gallery .g_space .image_box.wide { max-width: 320px; }
 
-.image_box .image_link .image {
+.image_link .image {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	box-shadow: 0px 8px 24px rgba(0,0,0,.15);
 	object-fit: cover;
 	z-index: 10;
 }
 
-.image_box .image_link.stack_imgs:before,
-.image_box .image_link.stack_imgs:after,
+.image_link.stack_imgs:before,
+.image_link.stack_imgs:after,
 .fm_rubric.stack_imgs:before,
 .fm_rubric.stack_imgs:after {
 	position: absolute;
@@ -568,7 +622,7 @@ input:focus, textarea:focus {
 	z-index: 9;
 }
 
-.image_box .image_link.stack_imgs:after,
+.image_link.stack_imgs:after,
 .fm_rubric.stack_imgs:after {
 	bottom: -20px;
 	left: 20px;
@@ -577,8 +631,8 @@ input:focus, textarea:focus {
 	z-index: 8;
 }
 
-.image_box .image_link.stack_imgs.top_stack:before,
-.image_box .image_link.stack_imgs.top_stack:after,
+.image_link.stack_imgs.top_stack:before,
+.image_link.stack_imgs.top_stack:after,
 .fm_rubric.stack_imgs.top_stack:before,
 .fm_rubric.stack_imgs.top_stack:after  {
 	bottom: auto;
@@ -586,7 +640,7 @@ input:focus, textarea:focus {
 
 }
 
-.image_box .image_link.stack_imgs.top_stack:after,
+.image_link.stack_imgs.top_stack:after,
 .fm_rubric.stack_imgs.top_stack:after {
 	bottom: auto;
 	top: -20px;
@@ -597,6 +651,18 @@ input:focus, textarea:focus {
 	position: absolute;
 	width: 0;
 	height: 0;
+}
+
+.g_space.scrollyeah {
+	height: auto;
+}
+
+.g_space.scrollyeah .image_link {
+	position: relative;
+	width: 280px;
+	height: 200px;
+	margin-right: 10px;
+	box-shadow: 0px 4px 12px rgba(0,0,0,.1);
 }
 
 
@@ -648,6 +714,47 @@ input:focus, textarea:focus {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+}
+
+.header .menu .menu_icon {
+	position: absolute;
+	top: 9px;
+	left: 0;
+	display: none;
+	width: 28px;
+	height: 24px;
+	transition: all .25s ease-in-out;
+	cursor: pointer;
+}
+
+.header .menu .menu_icon:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
+	transition: all .25s ease-in-out;
+}
+
+.header .menu .menu_icon.active:before,
+.header .menu .menu_icon.active:after {
+	position: absolute;
+	content: '';
+	top: 8px;
+	left: 0;
+	width: 24px;
+	height: 3px;
+	background: #fff;
+	box-shadow: none;
+	transform: rotate(45deg);
+	transition: all .25s ease-in-out;
+}
+
+.header .menu .menu_icon.active:after {
+	transform: rotate(-45deg); 
 }
 
 .header .menu ul { display: flex; }
@@ -706,30 +813,41 @@ input:focus, textarea:focus {
 
 .header .social a:hover { opacity: .84; }
 
+.header .top_buttons {
+	position: relative;
+	display: none;
+}
+
 .header.fixed {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 52px;
+	height: 48px;
 	width: 100%;
 	padding: 0;
 	background: #2FBF5F;
+	box-shadow: 0 4px 20px 0 rgba(47,191,95,.4);
 	z-index: 750;
 	animation: Show_fixed_header .4s ease-in-out;
 }
 
 .header.fixed .header_content {
 	height: 100%;
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: auto;
+	padding: 0 40px;
+}
+
+.header.fixed .menu .menu_icon {
+	top: 15px;
 }
 
 .header.fixed .menu ul li a:before {
 	position: absolute;
 	content: '';
 	top: auto;
-	bottom: -8px;
+	bottom: -6px;
 	left: 50%;
 }
 
@@ -747,6 +865,41 @@ input:focus, textarea:focus {
 	display: none;
 }
 
+.header.fixed .top_buttons {
+	display: block;
+	margin-left: 20px;
+}
+
+.header.fixed .top_buttons button {
+	height: 32px;
+	margin: 0;
+	padding: 0 8px;
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	box-shadow: -20px 0 0 4px rgba(0,0,0,.05);
+	color: #2FBF5F;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.header.fixed .top_buttons .fast_call_btn {
+	top: 1px;
+	box-shadow: none;
+	z-index: 2;
+}
+
+.header.fixed .top_buttons .fast_call_btn .svg {
+	top: 3px;
+	width: 18px;
+	height: 18px;
+	fill: #c55dec;
+}
+
+.header.fixed .top_buttons button:hover {
+	opacity: .8;
+}
+
 .sec_header_content {
 	position: relative;
 	height: 100%;
@@ -758,7 +911,7 @@ input:focus, textarea:focus {
 
 .sec_header_content .left {	
 	max-width: 54%;
-	margin-right: 80px; 
+	margin-right: 40px; 
 }
 
 .sec_header_content .left h1 {
@@ -935,7 +1088,7 @@ input:focus, textarea:focus {
 .ecotour_content .tour_info .tour_indicators strong {
 	display: block;
 	font-family: 'Gilam';
-	font-size: 24px;
+	font-size: 32px;
 }
 
 .ecotour_content .tour_info .tour_indicators small { 
@@ -1033,7 +1186,6 @@ input:focus, textarea:focus {
 .sec_ecotour .rest_quality .rq_blocks {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
 	margin-top: 40px;
 }
 
@@ -1869,6 +2021,617 @@ input:focus, textarea:focus {
 	width: 32px;
 	height: 32px;
 }
+
+
+
+
+
+/* --- SkrollYeah ----------------------------------------------------------------------------- */
+
+
+.scrollyeah {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  *zoom: 1;
+}
+
+.scrollyeah__wrap {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.scrollyeah__shaft {
+  float: left;
+  left: 0;
+  position: relative;
+  display: flex;
+  padding: 20px 0;
+}
+
+.scrollyeah_active .scrollyeah__shaft {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+  *cursor: move !important;
+}
+
+.scrollyeah_active .scrollyeah__shaft_grabbing, .scrollyeah_active .scrollyeah__shaft_grabbing * { 
+	cursor: -webkit-grabbing;
+	cursor: -o-grabbing;
+	cursor: -ms-grabbing;
+	cursor: grabbing;
+	cursor: grabbing; 
+}
+
+.scrollyeah__shadow {
+  position: absolute;
+  text-decoration: none;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  height: auto;
+  transition-property: left, right;
+  transition-duration: .3s, .3s;
+  transition-timing-function: cubic-bezier(0.1, 0, 0.25, 1), cubic-bezier(0.1, 0, 0.25, 1);
+  z-index: 20;
+}
+
+.scrollyeah__shadow_prev {
+  left: -40px;
+}
+
+.scrollyeah__shadow_next {
+  right: -40px;
+}
+
+.scrollyeah__shadow_prev:before,
+.scrollyeah__shadow_next:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 100%;
+	background: #2fbf5f;
+	border-radius: 2px;
+} 
+
+.scrollyeah__shadow_prev:before {
+	right: auto;
+	left: 0;
+}
+
+.scrollyeah_shadow .scrollyeah__shadow_prev { left: 0; }
+.scrollyeah_shadow .scrollyeah__shadow_next { right: 0; }
+.scrollyeah_shadow_no-left .scrollyeah__shadow_prev { left: -40px; }
+.scrollyeah_shadow_no-right .scrollyeah__shadow_next { right: -40px; }
+
+
+
+
+
+
+
+/* --- К меньшему разрешению ----------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 1200px) {
+	
+	.sec_header_content .left {
+		max-width: 68%;
+	}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.sec_title {
+		font-size: 48px;
+	}
+
+	.sec_header {
+		height: 520px;
+	}
+
+	.header .menu ul li {
+		margin-left: 20px;
+	}
+
+	.sec_header_content .left h1 {
+		font-size: 72px;
+	}
+
+	.sec_top_around .gallery .g_space {
+		height: 240px;
+	}
+
+	.ecotour_content .gallery .g_space {
+		max-height: 600px;
+	}
+
+	.ecotour_content .tour_info {
+		margin-left: 40px;
+	}
+
+	.ecotour_content .tour_info .tour_indicators .tour_money {
+		margin-right: 40px;
+	}
+
+	.ecotour_days .et_day {
+		width: 100%;
+	}
+
+	.sec_residence .gallery .g_space {
+		height: 240px;
+	}
+
+	.residence_conditions .rc_block {
+		margin-right: 20px;
+	}
+
+	.sec_food .gallery .g_space {
+		height: 240px;
+	}
+
+	.food_menu .fm_rubrics .fm_rubric {
+		max-width: 220px;
+	}
+
+	.sec_infrastructure .gallery .g_space {
+		height: 520px;
+	}
+
+	.footer .ask_us .left {
+		margin-right: 40px;
+	}
+
+	.footer .ask_us .right {
+		max-width: 320px;
+	}
+
+	.footer .requisite {
+		justify-content: space-between;
+	}
+
+	.footer .requisite .requisite_block {
+		width: 30%;
+	}
+
+}
+
+
+@media screen and (max-width: 840px) {
+	
+	.place,
+	.header.fixed .header_content {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.header .menu .menu_icon {
+		display: block;
+		left: 0;
+	}
+
+	.header.fixed .menu .menu_icon {
+		left: 24px;
+	}
+
+	.header .menu ul {
+	    position: absolute;
+	    top: 48px;
+	    left: 24px;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    display: none;
+	    background: #2FBF5F;
+	    border-radius: 0 0 4px 4px;
+	    box-shadow: 0 8px 20px 0 rgba(47,191,95,.4);
+	    transition: all 25s ease-in-out;
+	    z-index: 900;
+	}
+
+	.header .menu ul li {
+		margin: 0;
+		padding: 10px 12px;
+		border-bottom: 1px solid rgba(0,0,0,.05);
+	}
+
+	.header .menu ul li:first-child {
+		border-top: 1px solid rgba(0,0,0,.05);
+	}
+
+	.header .menu ul.visible {
+		display: block;
+	}
+
+	.sec_header_content {
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+
+	.sec_header_content .left {
+		max-width: 100%;
+		margin: 20px 0 0 0;
+	}
+
+	.sec_header_content .left h1 {
+		font-size: 64px;
+	}
+
+	.sec_header_content .left h1 > small {
+		font-size: 24px;
+	}
+
+	.sec_title { 
+		overflow: hidden;
+		line-height: 1.2;
+	}
+
+	.sec_top_around .gallery .g_space,
+	.sec_residence .gallery .g_space,
+	.sec_food .gallery .g_space {
+		height: auto;
+	}
+
+	.sec_ecotour { 
+		margin-top: 100px; 
+	}
+
+	.ecotour_content { 
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+	
+	.ecotour_content .gallery,
+	.ecotour_content .tour_info {
+		width: 100%;
+		margin: 0;
+	}
+
+	.ecotour_content .tour_info {
+		margin-top: 40px;
+	}
+
+	.sec_ecotour .rest_quality .rq_blocks {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.sec_ecotour .rest_quality .rq_block {
+		width: calc(40% - 40px);
+		margin: 0;
+		padding: 20px 0;
+	}
+
+	.sec_residence .gallery {
+		margin-top: 40px;
+	}
+
+	.residence_conditions {
+		margin-top: 32px;
+		flex-wrap: wrap;
+	}
+
+	.residence_conditions .rc_block {
+		width: 100%;
+		margin: 0;
+	}
+
+	.sec_food .gallery {
+		margin-top: 40px;
+	}
+
+	.sec_infrastructure .gallery {
+		margin-top: 40px;
+	}
+
+	.sec_infrastructure .gallery .g_space {
+		height: auto;
+	}
+
+	.footer {
+		margin-top: 60px;
+	}
+
+	.footer .ask_us {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.footer .ask_us .left {
+		margin: 0;
+	}
+
+	.footer .ask_us .right {
+		max-width: 680px;
+		margin: 40px 0 0;
+	}
+
+	.footer .requisite {
+		align-items: normal;
+	}
+
+	.footer .requisite .requisite_block {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.footer .requisite .requisite_block p {
+		margin-top: 4px;
+	}
+
+	.mod_win.mw_food_rubric .dish {
+		max-width: max-content;
+		width: calc(50% - 40px);
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+
+	.sec_header {
+		height: 600px;
+	}
+
+	.sec_header_content .left h1 {
+		font-size: 48px;
+	}
+
+	.sec_header_content .left h1 > small {
+		font-size: 18px;
+	}
+
+	.sec_header_content .left p {
+		font-size: 20px;
+	}
+
+	.place > .text_center {
+		text-align: left;
+	}
+
+	.sec_title {
+		font-size: 38px;
+	}
+
+	.sec_title span:before, .sec_title span:after {
+		display: none;
+	}
+
+	.sec_descriptor {
+		font-size: 17px;
+	}
+
+	.sec_descriptor > small {
+		font-size: 15px;
+	}
+
+	.sec_ecotour {
+		margin-top: 80px;
+	}
+
+	.ecotour_content,
+	.ecotour_content .tour_info {
+		margin-top: 24px;
+	}
+
+	.ecotour_content .tour_info .tour_indicators strong {
+		font-size: 26px;
+	}
+
+	.sec_ecotour .rest_quality .rq_blocks {
+		margin-top: 20px;
+	}
+
+	.sec_ecotour .rest_quality .rq_block {
+		width: 100%;
+	}
+
+	.ecotour_days .et_day {
+		flex-wrap: wrap;
+	}
+
+	.ecotour_days .et_day .right {
+		margin: 0;
+	}
+
+	.sec_residence .gallery,
+	.residence_conditions {
+		margin-top: 24px;
+	}
+
+	.sec_food .gallery,
+	.sec_food .food_menu {
+		margin-top: 24px;
+	}
+
+	.food_menu .fm_rubrics .fm_rubric {
+		max-width: 80%;
+	}
+
+	.sec_infrastructure .gallery {
+		margin-top: 24px;
+	}
+
+	.footer {
+		margin-top: 24px;
+	}
+
+	.footer .place {
+		padding-top: 100px;
+	}
+
+	.footer .ask_us .left .ask_form {
+		flex-wrap: wrap;
+	}
+
+	.footer .ask_us .left .ask_form input {
+		width: 100%;
+	}
+
+	.footer .ask_us .right {
+		position: relative;
+		top: 24px;
+	}
+
+}
+
+@media screen and (max-width: 420px) {
+
+	.place,
+	.header.fixed .header_content {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.sec_header {
+		height: 660px;
+	}
+
+	.header.fixed .menu .menu_icon {
+		left: 20px;
+	}
+
+	.header .menu ul {
+		left: 0;
+	}
+
+	.header.fixed .menu ul {
+		left: 20px;
+	}
+
+	.sec_header_content {
+		text-align: center;
+	}
+
+	.sec_header_content .left h1 {
+		font-size: 58px;
+		line-height: 1;
+	}
+
+	.sec_header_content .left h1 > small {
+		margin-bottom: 8px;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.sec_header_content .left p {
+		line-height: 1.2;
+	}
+
+	.sec_header_content .right {
+		justify-content: center;
+	}
+
+	.sec_ecotour, .sec_ecotour_program, .sec_residence, .sec_food, .sec_infrastructure {
+		margin-top: 60px;
+	}
+
+	.sec_title {
+		font-size: 34px;
+	}
+
+	.sec_top_around {
+		margin-top: 24px;
+	}
+
+	.sec_top_around .place > em {
+		font-size: 17px;
+	}
+
+	.sec_top_around .gallery {
+		margin-top: 10px;
+	}
+
+	.g_space.scrollyeah .image_link {
+		width: 240px;
+		height: 168px
+	}
+
+	.ecotour_content,
+	.ecotour_content .tour_info {
+		margin-top: 18px;
+	}
+
+	.ecotour_content .tour_info .tour_indicators {
+		flex-wrap: wrap;
+	}
+
+	.ecotour_content .tour_info .tour_indicators .tour_money {
+		margin: 0 0 20px;
+	}
+
+	.ecotour_content .tour_info .tour_indicators strong {
+		font-size: 32px;
+	}
+
+	.sec_ecotour .rest_quality {
+		margin-top: 40px;
+	}
+
+	.sec_ecotour .rest_quality h3 {
+		padding: 0;
+		text-align: left;
+	}
+
+	.sec_ecotour .rest_quality h3 span {
+		padding: 0;
+		color: #c55dec;
+    	font-size: 17px;
+	}
+
+	.sec_ecotour .rest_quality h3:before {
+		display: none;
+	}
+
+	.sec_ecotour .rest_quality .rq_blocks {
+		margin: 8px 0;
+	}
+
+	.sec_ecotour .rest_quality .rq_block {
+		padding: 12px 0;
+		text-align: left;
+	}
+
+	.sec_residence .gallery,
+	.residence_conditions {
+		margin-top: 18px;
+	}
+
+	.sec_food .gallery,
+	.sec_food .food_menu {
+		margin-top: 18px;
+	}
+
+	.sec_infrastructure .gallery {
+		margin-top: 18px;
+	}
+
+	.footer .ask_us .left > h3 {
+		font-size: 28px;
+	}
+
+	.mod_win {
+		padding: 20px;
+	}
+
+	.mod_win.mw_food_rubric .dish {
+		width: 100%;
+	}
+
+}
+
+
+
+
 
 
 

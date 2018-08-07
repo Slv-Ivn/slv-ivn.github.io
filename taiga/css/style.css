@@ -873,7 +873,7 @@ input:focus, textarea:focus {
 .header.fixed .top_buttons button {
 	height: 32px;
 	margin: 0;
-	padding: 0 8px;
+	padding: 1px 8px;
 	background: #fff;
 	border: none;
 	border-radius: 0;

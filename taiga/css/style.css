@@ -1048,6 +1048,7 @@ input:focus, textarea:focus {
 
 .ecotour_content .gallery .g_space {
 	height: 100%;
+	max-height: 720px;
 	margin: 0;
 }
 

@@ -847,7 +847,7 @@ input:focus, textarea:focus {
 	position: absolute;
 	content: '';
 	top: auto;
-	bottom: -6px;
+	bottom: -7px;
 	left: 50%;
 }
 

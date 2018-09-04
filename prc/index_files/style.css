@@ -1689,11 +1689,12 @@ display: block;
 
     .hover_cat_menu.hcm_goods { left: 100px; }
 
-    .hover_cat_menu ul {
+    .hover_cat_menu > ul {
       position: relative;
       display: block;
-      width: 292px;
+      width: 700px;
       height: calc(100vh - 136px);
+      padding: 5px 0;
       background: #fff;
       border: 1px solid #ddebed;
       border-radius: 0 0 2px 2px;
@@ -1702,6 +1703,8 @@ display: block;
       overflow: hidden;
       overflow-y: visible;
     }
+
+    .hover_cat_menu.if_top_b > ul { height: calc(100vh - 246px); }
 
     .hover_cat_menu:before {
       position: absolute;
@@ -1719,11 +1722,12 @@ display: block;
       margin: -4px 0 0 18px;
     }
 
-    .hover_cat_menu ul li {
+    .hover_cat_menu > ul > li {
+      position: relative;
       float: none;
       height: auto;
       margin: 0;
-      padding: 10px 15px 2px 15px;
+      padding: 8px 15px 5px 15px;
       font-size: 100%;
       font-weight: normal;
       border: none !important;
@@ -1735,26 +1739,99 @@ display: block;
       border: none !important;
     }
 
-    .hover_cat_menu ul li a {
-      max-width: 100%;
-      height: auto !important;
+    .hover_cat_menu > ul > li > a {
+      position: relative;
+      display: block !important;
+      max-width: 274px;
+      height: 21px !important;
       border: none;
       padding: 0 0 0 24px;
       transition: all .2s;
     }
 
-    .hover_cat_menu ul::-webkit-scrollbar { width: 8px; }
-    .hover_cat_menu ul::-webkit-scrollbar-thumb { background: #c5dbde; }
+    .hover_cat_menu > ul > li > a:after {
+      display: none;
+      position: absolute;
+      content: '';
+      top: 9px;
+      right: 0;
+      width: 20px;
+      height: 1px;
+      background: #ddebed;
+    }
+
+    .hover_cat_menu .hcm_sublinks {
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0;
+      display: none;
+      width: 380px;
+      height: 100%;
+    }
+
+    .hover_cat_menu .hcm_sublinks > ul {
+      position: absolute;
+      background: #fff;
+      border-left: 1px solid #ddebed;
+      width: 100%;
+      margin-bottom: 10px;
+      z-index: 99;
+    }
+
+    .hover_cat_menu .hcm_sublinks > ul li {
+      float: none;
+      height: auto;
+      margin: 0;
+      padding: 8px 15px 8px 0;
+      border: none;
+    }
+
+    .hover_cat_menu .hcm_sublinks li > a {
+      position: relative;
+      display: block;
+      max-width: 98% !important;
+      height: auto;
+      padding: 0 0 0 10px !important;
+      background: none;
+      border: none !important;
+      font-weight: normal;
+      font-size: 90%;
+      color: #2980b9 !important;
+    }
+
+    .hover_cat_menu .hcm_sublinks li > a:before {
+      position: absolute;
+      content: '';
+      top: 7px;
+      left: -2px;
+      width: 5px;
+      height: 5px;
+      background: #ddebed;
+    }
 
     .hover_cat_menu ul li:hover {
       background: none;
     }
+
+    .hover_cat_menu > ul > li:hover a:after { display: block; }
+
+    .hover_cat_menu ul li:hover a { color: #d02d2d; }
+
+    .hover_cat_menu ul li a:hover { opacity: .8; } 
+
+    .hover_cat_menu li:hover .hcm_sublinks { display: block; }
+
+    .hover_cat_menu .hcm_sublinks li > a:hover { color: #d02d2d !important; }
 
     .sub_menu a:nth-of-type(1):hover ~ .hover_cat_menu.hcm_producers,
     .hover_cat_menu:hover { display: block; }
 
     .sub_menu a:nth-of-type(2):hover ~ .hover_cat_menu.hcm_goods,
     .hover_cat_menu:hover { display: block; }
+
+    .hover_cat_menu > ul::-webkit-scrollbar { width: 8px; }
+    .hover_cat_menu > ul::-webkit-scrollbar-thumb { background: #c5dbde; }
 
     @keyframes Show_hover_cat_menu {
       0% {opacity: 0; transform: scale(.9);}

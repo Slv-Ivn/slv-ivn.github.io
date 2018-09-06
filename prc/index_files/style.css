@@ -638,6 +638,7 @@ li.search button:hover { background: #ffdc3a; }
 
     .sub_menu {
       position: absolute;
+      width: 100%;
       left: 1px;
       top: 42px;
       color: #3a444a;
@@ -1554,8 +1555,7 @@ display: block;
       list-style: none;
     }
 
-    .catalog ul > li,
-    .hover_cat_menu ul li {
+    .catalog ul > li {
       margin: 5px 0;
       display: block;
       line-height: 1.4;
@@ -1679,150 +1679,112 @@ display: block;
       display: none;
       top: 34px;
       left: -20px;
-      right: 0;
-      bottom: 0;
-      max-width: 1280px;
+      width: 100%;
+      width: calc(100% + 40px);
+      height: auto;
       margin: 0 auto;
+      padding: 15px 20px 10px;
+      background: #fff;
+      border: 1px solid #ddebed;
+      border-bottom-color: #d0e2e5;
+      border-radius: 0 0 2px 2px;
+      box-shadow: 0 10px 20px -2px rgba(0,0,0,.1);
       z-index: 99999;
+      box-sizing: border-box;
       animation: Show_hover_cat_menu .25s;
     }
-
-    .hover_cat_menu.hcm_goods { left: 100px; }
 
     .hover_cat_menu > ul {
       position: relative;
       display: block;
-      width: 700px;
-      height: calc(100vh - 136px);
-      padding: 5px 0;
-      background: #fff;
-      border: 1px solid #ddebed;
-      border-radius: 0 0 2px 2px;
-      border-top: none;
-      box-shadow: 0 8px 18px 0 rgba(0,0,0,.15);
-      overflow: hidden;
-      overflow-y: visible;
+      width: 100%;
+      height: auto;
+      column-count: 3;
+      column-gap: 40px;
     }
 
-    .hover_cat_menu.if_top_b > ul { height: calc(100vh - 246px); }
-
-    .hover_cat_menu:before {
+    .hover_cat_menu > ul:before {
       position: absolute;
       content: '';
-      top: ;
-      left: ;
-      width: 107px;
+      top: -18px;
+      left: -4px;
+      width: 112px;
       height: 2px;
-      margin: -4px 0 0 18px;
       background: #da2e2e;
     }
 
-    .hover_cat_menu.hcm_goods:before {
-      width: 53px;
-      margin: -4px 0 0 18px;
-    }
-
-    .hover_cat_menu > ul > li {
-      position: relative;
+    .hover_cat_menu.hcm_goods > ul:before {
+      left: 113px;
+      width: 62px;
+   }
+    
+    .main_menu .hover_cat_menu li,
+    .main_menu .hover_cat_menu li a {
       float: none;
-      height: auto;
-      margin: 0;
-      padding: 8px 15px 5px 15px;
       font-size: 100%;
       font-weight: normal;
-      border: none !important;
-      border-bottom: 1px solid #f5fafb !important;
-    }
-
-    .hover_cat_menu ul li:last-child { 
-      margin-bottom: 10px;
-      border: none !important;
-    }
-
-    .hover_cat_menu > ul > li > a {
-      position: relative;
-      display: block !important;
-      max-width: 274px;
-      height: 21px !important;
       border: none;
-      padding: 0 0 0 24px;
-      transition: all .2s;
+      height: auto;
+      line-height: 1.5;
     }
 
-    .hover_cat_menu > ul > li > a:after {
-      display: none;
-      position: absolute;
-      content: '';
-      top: 9px;
-      right: 0;
-      width: 20px;
-      height: 1px;
-      background: #ddebed;
+    .main_menu .hover_cat_menu li:hover { background: none; }
+
+    .hover_cat_menu > ul li { 
+      display: block;
+      padding: 2px 0;
     }
+
+    .hover_cat_menu li a {
+      position: relative;
+      padding: 0 0 0 24px;  
+    }
+
+    .main_menu .hover_cat_menu ul li:nth-child(4) { border: none; }
 
     .hover_cat_menu .hcm_sublinks {
       position: absolute;
-      top: 0;
-      left: auto;
-      right: 0;
       display: none;
-      width: 380px;
-      height: 100%;
-    }
-
-    .hover_cat_menu .hcm_sublinks > ul {
-      position: absolute;
+      min-width: 260px;
+      margin: -36px 0 0 -10px;
+      padding: 32px 10px 10px 12px;
       background: #fff;
-      border-left: 1px solid #ddebed;
-      width: 100%;
-      margin-bottom: 10px;
-      z-index: 99;
+      border-radius: 2px;
+      border: 1px solid #ddebed;
+      border-bottom-color: #d0e2e5;
+      box-shadow: 0 10px 24px -2px rgba(0,0,0,.1);
+      z-index: 98;
     }
 
-    .hover_cat_menu .hcm_sublinks > ul li {
-      float: none;
-      height: auto;
-      margin: 0;
-      padding: 8px 15px 8px 0;
-      border: none;
+    .hover_cat_menu .hcm_sublinks ul {
+      margin: 0 0 0 5px;
+      padding: 0 0 0 17px;
     }
 
-    .hover_cat_menu .hcm_sublinks li > a {
+    .hover_cat_menu .hcm_sublinks li {
       position: relative;
-      display: block;
-      max-width: 98% !important;
-      height: auto;
-      padding: 0 0 0 10px !important;
-      background: none;
-      border: none !important;
-      font-weight: normal;
-      font-size: 90%;
-      color: #2980b9 !important;
+      padding: 3px 0;
+      line-height: 0; 
     }
 
-    .hover_cat_menu .hcm_sublinks li > a:before {
+    .hover_cat_menu .hcm_sublinks li:before {
       position: absolute;
       content: '';
-      top: 7px;
-      left: -2px;
-      width: 5px;
-      height: 5px;
+      top: 11px;
+      left: -23px;
+      width: 14px;
+      height: 2px;
       background: #ddebed;
     }
 
-    .hover_cat_menu ul li:hover {
+    .hover_cat_menu .hcm_sublinks li a {
+      max-width: 100%;
       background: none;
+      padding: 0;
+      font-size: 90%;
     }
 
-    .hover_cat_menu > ul > li:hover a:after { display: block; }
-
-    .hover_cat_menu ul li:hover a { color: #d02d2d; }
-
-    .hover_cat_menu ul li a:hover { opacity: .8; } 
-
-    .hover_cat_menu li:hover .hcm_sublinks { display: block; }
-
-    .hover_cat_menu .hcm_sublinks li > a:hover { color: #d02d2d !important; }
+    .hover_cat_menu > ul li:hover a { z-index: 99; }
 
     .sub_menu a:nth-of-type(1):hover ~ .hover_cat_menu.hcm_producers,
     .hover_cat_menu:hover { display: block; }

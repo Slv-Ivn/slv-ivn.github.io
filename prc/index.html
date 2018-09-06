@@ -558,6 +558,11 @@ ga('send', 'pageview');</script>
 <a href="https://productcenter.ru/map">Промышленная карта</a><span>&nbsp;</span>
 <a href="https://productcenter.ru/products/add" class="add_btn hndl_is_can_add_product" data-producer-id="951"><i></i>Добавить продукцию</a>
 
+
+
+
+<!--  Выподающее меню каталога  -->
+
 <div class="hover_cat_menu hcm_producers">
   <ul>
     <li>
@@ -1009,7 +1014,7 @@ ga('send', 'pageview');</script>
   </ul>
 </div>
 
-<div class="hover_cat_menu hcm_goods if_top_b">
+<div class="hover_cat_menu hcm_goods">
   <ul>
     <li>
       <a class="ico215" href="">Благоустройство</a>
@@ -1459,6 +1464,31 @@ ga('send', 'pageview');</script>
     </li>
   </ul>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+  $('.hover_cat_menu > ul > li > a').mouseenter(function(){
+    $(this).next('.hcm_sublinks').show(120);
+    $(this).parent('li').mouseleave(function(){ $('.hcm_sublinks').hide(80); });
+  });
+</script>
+
+<!-- Конец выподающего меню -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

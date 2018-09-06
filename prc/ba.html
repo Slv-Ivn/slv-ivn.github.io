@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Реклама</title>
+	<link rel="stylesheet" href="index_files/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/chosen.min.css">
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/jquery.fancybox.css">
+	<script src="index_files/core.js"></script>
+	<script src="index_files/main-v9.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$(".fancybox").fancybox();
+
+		$('.ba_items .bai_item .__item_text .btn').click(function(){
+			$(this).parents('.bai_item').removeClass('active');
+			$(this).parents('.bai_item').addClass('active')
+			$(this).parents('.bai_item').find('.__form_order').removeClass('active')
+			$(this).parents('.bai_item').find('.__form_order').addClass('active')
+		});
+
+		$('.ba_items .bai_item .__form_order span.close').click(function(){
+			$(this).parents('.bai_item').removeClass('active');
+			$(this).parents('.bai_item').find('.__form_order').removeClass('active')
+		});
+
+	});
+
+
+</script>
+
+<style>
+header {
+	width: 100%;
+	height: 100px;
+	background: #ddebed;
+}
+.Main {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.Sidebar {
+	width: 22%;
+	height: 600px;
+	margin-top: 10px;
+	background: #ddebed;
+}
+.Content {
+	width: 75%;
+}
+
+
+
+
+.ba_items {
+	position: relative;
+	margin-top: 35px;
+}
+
+.ba_items > p { 
+	position: relative;
+	padding-left: 36px;
+}
+
+.ba_items > p:before {
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 0;
+	width: 30px;
+	height: 8px;
+	background: #da2e2e;
+}
+
+.bai_item {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	margin: 25px 0 50px;
+}
+
+.bai_item ul,
+.bai_item ul li {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+}
+
+.bai_item .__left {
+	width: 240px;
+	height: 240px;
+}
+
+.bai_item .__left img {
+	max-width: 100%;
+	box-shadow: 0 10px 28px -2px rgba(0,88,101,.12);
+}
+
+.bai_item .__left img:hover { 
+	cursor: zoom-in;
+	opacity: .8;
+}
+
+.bai_item .__right {
+	width: calc(100% - 265px);
+	margin-left: 25px;
+}
+
+.bai_item .__right li > strong {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 120%; 
+}
+
+.bai_item .__right li { margin: 10px 0 0; }
+
+.bai_item .__right p { margin: 0 0 5px; }
+
+.bai_item .__right .btn {
+	margin: 10px 0 2px;
+	height: 42px;
+}
+
+.bai_item.active { overflow: hidden; }
+
+.bai_item .__form_order	{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px 20px 20px;
+	background: #f0f5f6;
+	border-radius: 2px;
+	box-sizing: border-box;
+	z-index: 20;
+	animation: Show_ad_form_order .25s ease-in-out;
+}
+
+.bai_item .__form_order.active { display: block; }
+
+@keyframes Show_ad_form_order {
+	  0% { opacity: 0; transform: scale(.7); }
+	100% { opacity: 1; transform: scale(1); }
+}
+
+.bai_item .__form_order span.close {
+	right: 20px;
+	font-size: 200%; 
+}
+
+.bai_item .__form_order > strong {
+	display: block;
+	margin: 0 0 5px 5px;
+	font-size: 120%; 
+}
+
+.bai_item .__form_order	textarea { height: 80px; }
+
+.bai_item:last-child {
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	background: #f0f5f6;
+	margin-top: 75px;
+	padding: 20px 20px 25px;
+	border-radius: 2px;
+}
+
+.bai_item:last-child > strong { font-size: 120%; }
+
+.bai_item:last-child > p { margin: 5px 0 10px; }
+
+.bai_item form .input { margin: 0 0 5px; }
+
+.bai_item form .btn.green {
+	display: block;
+	margin: 0;
+	margin-left: 5px;
+}
+</style>
+
+<header></header>
+
+
+<div class="Main">
+
+	<div class="Sidebar"></div>
+
+	<div class="Content">
+		<h1>Реклама на интернет-выставке</h1>
+		<p>Собираетесь разместить свою рекламу на интернет-выставке.<br>Ознакомтесь с вариантами размещения, выберите необходимый и отправьте нам заявку.</p>
+
+		<div class="ba_items">
+			<p><i></i> — Красным цветом на изображениях выделены блоки с возможным размещением рекламных баннеров.</p>
+			<div class="bai_item">
+				<div class="__left">
+					<a href="ba_img/ba6.jpg" data-fancybox="" class="fancybox"><img src="ba_img/ba6.jpg" alt="" title=""></a>
+				</div>
+				<div class="__right">
+					<ul class="__item_text">
+						<li>
+							<strong>Широкий баннер в «шапке»</strong>
+							<p>Рекламный баннер размещается в «шапке» интернет-выставки и отображается на всех страницах. Цена размещения привязана к количеству показов рекламы посетителям.</p>
+						</li>
+						<li>
+							<b>Размеры</b>
+							<p>Ширина 728 пикселей, высота 90 пикселей</p>
+						</li>
+						<li>
+							<b>Стоимость</b>
+							<p>10 копеек за 1 показ рекламного баннера</p>
+						</li>
+						<li><button type="button" class="btn green">Разместить рекламу сдесь</button></li>
+					</ul>
+				</div>
+				<div class="__form_order">
+					<span class="close">×</span>
+					<strong>Заказать рекламное размещение</strong>
+					<form action="" method="" class="default_forms">
+						<div class="input small"><input type="text" name="" placeholder="Ваше имя"></div>
+						<div class="input small"><input type="text" name="" placeholder="Адрес эл. почты"></div>
+						<div class="input"><textarea name="" placeholder="Текст сообщения..."></textarea></div>
+						<button type="" class="btn green">Отправить предложение</button>
+					</form>
+				</div>
+			</div>
+			<div class="bai_item">
+				<div class="__left">
+					<a href=""><img src="ba_img/ba5.jpg" alt="" title=""></a>
+				</div>
+				<div class="__right">
+					<ul class="__item_text">
+						<li>
+							<strong>Широкий баннер в «шапке»</strong>
+							<p>Рекламный баннер размещается в «шапке» интернет-выставки и отображается на всех страницах. Цена размещения привязана к количеству показов рекламы посетителям.</p>
+						</li>
+						<li>
+							<b>Размеры</b>
+							<p>Ширина 728 пикселей, высота 90 пикселей</p>
+						</li>
+						<li>
+							<b>Стоимость</b>
+							<p>10 копеек за 1 показ рекламного баннера</p>
+						</li>
+						<li><button type="button" class="btn green">Разместить рекламу сдесь</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bai_item">
+				<div class="__left">
+					<a href=""><img src="ba_img/ba4.jpg" alt="" title=""></a>
+				</div>
+				<div class="__right">
+					<ul class="__item_text">
+						<li>
+							<strong>Широкий баннер в «шапке»</strong>
+							<p>Рекламный баннер размещается в «шапке» интернет-выставки и отображается на всех страницах. Цена размещения привязана к количеству показов рекламы посетителям.</p>
+						</li>
+						<li>
+							<b>Размеры</b>
+							<p>Ширина 728 пикселей, высота 90 пикселей</p>
+						</li>
+						<li>
+							<b>Стоимость</b>
+							<p>10 копеек за 1 показ рекламного баннера</p>
+						</li>
+						<li><button type="button" class="btn green">Разместить рекламу сдесь</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bai_item">
+				<div class="__left">
+					<a href=""><img src="ba_img/ba3.jpg" alt="" title=""></a>
+				</div>
+				<div class="__right">
+					<ul class="__item_text">
+						<li>
+							<strong>Широкий баннер в «шапке»</strong>
+							<p>Рекламный баннер размещается в «шапке» интернет-выставки и отображается на всех страницах. Цена размещения привязана к количеству показов рекламы посетителям.</p>
+						</li>
+						<li>
+							<b>Размеры</b>
+							<p>Ширина 728 пикселей, высота 90 пикселей</p>
+						</li>
+						<li>
+							<b>Стоимость</b>
+							<p>10 копеек за 1 показ рекламного баннера</p>
+						</li>
+						<li><button type="button" class="btn green">Разместить рекламу сдесь</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bai_item">
+				<div class="__left">
+					<a href=""><img src="ba_img/ba2.jpg" alt="" title=""></a>
+				</div>
+				<div class="__right">
+					<ul class="__item_text">
+						<li>
+							<strong>Широкий баннер в «шапке»</strong>
+							<p>Рекламный баннер размещается в «шапке» интернет-выставки и отображается на всех страницах. Цена размещения привязана к количеству показов рекламы посетителям.</p>
+						</li>
+						<li>
+							<b>Размеры</b>
+							<p>Ширина 728 пикселей, высота 90 пикселей</p>
+						</li>
+						<li>
+							<b>Стоимость</b>
+							<p>10 копеек за 1 показ рекламного баннера</p>
+						</li>
+						<li><button type="button" class="btn green">Разместить рекламу сдесь</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bai_item">
+				<div class="__left">
+					<a href=""><img src="ba_img/ba1.jpg" alt="" title=""></a>
+				</div>
+				<div class="__right">
+					<ul class="__item_text">
+						<li>
+							<strong>Широкий баннер в «шапке»</strong>
+							<p>Рекламный баннер размещается в «шапке» интернет-выставки и отображается на всех страницах. Цена размещения привязана к количеству показов рекламы посетителям.</p>
+						</li>
+						<li>
+							<b>Размеры</b>
+							<p>Ширина 728 пикселей, высота 90 пикселей</p>
+						</li>
+						<li>
+							<b>Стоимость</b>
+							<p>10 копеек за 1 показ рекламного баннера</p>
+						</li>
+						<li><button type="button" class="btn green">Разместить рекламу сдесь</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bai_item">
+				<strong>У вас индивидуальное предложение</strong>
+				<p>Сообщите нам о вашем рекламном предложении через форму ниже и мы обязательно что-нибудь придумаем.</p>
+				<form action="" method="" class="default_forms">
+					<div class="input small"><input type="text" name="" placeholder="Ваше имя"></div>
+					<div class="input small"><input type="text" name="" placeholder="Адрес эл. почты"></div>
+					<div class="input"><textarea name="" placeholder="Текст сообщения..."></textarea></div>
+					<button type="" class="btn green">Отправить предложение</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<footer></footer>
+	
+</body>
+</html>

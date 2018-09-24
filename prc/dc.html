@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Калькулятор доставки</title>
+	<link rel="stylesheet" href="index_files/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/chosen.min.css">
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/jquery.fancybox.css">
+	<script src="index_files/core.js"></script>
+	<script src="index_files/main-v9.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$('.delivery_calc .dc_results, .delivery_calc .dc_results table').hide();
+
+		$('.delivery_calc .__dc_form .btn').click(function(){
+			$("html,body").animate({"scrollTop": $(this).offset().top},420);
+			$('.delivery_calc .dc_results').show();
+			setTimeout(function(){$('.delivery_calc .dc_results table').show();$('.delivery_calc .dc_results .dcr_loader').hide()},2000);
+		});
+
+		$('.ba_items .bai_item .__form_order span.close').click(function(){
+			$(this).parents('.bai_item').removeClass('active');
+			$(this).parents('.bai_item').find('.__form_order').removeClass('active')
+		});
+
+	});
+
+
+</script>
+
+<style>
+header {
+	width: 100%;
+	height: 100px;
+	background: #ddebed;
+}
+.Main {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.Sidebar {
+	width: 22%;
+	height: 1200px;
+	margin-top: 10px;
+	background: #ddebed;
+}
+.Content {
+	width: 75%;
+}
+
+
+
+
+.delivery_calc {
+	position: relative;
+	margin: 40px 0;
+	box-sizing: border-box;
+}
+
+.delivery_calc > * { box-sizing: border-box; }
+
+.delivery_calc ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: none;
+}
+
+.delivery_calc .__dc_form {
+	position: relative;
+	width: 100%;
+	padding: 25px;
+    background: #fffffa;
+    border: 5px solid #f8f8dd;
+    border-radius: 2px;
+}
+
+.delivery_calc .__dc_form .inputs_line {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.delivery_calc .__dc_form .input_box { width: 48%; }
+.delivery_calc .__dc_form .inputs_line.__n2 .input_box { width: 22%; }
+.delivery_calc .__dc_form .input_box label { margin-left: 5%; }
+
+.delivery_calc .__dc_form .input_box .input {
+	margin-top: 5px;
+	padding: 5px;
+    background: #f0f5f6;
+    border-radius: 2px;
+}
+
+.delivery_calc .__dc_form .input_box .input input {
+	position: relative;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background: #fff;
+    border-radius: 2px;
+    border: 1px solid #c5dbde;
+    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 0 0 #fff;
+}
+
+.delivery_calc .__dc_form .choise_company_line {
+	padding-bottom: 15px;
+	border-bottom: 2px solid #f8f8dd;
+}
+
+.delivery_calc .__dc_form .choise_company_line > p { margin: 20px 0 10px; }
+
+.delivery_calc .__dc_form .choise_company_line > p > b {
+	display: block;
+	margin: 0 0 4px;
+}
+
+.delivery_calc .__dc_form .choise_company_line ul {
+	columns: 3;
+	column-gap: 40px;
+}
+
+.delivery_calc .__dc_form .choise_company_line ul li label {
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.delivery_calc .__dc_form .btn {
+	display: block;
+	width: 280px;
+	height: 48px;
+	margin: 15px auto 0 auto;
+}
+
+.delivery_calc .__dc_form .__dc_errors { 
+	position: relative;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #f8f8dd;
+}
+
+.delivery_calc .__dc_form .__dc_errors:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: -30px;
+	width: 5px;
+	height: 100%;
+	background: #d02d2d;
+	opacity: .75;
+}
+
+.delivery_calc .__dc_form .__dc_errors > strong {
+	display: block;
+	margin-bottom: 5px;
+	color: #d02d2d;
+	font-size: 110%;
+}
+
+.delivery_calc .__dc_form .__dc_errors div span {
+	color: #d02d2d;
+}
+
+.delivery_calc .dc_results {
+	position: relative;
+	margin-top: 40px;
+	padding: 25px;
+    background: #f9fcfd;
+    border: 5px solid #e9f4f7;
+    border-radius: 2px;
+    animation: Show_dc_results .42s ease-in-out;
+}
+
+@keyframes Show_dc_results {
+	  0% { opacity: 0; transform: scale(.8); }
+	100% { opacity: 1; transform: scale(1); }
+}
+
+.delivery_calc .dc_results > strong {
+	display: block;
+	font-size: 150%;
+}
+
+.delivery_calc .dc_results > p {
+	margin: 5px 0;
+	font-size: 110%;
+	line-height: 2;
+}
+
+.delivery_calc .dc_results > p > span { 
+	padding-right: 15px;
+	white-space: nowrap;
+}
+
+.delivery_calc .dc_results > p b { color: #477e88; }
+
+.delivery_calc .dc_results > p i {
+	position: relative;
+	top: 2px;
+	font: normal 120% 'Verdana';
+}
+
+.delivery_calc .dc_results table {
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+	border: none;
+	border-spacing: 0;
+    border-collapse: collapse;
+    vertical-align: middle;
+    box-shadow: 0 2px 20px 0 rgba(175,203,210,.1), 0 -2px 20px 0 rgba(175,203,210,.1);
+    animation: Show_dc_results .42s ease-in-out;
+}
+
+.delivery_calc .dc_results table th { border-top: 1px solid #e9f4f7; }
+
+.delivery_calc .dc_results table th,
+.delivery_calc .dc_results table td {
+	padding: 10px;
+	background: #fff;
+	border-bottom: 1px solid #e9f4f7;
+	transition: all .2s ease-in-out;
+}
+
+.delivery_calc .dc_results table th:nth-child(1),
+.delivery_calc .dc_results table td.dcr_img { 
+	width: 15%;
+	padding-left: 20px;
+	text-align: right; 
+}
+
+.delivery_calc .dc_results table td.dcr_img img {
+	max-width: 120px;
+	max-height: 48px;
+	vertical-align: middle;
+}
+
+.delivery_calc .dc_results table th:nth-child(2),
+.delivery_calc .dc_results table td.dcr_title {
+	width: 40%;
+	text-align: left;
+}
+
+.delivery_calc .dc_results table td.dcr_title div {
+	margin-bottom: 5px;
+	font-size: 110%;
+}
+
+.delivery_calc .dc_results table td.dcr_title small.red {
+	position: relative;
+	top: -2px;
+	display: block;
+}
+
+.delivery_calc .dc_results table td.dcr_title small {
+	padding-right: 10px;
+	font-size: 90%; 
+}
+
+.delivery_calc .dc_results table th:nth-child(3),
+.delivery_calc .dc_results table td.dcr_time {
+	width: 30%;
+	text-align: center;
+}
+
+.delivery_calc .dc_results table th:nth-child(4),
+.delivery_calc .dc_results table td.dcr_money {
+	width: 15%;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.delivery_calc .dc_results table td.dcr_time,
+.delivery_calc .dc_results table td.dcr_money { font-size: 110%; }
+
+.delivery_calc .dc_results .dcr_note {
+	max-width: 80%;
+	margin: 20px 0 0;
+	font-size: 100%;
+	line-height: 1.2;
+}
+
+.delivery_calc .dc_results .dcr_loader {
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 20px);
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border: 5px solid #e9f4f7;
+	border-radius: 80px;
+	box-shadow: -2px -2px 12px 2px #2765d1, 2px 2px 12px 2px #da2e2e;
+	animation: Dcr_loader .5s infinite ease-in-out;
+}
+
+@keyframes Dcr_loader {
+	  0% { transform: rotate(0deg); }
+	 15% { transform: rotate(60deg); }
+	 30% { transform: rotate(120deg); }
+	 50% { transform: rotate(180deg); }
+	 65% { transform: rotate(240deg); }
+	 85% { transform: rotate(300deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.delivery_calc .dc_results table tr:hover td { background: #ffffe5; }
+.delivery_calc .__dc_form label:hover { color: #d02d2d; }
+
+</style>
+
+<header></header>
+
+
+<div class="Main">
+
+	<div class="Sidebar"></div>
+
+	<div class="Content">
+		<h1>Калькулятор расчёта доставки</h1>
+		<p>Для расчета необходимо указать город отправления и получения, габариты груза и минимум одну транспортную компанию.</p>
+
+		<div class="delivery_calc">
+
+			<form action="" method="" class="__dc_form">
+				<div class="__dc_errors">
+					<strong>Некорректное заполнение формы</strong>
+					<div><span>Необходимо указать «<b>Вес</b>» транспортируемого груза</span></div>
+					<div><span>Необходимо выбрать хотя бы одну транспортную компанию</span></div>
+				</div>
+				<div class="inputs_line">
+					<div class="input_box">
+						<b>Город отправления</b><input type="checkbox" name="" id="dc_adr1"><label for="dc_adr1">От адреса</label>
+						<div class="input"><input type="text" placeholder="Например: Москва"></div>
+					</div>
+					<div class="input_box">
+						<b>Город получения</b><input type="checkbox" name="" id="dc_adr2"><label for="dc_adr2">До адреса</label>
+						<div class="input"><input type="text" placeholder="Например: Владивосток"></div>
+					</div>
+				</div>
+
+				<div class="inputs_line __n2">
+					<div class="input_box">
+						<b>Длина</b>
+						<div class="input"><input type="number" placeholder="В сантиметрах"></div>
+					</div>
+					<div class="input_box">
+						<b>Ширина</b>
+						<div class="input"><input type="number" placeholder="В сантиметрах"></div>
+					</div>
+					<div class="input_box">
+						<b>Высота</b>
+						<div class="input"><input type="number" placeholder="В сантиметрах"></div>
+					</div>
+					<div class="input_box">
+						<b>Вес</b>
+						<div class="input"><input type="number" placeholder="В килограммах"></div>
+					</div>
+				</div>
+
+				<div class="choise_company_line">
+					<p><b>Транспортные компании</b>Выберите компании в которых необходимо произвести расчёт доставки.</p>
+					<ul>
+						<li><input type="checkbox" name="" id="dc_n1" checked="checked"><label for="dc_n1">Компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n2" checked="checked"><label for="dc_n2">Ещё компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n3" checked="checked"><label for="dc_n3">Ещё какая-то компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n4" checked="checked"><label for="dc_n4">Компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n5" checked="checked"><label for="dc_n5">Ещё компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n6" checked="checked"><label for="dc_n6">Ещё какая-то компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n7" checked="checked"><label for="dc_n7">Компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n8" checked="checked"><label for="dc_n8">Ещё компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n9" checked="checked"><label for="dc_n9">Ещё какая-то компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n10" checked="checked"><label for="dc_n10">Компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n11" checked="checked"><label for="dc_n11">Ещё компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n12" checked="checked"><label for="dc_n12">Ещё какая-то компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n13" checked="checked"><label for="dc_n13">Компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n14" checked="checked"><label for="dc_n14">Ещё компания</label></li>
+						<li><input type="checkbox" name="" id="dc_n15" checked="checked"><label for="dc_n15">Тут какая-то очень-очень длинная компания</label></li>
+					</ul>
+				</div>
+
+				<button type="button" class="btn green">Рассчитать стоимость доставки</button>
+			</form>
+
+			<div class="dc_results">
+				<strong>Расчёт доставки</strong>
+				<p>
+					<span><b>Москва</b>&nbsp;<i>→</i>&nbsp;<b>Владивосток</b></span>
+					<span><b>От адреса до адреса</b></span>
+					<span>Габариты: <b>1.2м/1.2м/0.8м/32кг</b></p></span>
+				<table>
+					<tr><th></th><th>Транспортная компания</th><th>Срок доставки</th><th>Цена доставки</th></tr>
+					<tr>
+						<td class="dcr_img"><img src="https://vozovoz.ru/assets/build/images/logo2.svg" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">8—10 дней</td>
+						<td class="dcr_money">12 400 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="http://magic-trans.ru/bitrix/templates/.default/images/ico/logo.png" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Ещё какая-то компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">Необходимо уточнять</td>
+						<td class="dcr_money">280 120 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="https://vozovoz.ru/assets/build/images/logo2.svg" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Компания</div>
+							<small class="red">Доставка до адреса требует уточнения.</small>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">8—10 дней</td>
+						<td class="dcr_money">12 400 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="http://magic-trans.ru/bitrix/templates/.default/images/ico/logo.png" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Ещё какая-то компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">Необходимо уточнять</td>
+						<td class="dcr_money">280 120 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="https://vozovoz.ru/assets/build/images/logo2.svg" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">8—10 дней</td>
+						<td class="dcr_money">12 400 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="http://magic-trans.ru/bitrix/templates/.default/images/ico/logo.png" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Ещё какая-то компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">Необходимо уточнять</td>
+						<td class="dcr_money">280 120 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="https://vozovoz.ru/assets/build/images/logo2.svg" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">8—10 дней</td>
+						<td class="dcr_money">12 400 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="http://magic-trans.ru/bitrix/templates/.default/images/ico/logo.png" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Ещё какая-то компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">Необходимо уточнять</td>
+						<td class="dcr_money">280 120 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="https://vozovoz.ru/assets/build/images/logo2.svg" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">8—10 дней</td>
+						<td class="dcr_money">12 400 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+					<tr>
+						<td class="dcr_img"><img src="http://magic-trans.ru/bitrix/templates/.default/images/ico/logo.png" alt="" title=""></td>
+						<td class="dcr_title">
+							<div>Ещё какая-то компания</div>
+							<small><a href="tel:+70000000000">8 800 800-00-00</a></small>
+							<small><a href="">companysite.com</a></small>
+						</td>
+						<td class="dcr_time">Необходимо уточнять</td>
+						<td class="dcr_money">280 120 <span class="rubler" title="Рублей"></span></td>
+					</tr>
+				</table>
+				<p class="dcr_note"><small>В расчете могут быть представлены не все транспортные компании, по причине отсутствия в одном из городов или невозможности перевезти данный груз.</small></p>
+				<div class="dcr_loader"></div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+<footer></footer>
+	
+</body>
+</html>

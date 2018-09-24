@@ -51,7 +51,8 @@ header {
 	width: 22%;
 	height: 1200px;
 	margin-top: 10px;
-	background: #ddebed;
+	padding-top: 60px;
+	background: #f5fafb;
 }
 .Content {
 	width: 75%;
@@ -144,6 +145,7 @@ header {
 	width: 280px;
 	height: 48px;
 	margin: 15px auto 0 auto;
+	padding: 14px 24px;
 }
 
 .delivery_calc .__dc_form .__dc_errors { 
@@ -194,7 +196,7 @@ header {
 }
 
 .delivery_calc .dc_results > p {
-	margin: 5px 0;
+	margin: 0;
 	font-size: 110%;
 	line-height: 2;
 }
@@ -318,6 +320,37 @@ header {
 .delivery_calc .dc_results table tr:hover td { background: #ffffe5; }
 .delivery_calc .__dc_form label:hover { color: #d02d2d; }
 
+.btn.__delivery_calc {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	height: 48px;
+	width: 100%;
+	max-width: 280px;
+	margin: 25px auto;
+	padding: 14px;
+	background: linear-gradient(to bottom, #62afff 0%, #448bd4 100%);
+	box-shadow: 0 2px 2px -1px #005ab5, inset 0 0 0 1px rgba(104,178,255,1);
+	text-shadow: 0 2px 1px rgba(0,0,0,0.15);
+    color: #fff;
+    border: none;
+}
+
+.btn.__delivery_calc > i {
+	position: relative;
+	top: -1px;
+	width: 22px;
+	height: 22px;
+	margin: 0 10px 0 0 ;
+	background: url('delivery_calc.png') center center no-repeat;
+	background-size: cover;
+}
+
+.btn.__delivery_calc:hover {
+	background: #62afff;
+	color: #fff;
+}
+
 </style>
 
 <header></header>
@@ -325,7 +358,9 @@ header {
 
 <div class="Main">
 
-	<div class="Sidebar"></div>
+	<div class="Sidebar">
+		<a href="" class="btn blue __delivery_calc"><i></i>Рассчитать доставку</a>
+	</div>
 
 	<div class="Content">
 		<h1>Калькулятор расчёта доставки</h1>
@@ -508,6 +543,7 @@ header {
 			</div>
 
 		</div>
+		
 	</div>
 
 </div>

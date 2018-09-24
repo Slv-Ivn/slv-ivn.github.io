@@ -159,7 +159,7 @@ header {
 	top: 0;
 	left: -30px;
 	width: 5px;
-	height: 100%;
+	height: calc(100% - 5px);
 	background: #d02d2d;
 	opacity: .75;
 }
@@ -171,9 +171,7 @@ header {
 	font-size: 110%;
 }
 
-.delivery_calc .__dc_form .__dc_errors div span {
-	color: #d02d2d;
-}
+.delivery_calc .__dc_form .__dc_errors div span { color: #d02d2d; }
 
 .delivery_calc .dc_results {
 	position: relative;

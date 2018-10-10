@@ -1754,6 +1754,7 @@ display: block;
       border-bottom-color: #d0e2e5;
       box-shadow: 0 10px 24px -2px rgba(0,0,0,.1);
       z-index: 98;
+      animation: Show_hcm_sublinks .6s ease-in-out;
     }
 
     .hover_cat_menu .hcm_sublinks ul {
@@ -1798,6 +1799,12 @@ display: block;
     @keyframes Show_hover_cat_menu {
       0% {opacity: 0; transform: scale(.9);}
       100% {opacity: 1; transform: scale(1);}
+    }
+
+    @keyframes Show_hcm_sublinks {
+      0% {z-index: -5; opacity: 0; transform: scale(.5);}
+      80% {z-index: -5; opacity: 0; transform: scale(.5);}
+      100% {z-index: 98; opacity: 1; transform: scale(1);}
     }
     
 

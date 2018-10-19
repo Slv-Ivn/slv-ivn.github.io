@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Реклама</title>
+	<link rel="stylesheet" href="index_files/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/chosen.min.css">
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/jquery.fancybox.css">
+	<script src="index_files/core.js"></script>
+	<script src="index_files/main-v9.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	$(document).ready(function() { 
+
+
+	});
+
+
+</script>
+
+<style>
+header {
+	width: 100%;
+	height: 100px;
+	background: #ddebed;
+}
+.Main {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.Sidebar {
+	width: 22%;
+	height: 600px;
+	margin-top: 10px;
+	background: #ddebed;
+}
+.Content {
+	width: 75%;
+}
+
+
+
+
+.ba_items {
+	position: relative;
+	margin-top: 35px;
+}
+
+.ba_items > p { 
+	position: relative;
+	padding-left: 36px;
+}
+
+.ba_items > p:before {
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 0;
+	width: 30px;
+	height: 8px;
+	background: #da2e2e;
+}
+
+.bai_item {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	margin: 25px 0 50px;
+}
+
+.bai_item ul,
+.bai_item ul li {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+}
+
+.bai_item .__left {
+	width: 240px;
+	height: 240px;
+}
+
+.bai_item .__left img {
+	max-width: 100%;
+	box-shadow: 0 10px 28px -2px rgba(0,88,101,.12);
+}
+
+.bai_item .__left img:hover { 
+	cursor: zoom-in;
+	opacity: .8;
+}
+
+.bai_item .__right {
+	width: calc(100% - 265px);
+	margin-left: 25px;
+}
+
+.bai_item .__right li > strong {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 120%; 
+}
+
+.bai_item .__right li { margin: 10px 0 0; }
+
+.bai_item .__right p { margin: 0 0 5px; }
+
+.bai_item .__right .btn {
+	margin: 10px 0 2px;
+	height: 42px;
+}
+
+.bai_item.active { overflow: hidden; }
+
+.bai_item .__form_order	{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px 20px 20px;
+	background: #f0f5f6;
+	border-radius: 2px;
+	box-sizing: border-box;
+	z-index: 20;
+	animation: Show_ad_form_order .25s ease-in-out;
+}
+
+.bai_item .__form_order.active { display: block; }
+
+@keyframes Show_ad_form_order {
+	  0% { opacity: 0; transform: scale(.7); }
+	100% { opacity: 1; transform: scale(1); }
+}
+
+.bai_item .__form_order span.close {
+	right: 20px;
+	font-size: 200%; 
+}
+
+.bai_item .__form_order > strong {
+	display: block;
+	margin: 0 0 5px 5px;
+	font-size: 120%; 
+}
+
+.bai_item .__form_order	textarea { height: 80px; }
+
+.bai_item:last-child {
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	background: #f0f5f6;
+	margin-top: 75px;
+	padding: 20px 20px 25px;
+	border-radius: 2px;
+}
+
+.bai_item:last-child > strong { font-size: 120%; }
+
+.bai_item:last-child > p { margin: 5px 0 10px; }
+
+.bai_item form .input { margin: 0 0 5px; }
+
+.bai_item form .btn.green {
+	display: block;
+	margin: 0;
+	margin-left: 5px;
+}
+</style>
+
+<header></header>
+
+
+<div class="Main">
+
+	<div class="Sidebar"></div>
+
+	<div class="Content">
+		<h1></h1>
+		<p></p>
+
+		<div id="" class="map_card">
+			<span class="close">×</span>
+		    <div class="mc_left">
+		        <div class="item_images">
+		            <div class="img_list">
+		                <div style="left: 0px;">
+		                    <div><a href=""><img src="https://productcenter.ru/images/344926-lodka-rib-olimp-355-cr-tsielnyi-280x210.jpg"></a></div>
+		                    <div><a href=""><img src="https://productcenter.ru/images/212784-tient-dlia-vodnogo-vielosipieda-280x210.jpg"></a></div>
+		                    <div><a href=""><img src="https://productcenter.ru/images/344926-lodka-rib-olimp-355-cr-tsielnyi-280x210.jpg"></a></div>
+		                    <div><a href=""><img src="https://productcenter.ru/images/212784-tient-dlia-vodnogo-vielosipieda-280x210.jpg"></a></div>
+		                </div>
+		                <span class="img_check"><i></i><i></i><i></i><i></i><i></i></span>                 
+		            </div>
+		        </div>
+		    </div>
+			<div class="mc_right">
+				<a target="_blank" href="/producers/10250/ao-miasoprodukty" class="link">Компания «Крепкое Здоровье»</a>
+				<span class="city">г. Воскресенск</span>
+				<span class="rating"><div class="rating-stars"></div><div class="rating-active" style="width: 50px"></div></span>
+				<p>Компания «Крепкое Здоровье». Наша компания занимается производством и поставкой кедрового ореха,кедрового масла...</p>
+				<a class="show_mod_order_window btn green" data-producer-id="4764" href="#modOrderWindow">Заказать продукцию оптом</a>
+				<!-- <div class="pl_dl handle_show_prices" data-producer-id="4764">
+					<a href="#" class="download price-list">
+					<i>&nbsp;</i>
+					<span>Прайс-лист&nbsp;производителя</span>
+					<small>XLSX 1.1 MБ</small></a>
+				</div> -->
+				<a href="#" class="show_order_price btn" data-producer-id="9249">Заказать прайс-лист</a>
+			</div>    
+		</div>
+	</div>
+
+</div>
+
+
+<footer></footer>
+	
+</body>
+</html>

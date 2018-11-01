@@ -1122,10 +1122,11 @@ li.search button:hover { background: #ffdc3a; }
     .map_card strong { display: block; }
 
     .map_card span.close {
-      top: -10px;
-      right: -10px;
+      top: -14px;
+      right: -14px;
+      font-family: 'arial';
       font-size: 200%;
-      padding: 0 8px 4px;
+      padding: 4px 10px 2px;
       font-weight: bold;
       line-height: 1;
       background: #fff;
@@ -1814,10 +1815,10 @@ display: block;
 
   
     .sub_menu a:nth-of-type(1):hover ~ .hover_cat_menu.hcm_producers,
-    .hover_cat_menu:hover { display: block; }
+    .hover_cat_menu:hover { display: block !important; }
 
     .sub_menu a:nth-of-type(2):hover ~ .hover_cat_menu.hcm_goods,
-    .hover_cat_menu:hover { display: block; }
+    .hover_cat_menu:hover { display: block !important; }
 
 
     .hover_cat_menu > ul::-webkit-scrollbar { width: 8px; }
@@ -3133,7 +3134,7 @@ display: block;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,.08);
       }
 
-       .items .item.firm .item_body .pl_dl,
+       .items .item .item_body .pl_dl,
        .items .mini_item .item_body .pl_dl { 
         display: none;
         margin: 10px auto;

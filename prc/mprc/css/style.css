@@ -264,13 +264,23 @@ sup.notice { color: #d54444; }
 
 .btn .svg_icon {
 	vertical-align: bottom;
-    margin-right: 10px;
+    margin-right: 14px;
     fill: #fff;
 }
 
 .btn.launch {
 	display: table;
 	margin: 15px auto;
+}
+
+.delivery_calc_btn {
+	background: #66a3ee;
+    color: #fff;
+}
+
+.delivery_calc_btn .svg_icon {
+	width: 28px;
+	height: 20px;
 }
 
 .tabs .link {
@@ -310,7 +320,8 @@ sup.notice { color: #d54444; }
 
 ul li { list-style: none; }
 
-.uni_close {
+.uni_close,
+.uni_back {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -320,7 +331,8 @@ ul li { list-style: none; }
 	cursor: pointer;
 }
 
-.uni_close:before, .uni_close:after {
+.uni_close:before, .uni_close:after,
+.uni_back:before, .uni_back:after {
 	position: absolute;
 	content: '';
 	top: 0;
@@ -336,7 +348,13 @@ ul li { list-style: none; }
 	transform: rotate(-45deg);
 }
 
+.uni_back:before, .uni_back:after {
+	top: 8px;
+	height: 15px;
+}
+
 .uni_close:after { -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.uni_back:after { top: -9px; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 
 .uni_show {
 	position: absolute;
@@ -1130,7 +1148,8 @@ svg.svg_icon {
 	padding: 0 15px;
 }
 
-.mod_box .uni_close {
+.mod_box .uni_close,
+.mod_box .uni_back {
 	top: -45px;
 	left: 0;
 	right: 0;
@@ -1202,6 +1221,102 @@ svg.svg_icon {
 .mod_box.add_cash > div { margin-bottom: 25px; }
 .mod_box.add_cash .small_msg { margin: 20px 0; }
 .mod_box.add_cash .btn { width: 140px; }
+
+
+.mod_box .docs_list .dl_list { /* Скачать прайс-лист / отображение документов в модальном окне */
+	position: relative;
+	margin: 25px 0;
+	text-align: left;
+}
+
+.mod_box .docs_list .dl_list .row {
+	display: block;
+	padding: 10px 15px;
+	border-top: 1px solid #f2f7fc;
+	overflow: hidden;
+}
+
+.mod_box .docs_list .dl_list .row:last-child { border-bottom: 1px solid #f2f7fc; }
+
+.mod_box .docs_list .dl_list .row .cl_icon {
+	float: left;
+	width: 38px;
+	height: 38px;
+	background: #f2f7fc;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 38px;
+}
+
+.mod_box .docs_list .dl_list .cl_icon .svg_icon { vertical-align: middle; }
+
+
+.mod_box .docs_list .dl_list .row .link,
+.mod_box .docs_list .dl_list .row .row_text {
+	display: block;
+	margin-left: 52px;
+	line-height: 1.2;
+}
+
+.mod_box .docs_list .dl_list .row span > small {
+	display: block;
+	margin-top: 5px;
+	font-size: 12px;
+	color: #718aaa;
+}
+
+.mod_box .docs_list .dl_list .row_text {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+
+.mod_box.map_card_item { /* Модальное окно с листингом экранов */
+	margin-top: 30px;
+}
+
+.mod_box .windows_list {
+	display: flex;
+	overflow-x: hidden;
+}
+
+.mod_box .windows_list .wl_window {
+	position: relative;
+	min-width: 100%;
+	transition: margin .25s ease-in-out;
+}
+
+.mod_box .windows_list .wl_window.n2,
+.mod_box .windows_list .wl_window.n3,
+.mod_box .windows_list .wl_window.n4,
+.mod_box .windows_list .wl_window.n5 { display: none; }
+
+.mod_box .windows_list .wl_window .item {
+	margin-top: 50px;
+	animation: none;
+}
+
+.mod_box .windows_list .wl_window .item:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: -4%;
+	background: #f2f7fc;
+	border-radius: 2px;
+}
+
+.mod_box .windows_list .uni_close,
+.mod_box .windows_list .uni_back {
+	top: 0;
+	margin: 0 52px 0 auto;
+}
+
+.mod_box .windows_list .wl_window.n1 .uni_close { margin: auto; }
+
+.mod_box .windows_list .uni_back  { margin: 0 auto 0 0; }
 
 
 
@@ -1401,7 +1516,7 @@ svg.svg_icon {
 .item .base {
 	position: relative;
 	width: 100%;
-	height: 300px;
+	height: 350px;
 	background: #fff;
 	border-radius: 2px;
 	overflow: hidden;
@@ -1421,8 +1536,10 @@ svg.svg_icon {
 .item.firm .base .image > img {	padding: 10px; }
 
 .item .base .link {
-	display: block;
-	max-height: 44px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	height: 44px;
 	margin-top: 4px;
 	padding: 0 10px;
 	font-family: 'Roboto-Medium';
@@ -1434,7 +1551,7 @@ svg.svg_icon {
 
 .item .base .rating, .item .base .indicator { 
 	position: absolute;
-	bottom: 10px;
+	bottom: 60px;
 	left: 10px;
 	line-height: 1;
 }
@@ -1442,6 +1559,25 @@ svg.svg_icon {
 .item .base .indicator {
 	left: auto;
 	right: 10px;
+}
+
+.item .item_btns {
+	position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .item_btns .btn {
+	height: 36px;
+	margin: 0 10px;
+	padding: 8px;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
 }
 
 .rating i .svg_icon {
@@ -1709,6 +1845,9 @@ svg.svg_icon {
 	overflow: hidden;
 }
 
+.card.company .card_content { max-height: 250px; }
+.card.contacts .card_content { max-height: 140px; }
+
 .card_content:after {
 	position: absolute;
 	content: '';
@@ -1920,6 +2059,34 @@ svg.svg_icon {
 	margin: 0;
 	font-size: 14px;
 }
+
+
+
+/* --- Карточка компании в инстаграм  --- */
+
+.card.company_instagram .ci_gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	padding: 15px 15px 5px;
+	border-top: 1px solid #f2f7fc;
+}
+
+.card.company_instagram .ci_gallery a {
+	width: calc(50% - 5px);
+	height: 100px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+
+.card.company_instagram .ci_gallery a img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 2px;
+}
+
 
 
 
@@ -2233,7 +2400,7 @@ svg.svg_icon {
 
 .map .map_mark {
 	position: absolute;
-	top: 40px;
+	top: 60px;
 	left: 90px;
 	width: 40px;
 	height: 58px;
@@ -2241,7 +2408,7 @@ svg.svg_icon {
 }
 
 .map .map_mark:nth-child(2) {
-	top: 110px;
+	top: 120px;
 	left: 180px;
 }
 
@@ -2261,6 +2428,158 @@ svg.svg_icon {
     width: 100%;
     margin: 0;
     z-index: 100;
+}
+
+
+
+
+
+/* --- Страница спрос --- */
+
+
+.demand_list .card.comment .msg {
+	padding-top: 10px;
+	border-top: 0;
+}
+
+.demand_list .card.comment .comment-geo { color: #718aaa; }
+
+
+.card .card_content article br+br {
+	content: '';
+	margin-top: 8px;
+	display: block;
+	line-height: 1;
+}
+
+
+
+
+/* --- Калькулятор доставки --- */
+
+.delivery_calc {
+	position: relative;
+	margin: 15px 0;
+}
+
+.delivery_calc .form_element:not(.ch_box) label {
+	top: 4px;
+	margin-top: 10px;
+	text-transform: lowercase;
+	color: #718aaa;
+}
+
+.delivery_calc form > b.bolder {
+    position: relative;
+    display: block;
+    margin: 14px 0 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #718aaa;
+    text-align: left;
+}
+
+.delivery_calc form > b.bolder + small {
+	display: block;
+	margin-bottom: 14px;
+	text-align: left;
+}
+
+.delivery_calc .dc_results .card_content { max-height: 100%; }
+
+.delivery_calc .dc_results .card_content > .h2 sup { font-size: 12px; }
+
+.delivery_calc .dc_results .dcr_loader {
+    position: absolute;
+    top: -18px;
+    left: calc(50% - 20px);
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 5px solid #f2f7fc;
+    border-radius: 80px;
+    box-shadow: -2px -2px 12px 2px #2765d1, 2px 2px 12px 2px #da2e2e;
+    animation: Dcr_loader .5s infinite ease-in-out;
+    z-index: 10;
+}
+
+.delivery_calc .dc_results .dcr_info {
+	margin-top: -10px;
+	padding: 0 15px 5px 15px;
+}
+
+.delivery_calc .dc_results .dcr_info span { 
+	display: block;
+	color: #718aaa;
+}
+
+.delivery_calc .dcr_list .sector_name { margin: 16px 0 0; }
+.delivery_calc .dcr_list .sector_name b { background: #fff; }
+.delivery_calc .dcr_list .sector_name:after { background: #f2f7fc; }
+
+.delivery_calc .dcr_list .dcrl_item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 12px 15px;
+	border-bottom: 8px solid #f2f7fc;
+}
+
+.delivery_calc .dcr_list .dcrl_item .company { display: flex; }
+
+.delivery_calc .dcr_list .dcrl_item .company .company_logo {
+	width: 80px;
+	height: 60px;
+	margin-left: auto;
+}
+
+.delivery_calc .dcr_list .dcrl_item .company .company_logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.delivery_calc .dcr_list .dcrl_item .company .company_info { width: calc(100% - 92px); }
+
+.delivery_calc .dcr_list .dcrl_item .company .company_info b {
+	display: block;
+	font-size: 17px;
+}
+
+.delivery_calc .dcr_list .dcrl_item .company .company_info a {
+	display: block;
+	font-size: 13px;
+}
+
+.delivery_calc .dcr_list .dcrl_item .time_price {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 8px;
+}
+
+.delivery_calc .dcr_list .dcrl_item .time_price .time { margin-right: 10px; }
+.delivery_calc .dcr_list .dcrl_item .time_price .price { margin-left: 10px; }
+
+.delivery_calc .dcr_list .dcrl_item .time_price div small {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.delivery_calc .dc_results .dcr_note {
+	padding: 0 15px;
+	line-height: 1.1;
+}
+
+@keyframes Dcr_loader {
+	  0% { transform: rotate(0deg); }
+	 15% { transform: rotate(60deg); }
+	 30% { transform: rotate(120deg); }
+	 50% { transform: rotate(180deg); }
+	 65% { transform: rotate(240deg); }
+	 85% { transform: rotate(300deg); }
+	100% { transform: rotate(360deg); }
 }
 
 

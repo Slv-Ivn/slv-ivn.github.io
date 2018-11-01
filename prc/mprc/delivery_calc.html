@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Калькулятор доставки</title>
+	<meta name="description" content="" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="svg_icons"></div>
+
+<div id="space">
+
+	<header class="header">
+		<div class="mxw">
+
+			<div class="logo">
+				<a href="#"></a>
+				<strong>Производство России <small>интернет-выставка</small></strong>
+			</div>
+			<span class="srch">
+				<svg class="svg_icon _search"><use xlink:href="#icon_search"></svg>
+				<s class="uni_close"></s>
+			</span>
+			<span class="menu">
+				<i></i>
+				<s class="uni_close"></s>
+			</span>
+			<div class="search_block">
+				<form action="" method="">
+					<input type="search" class="input search" placeholder="Поиск...">
+					<button type="submit"><svg class="svg_icon _search"><use xlink:href="#icon_search"></svg></button>
+				</form>	
+			</div>
+
+		</div>
+	</header>
+
+	<div class="content">
+
+		<h1 class="up_text">Калькулятор доставки грузов</h1>
+		<p class="center">Для расчета стоимости доставки товаров необходимо указать города отправления и получения, габариты груза, и выбрать в списке транспортные компании.</p>
+		<hr class="s_line">
+
+		<div class="delivery_calc">
+			
+			<form action="" method="" class="center">
+				<div class="form_element">
+					<b class="bolder required">Город отправления</b>
+					<input type="text" name="" class="input" placeholder="Например: Москва">
+					<input type="checkbox" class="checkbox" id="zzz">
+					<label for="zzz">От конкретного адреса</a>
+						<svg class="svg_icon _okey"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_okey"></use></svg>
+					</label>
+				</div>
+				<div class="form_element">
+					<b class="bolder required">Город получения</b>
+					<input type="text" name="" class="input" placeholder="Например: Владивосток">
+					<input type="checkbox" class="checkbox" id="zzzz">
+					<label for="zzzz">До конкретного адреса</a>
+						<svg class="svg_icon _okey"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_okey"></use></svg>
+					</label>
+				</div>
+				<div class="form_element double">
+					<div>
+						<b class="bolder">Длина</b>
+						<input type="number" name="" class="input" placeholder="В сантиметрах">
+					</div>
+					<div>
+						<b class="bolder">Ширина</b>
+						<input type="number" name="" class="input" placeholder="В сантиметрах">
+					</div>
+				</div>
+				<div class="form_element double">
+					<div>
+						<b class="bolder">Высота</b>
+						<input type="number" name="" class="input" placeholder="В сантиметрах">
+					</div>
+					<div>
+						<b class="bolder">Вес</b>
+						<input type="number" name="" class="input" placeholder="В килограммах">
+					</div>
+				</div>
+
+				<b class="bolder">Транспортные компании</b>
+				<small>Выберите ТК для расчета доставки груза:</small>
+
+				<div class="form_element ch_box">
+					<input type="checkbox" class="checkbox" id="zzzzz">
+					<label for="zzzzz">СДЭК
+						<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg>
+					</label>
+				</div>
+				<div class="form_element ch_box">
+					<input type="checkbox" class="checkbox" id="zzzzzz">
+					<label for="zzzzzz">ЖелДорЭкспедиция
+						<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg>
+					</label>
+				</div>
+				<div class="form_element ch_box">
+					<input type="checkbox" class="checkbox" id="zzzx">
+					<label for="zzzx">Ратэк
+						<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg>
+					</label>
+				</div>
+				<button type="button" class="btn green show_dc_results">Рассчитать стоимость доставки</button>
+			</form>
+
+			<div class="card dc_results">
+				<div class="dcr_loader"></div>
+				<div class="card_content">
+					<p class="h2">Расчёт доставки <sup>от адреса до адреса</sup></p>
+					<div class="dcr_info">
+						<span><b>Москва</b>&nbsp;<b>→</b>&nbsp;<b>Владивосток</b></span>
+						<span>Габариты: <b>1.2м/1.2м/0.8м/32кг</b></span>
+					</div>
+					<div class="dcr_list">
+						<div class="sector_name"><b class="up_text">Транспортные компании</b></div>
+						<div class="dcrl_item">
+							<div class="company">
+								<div class="company_info">
+									<b class="short">Ратэк</b>
+									<a target="_blank" href="tel:+78005555515">8-800-555-55-15</a>
+									<a target="_blank" href="">http://www.rateksib.ru</a>
+								</div>
+								<div class="company_logo"><img src="https://productcenter.ru/content/images/tk/ratek.jpg" alt=""></div>
+							</div>
+							<div class="time_price">
+								<div class="time"><b>от 5 до 8 дней</b><small>Срок доставки</small></div>
+								<div class="price"><b>4820&nbsp;₽</b><small>Цена доставки</small></div>
+							</div>
+						</div>
+						<div class="dcrl_item">
+							<div class="company">
+								<div class="company_info">
+									<b class="short">ЖелДорЭкспедиция</b>
+									<a target="_blank" href="tel:+78005555515">8-800-1005-505</a>
+									<a target="_blank" href="">https://www.jde.ru</a>
+								</div>
+								<div class="company_logo"><img src="https://productcenter.ru/content/images/tk/jde.png" alt=""></div>
+							</div>
+							<div class="time_price">
+								<div class="time"><b>от 7 до 9 дней</b><small>Срок доставки</small></div>
+								<div class="price"><b>5100&nbsp;₽</b><small>Цена доставки</small></div>
+							</div>
+						</div>
+						<div class="dcrl_item">
+							<div class="company">
+								<div class="company_info">
+									<b class="short">СДЭК</b>
+									<a target="_blank" href="tel:+78005555515">8-800-250-04-05</a>
+									<a target="_blank" href="">https://www.cdek.ru</a>
+								</div>
+								<div class="company_logo"><img src="https://productcenter.ru/content/images/tk/cdek.png" alt=""></div>
+							</div>
+							<div class="time_price">
+								<div class="time"><b>от 8 до 10 дней</b><small>Срок доставки</small></div>
+								<div class="price"><b>5510&nbsp;₽</b><small>Цена доставки</small></div>
+							</div>
+						</div>
+					</div>
+					<p class="dcr_note"><small>В расчете могут быть представлены не все транспортные компании, по причине отсутствия в одном из городов или невозможности перевезти данный груз.</small></p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<aside class="sidebar">
+		<nav class="nav mxw">
+
+			<a href="" class="btn add green"><svg class="svg_icon _add_product"><use xlink:href="#icon_add_product"></svg>Добавить продукцию</a>
+			<hr class="line">
+			<div class="personal_list">
+				<a href="" class="unit">Зарегистрироваться</a>
+				<a href="" class="unit">Выйти</a>
+			</div>
+			<hr class="line">
+			<a class="unit">На главную</a>
+			<a href="" class="unit">Каталог</a>
+			<a href="" class="unit active">Товары</a>
+			<a href="" class="unit">Производители</a>
+			<a href="" class="unit">Новости производителей</a>
+			<a href="" class="unit">Новости в России</a>
+			<hr class="line">
+			<a href="" class="unit">О выставке</a>
+			<a href="" class="unit">Контакты и информация</a>
+			<a href="" class="unit">Полная версия сайта</a>
+
+		</nav>
+	</aside>
+
+	<footer class="footer">
+
+		<strong class="up_text">
+			<span>© 2008—2015</span>интернет-выставка российских производителей
+		</strong>
+
+	</footer>
+	
+	<div class="modal_space">
+
+	</div>
+
+	<div id="overlay"></div>
+	
+</div>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery_v2.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

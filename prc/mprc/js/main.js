@@ -97,6 +97,7 @@ $(document).ready(function(){
     $('.launch').click(function(){ //Блокировка прокрутки
         $('body').addClass('ovh');
         $('.modal_space, #overlay').addClass('active');
+        $('.modal_space .mod_box .windows_list').find('.wl_window').removeAttr('style'); // Очистка стилей слайдера
     });
 
     $('.launch.write_msg').click(function(){ //Написать комментарий
@@ -128,8 +129,55 @@ $(document).ready(function(){
         $('.mod_box.order_item').show(0);
     });
 
+    $('.launch.order_item_firm').click(function(){ //Заказ продукции с карточки компании 
+        $('.mod_box.order_item_firm').show(0);
+    });
+
     $('.launch.add_cash').click(function(){ //Пополнение баланса
         $('.mod_box.add_cash').show(0);
+    });
+
+    $('.launch.dl_docs').click(function(){ //Скачать прайс-лист или документы
+        $('.mod_box.dl_docs').show(0);
+    });
+
+    $('.launch.order_price').click(function(){ //Запрос прайс-лист
+        $('.mod_box.order_price').show(0);
+    });
+
+    $('.launch.map_card_item').click(function(){ //Карточка на карте
+        $('.mod_box.map_card_item').show(0);
+    });
+
+    $('.launch.add_order_demand').click(function(){ //Новая заявка на спрос
+        $('.mod_box.add_order_demand').show(0);
+    });
+
+    //Калькутор доставки
+    $('.delivery_calc .dc_results, .delivery_calc .dc_results .dcr_list').hide();
+
+    $('.delivery_calc .btn.show_dc_results').click(function(){
+        $("html,body").animate({"scrollTop": $(this).offset().top},420);
+        $('.delivery_calc .dc_results').show();
+        setTimeout(function(){$('.delivery_calc .dc_results .dcr_list').show();$('.delivery_calc .dc_results .dcr_loader').hide()},2000);
+    });
+
+
+
+
+    $('.mod_box .windows_list .wl_window .next_window.n2').click(function(){ //Листинг слайдов в модальных окнах
+        $(this).parents('.wl_window').css('margin-left','-100%').delay(250).hide(0);
+        $(this).parents('.windows_list').find('.wl_window.n2').css('margin-left','0').show(0);
+    });
+
+    $('.mod_box .windows_list .wl_window .next_window.n3').click(function(){ //Листинг слайдов в модальных окнах
+        $(this).parents('.wl_window').css('margin-left','-100%').delay(250).hide(0);
+        $(this).parents('.windows_list').find('.wl_window.n3').css('margin-left','0').show(0);
+    });
+
+    $('.mod_box .windows_list .wl_window .uni_back').click(function(){ //Листинг слайдов в модальных окнах
+        $(this).parents('.wl_window').css('margin-left','100%').delay(250).hide(0);
+        $(this).parents('.windows_list').find('.wl_window.n1').show(0).css('margin-left','0');
     });
 
 

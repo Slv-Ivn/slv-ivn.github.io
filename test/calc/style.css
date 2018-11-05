@@ -189,6 +189,9 @@ body {
     overflow: hidden;
 }
 
+.rest_booking .rb_residence .input:nth-child(3),
+.rest_booking .rb_residence .input:nth-child(4) { margin-top: 10px; }
+
 .rest_booking .inline.calendar input { 
 	margin: 0;
 	padding-right: 40px;

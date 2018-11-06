@@ -2586,6 +2586,36 @@ svg.svg_icon {
 
 
 
+/* --- Страница 404 --- */
+
+
+.content .p_404 {
+	max-width: 300px;
+	margin: 80px auto;
+}
+
+.content .p_404 .numbers div {
+	font-size: 98px;
+    font-weight: bold;
+    line-height: 1;
+    opacity: .08;
+}
+
+.content .p_404 .numbers p {
+    margin: 0;
+    font-size: 13px;
+    opacity: .5;
+}
+
+.content .links {
+	display: flex;
+	justify-content: space-around;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+
+
 
 
 /* --- Личный кабинет --- */

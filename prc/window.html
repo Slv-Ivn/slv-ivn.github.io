@@ -196,9 +196,27 @@ header {
 
 
 
-.popup_window s {
+.popup_window s.crossed {
+	position: relative;
 	color: #d02d2d;
-	opacity: .7; 
+	opacity: .75;
+	text-decoration: none;
+}
+
+.popup_window s.crossed:after {
+	position: absolute;
+    content: '';
+    top: 7px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background: #d02d2d;
+    transform: rotate(-45deg);
+    box-shadow: 0 1px 0 0 #fff, 0 -1px 0 0 #fff;
+}
+
+.popup_window .btn s.crossed:after {
+	box-shadow: 0 1px 0 0 #ffcf3a, 0 -1px 0 0 #ffcf3a;
 }
 </style>
 
@@ -215,10 +233,10 @@ header {
 		    <h3>Доступ закрыт <span class="close" title="Закрыть">×</span></h3>
 		    <div class="mw_text">
 		        <p><b>В рамках Вашего тарифного плана «Старт» доступ к контактам платный.</b></p>
-		        <p>Цена доступа — <s>100</s> <b>33</b> рубля, на 24 часа откроются все контакты в списке.</p>
+		        <p>Цена доступа — <s class="crossed">100</s> <b>33</b> рубля, на 24 часа откроются все контакты в списке.</p>
 		        
 		    </div>
-		    <button type="button" class="btn orange hndl_activate_orders_show_contacts">Оплатить <s>100</s> <b>33</b> руб.</button>
+		    <button type="button" class="btn orange hndl_activate_orders_show_contacts">Оплатить <s class="crossed">100</s> <b>33</b> руб.</button>
 		    <button type="button" class="btn orange" onclick="javascript:window.location.href = '/privateoffice/tarrifs/';">Выбрать другой тариф</button>
 		</div>
 

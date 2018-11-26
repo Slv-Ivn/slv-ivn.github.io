@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Добавление компании</title>
+	<meta name="description" content="" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="svg_icons"></div>
+
+<div id="space">
+
+	<header class="header">
+		<div class="mxw">
+
+			<div class="logo">
+				<a href="#"></a>
+				<strong>Производство России <small>интернет-выставка</small></strong>
+			</div>
+			<span class="srch">
+				<svg class="svg_icon _search"><use xlink:href="#icon_search"></svg>
+				<s class="uni_close"></s>
+			</span>
+			<span class="menu">
+				<i></i>
+				<s class="uni_close"></s>
+			</span>
+			<div class="search_block">
+				<form action="" method="">
+					<input type="search" class="input search" placeholder="Поиск...">
+					<button type="submit"><svg class="svg_icon _search"><use xlink:href="#icon_search"></svg></button>
+				</form>	
+			</div>
+
+		</div>
+	</header>
+
+	<div class="content">
+
+		<div class="annonce">
+			<article class="annonce_msg"><b>Производитель</b> — <a href="#">регистрируйся и размещай</a> свою продукцию на выставке.</article>
+			<s class="uni_close"></s>
+		</div>
+
+		<h1 class="up_text">Добавление компании</h1>
+
+		<hr class="s_line">
+
+		<form action="" method="post" class="general center">
+
+			<div class="small_msg error"><strong>Ошибка!</strong>Пожалуйста, заполните необходимые поля отмеченные — *</div>
+
+			<div class="sector_name"><b class="up_text">Основная информация</b></div>
+
+			<div class="form_element">
+				<b class="bolder required">Название организации</b>
+				<input type="text" name="firm_name" class="input" placeholder="...">
+			</div>
+
+			<div class="form_element">
+				<b class="bolder required">О компании</b>
+				<textarea name="msg_text" placeholder="..."></textarea>
+				<small class="helper">Внимание: описание производителя должно быть не менее 300 символов.</small>
+			</div>
+
+			<div class="form_element">
+				<b class="bolder required">Регион</b>
+				<label for="" class="select">
+					<select name="" id="">
+						<option value="">Выбрать...</option>
+						<option value="">Пункт который следует выбрать</option>
+						<option value="">Ещё один пункт</option>
+						<option value="">Выбираем этот пункт</option>
+					</select>
+				</label>
+			</div>
+
+			<div class="form_element">
+				<b class="bolder required">Город</b>
+				<label for="" class="select">
+					<select name="" id="">
+						<option value="">Выбрать...</option>
+						<option value="">Пункт который следует выбрать</option>
+						<option value="">Ещё один пункт</option>
+						<option value="">Выбираем этот пункт</option>
+					</select>
+				</label>
+			</div>
+
+			<div class="form_element">
+				<b class="bolder required">Адрес организации</b>
+				<input type="text" name="" class="input" placeholder="...">
+				<small class="helper">Укажите местоположение организации — улицу, дом.</small>
+			</div>
+
+			<div class="sector_name"><b class="up_text">Контактная информация</b></div>
+
+			<div class="form_element">
+				<b class="bolder">Контактное лицо</b>
+				<input type="text" name="" class="input" placeholder="...">
+				<small class="helper">Контактное лицо в компании ответственное за продажу продукции.</small>
+			</div>
+
+			<div class="form_element">
+				<b class="bolder required">Адрес эл. почты</b>
+				<input type="email" name="email" class="input" placeholder="...">
+			</div>
+
+			<div class="form_element error">
+				<b class="bolder required">Контактный телефон</b>
+				<input type="text" name="phone" class="input" placeholder="...">
+			</div>
+
+			<div class="form_element">
+				<b class="bolder">Skype</b>
+				<input type="text" name="skype" class="input" placeholder="...">
+			</div>
+
+			<div class="form_element">
+				<b class="bolder">Ссылка на сайта</b>
+				<input type="text" name="site" class="input" placeholder="...">
+			</div>
+
+			<div class="sector_name"><b class="up_text">Реквизиты</b></div>
+
+			<div class="form_element">
+				<b class="bolder">Название Юридического лица</b>
+				<input type="text" name="" class="input" placeholder="...">
+			</div>
+
+			<div class="form_element">
+				<b class="bolder">ИНН</b>
+				<input type="text" name="" class="input" placeholder="...">
+			</div>
+
+			<div class="form_element">
+				<b class="bolder">КПП</b>
+				<input type="text" name="" class="input" placeholder="...">
+			</div>
+
+			<div class="form_element">
+				<b class="bolder">ОГРН/ОГРНИП</b>
+				<input type="text" name="" class="input" placeholder="...">
+			</div>
+
+			<div class="sector_name"><b class="up_text">Изображения *</b></div>
+
+			<div class="images_list">
+				<div class="img_box">
+					<div class="del"><span class="uni_close"></span></div>
+					<div class="image"><img src="img/item4.jpg" alt=""></div>
+					<input type="text" name="" class="input" placeholder="Описание...">
+					<div class="cover">
+						<input type="radio" class="radio" id="xxx" name="">
+						<label for="xxx">Обложка</label>
+					</div>
+				</div>
+				<div class="img_box">
+					<div class="del"><span class="uni_close"></span></div>
+					<div class="image"><img src="img/item2.jpg" alt=""></div>
+					<input type="text" name="" class="input" placeholder="Описание...">
+					<div class="cover">
+						<input type="radio" class="radio" id="xxxx" name="">
+						<label for="xxxx">Обложка</label>
+					</div>
+				</div>
+			</div>
+
+			<button class="btn">Загрузить изображение</button>
+
+			<div class="sector_name"><b class="up_text">Видеоматериалы</b></div>
+
+			<div class="images_list videos">
+				<div class="img_box">
+					<div class="del"><span class="uni_close"></span></div>
+					<div class="image video"><i></i><img src="img/item4.jpg" alt=""></div>
+					<small class="short">Название данного видеоролика</small>
+				</div>
+				<div class="img_box">
+					<div class="del"><span class="uni_close"></span></div>
+					<div class="image video"><i></i><img src="img/item2.jpg" alt=""></div>
+					<small class="short">Видеоролик такой-то</small>
+				</div>
+			</div>
+
+			<div class="form_element">
+				<b class="bolder">Ссылка на видео</b>
+				<div class="combi">
+					<input type="text" class="input" name="cash" placeholder="...">
+					<button class="btn">Загрузить</button>
+				</div>
+				<small class="helper">Введите в поле ссылку на видео из YouTube.</small>
+			</div>
+
+			<div class="sector_name"><b class="up_text">Файлы</b></div>
+
+			<div class="files_list">
+				<div class="row price_list">
+					<div class="del"><span class="uni_close"></span></div>
+					<span class="cl_icon"><svg class="svg_icon _download"><use xlink:href="#icon_download"></svg></span>
+					<a href="" class="link short">Прайс-лист производителя<small>PDF • 7.5 МБ</small></a>
+				</div>
+				<div class="row">
+					<div class="del"><span class="uni_close"></span></div>
+					<span class="cl_icon"><svg class="svg_icon _download"><use xlink:href="#icon_download"></svg></span>
+					<a href="" class="link short">Рекламный буклет<small>JPG • 980 КБ</small></a>
+				</div>
+				<div class="row">
+					<div class="del"><span class="uni_close"></span></div>
+					<span class="cl_icon"><svg class="svg_icon _download"><use xlink:href="#icon_download"></svg></span>
+					<a href="" class="link short">Техническая документация<small>DOCX • 28 МБ</small></a>
+				</div>
+			</div>
+
+			<div class="form_element">
+				<button class="btn">+ Прайс-лист</button>
+				<button class="btn fl_r">+ Документ</button>
+				<small class="helper">Загрузите прайс-лист и необходимые файлы...</small>
+			</div>
+
+			<div class="sector_name"><b class="up_text">Платные услуги</b></div>
+
+			<div class="form_element ch_box">
+				<input type="checkbox" class="checkbox" id="zzz">
+				<label for="zzz">Проработать тексты
+					<b class="cash">250 рублей</b>
+					<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></svg>
+				</label>
+				<small class="helper">Заказать профессиональную проработку текcтов интернет­-маркетологом.</small>
+			</div>
+
+			<div class="form_element ch_box">
+				<input type="checkbox" class="checkbox" id="zzzz">
+				<label for="zzzz">Показать на главной странице
+					<b class="cash">90 рублей</b>
+					<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></svg>
+				</label>
+				<small class="helper">Карточка компании будет показана на главной странице Выставки и её увидит большее число посетителей.</small>
+			</div>
+
+			<div class="form_element ch_box">
+				<input type="checkbox" class="checkbox" id="zzzzz">
+				<label for="zzzzz">Поднять в каталогах
+					<b class="cash">120 рублей</b>
+					<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></svg>
+				</label>
+				<small class="helper">Закрепим компанию вверху каталога на 30 дней, это увеличит посещаемость в разы.</small>
+			</div>
+
+			<div class="small_msg"><i>После применения изменений у вас с баланса будет списано 370 рублей за выбранные услуги.</i></div>
+
+			<button type="submit" class="btn green">Сохранить и продолжить</button>
+
+		</form>
+
+	</div>
+
+	<aside class="sidebar">
+		<nav class="nav mxw">
+
+			<a href="" class="btn add green"><svg class="svg_icon _add_product"><use xlink:href="#icon_add_product"></svg>Добавить продукцию</a>
+			<hr class="line">
+			<div class="personal_list">
+				<a href="" class="unit">Зарегистрироваться</a>
+				<a href="" class="unit">Войти</a>
+			</div>
+			<hr class="line">
+			<a class="unit">На главную</a>
+			<a href="" class="unit">Каталог</a>
+			<a href="" class="unit">Товары</a>
+			<a href="" class="unit">Производители</a>
+			<a href="" class="unit">Новости производителей</a>
+			<a href="" class="unit">Новости в России</a>
+			<hr class="line">
+			<a href="" class="unit">О выставке</a>
+			<a href="" class="unit">Контакты и информация</a>
+			<a href="" class="unit">Полная версия сайта</a>
+
+		</nav>
+	</aside>
+
+	<footer class="footer">
+
+		<strong class="up_text">
+			<span>© 2008—2015</span>интернет-выставка российских производителей
+		</strong>
+
+	</footer>
+
+	<div id="overlay"></div>
+	
+</div>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery_v2.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

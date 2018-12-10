@@ -4294,7 +4294,7 @@ display: block;
           position: relative;
           margin-top: 10px;
           line-height: 1.42;
-          padding: 10px 10px 20px;
+          padding: 10px 10px 14px;
           background: #fbfdff;
           border-radius: 3px;
           border: 1px solid #ddebed;
@@ -4426,6 +4426,85 @@ display: block;
           color: #477e88;
           vertical-align: middle;
         }
+
+        /* Пользовательские отзывы */
+
+        .user_review_rating .rr_stars,
+        .p_review_rating .rr_stars { height: 22px; }
+
+        .user_review_rating .rr_stars {
+          position: absolute;
+          top: calc(50% - 8px);
+          right: 0;
+        }
+
+        .p_review_rating {
+          display: flex;
+          margin-bottom: 12px;
+          margin-left: 85px; 
+        }
+
+        .p_review_rating > span {
+          position: relative;
+          top: 1px;
+          margin-left: 4px;
+          color: #477e88;
+        }
+
+        .user_review_rating .rr_stars i,
+        .p_review_rating .rr_stars i {
+          position: relative;
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background: url('img/stars-22.png') no-repeat;
+        }
+
+        .user_review_rating .rr_stars i.active,
+        .p_review_rating .rr_stars i.active { background-position: 0 -44px; }
+
+        .comments .comment-geo {
+          position: relative;
+          top: 4px;
+        }
+
+        .comments .post.user_review .p_text .bad_text,
+        .comments .post.user_review .p_text .comment_text {
+          position: relative;
+          padding-top: 8px;
+        }
+
+        .comments .post.user_review .p_text .bad_text:before,
+        .comments .post.user_review .p_text .comment_text:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -10px;
+          width: 100%;
+          height: 1px;
+          background: #ddebed;
+        }
+
+        .comments .post.user_review .p_text .block_title {
+          display: block;
+          margin-bottom: 4px;
+        }
+
+        .post.add_form.user_review .p_review_rating .rr_stars i:hover { cursor: pointer; }
+
+        .post.add_form.user_review .p_head .input { width: 49.5%; }
+        
+        .post.add_form .p_text.user_review strong {
+          display: block;
+          margin-bottom: 4px;
+          color: #477e88;
+        }
+
+        .post.add_form .p_text.user_review textarea { height: 60px; }
+
+
+
+
                             
         /* О сайте */
 

@@ -96,8 +96,8 @@ $(document).ready(function(){
 
     $('.launch').click(function(){ //Блокировка прокрутки
         $('body').addClass('ovh');
-        $('#overlay').addClass('active');
-        $('.mod_box .windows_list').find('.wl_window').removeAttr('style'); // Очистка стилей слайдера
+        $('.modal_space, #overlay').addClass('active');
+        $('.modal_space .mod_box .windows_list').find('.wl_window').removeAttr('style'); // Очистка стилей слайдера
     });
 
     $('.launch.write_msg').click(function(){ //Написать комментарий

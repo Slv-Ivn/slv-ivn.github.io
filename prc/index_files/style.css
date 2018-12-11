@@ -3766,7 +3766,10 @@ display: block;
           text-align: left;
         }
 
-        .bp_text { margin-left: 170px; }
+        .bp_text { 
+          margin-left: 170px;
+          margin-right: 190px;
+        }
 
         .bp_text > p {
           position: relative;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Window</title>
+	<link rel="stylesheet" href="index_files/style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/chosen.min.css">
+	<link rel="stylesheet" property="stylesheet" type="text/css" href="index_files/jquery.fancybox.css">
+	<script src="index_files/core.js"></script>
+	<script src="index_files/main-v9.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+	});
+
+
+</script>
+
+<style>
+header {
+	width: 100%;
+	height: 100px;
+	background: #ddebed;
+}
+.Main {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.Sidebar {
+	width: 22%;
+	height: 600px;
+	margin-top: 10px;
+	background: #ddebed;
+}
+.Content {
+	width: 75%;
+}
+
+
+
+</style>
+
+<header></header>
+
+
+<div class="Main">
+
+	<div class="Sidebar"></div>
+
+	<div class="Content">
+		
+		<div class="popup_window" style="display: block; opacity: 1;">
+		    <h3>Информирование <span class="close" title="Закрыть">×</span></h3>
+		    <div class="mw_text">
+		        <p>Изменения внесены. Информация была успешно сохранена.</p>		        
+		    </div>
+		    <button type="button" class="btn orange">Хорошо, закрыть окно</button>
+		</div>
+
+		<div class="popup_window" style="display: block; opacity: 1; margin: 50px;">
+		    <h3>Информирование <span class="close" title="Закрыть">×</span></h3>
+		    <div class="mw_text">
+		        <p>Произошла ошибка. Информация не была сохранена.</p>
+		        <p>Пожалуйста, закройте окно и попробуйте ещё раз.</p>	        
+		    </div>
+		    <button type="button" class="btn orange">Хорошо, закрыть окно</button>
+		</div>
+
+	</div>
+
+</div>
+
+
+<footer></footer>
+	
+</body>
+</html>

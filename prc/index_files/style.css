@@ -1715,7 +1715,7 @@ display: block;
     
     .hover_cat_menu {
       position: absolute;
-      display: none;
+      display:;
       top: 34px;
       left: -20px;
       width: 100%;
@@ -1731,8 +1731,13 @@ display: block;
       z-index: 99999;
       box-sizing: border-box;
       /*animation: Show_hover_cat_menu .25s;*/
-      animation: Show_hover_cat_menu .6s;
+      /*animation: Show_hover_cat_menu .6s;*/
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s;
     }
+
+    .hover_cat_menu:hover { opacity: 1; visibility: visible; transition: all 1s;}
 
     .hover_cat_menu > ul {
       position: relative;
@@ -1828,7 +1833,7 @@ display: block;
 
   
     .sub_menu a:nth-of-type(1):hover ~ .hover_cat_menu.hcm_producers,
-    .hover_cat_menu:hover { display: block !important; }
+    .hover_cat_menu:hover { opacity: 1; visibility: visible; z-index: -10; transition: all 1s; }
 
     .sub_menu a:nth-of-type(2):hover ~ .hover_cat_menu.hcm_goods,
     .hover_cat_menu:hover { display: block !important; }
@@ -1846,6 +1851,12 @@ display: block;
     @keyframes Show_hover_cat_menu {
       0% {opacity: 0;}
       50% {opacity: 0; transform: scale(.9);}
+      100% {opacity: 1; transform: scale(1);}
+    }
+
+     @keyframes Show_hover_cat_ {
+      0% {opacity: 0; visibility: hidden; z-index: -9999;}
+      50% {opacity: 0; transform: scale(.9); visibility: visible; z-index: 9999;}
       100% {opacity: 1; transform: scale(1);}
     }   
 

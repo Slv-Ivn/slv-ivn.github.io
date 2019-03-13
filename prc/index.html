@@ -1470,6 +1470,9 @@ ga('send', 'pageview');</script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
+  $('.hover_cat_menu').hover(function(){
+    $(this).delay(1000);
+  });
   $('.hover_cat_menu > ul > li > a').mouseenter(function(){
     $(this).next('.hcm_sublinks').show(120);
     $(this).parent('li').mouseleave(function(){ $('.hcm_sublinks').hide(80); });

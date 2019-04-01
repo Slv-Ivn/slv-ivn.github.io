@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script>
+		 $("div.menu a").click(function () {
+	        var elementClick = $(this).data('nav')
+	        var destination = $(elementClick).next().find('h2').offset().top;
+	        if(!$('.header').hasClass('fixed')){
+	        destination = destination - 100;
+	        }
+	        destination = destination - 70;
+	        
+	        //console.log(destination);
+	        
+	        $('html').animate({ scrollTop: destination }, 1100);
+	        
+	        $('.menu .menu_show').removeClass('active'); 
+	        $('.menu, .menu li').removeClass('visible'); 
+	        return false; 
+	    }); >
+	</script> -->
+
+	<script>
+		 $(document).ready(function(){
+		    $(".menu a").click(function(event) {
+		      event.preventDefault();
+		      var id = $(this).attr('href'),
+		          top = $(id).offset().top;
+		      $('body,html').animate({
+		          scrollTop: top
+		      }, 1000);
+		  });
+		}); 
+	</script>
+
+	<header class="header">
+		<div class="menu">
+			<ul>
+				<li><a data-nav="#usloviya-prozhivaniya" href="#usloviya-prozhivaniya">Вниз</a></li>
+			</ul>
+		</div>
+	</header>
+	<div style="height: 2100px;"></div>
+	<a id="usloviya-prozhivaniya" name="usloviya-prozhivaniya"></a>
+	<footer><h2>#######################################################</h2></footer>
+</body>
+</html>

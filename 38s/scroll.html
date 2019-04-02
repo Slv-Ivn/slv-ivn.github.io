@@ -5,7 +5,9 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- <script>
+	<script>
+	$(document).ready(function(){
+
 		 $("div.menu a").click(function () {
 	        var elementClick = $(this).data('nav')
 	        var destination = $(elementClick).next().find('h2').offset().top;
@@ -22,9 +24,10 @@
 	        $('.menu, .menu li').removeClass('visible'); 
 	        return false; 
 	    }); >
-	</script> -->
+	});
+	</script>
 
-	<script>
+	<!-- <script>
 		 $(document).ready(function(){
 		    $(".menu a").click(function(event) {
 		      event.preventDefault();
@@ -35,17 +38,17 @@
 		      }, 1000);
 		  });
 		}); 
-	</script>
+	</script> -->
 
 	<header class="header">
 		<div class="menu">
 			<ul>
-				<li><a data-nav="#usloviya-prozhivaniya" href="#usloviya-prozhivaniya">Вниз</a></li>
+				<li><a data-nav="#usloviya-prozhivaniya" href="#!usloviya-prozhivaniya">Вниз</a></li>
 			</ul>
 		</div>
 	</header>
 	<div style="height: 2100px;"></div>
-	<a id="usloviya-prozhivaniya" name="usloviya-prozhivaniya"></a>
+	<a id="usloviya-prozhivaniya" name="!usloviya-prozhivaniya"></a>
 	<footer><h2>#######################################################</h2></footer>
 </body>
 </html>

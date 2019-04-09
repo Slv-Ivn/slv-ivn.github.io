@@ -33,7 +33,7 @@ body {
   position: relative;
   width: 1280px;
   margin: 0 auto;
-  z-index: 10;
+  /*z-index: 10;*/
 }
 
 #content > div:first-of-type {
@@ -203,19 +203,6 @@ body {
 
     a.btn.green:hover, button.btn.green:hover, input.btn.green:hover { background: #3dd55d; }
     .btn.green:active { box-shadow: inset 0 0 0 100px rgba(0,0,0,0.1); }
-
-    a.btn.blue, button.btn.blue, input.btn.blue {
-      background: linear-gradient(to bottom, #62afff 0%, #448bd4 100%);
-      box-shadow: 0 2px 2px -1px #005ab5, inset 0 0 0 1px rgba(104,178,255,.8);
-      text-shadow: 0 2px 1px rgba(0,0,0,0.15);
-      color: #fff;
-      border: none;
-    }
-
-    a.btn.blue:hover, button.btn.blue:hover, input.btn.blue:hover {
-      background: #62afff;
-      color: #fff;
-    }
 
     img { border: none; }
     
@@ -1715,7 +1702,7 @@ display: block;
     
     .hover_cat_menu {
       position: absolute;
-      display:;
+      display: none;
       top: 34px;
       left: -20px;
       width: 100%;
@@ -1731,13 +1718,8 @@ display: block;
       z-index: 99999;
       box-sizing: border-box;
       /*animation: Show_hover_cat_menu .25s;*/
-      /*animation: Show_hover_cat_menu .6s;*/
-      visibility: hidden;
-      opacity: 0;
-      transition: all 1s;
+      /*animation: Show_hover_cat_menu .8s;*/
     }
-
-    .hover_cat_menu:hover { opacity: 1; visibility: visible; transition: all 1s;}
 
     .hover_cat_menu > ul {
       position: relative;
@@ -1831,13 +1813,13 @@ display: block;
 
     .hover_cat_menu > ul li:hover a { z-index: 99; }
 
-  
+  /*
     .sub_menu a:nth-of-type(1):hover ~ .hover_cat_menu.hcm_producers,
-    .hover_cat_menu:hover { opacity: 1; visibility: visible; z-index: -10; transition: all 1s; }
+    .hover_cat_menu:hover { display: block !important; }
 
     .sub_menu a:nth-of-type(2):hover ~ .hover_cat_menu.hcm_goods,
     .hover_cat_menu:hover { display: block !important; }
-
+*/
 
     .hover_cat_menu > ul::-webkit-scrollbar { width: 8px; }
     .hover_cat_menu > ul::-webkit-scrollbar-thumb { background: #c5dbde; }
@@ -1850,13 +1832,8 @@ display: block;
  */   
     @keyframes Show_hover_cat_menu {
       0% {opacity: 0;}
-      50% {opacity: 0; transform: scale(.9);}
-      100% {opacity: 1; transform: scale(1);}
-    }
-
-     @keyframes Show_hover_cat_ {
-      0% {opacity: 0; visibility: hidden; z-index: -9999;}
-      50% {opacity: 0; transform: scale(.9); visibility: visible; z-index: 9999;}
+      35% {opacity: 0;}
+      65% {opacity: 0; transform: scale(.9);}
       100% {opacity: 1; transform: scale(1);}
     }   
 
@@ -2628,7 +2605,12 @@ display: block;
 
         /* Сортировка */
 
-        #center .sort { padding-top: 14px; }
+        #center .sort { 
+          padding-top: 14px;
+          font-size: 0;
+        }
+
+        #center .sort > * { font-size: 13px; }
 
         .sort a {
           display: inline-block;
@@ -2638,21 +2620,50 @@ display: block;
           border: 1px solid #c5dbde;
           border-right: none;
           background: #f9fcfd;
-          padding: 0 10px;
-          line-height: 2.6;
+          padding: 0 8px;
+          line-height: 2.5;
         }
 
         .sort a:first-of-type { border-radius: 2px 0 0 2px; }
-        .sort a:last-of-type { 
+        .sort a:nth-of-type(5){ 
           border-radius: 0 2px 2px 0; 
           border-right: 1px solid #c5dbde; 
         }
+
+        .sort a.items_on_map {
+          margin-left: 20px;
+          border-radius: 2px;
+          border: 1px solid #c5dbde;
+        }
+
+        .sort a.items_on_map.active:hover { cursor: pointer; }
 
         .sort a:hover, .pagination a:hover { background: #fff; }
         .sort a.active, .pagination a:active { 
           background: #ddebed;
           color: #3a444a;
           cursor: default;
+        }
+
+        .sort a.items_on_map.active:hover { cursor: pointer; }
+
+        .catalog_map {
+          position: relative;
+          width: 0;
+          height: 0;
+          margin: 0;
+          visibility: hidden;
+          opacity: 0;
+          transition: height .4s ease-in-out, opacity .8s ease-in-out;
+        }
+
+        .catalog_map.active {
+          width: 100%;
+          height: 480px;
+          margin: 20px 0;
+          visibility: visible;
+          opacity: 1;
+          transition: height .4s ease-in-out, opacity .8s ease-in-out;
         }
 
         /* Производители / товары */
@@ -3652,7 +3663,7 @@ display: block;
           text-shadow: 0 1px 0 rgba(255,255,255,0.8);
           transition: all 0.3s ease-in-out;
           cursor: pointer;
-          z-index: 100;
+          z-index: 10;
         }
 
         .item_tabs {clear: right;}
@@ -3777,10 +3788,7 @@ display: block;
           text-align: left;
         }
 
-        .bp_text { 
-          margin-left: 170px;
-          margin-right: 190px;
-        }
+        .bp_text { margin-left: 170px; }
 
         .bp_text > p {
           position: relative;
@@ -3824,28 +3832,8 @@ display: block;
           outline-style: none;
         }
 
-        .bc_text { position: relative; }
-
-        .bc_text ul { 
-          margin-top: 0;
-          margin-right: 200px;
-        }
-
-        .bp_text > ul li, .bc_text ul li, .u_profile ul li { margin: 15px 0; }
-
-        .contacts_tabs_btns { /* Кнопки на вкладке контактов */
-          position: absolute;
-          top: 0;
-          right: 0;
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .contacts_tabs_btns .btn {
-          margin-bottom: 8px;
-          padding: 8px 16px;
-        }
+        .bc_text ul { margin-top: 0; }
+        .bp_text > ul li, .bc_text ul li, .u_profile ul li { margin: 15px 0; }        
 
         .box_news { padding-bottom: 50px; }
 
@@ -4308,7 +4296,7 @@ display: block;
           position: relative;
           margin-top: 10px;
           line-height: 1.42;
-          padding: 10px 10px 14px;
+          padding: 10px 10px 20px;
           background: #fbfdff;
           border-radius: 3px;
           border: 1px solid #ddebed;
@@ -4440,85 +4428,6 @@ display: block;
           color: #477e88;
           vertical-align: middle;
         }
-
-        /* Пользовательские отзывы */
-
-        .user_review_rating .rr_stars,
-        .p_review_rating .rr_stars { height: 22px; }
-
-        .user_review_rating .rr_stars {
-          position: absolute;
-          top: calc(50% - 8px);
-          right: 0;
-        }
-
-        .p_review_rating {
-          display: flex;
-          margin-bottom: 12px;
-          margin-left: 85px; 
-        }
-
-        .p_review_rating > span {
-          position: relative;
-          top: 1px;
-          margin-left: 4px;
-          color: #477e88;
-        }
-
-        .user_review_rating .rr_stars i,
-        .p_review_rating .rr_stars i {
-          position: relative;
-          display: inline-block;
-          width: 22px;
-          height: 22px;
-          background: url('img/stars-22.png') no-repeat;
-        }
-
-        .user_review_rating .rr_stars i.active,
-        .p_review_rating .rr_stars i.active { background-position: 0 -44px; }
-
-        .comments .comment-geo {
-          position: relative;
-          top: 4px;
-        }
-
-        .comments .post.user_review .p_text .bad_text,
-        .comments .post.user_review .p_text .comment_text {
-          position: relative;
-          padding-top: 8px;
-        }
-
-        .comments .post.user_review .p_text .bad_text:before,
-        .comments .post.user_review .p_text .comment_text:before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -10px;
-          width: 100%;
-          height: 1px;
-          background: #ddebed;
-        }
-
-        .comments .post.user_review .p_text .block_title {
-          display: block;
-          margin-bottom: 4px;
-        }
-
-        .post.add_form.user_review .p_review_rating .rr_stars i:hover { cursor: pointer; }
-
-        .post.add_form.user_review .p_head .input { width: 49.5%; }
-        
-        .post.add_form .p_text.user_review strong {
-          display: block;
-          margin-bottom: 4px;
-          color: #477e88;
-        }
-
-        .post.add_form .p_text.user_review textarea { height: 60px; }
-
-
-
-
                             
         /* О сайте */
 
@@ -5218,6 +5127,8 @@ div.helper:hover > .help_text {
   flex-wrap: wrap;
   transition: all .25s ease-in-out;
 }
+
+
 
 .com_insta_box .insta_photo {
   width: 108px;
@@ -7340,9 +7251,11 @@ opacity: .8;
 .autocomplete-group strong { font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
 
 .items-on-page{
+    position: relative;
+    top: -2px;
     display: inline-block;
     float: right;
-    line-height: 34px;
+    line-height: 1.45;
     height: 34px;                        
 }  
 

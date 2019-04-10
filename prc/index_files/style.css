@@ -2625,15 +2625,10 @@ display: block;
         }
 
         .sort a:first-of-type { border-radius: 2px 0 0 2px; }
-        .sort a:nth-of-type(5){ 
+        
+        .sort a:last-of-type { 
           border-radius: 0 2px 2px 0; 
           border-right: 1px solid #c5dbde; 
-        }
-
-        .sort a.items_on_map {
-          margin-left: 20px;
-          border-radius: 2px;
-          border: 1px solid #c5dbde;
         }
 
         .sort a.items_on_map.active:hover { cursor: pointer; }

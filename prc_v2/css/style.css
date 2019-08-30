@@ -614,13 +614,14 @@ svg.svg {
 
 .search_block {
 	display: flex;
-	margin-top: 5px;
+	margin-top: 7px;
 }
 
 .search_block .input {
 	width: 420px;
 	border-radius: 4px 0 0 4px;
 	border-color: #FFCF3A;
+	vertical-align: middle;
 }
 
 .search_block .btn {
@@ -633,6 +634,7 @@ svg.svg {
 	border-radius: 0 4px 4px 0;
 	border-color: #FFCF3A;
 	box-shadow: 0;
+	vertical-align: middle;
 	transition: all .2s ease-in-out;
 }
 

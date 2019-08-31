@@ -2577,7 +2577,7 @@ svg.svg {
 .content .sidebar .sb_block.sb_top_requests.v2 .sbb_body .tr_link {
 	color: var(--link_color);
 }
-.content .sidebar .sb_block.sb_top_requests.v2 .sbb_body .tr_link.trl1 { font-size: 12px; opacity: .6;}
+.content .sidebar .sb_block.sb_top_requests.v2 .sbb_body .tr_link.trl1 { font-size: 12px; opacity: .7;}
 .content .sidebar .sb_block.sb_top_requests.v2 .sbb_body .tr_link.trl2 { font-size: 14px; opacity: .8; }
 .content .sidebar .sb_block.sb_top_requests.v2 .sbb_body .tr_link.trl3 { font-size: 18px; line-height: 1.3; opacity: .9; }
 .content .sidebar .sb_block.sb_top_requests.v2 .sbb_body .tr_link.trl4 { font-size: 20px; line-height: 1.2; }
@@ -2585,7 +2585,8 @@ svg.svg {
 .content .sidebar .sb_block.sb_top_requests .sbb_body .tr_link:hover { color: var(--red_color); }
 .content .sidebar .sb_block.sb_top_requests.v2 .sbb_body .tr_link:hover { color: var(--red_color); opacity: 1;}
 
-.content .sidebar .sb_block.sb_top_requests2 .sbb_body li {
+
+.content .sidebar .sb_block.sb_top_requests2 .sbb_body li:not(:first-child) {
 	display: block;
 	line-height: 0;
 	margin-top: 6px;
@@ -2632,13 +2633,13 @@ svg.svg {
 
 .content .sidebar .sb_block.sb_top_requests2.v2 .sbb_body .tr_link {
 	color: var(--link_color);
-	background: rgba(102,163,238,.1);
+	background: none;
 }
 
 .content .sidebar .sb_block.sb_top_requests2.v2 .sbb_body .tr_link.trl1 { 
 	font-size: 12px;
 	line-height: 14px;
-	opacity: .6;
+	opacity: .7;
 }
 
 .content .sidebar .sb_block.sb_top_requests2.v2 .sbb_body .tr_link.trl2 { 

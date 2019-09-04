@@ -1224,7 +1224,7 @@ svg.svg {
 }
 
 .catalog_list .column {
-	width: 33.333%;
+	width: 30%;
 	margin-right: 60px;
 }
 
@@ -1336,6 +1336,10 @@ svg.svg {
 	height: 1px;
 	background: var(--icon_catalog_color);
 	transition: all .2s ease-in-out;
+}
+
+.catalog_list .cl .cl_sub_links > li > .cl_sub_links {
+	margin-top: 4px;
 }
 
 .catalog_list .cl .cl_sub_links .show_links {
@@ -2682,28 +2686,25 @@ svg.svg {
 .content .sidebar .sb_block.sb_top_requests2 .sbb_body .tr_link.trl1 { 
 	font-size: 12px;
 	line-height: 14px;
-	background: rgba(102,163,238,.1);
 }
 
 .content .sidebar .sb_block.sb_top_requests2 .sbb_body .tr_link.trl2 { 
 	font-size: 14px;
 	line-height: 16px;
 	color: #f5b900;
-	background: rgba(255, 207, 58,.1);
+
 }
 
 .content .sidebar .sb_block.sb_top_requests2 .sbb_body .tr_link.trl3 { 
 	font-size: 18px;
 	line-height: 21px;
 	color: #33A920;
-	background: rgba(82,192,64,.1);
 }
 
 .content .sidebar .sb_block.sb_top_requests2 .sbb_body .tr_link.trl4 { 
 	font-size: 20px;
 	line-height: 24px;
 	color: #66A3EE;
-	background: rgba(102,163,238,.1);
 }
 
 .content .sidebar .sb_block.sb_top_requests2 .sbb_body .tr_link:hover { color: var(--red_color); }

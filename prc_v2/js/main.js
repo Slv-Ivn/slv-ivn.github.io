@@ -9,7 +9,9 @@ $(document).ready(function(){
     $('#svg_icons').load('img/all_icons.svg');
 
 
-
+$('.show_links').click(function(){
+        $(this).toggleClass("active").next().slideToggle(240)
+    });
 
 
 /* Последовательная анимация

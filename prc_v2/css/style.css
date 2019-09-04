@@ -56,6 +56,7 @@
 	--btn_color: #F0F6FD;
 	--btn_color_hover: #E9F2FD;
 	--medium_blue_color: #66A3EE;
+	--icon_catalog_color: #bfd8f8;
 }
 
 
@@ -1215,32 +1216,48 @@ svg.svg {
 	background: var(--red_color);
 }
 
-.main_catalog .mc_list {
+.main_catalog .catalog_list {
 	position: relative;
+	display: flex;
+	justify-content: ;
 	margin: 32px 0 28px;
 }
 
-.main_catalog .mc_list .mcl {
-	position: relative;
-	columns: 3 auto;
-	column-gap: 40px;
+.catalog_list .column {
+	width: 33.333%;
+	margin-right: 60px;
 }
 
-.main_catalog .mc_list .mcl > li {
+.catalog_list .column:last-child { margin-right: 0; }
+
+.catalog_list .cl {
+	position: relative;
+}
+
+.catalog_list .cl > li {
 	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	margin-bottom: 12px;
 	font-weight: 500;
 }
 
-.main_catalog .mc_list .mcl > li .svg {
+.catalog_list .cl > li .svg {
 	width: 20px;
 	height: 20px;
 	margin-right: 12px;
 	vertical-align: top;
+	flex-shrink: 0;
 }
 
-.main_catalog .mc_list .mcl li .show_links {
+.catalog_list .cl .link {
+	max-width: 85%;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.catalog_list .cl li .show_links {
 	position: relative;
 	display: inline-block;
 	top: 4px;
@@ -1250,8 +1267,8 @@ svg.svg {
 	cursor: pointer;
 } 
 
-.main_catalog .mc_list .mcl li .show_links:before,
-.main_catalog .mc_list .mcl li .show_links:after {
+.catalog_list .cl li .show_links:before,
+.catalog_list .cl li .show_links:after {
 	position: absolute;
 	content: '';
 	top: 5px;
@@ -1264,21 +1281,82 @@ svg.svg {
 	transition: all .2s ease-in-out;
 }
 
-.main_catalog .mc_list .mcl li .show_links:after {
+.catalog_list .cl li .show_links:after {
 	top: 0;
 	left: 5px;
 	width: 4px;
 	height: 14px;
 }
 
-.main_catalog .mc_list .mcl li .show_links:hover:before,
-.main_catalog .mc_list .mcl li .show_links:hover:after {
+.catalog_list .cl li .show_links.active:before,
+.catalog_list .cl li .show_links.active:after {
+	position: absolute;
+	content: '';
+	top: 5px;
+	left: 0;
+	width: 14px;
+	height: 4px;
+	background: #66A3EE;
+	border-radius: 4px;
+	opacity: .6;
+	transition: all .2s ease-in-out;
+}
+
+.catalog_list .cl li .show_links:hover:before,
+.catalog_list .cl li .show_links:hover:after {
 	background: var(--red_color);
 	transition: all .2s ease-in-out;
 }
 
 
-.main_catalog .mc_list .mcl .mcl_sub_links { display: none; }
+.catalog_list .cl .cl_sub_links {
+	display: none;
+	width: 100%;
+	margin: 6px 0 12px 32px;
+	margin-left: 32px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+
+.catalog_list .cl .cl_sub_links > li {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4px 0;
+}
+
+.catalog_list .cl .cl_sub_links > li:after {
+	position: absolute;
+	content: '';
+	top: 10px;
+	left: -29px;
+	width: 16px;
+	height: 1px;
+	background: var(--icon_catalog_color);
+	transition: all .2s ease-in-out;
+}
+
+.catalog_list .cl .cl_sub_links .show_links {
+	transform: scale(.8);
+}
+
+.catalog_list .cl .cl_sub_links > li > .cl_sub_links > li:after {
+	position: absolute;
+	content: '';
+	top: 10px;
+	left: -24px;
+	width: 12px;
+	height: 1px;
+	background: var(--icon_catalog_color);
+	transition: all .2s ease-in-out;
+}
+
+.catalog_list .cl .cl_sub_links > li > .cl_sub_links {
+	margin-left: 24px;
+	font-size: 13px;
+}
 
 
 

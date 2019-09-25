@@ -1957,7 +1957,6 @@ input:focus, textarea:focus {
     margin-top: 40px;
     margin-bottom: 150px;
     padding-top: 20px;
-    border-top: 2px solid #dff1fa;
 }
 
 
@@ -1967,7 +1966,6 @@ input:focus, textarea:focus {
     position: relative;
     max-width: 760px;
     margin: 20px auto;
-    overflow-x: scroll;
 }
 
 .price_table table {
@@ -3212,6 +3210,8 @@ input:focus, textarea:focus {
     .section.ask_us .right div { font-size: 14px; }
 
     .fun_list .single_box { width: 30%; }
+
+    .price_table { overflow-x: scroll; }
 
 }
 

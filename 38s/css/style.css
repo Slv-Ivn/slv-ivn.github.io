@@ -1967,6 +1967,7 @@ input:focus, textarea:focus {
     position: relative;
     max-width: 760px;
     margin: 20px auto;
+    overflow: scroll;
 }
 
 .price_table table {

@@ -562,10 +562,10 @@ input:focus, textarea:focus {
 .logo {
     position: relative;
     width: 70px;
-    height: 70px;
+    /*height: 70px;*/
 }
 
-.logo img {    max-width: 100%; }
+.logo img { max-width: 100%; }
 
 .menu {
     position: relative;
@@ -775,16 +775,16 @@ input:focus, textarea:focus {
 .header.fixed .place * { -webkit-animation: Show_elements .5s; animation: Show_elements .5s; }
 
 .header.fixed .logo {
-    width: 64px;
-    height: 64px;
+    width: 60px;
+    height: 60px;
     top: 7px;
 }
 
 .header.fixed .logo img {
-    border-radius: 100px;
+    /*border-radius: 100px;
     border: 5px solid #fff;
     -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15);*/
 }
 
 .header.fixed .menu li a { 
@@ -1733,7 +1733,7 @@ input:focus, textarea:focus {
 
 .months_tabs .months_list .tab { position: relative; }
 
-.months_tabs .months_list .tab:nth-child(6) { display: none; }
+/*.months_tabs .months_list .tab:nth-child(6) { display: none; }*/
 
 .months_tabs .months_list .tab > span {
     position: relative;
@@ -1959,6 +1959,65 @@ input:focus, textarea:focus {
     padding-top: 20px;
     border-top: 2px solid #dff1fa;
 }
+
+
+/* Таблица цен на номера */
+
+.price_table {
+    position: relative;
+    max-width: 760px;
+    margin: 20px auto;
+}
+
+.price_table table {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 0;
+    background: #fff;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.price_table table tr th,
+.price_table table tr td {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #dff1fa;
+    text-align: left;
+}
+
+.price_table table tr th { 
+    border-bottom: 2px solid #ee1515; 
+}
+
+.price_table table tr th:not(:last-child),
+.price_table table tr td:not(:last-child) { 
+    border-right: 40px solid #fff;
+}
+
+.price_table table tr th:first-child,
+.price_table table tr td:first-child {
+    text-align: right;
+}
+
+.price_table table tr:last-child td { 
+    border-bottom: 2px solid #252525; 
+}
+
+.price_table table tr th > small {
+    display: block;
+}
+
+.price_table .pt_descriptor {
+    margin: 0 auto;
+}
+
+.price_table .pt_descriptor p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
 
 .section.rest_june .block {
     position: relative;
@@ -3232,12 +3291,19 @@ input:focus, textarea:focus {
     .section.ask_us .left { max-width: 100%; }
     .section.ask_us .right { max-width: 90%; margin: 50px 0 0; }
 
-    .mod_window.fast_booking { max-width: 420px; }
-    .mod_window.fast_booking .box { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
-    .mod_window.fast_booking .left { width: 100%; padding: 0; }
+    .mod_window.fast_booking,
+    .mod_window.order_booking { max-width: 420px; }
+
+    .mod_window.fast_booking .box,
+    .mod_window.order_booking .box { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+
+    .mod_window.fast_booking .left,
+    .mod_window.order_booking .left { width: 100%; padding: 0; }
+
     .mod_window.fast_booking .right .img { display: none; }
 
-    .mod_window.fast_booking .right { 
+    .mod_window.fast_booking .right,
+    .mod_window.order_booking .right { 
         width: 100%;
         margin-top: 20px;
         padding: 20px 0 0 0;

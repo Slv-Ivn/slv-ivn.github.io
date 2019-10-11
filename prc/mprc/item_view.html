@@ -290,7 +290,7 @@
 			<div class="card_content">
 
 				<p class="h2">Отзывы <sup>51</sup></p>
-				<b class="btn green launch write_msg plus">+</b>
+				<b class="btn green launch write_review plus">+</b>
 
 				<div class="msg">
 					<div class="base">
@@ -473,61 +473,150 @@
 
 	</footer>
 	
-<div class="modal_space">
+	<div class="modal_space">
 
+<!-- 		<div class="mod_box item_rating">
+				<div class="mod_box_body mxw">
+					<s class="uni_close">закрыть</s>
 
-	<div class="mod_box add_msg review">
-		<div class="mod_box_body mxw">
-			<s class="uni_close">закрыть</s>
-
-			<form action="" method="post" class="center">
-				<p class="h1">Новый отзыв</p>
-				<div class="review_rating">
-					<span class="rating">
-						<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
-						<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
-						<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
-						<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
-						<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
-					</span>
-					<small>Поставьте вашу оценку</small>
+					<p class="h1 up_text">Рекомендовать <small>продукцию</small></p>
+					<div class="share">
+		                <a rel="nofollow" href="#" target="_blank" data-url=""><svg class="svg_icon _ask"><use xlink:href="#icon_ask"></svg></a>
+		                <a rel="nofollow" href="#" target="_blank" data-url=""><svg class="svg_icon _ask"><use xlink:href="#icon_ask"></svg></a>
+		                <a rel="nofollow" href="#" target="_blank" data-url=""><svg class="svg_icon _ask"><use xlink:href="#icon_ask"></svg></a>
+		                <a rel="nofollow" href="#" target="_blank" data-url=""><svg class="svg_icon _ask"><use xlink:href="#icon_ask"></svg></a>
+		                <a rel="nofollow" href="#" target="_blank" data-url=""><svg class="svg_icon _ask"><use xlink:href="#icon_ask"></svg></a>
+		            </div>
 				</div>
+			</div> -->
 
-				<div class="form_element">
-					<b class="bolder required">Преимущества</b>
-					<textarea name="msg_text" placeholder="..."></textarea>
-				</div>
+		<div class="mod_box order_item">
+			<div class="mod_box_body mxw">
+				<s class="uni_close">закрыть</s>
 
-				<div class="form_element">
-					<b class="bolder required">Недостатки</b>
-					<textarea name="msg_text" placeholder="..."></textarea>
-				</div>
+				<form action="" method="post" class="center">
+					<p class="h1 up_text">Заказать <small>Алюминиевая моторная лодка Бестер 500</small></p>
 
-				<div class="form_element">
-					<b class="bolder required">Комментарий</b>
-					<textarea name="msg_text" placeholder="..."></textarea>
-				</div>
+					<div class="form_element">
+						<b class="bolder required">Имя</b>
+						<input type="text" name="name" class="input" placeholder="...">
+					</div>
 
-				<div class="form_element">
-					<b class="bolder required">Имя</b>
-					<input type="text" name="name" class="input" placeholder="...">
-				</div>
+					<div class="form_element">
+						<b class="bolder required">Адрес эл. почты</b>
+						<input type="email" name="email" class="input" placeholder="...">
+					</div>
 
-				<div class="form_element">
-					<b class="bolder required">Адрес эл. почты</b>
-					<input type="email" name="email" class="input" placeholder="...">
-				</div>
+					<div class="form_element">
+						<b class="bolder">Телефон</b>
+						<input type="text" name="phone" class="input" placeholder="...">
+					</div>
 
-				<div class="small_msg"><i>Адрес электронной почты будет виден только производителю.</i></div>
+					<div class="form_element">
+						<b class="bolder required">Пожелания к заказу</b>
+						<textarea name="msg_text" placeholder="..."></textarea>
+					</div>
 
-				<button type="submit" class="btn">Опубликовать</button>
+					<div class="form_element ch_box">
+						<input type="checkbox" class="checkbox" id="zzz">
+						<label for="zzz">Я соглашаюсь с <a href="">политикой конфиденциальности</a>
+							<svg class="svg_icon _okey"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_okey"></use></svg>
+						</label>
+					</div>
 
-			</form>
+					<button type="submit" class="btn green">Отправить заказ</button>
+
+				</form>
+			</div>
 		</div>
+		
+		<div class="mod_box add_msg">
+			<div class="mod_box_body mxw">
+				<s class="uni_close">закрыть</s>
+
+				<form action="" method="post" class="center">
+					<p class="h1">Новый комментарий</p>
+
+					<div class="form_element">
+						<b class="bolder required">Имя</b>
+						<input type="text" name="name" class="input" placeholder="...">
+					</div>
+
+					<div class="form_element">
+						<b class="bolder required">Адрес эл. почты</b>
+						<input type="email" name="email" class="input" placeholder="...">
+					</div>
+
+					<div class="form_element">
+						<b class="bolder">Телефон</b>
+						<input type="text" name="phone" class="input" placeholder="...">
+					</div>
+
+					<div class="small_msg"><i>Адрес электронной почты и телефон будут видны только производителю.</i></div>
+
+					<div class="form_element">
+						<b class="bolder required">Текст сообщения</b>
+						<textarea name="msg_text" placeholder="..."></textarea>
+						<small class="helper">Коммерческий вопрос? Укажите имя, город, примерный объем заказа — это ускорит ответ.</small>
+					</div>
+
+					<button type="submit" class="btn">Опубликовать</button>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="mod_box add_review">
+			<div class="mod_box_body mxw">
+				<s class="uni_close">закрыть</s>
+
+				<form action="" method="post" class="center">
+					<p class="h1">Новый отзыв</p>
+					<div class="review_rating">
+						<span class="rating">
+							<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
+							<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
+							<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
+							<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
+							<i><svg class="svg_icon _star"><use xlink:href="#icon_star"></svg></i>
+						</span>
+						<small>Поставьте вашу оценку</small>
+					</div>
+
+					<div class="form_element">
+						<b class="bolder required">Преимущества</b>
+						<textarea name="msg_text" placeholder="..."></textarea>
+					</div>
+
+					<div class="form_element">
+						<b class="bolder required">Недостатки</b>
+						<textarea name="msg_text" placeholder="..."></textarea>
+					</div>
+
+					<div class="form_element">
+						<b class="bolder required">Комментарий</b>
+						<textarea name="msg_text" placeholder="..."></textarea>
+					</div>
+
+					<div class="form_element">
+						<b class="bolder required">Имя</b>
+						<input type="text" name="name" class="input" placeholder="...">
+					</div>
+
+					<div class="form_element">
+						<b class="bolder required">Адрес эл. почты</b>
+						<input type="email" name="email" class="input" placeholder="...">
+					</div>
+
+					<div class="small_msg"><i>Адрес электронной почты будет виден только производителю.</i></div>
+
+					<button type="submit" class="btn">Опубликовать</button>
+
+				</form>
+			</div>
+		</div>
+
 	</div>
-
-
-</div>
 
 	<div id="overlay"></div>
 	

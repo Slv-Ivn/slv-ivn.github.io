@@ -101,7 +101,12 @@ $(document).ready(function(){
     });
 
     $('.launch.write_msg').click(function(){ //Написать комментарий
-        $('.mod_box.add_msg').show(0);
+        $('.mod_box.add_msg').addClass('active').show(0);
+        $('.msg .uni_show, .msg .hide_menu').removeClass('active');
+    });
+
+    $('.launch.write_review').click(function(){ //Написать комментарий
+        $('.mod_box.add_review').addClass('active').show(0);
         $('.msg .uni_show, .msg .hide_menu').removeClass('active');
     });
 
@@ -126,7 +131,7 @@ $(document).ready(function(){
     });
 
     $('.launch.order_item').click(function(){ //Заказ продукции
-        $('.mod_box.order_item').show(0);
+        $('.mod_box.order_item').addClass('active').show(0);
     });
 
     $('.launch.order_item_firm').click(function(){ //Заказ продукции с карточки компании 
@@ -181,10 +186,10 @@ $(document).ready(function(){
     });
 
 
-    $('.modal_space .uni_close').click(function(){ //Закрытие
+    $('.mod_box .uni_close').click(function(){ //Закрытие
         $('#overlay, .modal_space').removeClass('active');
         $('body').removeClass('ovh');
-        $('.mod_box').delay(400).hide(0);
+        $('.mod_box').hide(0);
     });
 
 

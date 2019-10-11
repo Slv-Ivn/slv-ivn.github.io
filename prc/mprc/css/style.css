@@ -2202,13 +2202,22 @@ svg.svg_icon {
 
 .card .msg .date, .card .msg .name {
 	position: absolute;
-	top: 20px;
+	top: 18px;
 	left: 0;
 	right: 0;
 	margin: 0 40px 0 75px;
 }
 
 .card .msg .name { margin-top: 20px; }
+
+.card .msg .rating {
+	position: relative;
+	top: 1px;
+	float: right;
+	background: #fff;
+    padding: 0 0px 0px 10px;
+	z-index: 10;
+}
 
 .card .msg .uni_show.vertical { 
 	position: absolute;
@@ -2217,6 +2226,23 @@ svg.svg_icon {
 }
 
 .card .msg_text { margin-top: 10px; }
+
+.card.comments.reviews .msg_text .block_title {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #718aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card.comments.reviews .msg_text p { margin: 8px 0; }
+
+.card.comments.reviews .msg_text .good_text,
+.card.comments.reviews .msg_text .bad_text {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #f2f7fc;
+}
 
 .card .msg .hide_menu {
 	position: absolute;

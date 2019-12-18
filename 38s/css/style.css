@@ -2020,6 +2020,10 @@ input:focus, textarea:focus {
     font-size: 13px;
 }
 
+.price_table.pt_action_tour > .text_center p {
+    font-family: 'Quiza Pro';
+}
+
 .price_table.pt_action_tour .pt_note {
     padding-bottom: 15px;
     border-bottom: 1px solid #252525;

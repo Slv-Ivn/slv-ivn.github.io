@@ -94,13 +94,13 @@ header, section, menu, nav, aside, article, footer, .h1, .h2, .h3, .h4 { display
     margin: 0 auto;
 }
 
-.place { 
+.place {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-img { 
+img {
     border: none;
     border-radius: 1px;
 }
@@ -151,8 +151,8 @@ i, em, .italic {
     font-style: italic;
 }
 
-h1, h2, .h1, .h2 {    
-    font-family: 'Neris'; 
+h1, h2, .h1, .h2 {
+    font-family: 'Neris';
     font-weight: 900;
     -webkit-transition: all .25s;
     transition: all .25s;
@@ -182,12 +182,12 @@ h3, .h3, h4, .h4, strong, b {
     transition: all .25s;
 }
 
-h1, .h1 { 
+h1, .h1 {
     font-size: 28px;
     line-height: 1.4;
 }
 
-h2, .h2 { 
+h2, .h2 {
     font-size: 22px;
     line-height: 1.4;
 }
@@ -291,14 +291,14 @@ span.close:hover:after { background: #252525; }
     pointer-events: none;
 }
 
-.color_splash:before {    
+.color_splash:before {
     background: rgba(40, 200, 0, .09);
     -webkit-transform: rotate(-35deg) translate(-5px, -5px);
     -ms-transform: rotate(-35deg) translate(-5px, -5px);
     transform: rotate(-35deg) translate(-5px, -5px);
 }
 
-.color_splash:after {    
+.color_splash:after {
     background: rgba(125, 0, 220, .09);
     -webkit-transform: rotate(-25deg) translate(-20px, -20px);
     -ms-transform: rotate(-25deg) translate(-20px, -20px);
@@ -442,7 +442,7 @@ textarea {
 
 input[placeholder] { text-overflow: ellipsis; }
 
-input:focus, textarea:focus { 
+input:focus, textarea:focus {
     background: #fff !important;
     -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
     box-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
@@ -620,7 +620,7 @@ input:focus, textarea:focus {
     margin-bottom: 7px;
 }
 
-.menu li a .svg._pay { 
+.menu li a .svg._pay {
     top: 1px;
     fill-rule: evenodd;
 }
@@ -676,9 +676,9 @@ input:focus, textarea:focus {
     transition: all .2s ease;
 }
 
-.menu .menu_show.active { 
-    color: #21201b; 
-    -webkit-transition: all .2s ease; 
+.menu .menu_show.active {
+    color: #21201b;
+    -webkit-transition: all .2s ease;
     transition: all .2s ease;
 }
 
@@ -787,7 +787,7 @@ input:focus, textarea:focus {
     box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15);*/
 }
 
-.header.fixed .menu li a { 
+.header.fixed .menu li a {
     font: 600 12px Neris;
 }
 
@@ -902,7 +902,7 @@ input:focus, textarea:focus {
     font-size: 24px;
 }
 
-.section.top .best { 
+.section.top .best {
     position: relative;
     display: -ms-flexbox;
     display: -webkit-box;
@@ -1030,7 +1030,7 @@ input:focus, textarea:focus {
     background: #9015ee;
 }
 
-.section.why_we .foto_block .fotos:hover .hover { opacity: 1; } 
+.section.why_we .foto_block .fotos:hover .hover { opacity: 1; }
 .section.why_we .foto_block .fotos:hover .hover .svg { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
 .section.why_we .foto_block .s_line {
@@ -1059,7 +1059,7 @@ input:focus, textarea:focus {
 
 .section.better_rest .text_center { overflow: hidden; }
 
-.section.better_rest .help_marker { 
+.section.better_rest .help_marker {
     position: relative;
     display: inline-block;
 }
@@ -1094,7 +1094,7 @@ input:focus, textarea:focus {
 
 .gallery { margin-bottom: 60px; }
 
-.gallery .img_box { 
+.gallery .img_box {
     position: relative;
     height: 470px;
     display: -ms-flexbox;
@@ -1173,7 +1173,7 @@ input:focus, textarea:focus {
     left: 15px;
 }
 
-.gallery .img_box .image:hover .hover { opacity: 1; } 
+.gallery .img_box .image:hover .hover { opacity: 1; }
 .gallery .img_box .image:hover .hover .svg { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
 
@@ -1218,12 +1218,12 @@ input:focus, textarea:focus {
   *cursor: move !important;
 }
 
-.scrollyeah_active .scrollyeah__shaft_grabbing, .scrollyeah_active .scrollyeah__shaft_grabbing * { 
+.scrollyeah_active .scrollyeah__shaft_grabbing, .scrollyeah_active .scrollyeah__shaft_grabbing * {
     cursor: -webkit-grabbing;
     cursor: -o-grabbing;
     cursor: -ms-grabbing;
     cursor: grabbing;
-    cursor: grabbing; 
+    cursor: grabbing;
 }
 
 .scrollyeah__shadow {
@@ -1266,7 +1266,7 @@ input:focus, textarea:focus {
     height: 100%;
     background: #252525;
     border-radius: 2px;
-} 
+}
 
 .scrollyeah__shadow_prev:before {
     right: auto;
@@ -1307,7 +1307,7 @@ input:focus, textarea:focus {
     align-items: flex-end;
 }
 
-.section.conditions .left { 
+.section.conditions .left {
     position: relative;
     max-width: 520px;
     margin: 0 0 -62px -50px;
@@ -1358,7 +1358,7 @@ input:focus, textarea:focus {
 
 .section.conditions .right .sec_descriptor {
     margin: 0;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .section.conditions .points {
@@ -1484,16 +1484,16 @@ input:focus, textarea:focus {
     border-bottom: 3px solid #252525;
 }
 
-.food_option .color_splash { 
-    -webkit-filter: blur(20px); 
+.food_option .color_splash {
+    -webkit-filter: blur(20px);
     filter: blur(20px);
-    opacity: .75; 
+    opacity: .75;
 }
 
 .food_option h3 {
     font-size: 28px;
     line-height: 1;
-    text-align: left; 
+    text-align: left;
 }
 
 .food_option ul {
@@ -1504,8 +1504,8 @@ input:focus, textarea:focus {
 
 .food_option li {
     position: relative;
-    margin: 5px 0; 
-    line-height: 1; 
+    margin: 5px 0;
+    line-height: 1;
 }
 
 .food_option li.fo_numbers > span { display: block; }
@@ -1586,13 +1586,13 @@ input:focus, textarea:focus {
     margin: 25px 0;
 }
 
-.fun_list > div { 
+.fun_list > div {
     position: relative;
     border-radius: 1px;
     margin: 0 10px 20px 10px;
 }
 
-.fun_list .image { 
+.fun_list .image {
     position: relative;
     display: block;
     width: 100%;
@@ -1633,7 +1633,7 @@ input:focus, textarea:focus {
     left: 15px;
 }
 
-.fun_list .image:hover .hover { opacity: 1; } 
+.fun_list .image:hover .hover { opacity: 1; }
 .fun_list .image:hover .hover .svg { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
 .section.fun .place > .btn {
@@ -1656,7 +1656,7 @@ input:focus, textarea:focus {
 
 .months_tabs {
     position: relative;
-    text-align: center; 
+    text-align: center;
 }
 
 .months_tabs .msg { display: none; }
@@ -1940,7 +1940,7 @@ input:focus, textarea:focus {
 .rooms_table .room_line .rl_date.disabled-number { background: grey; }
 
 .section.free_rooms .place > .btn {
-    display: block; 
+    display: block;
     margin: 40px auto;
     z-index: 50;
 }
@@ -1965,8 +1965,10 @@ input:focus, textarea:focus {
 .price_table {
     position: relative;
     max-width: 760px;
-    margin: 20px auto;
+    margin: 24px auto;
 }
+
+.price_table .text_center { margin: 24px 0 16px 0; }
 
 .price_table table {
     position: relative;
@@ -1984,14 +1986,15 @@ input:focus, textarea:focus {
     padding: 10px 0;
     border-bottom: 1px solid #dff1fa;
     text-align: left;
+    white-space: nowrap;
 }
 
-.price_table table tr th { 
-    border-bottom: 2px solid #ee1515; 
+.price_table table tr th {
+    border-bottom: 2px solid #ee1515;
 }
 
 .price_table table tr th:not(:last-child),
-.price_table table tr td:not(:last-child) { 
+.price_table table tr td:not(:last-child) {
     border-right: 40px solid #fff;
 }
 
@@ -2000,8 +2003,8 @@ input:focus, textarea:focus {
     text-align: right;
 }
 
-.price_table table tr:last-child td { 
-    border-bottom: 2px solid #252525; 
+.price_table table tr:last-child td {
+    border-bottom: 2px solid #252525;
 }
 
 .price_table table tr th > small {
@@ -2016,6 +2019,40 @@ input:focus, textarea:focus {
     margin: 5px 0;
     font-size: 13px;
 }
+
+.price_table.pt_action_tour .pt_note {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #252525;
+}
+
+.price_table.pt_action_tour .pt_note p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.price_table.pt_action_tour .pt_tour_terms {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #252525;
+}
+
+.price_table.pt_action_tour .pt_tour_terms ul li {
+    position: relative;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.price_table.pt_action_tour .pt_tour_terms ul li:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    width: 8px;
+    height: 8px;
+    background: #ee1515;
+    border-radius: 2px;
+}
+
 
 
 .section.rest_june .block {
@@ -2094,7 +2131,7 @@ input:focus, textarea:focus {
     background-size: contain;
 }
 
-.section.rest_june .images .image:hover .hover { opacity: 1; } 
+.section.rest_june .images .image:hover .hover { opacity: 1; }
 .section.rest_june .images .image:hover .hover .svg { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 
 .section.rest_june .text {
@@ -2129,7 +2166,7 @@ input:focus, textarea:focus {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
-    padding: 40px 0 25px; 
+    padding: 40px 0 25px;
 }
 
 .section.calculation .place:before, .section.calculation .place:after {
@@ -2158,9 +2195,9 @@ input:focus, textarea:focus {
     background: linear-gradient(to left, #252525 0%, #252525 50%, rgba(0,0,0,0) 100%);
 }
 
-.section.calculation h2.up_text { 
+.section.calculation h2.up_text {
     margin-right: 50px;
-    text-align: right; 
+    text-align: right;
 }
 
 .rest_booking {
@@ -2176,7 +2213,7 @@ input:focus, textarea:focus {
 .rest_booking input {
     position: relative;
     height: 50px;
-    width: 100%; 
+    width: 100%;
     margin: 4px 0;
 }
 
@@ -2209,7 +2246,7 @@ input:focus, textarea:focus {
     background: #fff;
 }
 
-.rest_booking .rb_residence label > small { 
+.rest_booking .rb_residence label > small {
     display: block;
     font-size: 14px;
 }
@@ -2226,11 +2263,11 @@ input:focus, textarea:focus {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin: 0 0 10px; 
-} 
+    margin: 0 0 10px;
+}
 
 .rest_booking .input,
-.rest_booking .combined { 
+.rest_booking .combined {
     position: relative;
     width: 100%;
     max-width: 204px;
@@ -2242,7 +2279,7 @@ input:focus, textarea:focus {
 .rest_booking .rb_residence .input:nth-child(3),
 .rest_booking .rb_residence .input:nth-child(4) { margin-top: 10px; }
 
-.rest_booking .inline.calendar input { 
+.rest_booking .inline.calendar input {
     margin: 0;
     padding-right: 40px;
 }
@@ -2305,9 +2342,9 @@ input:focus, textarea:focus {
 .rest_booking .combined > span.plus:after { content: '+'; }
 .rest_booking .combined > span:hover:after { color: #e3533c; }
 
-.rest_booking .rb_order_form .inline .total_money {    
+.rest_booking .rb_order_form .inline .total_money {
     margin: 0;
-    color: #00a03d; 
+    color: #00a03d;
 }
 
 .rest_booking .rb_personal input { width: 100%; }
@@ -2370,7 +2407,7 @@ input:focus, textarea:focus {
 
 .way_box .way_map {
     width: 58%;
-    height: 480px; 
+    height: 480px;
     margin-right: 4%;
     background: url('/img/map.png') 50% 50% no-repeat #eee;
     background-size: cover;
@@ -2382,7 +2419,7 @@ input:focus, textarea:focus {
 .way_box .way_list { width: 38%; }
 .way_box .way_list div { margin-bottom: 12px; }
 
-.way_box .way_list div h3 { 
+.way_box .way_list div h3 {
     margin-bottom: 10px;
     font-size: 21px;
 }
@@ -2437,7 +2474,7 @@ input:focus, textarea:focus {
 
 .section.ask_us .sec_descriptor {
     margin: 0;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .section.ask_us .ask_form {
@@ -2501,20 +2538,20 @@ input:focus, textarea:focus {
     border-left: 2px solid #dff1fa;
 }
 
-.section.ask_us .right div { 
+.section.ask_us .right div {
     margin-top: 8px;
     font-size: 16px;
 }
 
-.section.ask_us .right > p { 
+.section.ask_us .right > p {
     margin: 0;
-    font-family: 'Quiza Pro'; 
+    font-family: 'Quiza Pro';
 }
 
 .section.ask_us .right div span { display: block; }
 
 .section.ask_us .right div b,
-.section.ask_us .right div a { 
+.section.ask_us .right div a {
     font-size: 18px;
     font-weight: 600;
 }
@@ -2530,7 +2567,7 @@ input:focus, textarea:focus {
     text-align: center;
 }
 
-.footer .s_line { 
+.footer .s_line {
     width: 100%;
     margin: 0;
 }
@@ -2694,9 +2731,9 @@ input:focus, textarea:focus {
     text-align: center;
 }
 
-.mod_window.call_back form input { 
+.mod_window.call_back form input {
     margin-bottom: 0;
-    font-size: 30px; 
+    font-size: 30px;
     width: 100%;
 }
 
@@ -2712,7 +2749,7 @@ input:focus, textarea:focus {
     font-size: 17px;
 }
 
-.mod_window.call_back form input::-webkit-input-placeholder { 
+.mod_window.call_back form input::-webkit-input-placeholder {
     position: relative;
     top: -6px;
     font-size: 17px;
@@ -2775,7 +2812,7 @@ input:focus, textarea:focus {
 .mod_window.order_booking .left {
     width: 50%;
     padding-right: 20px;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .mod_window.fast_booking .left h3,
@@ -2798,9 +2835,9 @@ input:focus, textarea:focus {
 
 .mod_window.fast_booking .left .msg_line .room,
 .mod_window.fast_booking .left .msg_line .adult,
-.mod_window.fast_booking .left .msg_line .pay_day { 
+.mod_window.fast_booking .left .msg_line .pay_day {
     width: 42%;
-    margin-right: 12px; 
+    margin-right: 12px;
 }
 
 .mod_window.fast_booking .left .msg_line b,
@@ -2813,8 +2850,8 @@ input:focus, textarea:focus {
 .mod_window.order_booking .left .msg_line small { display: block; }
 
 .mod_window.fast_booking .left .msg_line .all_pay,
-.mod_window.order_booking .left .msg_line.total_money { 
-    color: #3cb709; 
+.mod_window.order_booking .left .msg_line.total_money {
+    color: #3cb709;
     font-weight: 600;
     text-shadow: 0 1px 2px rgba(0,0,0,.05);
 }
@@ -2848,9 +2885,9 @@ input:focus, textarea:focus {
 .adm_block .text > * { display: block; }
 .adm_block .text span { font: 600 14px/.8 'Neris'; }
 
-.adm_block .text small { 
+.adm_block .text small {
     margin: 4px 0 2px;
-    font-family: 'Quiza Pro' 
+    font-family: 'Quiza Pro'
 }
 
 .mod_window.fast_booking .right,
@@ -2913,13 +2950,13 @@ input:focus, textarea:focus {
         padding-left: 25px;
         padding-right: 25px;
     }
-    
+
     .menu { margin-left: 25px; }
     .menu li { margin: 0 5% 0 0; }
 
     .section.why_we .foto_block .fotos { height: 180px; }
 
-    .section.conditions .left { 
+    .section.conditions .left {
         max-width: 480px;
         margin: 0 0 -58px -50px;
     }
@@ -2944,7 +2981,7 @@ input:focus, textarea:focus {
     .sec_descriptor {max-width: 800px;font-size: 20px; }
     .rooms_table .room_line .rl_date { width: 24px; }
 
-    .months_tabs .msg.visible { 
+    .months_tabs .msg.visible {
         position: relative;
         -ms-flex-pack: center;
         -webkit-box-pack: center;
@@ -2997,7 +3034,7 @@ input:focus, textarea:focus {
         width: 0;
         height: 0;
     }
-    
+
     .menu ul { display: block; }
     .menu.visible {    width: auto;height: auto;}
     .section.top .call_numbers {-ms-flex-direction: column;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;flex-direction: column;    margin-top: 40px;}
@@ -3079,7 +3116,7 @@ input:focus, textarea:focus {
     .section.why_we .foto_block:nth-child(3), .section.why_we .foto_block:nth-child(4) { margin-top: 60px; }
     .section.why_we .foto_block .fotos {height: 200px;}
 
-    .section.conditions .left { 
+    .section.conditions .left {
         max-width: 420px;
         margin: 0 0 -52px -80px;
     }
@@ -3088,13 +3125,13 @@ input:focus, textarea:focus {
     .section.conditions .right { max-width: 50%; }
     .section.conditions .points { margin: 20px 0 10px; }
     .section.conditions .points .point { margin-bottom: 8px; }
-    
+
     .section.ask_us .right {
         margin: 100px 0 0 20px;
         padding: 10px 0 10px 20px;
     }
     .section.ask_us .right div { font-size: 14px;}
-    
+
     .way_box {
         display: -ms-flexbox;
         display: -webkit-box;
@@ -3110,7 +3147,7 @@ input:focus, textarea:focus {
         flex-direction: column-reverse;
     }
 
-    .way_box .way_map { 
+    .way_box .way_map {
         margin: 0;
         width: 100%;
     }
@@ -3146,9 +3183,9 @@ input:focus, textarea:focus {
         top: -320px;
     }
 
-    .section.food .text_center { 
+    .section.food .text_center {
         padding-top: 80px;
-        margin-bottom: 100px; 
+        margin-bottom: 100px;
     }
 
     .section.calculation .place {
@@ -3173,12 +3210,12 @@ input:focus, textarea:focus {
 
 
 @media screen and (max-width: 780px) {
-    
+
     .section.why_we .foto_block {width: 38%;}
     .section.why_we .foto_block .fotos {height: 170px;}
     .section.conditions .place { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; overflow: hidden;}
 
-    .section.conditions .left { 
+    .section.conditions .left {
         max-width: 72%;
         margin: 0 0 0 -50px;
     }
@@ -3190,15 +3227,15 @@ input:focus, textarea:focus {
         bottom: 62px;
         width: -webkit-calc(100% + 50px);
         width: calc(100% + 50px);
-        height: 2px; 
+        height: 2px;
         background: #252525;
     }
-    
+
     .section.free_rooms { overflow: hidden; }
     .section.conditions .left .offer { right: -80px; }
     .section.conditions .right { max-width: 75%; margin-top: -40px;}
     .section.conditions .place > .s_line { display: none; }
-    
+
     .rooms_table .room_line .rl_date { margin-bottom: 2px; }
     .rooms_table .room_line .rl_dates { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
     .rooms_table .type_rooms { text-align: left; }
@@ -3227,7 +3264,7 @@ input:focus, textarea:focus {
     }
 
     .section.top .place { -ms-flex-direction: column; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; }
-    .section.top .place h1 { font-size: 42px; } 
+    .section.top .place h1 { font-size: 42px; }
     .section.top .call_numbers { margin-top: 0; }
 
     .section.top .best {
@@ -3272,7 +3309,7 @@ input:focus, textarea:focus {
     .months_tabs .months_list .tab > span { border-radius: 3px !important; }
     .months_tabs .months_list .tab.discount.active:nth-of-type(5):before {top: auto; bottom: -20px;    }
     .months_tabs .months_list .tab.discount.active:nth-of-type(5):after {top: auto;    bottom: -16px; }
-    
+
     .months_tabs .msg.visible { top: 0; -ms-flex-pack: start; -webkit-box-pack: start; -webkit-justify-content: flex-start; justify-content: flex-start;}
     .rooms_table { margin-top: 25px; }
     .rooms_table .helper { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: start; -webkit-box-pack: start; -webkit-justify-content: flex-start; justify-content: flex-start; text-align: left; -ms-flex-align: baseline; -webkit-box-align: baseline; -webkit-align-items: baseline; align-items: baseline;}
@@ -3286,7 +3323,7 @@ input:focus, textarea:focus {
     .section.rest_june .images .image { right: 0; }
     .section.rest_june .images .image.big { left: 0; }
     .section.rest_june .images .image.mini { right: 25%; }
-    
+
     .section.ask_us { overflow: hidden; padding-top: 120px; }
     .section.ask_us .place { -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; flex-wrap: wrap; }
     .section.ask_us .left { max-width: 100%; }
@@ -3304,12 +3341,12 @@ input:focus, textarea:focus {
     .mod_window.fast_booking .right .img { display: none; }
 
     .mod_window.fast_booking .right,
-    .mod_window.order_booking .right { 
+    .mod_window.order_booking .right {
         width: 100%;
         margin-top: 20px;
         padding: 20px 0 0 0;
-        border: 0; 
-        border-top: 2px solid #dff1fa; 
+        border: 0;
+        border-top: 2px solid #dff1fa;
     }
 
     .section.way_to_us { margin-top: 80px; }
@@ -3355,12 +3392,12 @@ input:focus, textarea:focus {
         width: 70px;
         height: 70px;
     }
-    
-    .header .instagram { 
+
+    .header .instagram {
         top: -41px;
         left: 5px;
     }
-    
+
     .section.top .call_numbers { font-size: 26px; }
     .section.top .call_numbers small { font-size: 18px; }
     .header .top_buttons { -ms-flex-order: 2; -webkit-box-ordinal-group: 3; -webkit-order: 2; order: 2; }
@@ -3397,7 +3434,7 @@ input:focus, textarea:focus {
     .section.conditions .points .points_list { max-width: 100%; margin-bottom: 10px;}
     .rooms_table .helper > div {width: 100%; }
     .rooms_table .helper .h_free, .rooms_table .helper .h_reserve, .rooms_table .helper .h_busy { margin-bottom: 10px; }
-    
+
     .section.rest_june .images .image.mini { right: 10%; }
     .section.rest_june .images .image.big { width: 75%; }
     .section.rest_june .text { width: 90%; }

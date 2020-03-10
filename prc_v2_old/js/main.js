@@ -9,15 +9,6 @@ $(document).ready(function(){
 	//Стилизация селектов
 	$('select').bselect();
 
-	$(".imgs_slider").lightSlider({
-	    gallery: true,
-	    item: 1,
-	    // loop: true,
-	    slideMargin: 0,
-	    thumbMargin: 10,
-	    thumbItem: 5
-	});
-
 	//Фансибокс-оболочка
 	$('[data-fancybox').fancybox({
 		touch: false
@@ -103,17 +94,6 @@ $(document).ready(function(){
 			$prev.addClass('active').show();
 		});
 	});
-
-	//Добавить в закладки (также убрать из закладок)
-	$('.item_view .iv_conditions .iv_block_body .link').click(function(){
-		$(this).text($(this).text() == 'Ознакомиться с условиями' ? 'Скрыть условия' : 'Ознакомиться с условиями');
-		$(this).parents().next('.hide_text').slideToggle(80);
-	});
-
-	$('.iv_bottom .iv_about .tabs_header').on('click', 'li:not(.active)', function() {
-    $(this).addClass('active').siblings().removeClass('active')
-      .closest('.iv_bottom .iv_about').find('.tab_content').removeClass('active').eq($(this).index()).addClass('active');
-  	});
 
 
 

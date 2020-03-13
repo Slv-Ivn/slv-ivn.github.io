@@ -35,6 +35,14 @@ $(document).ready(function(){
         return false; 
     });
 
+    //Плавающий поиск
+	$(window).scroll(function(){
+        if($(this).scrollTop() >= 500){
+        $('.search_block').addClass('fixed'); }
+        else { 
+            $('.search_block').removeClass('fixed'); }
+    });
+
 	//Показать обрезанное содержимое блоков
 	$('.btn.show_content').click(function(){
 		$(this).hide();

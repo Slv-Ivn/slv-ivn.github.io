@@ -721,6 +721,21 @@ svg.svg {
 .search_block .btn:hover { background: var(--orange_border_color); }
 .search_block .btn:hover .svg { fill: #fff; }
 
+.search_block.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	z-index: 999;
+}
+
+.search_block.fixed form { 
+	width: auto;
+	margin: auto;
+	box-shadow: var(--main_shadow_hover);
+}
+
 
 /* Главное меню */
 

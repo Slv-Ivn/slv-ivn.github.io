@@ -9,7 +9,7 @@ $(document).ready(function(){
 	//Стилизация селектов
 	$('select').bselect();
 
-	$(".imgs_slider").lightSlider({
+	$('.imgs_slider').lightSlider({
 	    gallery: true,
 	    item: 1,
 	    // loop: true,

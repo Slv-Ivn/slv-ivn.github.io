@@ -293,6 +293,10 @@ button:hover,
 
 ul li { list-style: none; }
 
+.iv_text ul { padding-left: 24px; }
+
+.iv_text ul li { list-style: outside square; }
+
 .uni_close {
 	position: absolute;
 	top: 0;
@@ -1729,7 +1733,7 @@ svg.svg {
 	position: relative;
 	flex-shrink: 0;
 	width: 684px;
-	height: 350px;
+	height: 516px;
 	margin-right: 40px;
     padding: 20px 24px 24px 24px;
     background: #fff;
@@ -1842,7 +1846,7 @@ svg.svg {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 40px;
+	margin-top: 24px;
 }
 
 .main_information .mi_side_block .mi_more_links .ml_link {
@@ -1864,6 +1868,56 @@ svg.svg {
 	display: block;
 	margin-bottom: 4px;
 	font-weight: 500;
+}
+
+.main_information .mi_side_block .prc_instagram {
+	position: relative;
+	margin-top: 8px;
+	padding: 14px 16px 16px 16px;
+    background: #fff;
+    border: 1px solid var(--border_color);
+    border-radius: 4px;
+    box-shadow: var(--main_shadow);
+}
+
+.main_information .mi_side_block .prc_instagram > .link {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+	font-weight: 500;
+}
+
+.main_information .mi_side_block .prc_instagram > .link .svg {
+	margin-right: 8px;
+	fill: pink;
+}
+
+.main_information .mi_side_block .prc_instagram .fotos {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main_information .mi_side_block .prc_instagram .fotos a {
+	width: 88px;
+	height: 88px;
+	margin-right: 15px;
+	border-radius: 4px;
+	transition: all .2s ease-in-out;
+}
+
+.main_information .mi_side_block .prc_instagram .fotos a:last-child { margin-right: 0; }
+
+.main_information .mi_side_block .prc_instagram .fotos a:hover {
+	transform: scale(1.2);
+	opacity: .9;
+}
+
+.main_information .mi_side_block .prc_instagram .fotos a img {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	object-fit: cover;
 }
 
 
@@ -3016,21 +3070,19 @@ svg.svg {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	margin-left: 40px;
 }
 
-.item_view .iv_head .iv_content h1 {
-	margin-bottom: 4px;
-}
+.item_view .iv_head .iv_content h1 { margin-bottom: 4px; }
 
 .item_view .iv_head .iv_content .from_producer {
+	display: block;
 	margin-right: 24px;
 	font-size: 17px;
 }
 
-.item_view .iv_head .iv_content .extra_descriptor {
-	margin-top: 8px;
-}
+.item_view .iv_head .iv_content .extra_descriptor { margin-top: 8px; }
 
 .item_view .iv_head .iv_content hr {
 	position: relative;
@@ -3094,9 +3146,9 @@ svg.svg {
 	letter-spacing: 0;
 }
 
-.item_view .iv_head .iv_content .iv_main_block .iv_item_order .info .min_party {
-	position: relative;
-}
+.item_view .iv_head .iv_content .iv_main_block .iv_item_order .info .min_party { position: relative; }
+
+.item_view.firm .iv_head .iv_content .iv_main_block .iv_item_order .info .min_party b { display: block; }
 
 .item_view .iv_head .iv_content .iv_main_block .iv_item_order .btn {
 	margin: 0;
@@ -3281,35 +3333,22 @@ svg.svg {
 	border-radius: 80px;
 }
 
-.item_view .iv_bottom .iv_about .tabs_header .icon .svg {
-	width: 16px;
-}
+.item_view .iv_bottom .iv_about .tabs_header .icon .svg { width: 16px; }
 
-.item_view .iv_bottom .iv_about .tabs_header li.active .svg {
-	fill: var(--text_color);
-}
+.item_view .iv_bottom .iv_about .tabs_header li.active .svg { fill: var(--text_color); }
 
-
-.item_view .iv_bottom .iv_about .tabs_header li b {
-	font-size: 17px;
-}
+.item_view .iv_bottom .iv_about .tabs_header li b {	font-size: 17px; }
 
 .item_view .iv_bottom .iv_about .tabs_header li.active b {
 	color: var(--text_color);
 	cursor: default;
 }
 
-.item_view .iv_bottom .iv_about .tab_content {
-	display: none;
-}
+.item_view .iv_bottom .iv_about .tab_content { display: none; }
 
-.item_view .iv_bottom .iv_about .tab_content.active {
-	display: block;
-}
+.item_view .iv_bottom .iv_about .tab_content.active { display: block; }
 
-.item_view .iv_bottom .iv_about .tc_description .iv_features {
-	margin-top: 24px;
-}
+.item_view .iv_bottom .iv_about .tc_description .iv_features { margin-top: 24px; }
 
 .item_view .iv_bottom .iv_about .iv_block_title {
 	position: relative;
@@ -3529,6 +3568,55 @@ form.ask_form.add_review .user_rating .ur_text {
 }
 
 
+/*—————————————————————————————————————————————— новости в карточках */
+
+
+.item_view .iv_bottom .firm_news {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+}
+
+.item_view .iv_bottom .firm_news:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: -24px;
+	width: calc(100% + 24px);
+	height: 1px;
+	background: var(--border_color);
+}
+
+.item_view .iv_bottom .firm_news:last-child { padding-bottom: 0; }
+
+.item_view .iv_bottom .firm_news:last-child:after { display: none; }
+
+.item_view .iv_bottom .firm_news .image {
+	flex-shrink: 0;
+	width: 160px;
+	height: 120px;
+	margin-right: 24px;
+	border-radius: 4px;
+}
+
+.item_view .iv_bottom .firm_news .image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.item_view .iv_bottom .firm_news .text > small { display: block; }
+
+.item_view .iv_bottom .firm_news .text .link {
+	display: inline-block;
+	margin: 4px 0;
+	font-weight: 500;
+}
+
+
 /*—————————————————————————————————————————————— контакты в карточках */
 
 
@@ -3563,6 +3651,7 @@ form.ask_form.add_review .user_rating .ur_text {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: 4px;
 }
 
 .item_view .iv_bottom .contact_firm_id .text .link { font-weight: 500; }
@@ -3662,7 +3751,7 @@ form.ask_form.add_review .user_rating .ur_text {
 
 .item_view .iv_bottom .iv_side_block > b {
 	position: relative;
-	display: block;
+	display: flex;
 	margin-bottom: 24px;
 	padding-bottom: 14px;
 	font-size: 17px;
@@ -3678,15 +3767,18 @@ form.ask_form.add_review .user_rating .ur_text {
 	background: var(--border_color);
 }
 
+.item_view .iv_bottom .iv_side_block > b > a { margin-left: auto; }
+
+
 /*—————————————————————————————————————————————— товары/компании в карточках */
 
-.item_view .iv_bottom .iv_side_block.similar_items .cards { margin-bottom: 8px;}
+.item_view .iv_bottom .iv_side_block .cards { margin-bottom: 8px;}
 
-.item_view .iv_bottom .iv_side_block.similar_items .cards .card_item { margin: 0 14px 24px 0; }
+.item_view .iv_bottom .iv_side_block .cards .card_item { margin: 0 14px 24px 0; }
 
-.item_view .iv_bottom .iv_side_block.similar_items .cards .card_item:nth-child(2n) { margin-right: 0; }
+.item_view .iv_bottom .iv_side_block .cards .card_item:nth-child(2n) { margin-right: 0; }
 
-.item_view .iv_bottom .iv_side_block.similar_items .btn.load_content {
+.item_view .iv_bottom .iv_side_block .btn.load_content {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -3709,6 +3801,39 @@ form.ask_form.add_review .user_rating .ur_text {
 	max-width: 48%;
 	margin: 0 0 8px;
 	font-size: 13px;
+}
+
+
+/*—————————————————————————————————————————————— блок инстаграма в карточках */
+
+.item_view .iv_bottom .iv_side_block.firm_instagram .list_photos {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: -16px;
+}
+
+.item_view .iv_bottom .iv_side_block.firm_instagram .list_photos a {
+	width: 106px;
+	height: 106px;
+	margin: 16px 15px 0 0;
+	border-radius: 4px;
+	transition: all .2s ease-in-out;
+}
+
+.item_view .iv_bottom .iv_side_block.firm_instagram .list_photos a:nth-child(4n) { margin-right: 0; }
+
+.item_view .iv_bottom .iv_side_block.firm_instagram .list_photos a:hover {
+	transform: scale(1.2);
+	opacity: .9;
+}
+
+.item_view .iv_bottom .iv_side_block.firm_instagram .list_photos a img {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	object-fit: cover;
 }
 
 

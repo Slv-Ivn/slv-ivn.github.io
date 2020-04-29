@@ -3890,6 +3890,48 @@ form.ask_form.add_review .user_rating .ur_text {
 
 
 
+/*—————————————————————————————————————————————— формы */
+
+.special_form {
+	position: relative;
+	max-width: 640px;
+	margin: 24px 0;
+}
+
+.special_form .sf_line { position: relative; }
+
+.special_form .sf_line label {
+	position: relative;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.special_form .sf_line label > b { display: block; }
+
+.special_form .sf_line label > small {
+	display: block;
+	line-height: 1.3;
+	color: var(--grey_color);
+}
+
+.special_form .sf_line .input,
+.special_form .sf_line textarea { margin-top: 8px; }
+
+.special_form .sf_line.double {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.special_form .sf_line.double label {
+	width: 48%;
+}
+
+
+/* --- Форма сотрудника ---*/
+
+
 /*—————————————————————————————————————————————— подвал */
 
 

@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 	//Кнопка вернуться наверх
 	$(window).scroll(function(){
-        if($(this).scrollTop() >= 500){
+        if($(this).scrollTop() >= 400){
         $('.to_top').addClass('fixed'); }
         else { 
             $('.to_top').removeClass('fixed'); }
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
     //Плавающий поиск
 	$(window).scroll(function(){
-        if($(this).scrollTop() >= 500){
+        if($(this).scrollTop() >= 400){
         $('.search_block').addClass('fixed'); }
         else { 
             $('.search_block').removeClass('fixed'); }

@@ -2283,7 +2283,7 @@ svg.svg {
 .cards .card_item:hover .ci_bottom { box-shadow: 0 8px 12px -2px rgba(0,0,0,.08); }
 
 .cards .card_item.firm {
-	height: 294px;
+	height: 312px;
 }
 
 .cards .card_item.firm .ci_body .ci_main .image img {
@@ -2292,7 +2292,7 @@ svg.svg {
 }
 
 .cards .card_item.firm .ci_body .ci_main .text {
-	margin: 12px 0 8px 0;
+	margin: 34px 0 8px 0;
 }
 
 .cards .card_item .ci_body .ci_main .text .item_info .ii_goods {

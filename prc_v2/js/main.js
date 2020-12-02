@@ -23,6 +23,23 @@ $(document).ready(function(){
 		touch: false
 	});
 
+	//Топ-бар — поиск и меню
+
+    $('.header .rfi_srch, .header .rfi_menu').click(function(){
+        $(this).toggleClass('active');
+    });
+
+    $('.header .rfi_srch').on('click', function(){
+        $('.search_block').toggleClass('active');
+        setTimeout(function() { $('.search_block.active .input').focus() }, 420);
+    });
+
+    $('.header .rfi_menu').click(function(){
+        $('body').toggleClass('ovh');
+        $('.nav_menu').toggleClass('active');
+        $('.overlay').toggleClass('active');
+    });
+
 	//Кнопка вернуться наверх
 	$(window).scroll(function(){
         if($(this).scrollTop() >= 400){

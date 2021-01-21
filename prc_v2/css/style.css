@@ -576,8 +576,19 @@ svg.svg {
 
 .user_rating i,
 .item_rating i {
+	position: relative;
 	display: flex;
 	align-items: center;
+	width: 90px;
+	height: 16px;
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"%3E%3Cpath d="M10.95108.70746l1.65207,5.39122a.99645.99645,0,0,0,.95108.70746H19.0026a1.00514,1.00514,0,0,1,.6043,1.80154l-4.49236,3.46075a1.00871,1.00871,0,0,0-.34678,1.09408l1.69543,5.53271a.99733.99733,0,0,1-1.55538,1.09408L10.6043,16.474a.98886.98886,0,0,0-1.20861,0L5.09219,19.7893a.99733.99733,0,0,1-1.55538-1.09408l1.69543-5.53271a1.00871,1.00871,0,0,0-.34678-1.09408L.39309,8.60768A1.00514,1.00514,0,0,1,.9974,6.80614H6.44577a.99645.99645,0,0,0,.95108-.70746L9.04892.70746A.993.993,0,0,1,10.95108.70746Z" fill="%23bccee5"/%3E%3C/svg%3E');
+	background-size: 18px 16px;
+}
+
+.user_rating i.rating_stars_mask,
+.item_rating i.rating_stars_mask {
+	position: absolute;
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"%3E%3Cpath d="M10.95108.70746l1.65207,5.39122a.99645.99645,0,0,0,.95108.70746H19.0026a1.00514,1.00514,0,0,1,.6043,1.80154l-4.49236,3.46075a1.00871,1.00871,0,0,0-.34678,1.09408l1.69543,5.53271a.99733.99733,0,0,1-1.55538,1.09408L10.6043,16.474a.98886.98886,0,0,0-1.20861,0L5.09219,19.7893a.99733.99733,0,0,1-1.55538-1.09408l1.69543-5.53271a1.00871,1.00871,0,0,0-.34678-1.09408L.39309,8.60768A1.00514,1.00514,0,0,1,.9974,6.80614H6.44577a.99645.99645,0,0,0,.95108-.70746L9.04892.70746A.993.993,0,0,1,10.95108.70746Z" fill="%23FFCF3A"/%3E%3C/svg%3E');
 }
 
 .user_rating i:not(:last-child),
@@ -607,6 +618,13 @@ svg.svg {
 	margin-left: 8px;
 } 
 
+
+.user_rating.small i,
+.item_rating.small i {
+	width: 80px;
+	height: 14px;
+	background-size: 16px 14px;
+} 
 
 
 /* --- Анимация --- */
@@ -1568,11 +1586,25 @@ svg.svg {
 	fill: var(--icon_catalog_color);
 }
 
+.catalog_list.cities .cl_column .cl_letter {
+	position: absolute;
+	top: 0;
+	left: 0;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #bfd8f8;
+}
+
 .catalog_list .cl_column .link {
 	max-width: 85%;
 	text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.catalog_list.cities .cl_column .link {
+	margin-left: 32px;
 }
 
 .catalog_list .cl_column li .show_links {
@@ -1678,6 +1710,10 @@ svg.svg {
 .catalog_list .cl_column .cl_sub_links > li > .cl_sub_links {
 	margin-left: 24px;
 	font-size: 13px;
+}
+
+.catalog_list.cities .cl_column .cl_sub_links li:after {
+	left: 0;
 }
 
 
@@ -4599,6 +4635,7 @@ form.ask_form.add_review .user_rating .ur_text {
 
 	.nav_menu .nav_links li {
 		margin-top: 8px;
+		font-size: 16px;
 	}
 
 	.nav_menu .nav_links li:nth-last-child(1) > .link_title,
@@ -4649,8 +4686,8 @@ form.ask_form.add_review .user_rating .ur_text {
 
 	.main_catalog .catalog_tabs {
 		width: 100%;
-		overflow-x: auto;
-		scrollbar-width: none;
+		/*overflow-x: auto;
+		scrollbar-width: none;*/
 	}
 
 	.main_catalog .catalog_tabs::-webkit-scrollbar {
@@ -4659,7 +4696,13 @@ form.ask_form.add_review .user_rating .ur_text {
 
 	.main_catalog .catalog_tabs .left,
 	.main_catalog .catalog_tabs .right {
-		white-space: nowrap;
+		/*white-space: nowrap;*/
+	}
+
+	.main_catalog .catalog_tabs .left .link,
+	.main_catalog .catalog_tabs .right .link {
+		display: block;
+		margin-top: 24px;
 	}
 
 	.main_catalog .catalog_list {
@@ -4723,6 +4766,8 @@ form.ask_form.add_review .user_rating .ur_text {
 	.main_information .mi_side_block .prc_instagram .fotos a {
 		margin-top: 8px;
 		margin-bottom: 8px;
+		width: 72px;
+		height: 72px;
 	}
 
 	.main_information .mi_about {

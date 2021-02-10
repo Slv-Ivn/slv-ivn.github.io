@@ -104,6 +104,15 @@ $(document).ready(function(){
 		$('.content .central .catalog_map').toggleClass('active');
 	});
 
+	//Показать фильтр в каталоге на мобильной версии
+	$('.central .sort .filter_call').click(function(){
+        $('.content .sidebar .sb_block.filter').toggleClass('active')
+    });
+
+    $('.content .sidebar .sb_block.filter .uni_close').click(function(){
+        $(this).parents('.sb_block.filter').toggleClass('active')
+    });
+
 
 	$(function(){ //Слайдер в блоке «Приглагаем дилеров»
 

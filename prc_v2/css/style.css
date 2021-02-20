@@ -4474,6 +4474,17 @@ form.ask_form.add_review .user_rating .ur_text {
 
 
 
+/*—————————————————————————————————————————————— Width 1279 */
+
+
+@media screen and (max-width: 1279px) {
+
+	.cards .card_item:nth-child(4n) { margin-right: 16px; }
+}
+
+
+
+
 /*—————————————————————————————————————————————— Width 980 */
 
 
@@ -4704,6 +4715,8 @@ form.ask_form.add_review .user_rating .ur_text {
 	}
 
 	.nav_menu .catalog_list { display: none; }
+
+	.nav_menu .nav_links > li:hover:after { display: none; }
 
 	.crumbs { margin-top: 64px; }
 

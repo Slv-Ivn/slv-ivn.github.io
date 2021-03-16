@@ -15,7 +15,8 @@ $(document).ready(function(){
 	    // loop: true,
 	    slideMargin: 0,
 	    thumbMargin: 10,
-	    thumbItem: 5
+	    thumbItem: 5,
+	    enableTouch: true
 	});
 
 	//Фансибокс-оболочка

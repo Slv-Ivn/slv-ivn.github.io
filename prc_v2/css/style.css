@@ -5211,7 +5211,12 @@ form.ask_form.add_review .user_rating .ur_text {
 		height: 168px;
 	}
 
-	.item_view .iv_bottom .iv_side_block .cards .card_item, .item_view .iv_bottom .iv_side_block .cards .card_item {
+	.item_view .iv_head {
+		padding: 16px;
+	}
+
+	.item_view .iv_bottom .iv_side_block .cards .card_item,
+	.item_view .iv_bottom .iv_side_block .cards .card_item {
 		margin-right: 0 !important;
 	}
 

@@ -3700,6 +3700,15 @@ form.ask_form .form_bottom .info_text {
 	color: var(--grey_color);
 }
 
+form.ask_form .form_bottom .confirmation {
+	margin-left: 16px;
+	display: flex;
+}
+
+form.ask_form .form_bottom .confirmation .text {
+	margin-left: 16px;
+}
+
 form.ask_form.add_review textarea {
 	height: 80px;
 }
@@ -5287,6 +5296,37 @@ form.ask_form.add_review .user_rating .ur_text {
 
 	.item_view .iv_bottom .iv_about .iv_block_title:after {
 		left: -16px;
+	}
+
+	.item_view.firm .iv_head .iv_content .iv_main_block .iv_item_order .info .min_party b {
+		display: inline;
+	}
+
+	.item_view .iv_conditions .iv_block_delivery .icon {
+		position: relative;
+		left: -6px;
+		margin-right: 20px;
+	}
+
+	.item_view .iv_bottom .iv_side_block.firm_instagram .list_photos a {
+		width: 64px;
+		height: 64px;
+	}
+
+	form.ask_form .form_bottom {
+		flex-wrap: wrap;
+	}
+
+	form.ask_form .form_bottom button {
+		order: 2;
+		width: 100%;
+		margin: 16px 0 0 0;
+	}
+
+	form.ask_form .form_bottom .confirmation {
+		order: 1;
+		margin-top: 8px;
+		width: 100%;
 	}
 
 	form.ask_form .inputs {

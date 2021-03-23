@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Карточка компании</title>
+	<title>Карточка продукта</title>
 	<meta name="description" content="" />
 	<meta name="robots" content="index, follow" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
 
@@ -37,6 +38,17 @@
 					<input name="" type="search" id="" class="input" placeholder="Поиск товаров и производителей..." value="">
 					<button type="submit" class="btn"><svg class="svg _icon_search"><use xlink:href="#icon_search"></use></svg></button>
 				</form>
+			</div>
+
+			<div class="res_function_icons">
+				<span class="rfi_srch">
+					<svg class="svg_icon _search"><use xlink:href="#icon_search"></svg>
+					<s class="uni_close"></s>
+				</span>
+				<span class="rfi_menu">
+					<i></i>
+					<s class="uni_close"></s>
+				</span>
 			</div>
 
 		</div>
@@ -107,11 +119,9 @@
 							</div>
 							<div class="iv_rating">
 								<div class="item_rating">
-									<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+									<i class="rating_stars">
+										<i class="rating_stars_mask" style="width: 80%"></i>
+									</i>
 								</div>
 								<a href="" class="text_short">48 отзывов</a>
 							</div>
@@ -336,7 +346,11 @@
 								<textarea name="comment_text" placeholder="Текст сообщения..."></textarea>
 								<div class="form_bottom">
 									<button type="submit" class="btn">Опубликовать</button>
-									<span class="info_text">Адрес электронной почты и телефон будут видны только производителю.</span>
+									<span class="confirmation">
+										<input type="checkbox" class="checkbox" id="policy-agree" name="policy-agree" checked="checked">
+										<label for="policy-agree"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+										<span class="text">Я соглашаюсь с <a target="_blank" href="">политикой конфиденциальности</a></span>
+									</span>
 								</div>
 							</form>
 						</div>
@@ -350,11 +364,9 @@
 											<small>24.09.2019 05:45</small>
 										</div>
 										<div class="user_rating">
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+											<i class="rating_stars">
+												<i class="rating_stars_mask" style="width: 80%"></i>
+											</i>
 										</div>
 									</div>
 									<div class="ur_review_body">
@@ -375,11 +387,9 @@
 											<small>24.09.2019 05:45</small>
 										</div>
 										<div class="user_rating">
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+											<i class="rating_stars">
+												<i class="rating_stars_mask" style="width: 80%"></i>
+											</i>
 										</div>
 									</div>
 									<div class="ur_review_body">
@@ -396,11 +406,9 @@
 											<small>24.09.2019 05:45</small>
 										</div>
 										<div class="user_rating">
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-											<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+											<i class="rating_stars">
+												<i class="rating_stars_mask" style="width: 80%"></i>
+											</i>
 										</div>
 									</div>
 									<div class="ur_review_body">
@@ -419,12 +427,9 @@
 							<form action="" method="" class="ask_form add_review">
 								<b class="iv_block_title">Написать отзыв</b>
 								<div class="user_rating">
-									<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<i class=""><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-									<span class="ur_text">Ваша оценка</span>
+									<i class="rating_stars">
+										<i class="rating_stars_mask" style="width: 80%"></i>
+									</i>
 								</div>
 								<div class="inputs">
 									<input class="input" type="text" name="user_name" placeholder="Ваше имя">
@@ -439,7 +444,11 @@
 								<textarea name="commen_text" placeholder="Текст сообщения..."></textarea>
 								<div class="form_bottom">
 									<button type="submit" class="btn">Опубликовать</button>
-									<span class="info_text">Адрес электронной почты и телефон будут видны только производителю.</span>
+									<span class="confirmation">
+										<input type="checkbox" class="checkbox" id="policy-agree" name="policy-agree" checked="checked">
+										<label for="policy-agree"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+										<span class="text">Я соглашаюсь с <a target="_blank" href="">политикой конфиденциальности</a></span>
+									</span>
 								</div>
 							</form>
 						</div>
@@ -557,11 +566,50 @@
 										<div class="ci_main">
 											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
 											<div class="image">
-												<a href=""><img src="img/item3.jpg" alt="" title></a>
+												<a href=""><img src="img/image4.jpg" alt="" title></a>
 											</div>
 											<div class="text">
-												<div class="item_price">цена от <b>100</b> ₽</div>
+												<div class="item_price">цена договорная</div>
 												<a href="" class="link">Мужские туфли Оксфорды из натуральной кожи</a>
+												<div class="item_descriptor">Полукомбинезон рабочий — это универсальный элемент одежды. Он подходит для ношения в любое время года...</div>
+												<div class="item_info">
+													<div class="ii_city">
+														<a href=""><svg class="svg _icon_location"><use xlink:href="#icon_location"></use></svg>Москва</a>
+													</div>
+													<div class="ii_company" title="Производитель:">
+														<a href=""><svg class="svg _icon_firm"><use xlink:href="#icon_firm"></use></svg></a>
+													</div>
+													<div class="ii_category" title="Категория:">
+														<a href=""><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="ci_extra">
+											<button type="button" class="btn green show_mw_order_item" data-fancybox data-src="#ModWin_OrderItem">Купить оптом в 1 клик</button>
+											<button type="button" class="btn white show_mw_dl_price" data-fancybox data-src="#ModWin_DlPrice">Прайс-лист производителя</button>
+										</div>
+										<div class="ci_bottom">
+											<div class="item_rating small">
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 60%"></i>
+												</i>
+												<small class="grey_color text_short">48 отзывов</small>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card_item product">
+									<div class="ci_body">
+										<div class="ci_main">
+											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
+											<div class="image">
+												<a href=""><img src="img/item4.jpg" alt="" title></a>
+											</div>
+											<div class="text">
+												<div class="item_price">цена от <b>14 000</b> ₽</div>
+												<a href="" class="link">Стеклопластиковые элементы для кабины «колесо обозрения»</a>
 												<div class="item_descriptor">Полукомбинезон рабочий — это универсальный элемент одежды. Он подходит для ношения в любое время года...</div>
 												<div class="item_info">
 													<div class="ii_city">
@@ -582,16 +630,54 @@
 										</div>
 										<div class="ci_bottom">
 											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<small class="grey_color text_short">48 отзывов</small>
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 80%"></i>
+												</i>
+												<small class="grey_color text_short">297 отзывов</small>
 											</div>
 										</div>
 									</div>
 								</div>
+
+								<div class="card_item product">
+									<div class="ci_body">
+										<div class="ci_main">
+											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
+											<div class="image">
+												<a href=""><img src="img/item1.jpg" alt="" title></a>
+											</div>
+											<div class="text">
+												<div class="item_price">цена от <b>100</b> ₽</div>
+												<a href="" class="link">Рукавицы брезентовые утепленные</a>
+												<div class="item_descriptor">Полукомбинезон рабочий — это универсальный элемент одежды. Он подходит для ношения в любое время года...</div>
+												<div class="item_info">
+													<div class="ii_city">
+														<a href=""><svg class="svg _icon_location"><use xlink:href="#icon_location"></use></svg>Владивосток</a>
+													</div>
+													<div class="ii_company" title="Производитель:">
+														<a href=""><svg class="svg _icon_firm"><use xlink:href="#icon_firm"></use></svg></a>
+													</div>
+													<div class="ii_category" title="Категория:">
+														<a href=""><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="ci_extra">
+											<button type="button" class="btn green show_mw_order_item" data-fancybox data-src="#ModWin_OrderItem">Купить оптом в 1 клик</button>
+											<button type="button" class="btn white show_mw_dl_price" data-fancybox data-src="#ModWin_DlPrice">Прайс-лист производителя</button>
+										</div>
+										<div class="ci_bottom">
+											<div class="item_rating small">
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 60%"></i>
+												</i>
+												<small class="grey_color text_short">11 отзывов</small>
+											</div>
+										</div>
+									</div>
+								</div>
+
 								<div class="card_item product">
 									<div class="ci_body">
 										<div class="ci_main">
@@ -622,91 +708,9 @@
 										</div>
 										<div class="ci_bottom">
 											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<small class="grey_color text_short">48 отзывов</small>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="card_item product">
-									<div class="ci_body">
-										<div class="ci_main">
-											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
-											<div class="image">
-												<a href=""><img src="img/item3.jpg" alt="" title></a>
-											</div>
-											<div class="text">
-												<div class="item_price">цена от <b>100</b> ₽</div>
-												<a href="" class="link">Мужские туфли Оксфорды из натуральной кожи</a>
-												<div class="item_descriptor">Полукомбинезон рабочий — это универсальный элемент одежды. Он подходит для ношения в любое время года...</div>
-												<div class="item_info">
-													<div class="ii_city">
-														<a href=""><svg class="svg _icon_location"><use xlink:href="#icon_location"></use></svg>Владивосток</a>
-													</div>
-													<div class="ii_company" title="Производитель:">
-														<a href=""><svg class="svg _icon_firm"><use xlink:href="#icon_firm"></use></svg></a>
-													</div>
-													<div class="ii_category" title="Категория:">
-														<a href=""><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="ci_extra">
-											<button type="button" class="btn green show_mw_order_item" data-fancybox data-src="#ModWin_OrderItem">Купить оптом в 1 клик</button>
-											<button type="button" class="btn white show_mw_order_price" data-fancybox data-src="#ModWin_OrderPrice">Заказать прайс-лист</button>
-										</div>
-										<div class="ci_bottom">
-											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<small class="grey_color text_short">48 отзывов</small>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="card_item product">
-									<div class="ci_body">
-										<div class="ci_main">
-											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
-											<div class="image">
-												<a href=""><img src="img/item3.jpg" alt="" title></a>
-											</div>
-											<div class="text">
-												<div class="item_price">цена от <b>100</b> ₽</div>
-												<a href="" class="link">Мужские туфли Оксфорды из натуральной кожи</a>
-												<div class="item_descriptor">Полукомбинезон рабочий — это универсальный элемент одежды. Он подходит для ношения в любое время года...</div>
-												<div class="item_info">
-													<div class="ii_city">
-														<a href=""><svg class="svg _icon_location"><use xlink:href="#icon_location"></use></svg>Владивосток</a>
-													</div>
-													<div class="ii_company" title="Производитель:">
-														<a href=""><svg class="svg _icon_firm"><use xlink:href="#icon_firm"></use></svg></a>
-													</div>
-													<div class="ii_category" title="Категория:">
-														<a href=""><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="ci_extra">
-											<button type="button" class="btn green show_mw_order_item" data-fancybox data-src="#ModWin_OrderItem">Купить оптом в 1 клик</button>
-											<button type="button" class="btn white show_mw_order_price" data-fancybox data-src="#ModWin_OrderPrice">Заказать прайс-лист</button>
-										</div>
-										<div class="ci_bottom">
-											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 80%"></i>
+												</i>
 												<small class="grey_color text_short">48 отзывов</small>
 											</div>
 										</div>
@@ -724,10 +728,10 @@
 										<div class="ci_main">
 											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
 											<div class="image">
-												<a href=""><img src="img/firm1.jpg" alt="" title></a>
+												<a href=""><img src="img/firm.png" alt="" title></a>
 											</div>
 											<div class="text">
-												<a href="" class="link">Производитель деревянных игрушек «MIKS»</a>
+												<a href="" class="link">Производитель растительного масла «Астон»</a>
 												<div class="item_descriptor">Компания «Комупак» - ведущее предприятие России, выпускающее качественную упаковку из картона и...</div>
 												<div class="item_info">
 													<div class="ii_city">
@@ -749,11 +753,9 @@
 										</div>
 										<div class="ci_bottom">
 											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 80%"></i>
+												</i>
 												<small class="grey_color text_short">48 отзывов</small>
 											</div>
 										</div>
@@ -764,10 +766,10 @@
 										<div class="ci_main">
 											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
 											<div class="image">
-												<a href=""><img src="img/firm1.jpg" alt="" title></a>
+												<a href=""><img src="img/firm.jpg" alt="" title></a>
 											</div>
 											<div class="text">
-												<a href="" class="link">Производитель деревянных игрушек «MIKS»</a>
+												<a href="" class="link">Кофе MADEO — производитель свежеобжаренного кофе</a>
 												<div class="item_descriptor">Компания «Комупак» - ведущее предприятие России, выпускающее качественную упаковку из картона и...</div>
 												<div class="item_info">
 													<div class="ii_city">
@@ -789,11 +791,9 @@
 										</div>
 										<div class="ci_bottom">
 											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 80%"></i>
+												</i>
 												<small class="grey_color text_short">48 отзывов</small>
 											</div>
 										</div>
@@ -804,10 +804,10 @@
 										<div class="ci_main">
 											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
 											<div class="image">
-												<a href=""><img src="img/firm1.jpg" alt="" title></a>
+												<a href=""><img src="img/firm.png" alt="" title></a>
 											</div>
 											<div class="text">
-												<a href="" class="link">Производитель деревянных игрушек «MIKS»</a>
+												<a href="" class="link">Производитель растительного масла «Астон»</a>
 												<div class="item_descriptor">Компания «Комупак» - ведущее предприятие России, выпускающее качественную упаковку из картона и...</div>
 												<div class="item_info">
 													<div class="ii_city">
@@ -829,11 +829,9 @@
 										</div>
 										<div class="ci_bottom">
 											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 80%"></i>
+												</i>
 												<small class="grey_color text_short">48 отзывов</small>
 											</div>
 										</div>
@@ -844,10 +842,10 @@
 										<div class="ci_main">
 											<div class="to_favorites" title="В избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg></div>
 											<div class="image">
-												<a href=""><img src="img/firm1.jpg" alt="" title></a>
+												<a href=""><img src="img/firm.jpg" alt="" title></a>
 											</div>
 											<div class="text">
-												<a href="" class="link">Производитель деревянных игрушек «MIKS»</a>
+												<a href="" class="link">Кофе MADEO — производитель свежеобжаренного кофе</a>
 												<div class="item_descriptor">Компания «Комупак» - ведущее предприятие России, выпускающее качественную упаковку из картона и...</div>
 												<div class="item_info">
 													<div class="ii_city">
@@ -869,11 +867,9 @@
 										</div>
 										<div class="ci_bottom">
 											<div class="item_rating small">
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i class="active"><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
-												<i><svg class="svg _icon_star"><use xlink:href="#icon_star"></use></svg></i>
+												<i class="rating_stars">
+													<i class="rating_stars_mask" style="width: 80%"></i>
+												</i>
 												<small class="grey_color text_short">48 отзывов</small>
 											</div>
 										</div>

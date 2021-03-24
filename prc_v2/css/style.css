@@ -5224,6 +5224,16 @@ form.ask_form.add_review .user_rating .ur_text {
 		margin: 16px 0 0 0;
 	}
 
+	.news_view .nv_text .image {
+		margin: 0 0 16px 0;
+		float: none;
+	}
+
+	.news_view .nv_text .image img {
+		width: 100%;
+		max-width: 100%;
+	}
+
 }
 
 
@@ -5465,6 +5475,39 @@ form.ask_form.add_review .user_rating .ur_text {
 	.news .news_item .image {
 		width: 100%;
 		height: 180px;
+	}
+
+	.news_view {
+		padding: 16px;
+	}
+
+	.news_view .main_title {
+		font-size: 20px;
+	}
+
+	.news_view .nv_more {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.news_view .nv_more .nvm_item {
+		width: 100%;
+		margin: 8px 0 8px -4px;
+		width: calc(100% + 8px);
+		align-items: flex-start;
+	}
+
+	.news_view .nv_more:after {
+		left: -18px;
+		width: calc(100% + 40px);
+	}
+
+	.news_view .nv_more .nvm_item:nth-of-type(1) {
+		margin-top: 24px;
+	}
+
+	.news_view .nv_more .nvm_item .nvm_text .link {
+		max-height: 100%;
 	}
 
 	.modwin .button_block {

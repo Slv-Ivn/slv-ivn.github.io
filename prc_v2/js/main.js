@@ -114,6 +114,15 @@ $(document).ready(function(){
         $(this).parents('.sb_block.filter').toggleClass('active')
     });
 
+    //Показать выбор рубрики в новостях на мобильной версии
+	$('.central .rubrics_list_call').click(function(){
+        $('.content .sidebar .sb_block.sb_news_rubric').toggleClass('active')
+    });
+
+    $('.content .sidebar .sb_block.sb_news_rubric .uni_close').click(function(){
+        $(this).parents('.sb_block.sb_news_rubric').toggleClass('active')
+    });
+
 
 	$(function(){ //Слайдер в блоке «Приглагаем дилеров»
 

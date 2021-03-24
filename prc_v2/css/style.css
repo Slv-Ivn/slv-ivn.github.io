@@ -4659,6 +4659,10 @@ form.ask_form.add_review .user_rating .ur_text {
 		max-width: 100%;
 	}
 
+	.item_view.firm .iv_head .iv_content .iv_main_block .iv_item_order .info .min_party b {
+		display: inline;
+	}
+
 
 }
 
@@ -5079,6 +5083,10 @@ form.ask_form.add_review .user_rating .ur_text {
 		width: auto;
 	}
 
+	.item_view.firm .iv_head .iv_content .iv_main_block .iv_item_order .info .min_party b {
+		display: block;
+	}
+
 	.footer .f_columns {
 		flex-wrap: wrap;
 	}
@@ -5309,8 +5317,8 @@ form.ask_form.add_review .user_rating .ur_text {
 	}
 
 	.item_view .iv_bottom .iv_side_block.firm_instagram .list_photos a {
-		width: 64px;
-		height: 64px;
+		width: 68px;
+		height: 68px;
 	}
 
 	form.ask_form .form_bottom {

@@ -3617,7 +3617,7 @@ svg.svg {
 	flex-shrink: 0;
 	border-radius: 4px;
 	border: 1px solid var(--border_color);
-	background: var(--btn_color);
+	background: var(--main_bg_color);
 }
 
 .comments .comment .comment_head .image img,

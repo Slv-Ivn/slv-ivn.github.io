@@ -3646,6 +3646,7 @@ svg.svg {
 	padding: 12px 16px;
 	border-radius: 4px;
 	background: var(--main_bg_color);
+	border: 1px solid var(--btn_color);
 }
 
 .user_reviews .ur_review .ur_review_body > b {

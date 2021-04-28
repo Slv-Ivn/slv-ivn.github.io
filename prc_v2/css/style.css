@@ -2146,6 +2146,7 @@ svg.svg {
 
 .content .central .sort .sort_mark:hover {
 	background: var(--btn_color_hover);
+	cursor: pointer;
 }
 
 .content .central .sort .sort_mark.active {
@@ -4175,10 +4176,13 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 
 .contacts_prc .cprc_details { 
 	width: 100%;
-	margin: 24px 0;
+	margin: 16px 0;
 	border-spacing: 0;
-	border: 1px solid var(--border_color);
-    border-radius: 4px;
+}
+
+.contacts_prc > hr {
+	width: calc(100% + 40px);
+	margin: 24px 0;
 }
 
 .contacts_prc b.h3 {
@@ -5831,6 +5835,8 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 		height: 80px;
 	}
 
+	.comments .comment.answer { margin-left: 40px; }
+
 	form.ask_form .form_bottom {
 		flex-wrap: wrap;
 	}
@@ -5949,6 +5955,8 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 		order: 1;
 		margin-left: 0;
 	}
+
+	.contacts_prc > hr { width: calc(100% + 16px); }
 
 	.demand_page .demand_form:before,
 	.delivery_calc .dcalc_form:before {

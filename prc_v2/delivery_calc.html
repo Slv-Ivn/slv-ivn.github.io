@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Калькулятор доставки</title>
+	<meta name="description" content="" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+<div id="svg_icons"></div>
+
+<div class="prc">
+
+	<header class="header">
+		<div class="space">
+			
+			<div class="logo">
+				<img src="img/logo.svg" alt="Интернет-выставка Производство России" title="Интернет-выставка Производство России">
+				<strong>Производство России<small>интернет-выставка</small></strong>
+			</div>
+
+			<div class="prc_score">
+				<div class="left">
+					<strong>15 000</strong>
+					<small>Российских производителей</small>
+				</div>
+				<div class="right">
+					<strong>55 000</strong>
+					<small>Товаров российского производства</small>
+				</div>
+			</div>
+
+			<div class="search_block">
+				<form action="">
+					<input name="" type="search" id="" class="input" placeholder="Поиск товаров и производителей..." value="">
+					<button type="submit" class="btn"><svg class="svg _icon_search"><use xlink:href="#icon_search"></use></svg></button>
+				</form>
+			</div>
+
+			<div class="res_function_icons">
+				<span class="rfi_srch">
+					<svg class="svg_icon _search"><use xlink:href="#icon_search"></svg>
+					<s class="uni_close"></s>
+				</span>
+				<span class="rfi_menu">
+					<i></i>
+					<s class="uni_close"></s>
+				</span>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="nav_menu">
+		<div class="space">
+			
+			<ul class="nav_links">
+				<li><a href="" class="link_title clh_firms">Производители</a></li>
+				<li><a href="" class="link_title clh_products">Товары</a></li>
+				<li><a href="" class="link_title">Спрос</a></li>
+				<li><a href="" class="link_title">Промышленная карта</a></li>
+				<li><a href="" class="link_title">Форум</a></li>
+				<li>
+					<a href="" class="link_title">Новости</a>
+					<ul class="drop_menu" style="visibility: hidden;">
+						<li><a href="">Новости в России</a></li>
+						<li><a href="">Новости производителей</a></li>
+						<li><a href="">События проекта</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="" class="link_title">О проекте</a>
+					<ul class="drop_menu" style="visibility: hidden;">
+						<li><a href="">О выставке</a></li>
+						<li><a href="">Баннеры</a></li>
+						<li><a href="">Партнёры проекта</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="buttons_block">
+				<a href="" class="favorites_link" title="Избранное"><svg class="svg _icon_favorite"><use xlink:href="#icon_favorite"></use></svg> <span>Избранное</span></a>
+				<a href="" class="add_btn" title="Добавить продукцию">Добавить продукцию</a>
+				<a href="" class="personal_link" title="Войти"><svg class="svg _icon_face"><use xlink:href="#icon_face"></use></svg>Войти</a>
+			</div>
+
+			<div class="catalog_list firms" style="visibility: hidden;">
+				<ul class="cl_column">
+					<li>
+						<svg class="svg c_icon215"><use xlink:href="#c_icon215"></use></svg>
+						<a href="" class="link">Благоустройство</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link">Жилищно-коммунальное хозяйство</a></li>
+							<li><a href="" class="link">Заборы и ограждения</a></li>
+							<li><a href="" class="link">Малые архитектурные формы</a></li>
+							<li><a href="" class="link">Садовый декор</a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon26"><use xlink:href="#c_icon26"></use></svg>
+						<a href="" class="link">Бытовая техника, электроника</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon39"><use xlink:href="#c_icon39"></use></svg>
+						<a href="" class="link">Галантерея</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon231"><use xlink:href="#c_icon231"></use></svg>
+						<a href="" class="link">Детская одежда</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon31"><use xlink:href="#c_icon31"></use></svg>
+						<a href="" class="link">Детские товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon48"><use xlink:href="#c_icon48"></use></svg>
+						<a href="" class="link">Другие товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon413"><use xlink:href="#c_icon413"></use></svg>
+						<a href="" class="link">Зоотовары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon216"><use xlink:href="#c_icon216"></use></svg>
+						<a href="" class="link">Инструменты</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon42"><use xlink:href="#c_icon42"></use></svg>
+						<a href="" class="link">Мебель</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon37"><use xlink:href="#c_icon37"></use></svg>
+						<a href="" class="link">Медицинские изделия</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="cl_column">
+					<li>
+						<svg class="svg c_icon237"><use xlink:href="#c_icon237"></use></svg>
+						<a href="" class="link">Обувь</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon34"><use xlink:href="#c_icon34"></use></svg>
+						<a href="" class="link">Одежда</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon44"><use xlink:href="#c_icon44"></use></svg>
+						<a href="" class="link">Оптические приборы</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon417"><use xlink:href="#c_icon417"></use></svg>
+						<a href="" class="link">Отдых</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon45"><use xlink:href="#c_icon45"></use></svg>
+						<a href="" class="link">Продукты питания</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon29"><use xlink:href="#c_icon29"></use></svg>
+						<a href="" class="link">Промышленное оборудование</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon49"><use xlink:href="#c_icon49"></use></svg>
+						<a href="" class="link">Религиозные и ритуальные товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon46"><use xlink:href="#c_icon46"></use></svg>
+						<a href="" class="link">Сельское хозяйство</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon171"><use xlink:href="#c_icon171"></use></svg>
+						<a href="" class="link">Системы охраны и безопасности</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon33"><use xlink:href="#c_icon33"></use></svg>
+						<a href="" class="link">Спортивные товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="cl_column">
+					<li>
+						<svg class="svg c_icon43"><use xlink:href="#c_icon43"></use></svg>
+						<a href="" class="link">Строительство и ремонт</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon41"><use xlink:href="#c_icon41"></use></svg>
+						<a href="" class="link">Сырье, полезные ископаемые</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon430"><use xlink:href="#c_icon430"></use></svg>
+						<a href="" class="link">Текстиль</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon35"><use xlink:href="#c_icon35"></use></svg>
+						<a href="" class="link">Товары для дома</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon40"><use xlink:href="#c_icon40"></use></svg>
+						<a href="" class="link">Товары личного потребления</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon30"><use xlink:href="#c_icon30"></use></svg>
+						<a href="" class="link">Торговое оборудование</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon32"><use xlink:href="#c_icon32"></use></svg>
+						<a href="" class="link">Транспорт, техника, запчасти</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon36"><use xlink:href="#c_icon36"></use></svg>
+						<a href="" class="link">Химическая промышленность</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon28"><use xlink:href="#c_icon28"></use></svg>
+						<a href="" class="link">Электротовары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon38"><use xlink:href="#c_icon38"></use></svg>
+						<a href="" class="link">Ювелирные изделия, подарки</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="catalog_list products" style="visibility: hidden;">
+				<ul class="cl_column">
+					<li>
+						<svg class="svg c_icon215"><use xlink:href="#c_icon215"></use></svg>
+						<a href="" class="link">Благоустройство</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link">Жилищно-коммунальное хозяйство</a></li>
+							<li><a href="" class="link">Заборы и ограждения</a></li>
+							<li><a href="" class="link">Малые архитектурные формы</a></li>
+							<li><a href="" class="link">Садовый декор</a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon26"><use xlink:href="#c_icon26"></use></svg>
+						<a href="" class="link">Бытовая техника, электроника</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon39"><use xlink:href="#c_icon39"></use></svg>
+						<a href="" class="link">Галантерея</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon231"><use xlink:href="#c_icon231"></use></svg>
+						<a href="" class="link">Детская одежда</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon31"><use xlink:href="#c_icon31"></use></svg>
+						<a href="" class="link">Детские товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon48"><use xlink:href="#c_icon48"></use></svg>
+						<a href="" class="link">Другие товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon413"><use xlink:href="#c_icon413"></use></svg>
+						<a href="" class="link">Зоотовары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon216"><use xlink:href="#c_icon216"></use></svg>
+						<a href="" class="link">Инструменты</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon42"><use xlink:href="#c_icon42"></use></svg>
+						<a href="" class="link">Мебель</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon37"><use xlink:href="#c_icon37"></use></svg>
+						<a href="" class="link">Медицинские изделия</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="cl_column">
+					<li>
+						<svg class="svg c_icon237"><use xlink:href="#c_icon237"></use></svg>
+						<a href="" class="link">Обувь</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon34"><use xlink:href="#c_icon34"></use></svg>
+						<a href="" class="link">Одежда</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon44"><use xlink:href="#c_icon44"></use></svg>
+						<a href="" class="link">Оптические приборы</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon417"><use xlink:href="#c_icon417"></use></svg>
+						<a href="" class="link">Отдых</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon45"><use xlink:href="#c_icon45"></use></svg>
+						<a href="" class="link">Продукты питания</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon29"><use xlink:href="#c_icon29"></use></svg>
+						<a href="" class="link">Промышленное оборудование</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon49"><use xlink:href="#c_icon49"></use></svg>
+						<a href="" class="link">Религиозные и ритуальные товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon46"><use xlink:href="#c_icon46"></use></svg>
+						<a href="" class="link">Сельское хозяйство</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon171"><use xlink:href="#c_icon171"></use></svg>
+						<a href="" class="link">Системы охраны и безопасности</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon33"><use xlink:href="#c_icon33"></use></svg>
+						<a href="" class="link">Спортивные товары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="cl_column">
+					<li>
+						<svg class="svg c_icon43"><use xlink:href="#c_icon43"></use></svg>
+						<a href="" class="link">Строительство и ремонт</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon41"><use xlink:href="#c_icon41"></use></svg>
+						<a href="" class="link">Сырье, полезные ископаемые</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon430"><use xlink:href="#c_icon430"></use></svg>
+						<a href="" class="link">Текстиль</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon35"><use xlink:href="#c_icon35"></use></svg>
+						<a href="" class="link">Товары для дома</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon40"><use xlink:href="#c_icon40"></use></svg>
+						<a href="" class="link">Товары личного потребления</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon30"><use xlink:href="#c_icon30"></use></svg>
+						<a href="" class="link">Торговое оборудование</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon32"><use xlink:href="#c_icon32"></use></svg>
+						<a href="" class="link">Транспорт, техника, запчасти</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon36"><use xlink:href="#c_icon36"></use></svg>
+						<a href="" class="link">Химическая промышленность</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon28"><use xlink:href="#c_icon28"></use></svg>
+						<a href="" class="link">Электротовары</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+					<li>
+						<svg class="svg c_icon38"><use xlink:href="#c_icon38"></use></svg>
+						<a href="" class="link">Ювелирные изделия, подарки</a>
+						<ul class="cl_sub_links">
+							<li><a href="" class="link"></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="crumbs">
+		<div class="space">
+			
+			<ul class="crumbs_list">
+				<li class="crumb">
+					<a href="" class="home_link" title="На главную старницу"><svg class="svg _icon_home_link"><use xlink:href="#icon_home_link"></use></svg></a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="space">
+
+			<div class="central single_column">
+				
+				<div class="delivery_calc">
+					<h1>Калькулятор доставки грузов</h1>
+					<p>Для расчета стоимости доставки товаров необходимо указать города отправления и получения, габариты груза, и выбрать в списке транспортные компании.</p>
+					<div class="dcalc_form">
+						<form action="" method="" class="">
+							<div class="dcalc_errors">
+								<b>Некорректное заполнение формы</b>
+								<p>Необходимо указать «<b>Вес</b>» транспортируемого груза</p>
+								<p>Необходимо выбрать хотя бы одну транспортную компанию</p>
+							</div>
+							<div class="inputs_n2">
+								<div class="input_box">
+									<div class="text">
+										<b>Город отправления</b>
+										<input type="checkbox" class="checkbox" id="dcalc_adr1" name="">
+										<label for="dcalc_adr1"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg>от адреса</label>
+									</div>
+									<input class="input" type="text" name="" placeholder="Например: Москва">
+								</div>
+								<div class="input_box">
+									<div class="text">
+										<b>Город получения</b>
+										<input type="checkbox" class="checkbox" id="dcalc_adr2" name="">
+										<label for="dcalc_adr2"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg>до адреса</label>
+									</div>
+									<input class="input" type="text" name="" placeholder="Например: Владивосток">
+								</div>
+							</div>
+							<div class="inputs_n4">
+								<div class="input_box">
+									<b>Длина</b>
+									<input class="input" type="number" placeholder="В сантиметрах">
+								</div>
+								<div class="input_box">
+									<b>Ширина</b>
+									<input class="input" type="number" placeholder="В сантиметрах">
+								</div>
+								<div class="input_box">
+									<b>Высота</b>
+									<input class="input" type="number" placeholder="В сантиметрах">
+								</div>
+								<div class="input_box">
+									<b>Вес</b>
+									<input class="input error" type="number" placeholder="В килограммах">
+								</div>
+							</div>
+							<div class="dcalc_company">
+								<p>
+									<b>Транспортные компании</b>
+									<span>Выберите ТК для расчета доставки груза:</span>
+								</p>
+								<ul>
+									<li>
+										<input type="checkbox" class="checkbox" id="dcalc_com1" name="" checked="checked">
+										<label for="dcalc_com1">ЖелДорЭкспедиция<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+									</li>
+									<li>
+										<input type="checkbox" class="checkbox" id="dcalc_com2" name="" checked="checked">
+										<label for="dcalc_com2">СДЭК<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+									</li>
+									<li>
+										<input type="checkbox" class="checkbox" id="dcalc_com3" name="" checked="checked">
+										<label for="dcalc_com3">ПЭК<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+									</li>
+									<li>
+										<input type="checkbox" class="checkbox" id="dcalc_com4" name="" checked="checked">
+										<label for="dcalc_com4">Деловый Линии<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+									</li>
+									<li>
+										<input type="checkbox" class="checkbox" id="dcalc_com5" name="" checked="checked">
+										<label for="dcalc_com5">Энергия<svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+									</li>
+								</ul>
+							</div>
+							<button type="button" class="btn green">Рассчитать стоимость доставки</button>
+						</form>
+					</div>
+					<div class="dcalc_results">
+						<b class="h2">Расчёт доставки</b>
+						<p class="dcalc_info">
+							<span>
+								<b>Владивосток, Светланская, 145</b>
+								<b>→</b>
+								<b>Нижний Новгород, Ленинградская, 18</b>
+							</span>
+							<span>От адреса до адреса</span>
+							<span>Габариты: <b>1.2м/0.6м/0.7м/14кг</b></span>
+						</p>
+						<table>
+							<tr>
+								<th></th>
+								<th>Транспортная компания</th>
+								<th>Срок доставки</th>
+								<th>Цена доставки</th>
+							</tr>
+							<tr>
+								<td><img src="https://productcenter.ru/content/images/tk/cdek.png" alt="" title=""></td>
+								<td>
+									<div>СДЭК</div>
+									<small><a target="_blank" href="tel:+78002500405">8-800-250-04-05</a>&emsp;</small>
+									<small><a target="_blank" href="https://www.cdek.ru">www.cdek.ru</a></small>
+								</td>
+								<td>от 4 до 5 дней</td>
+								<td>20 890 ₽ </td>
+							</tr>
+							<tr>
+								<td><img src="https://productcenter.ru//content/images/tk/pek.png" alt="" title=""></td>
+								<td>
+									<div>ПЭК</div>
+									<small><a target="_blank" href="tel:+74956601111">+7(495)660-11-11</a>&emsp;</small>
+									<small><a target="_blank" href="https://pecom.ru">pecom.ru</a></small>
+								</td>
+								<td>Необходимо утонять</td>
+								<td>22 140 ₽ </td>
+							</tr>
+							<tr>
+								<td><img src="https://productcenter.ru/content/images/tk/cdek.png" alt="" title=""></td>
+								<td>
+									<div>СДЭК</div>
+									<small><a target="_blank" href="tel:+78002500405">8-800-250-04-05</a>&emsp;</small>
+									<small><a target="_blank" href="https://www.cdek.ru">www.cdek.ru</a></small>
+								</td>
+								<td>от 4 до 5 дней</td>
+								<td>20 890 ₽ </td>
+							</tr>
+							<tr>
+								<td><img src="https://productcenter.ru//content/images/tk/pek.png" alt="" title=""></td>
+								<td>
+									<div>ПЭК</div>
+									<small><a target="_blank" href="tel:+74956601111">+7(495)660-11-11</a>&emsp;</small>
+									<small><a target="_blank" href="https://pecom.ru">pecom.ru</a></small>
+								</td>
+								<td>Необходимо утонять</td>
+								<td>22 140 ₽ </td>
+							</tr>
+						</table>
+						<small>В расчете могут быть представлены не все транспортные компании, по причине отсутствия в одном из городов или невозможности перевезти данный груз.</small><br>
+						<small>Расчет доставки ориентировочный, точную цену доставки узнавайте у менеджеров транспортных компаний.</small>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="space">
+			
+			<div class="f_columns">
+				
+				<div class="fc_item">
+					<div style="width: 88px; height: 31px; margin: 16px 0; background: #ccc;"></div>
+					<small class="copyright">© «Производство России», 2008—2019</small>
+				</div>
+
+				<div class="fc_item">
+					<b class="block_title up_text">Справка</b>
+					<ul>
+						<li><a href="" class="link text_short">Пользовательское соглашение</a></li>
+						<li><a href="" class="link text_short">Политика конфиденциальности</a></li>
+						<li><a href="" class="link text_short">Контакты</a></li>
+						<li><a href="" class="link text_short">Реклама на сайте</a></li>
+					</ul>
+				</div>
+
+				<div class="fc_item">
+					<b class="block_title up_text">Продуктцентр</b>
+					<ul>
+						<li><a href="" class="link text_short">Пользовательское соглашение</a></li>
+						<li><a href="" class="link text_short">Политика конфиденциальности</a></li>
+						<li><a href="" class="link text_short">Контакты</a></li>
+						<li><a href="" class="link text_short">Реклама на сайте</a></li>
+					</ul>
+				</div>
+
+				<div class="fc_item">
+					<b class="block_title up_text">Новое на выствке</b>
+					<ul>
+						<li><a href="" class="link text_short">Пользовательское соглашение</a></li>
+						<li><a href="" class="link text_short">Политика конфиденциальности</a></li>
+						<li><a href="" class="link text_short">Контакты</a></li>
+						<li><a href="" class="link text_short">Реклама на сайте</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+
+<div class="to_top" title="Вернуться наверх ↑"></div>
+
+</div>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/fancybox.css">
+<link rel="stylesheet" href="css/lightslider.css">
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bselect.js"></script>
+<script src="js/fancybox.js"></script>
+<script src="js/lightslider.js"></script>
+
+</body>
+</html>

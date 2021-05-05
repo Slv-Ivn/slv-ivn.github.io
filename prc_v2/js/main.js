@@ -38,8 +38,8 @@ $(document).ready(function(){
     $('.header .rfi_menu').click(function(){
         $('body').toggleClass('ovh');
         $('.nav_menu').toggleClass('active');
-        $('.overlay').toggleClass('active');
     });
+
 
 	//Кнопка вернуться наверх
 	$(window).scroll(function(){
@@ -121,6 +121,13 @@ $(document).ready(function(){
 
     $('.content .sidebar .sb_block.sb_news_rubric .uni_close').click(function(){
         $(this).parents('.sb_block.sb_news_rubric').toggleClass('active')
+    });
+
+    //Модальное окно входа/регистрации
+    $('.modwin.mw_sign_in .title span').click(function(){
+    	$('.modwin.mw_sign_in .title span.active').removeClass('active');
+    	$(this).addClass('active');
+    	$('.modwin.mw_sign_in form').toggleClass('active');
     });
 
 

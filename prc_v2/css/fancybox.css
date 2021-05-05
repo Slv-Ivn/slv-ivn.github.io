@@ -408,17 +408,25 @@ body.compensate-for-scrollbar {
     z-index: 401;
 }
 
-.fancybox-close-small:hover {
-    color: #fff;
-    opacity: 1;
-}
-
 .fancybox-slide--html .fancybox-close-small {
     color: currentColor;
-    padding: 10px;
+    padding: 8px;
     right: 0;
     top: 0;
     border-radius: 4px;
+    stroke: #333;
+    stroke-width: .8;
+}
+
+.fancybox-close-small svg path {
+    stroke: currentColor;
+    stroke-width: .8;
+}
+
+.fancybox-close-small:hover {
+    color: #E01111;
+    stroke: #E01111;
+    opacity: 1;
 }
 
 .fancybox-slide--image.fancybox-is-scaling .fancybox-content {

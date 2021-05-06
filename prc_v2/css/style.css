@@ -4790,8 +4790,8 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 
 .modwin.mw_ask_form .ask_form { margin-bottom: 0; }
 .modwin.mw_ask_form .ask_form .inputs .input { width: 49%; }
-
 .modwin.mw_ask_form .button_block { flex-wrap: wrap; }
+.modwin.mw_ask_form .button_block .btn { width: 100%; }
 
 .modwin.mw_ask_form .confirmation {
 	width: 100%;

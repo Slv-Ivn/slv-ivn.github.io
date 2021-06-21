@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Добавление компании</title>
+	<title>Регистрация сотрудника</title>
 	<meta name="description" content="" />
 	<meta name="robots" content="index, follow" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -550,244 +550,71 @@
 		<div class="space">
 
 			<div class="central">
-				<h1 class="main_title">Регистрация компании-производителя</h1>
+				<h1 class="main_title">Регистрация сотрудника</h1>
 
-				<form action="" method="" name="" class="special_form add_company">
+				<form action="" method="" name="" class="special_form reg_user">
 					
 					<div class="sf_box">
-						<div class="sf_title"><b>Основная информация</b></div>
-						<div class="sf_line">
-							<label class="sf_block needed">
-								<b>Название компании или ТМ</b>
-								<small>Укажите краткое и понятное название компании или ТМ.<br>Реквизиты заполняются ниже в отдельном поле.</small>
-								<input class="input" type="text" name="" placeholder="Название...">
-							</label>
-						</div>
-						<div class="sf_line">
-							<label class="sf_block needed">
-								<b>Описание производства</b>
-								<small>История предприятия, ассортимент, объём, качество продукции, ваши преимущества.</small>
-								<textarea name="" placeholder="Текст..."></textarea>
-							</label>
-						</div>
-						<div class="sf_line">
-							<label class="sf_block needed error">
-								<b>Условия работы</b>
-								<small>Условия сотрудничества, география продаж, условия для дилеров и крупных оптовиков, условия доставки.</small>
-								<textarea name="" class="error" placeholder="Текст..."></textarea>
-							</label>
-						</div>
-						<div class="sf_line double">
-							<div class="sf_block needed">
-								<b>Регион</b>
-								<select name="" id="">
-									<option value="0">Выбрать регион...</option>
-									<option value="1">Регион</option>
-									<option value="2">Регион 2</option>
-									<option value="3">Регион 3</option>
-									<option value="1">Регион</option>
-								</select>
-							</div>
-							<div class="sf_block needed">
-								<b>Город</b>
-								<select name="" id="">
-									<option value="0">Выбрать город...</option>
-									<option value="1">Город</option>
-									<option value="2">Город 2</option>
-									<option value="3">Город 3</option>
-									<option value="1">Город</option>
-									<option value="2">Город 2</option>
-								</select>
-							</div>
-						</div>
+						<div class="sf_title"><b>Проверка компании</b></div>
 						<div class="sf_line">
 							<label class="sf_block">
-								<b>Адрес</b>
-								<small>Укажите адрес компании.<br>Место на карте определяется согласно адресу автоматически.</small>
-								<input class="input" type="text" name="" placeholder="Посёлок, улица, дом...">
+								<b>Нзвание организации</b>
+								<small>Убедитесь, что Ваша компания ещё не представлена на Выставке.</small>
+								<input class="input" type="text" name="" placeholder="...">
 							</label>
-							<div class="address_map"></div>
+							<div class="company_list">
+								<div class="cl_item">
+									<div class="image"><img src="img/firm.jpg" alt="" title=""></div>
+									<div class="text">
+										<a href="" class="link">Helgi Home — текстильная мастерская</a>
+										<small class="grey_color">г. Комсомольск-на-Амуре</small>
+										<a href="" class="btn">Это моя компания</a>
+									</div>
+								</div>
+								<div class="cl_item">
+									<div class="image"><img src="img/firm2.jpg" alt="" title=""></div>
+									<div class="text">
+										<a href="" class="link">000 «Мианикосметик»</a>
+										<small class="grey_color">г. Смоленск</small>
+										<a href="" class="btn">Это моя компания</a>
+									</div>
+								</div>
+								<div class="cl_item">
+									<div class="image"><img src="img/firm1.jpg" alt="" title=""></div>
+									<div class="text">
+										<a href="" class="link">Aspil Energy – производство литиевых аккумуляторов</a>
+										<small class="grey_color">г. Пятигорск</small>
+										<a href="" class="btn">Это моя компания</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-
 					<div class="sf_box">
-						<div class="sf_title"><b>Контактная информация</b></div>
-						<div class="sf_line">
-							<label class="sf_block">
-								<b>Контактное лицо</b>
-								<small>Укажите сотрудника,ответственного за работу с Выставкой.</small>
-								<input class="input" type="text" name="" placeholder="Имя и должность...">
-							</label>
-						</div>
+						<div class="sf_title"><b>Регистрация</b></div>
 						<div class="sf_line double">
-							<label class="sf_block">
-								<b>Телефон</b>
-								<small>отдела продаж, можно несколько через запятую.</small>
-								<input class="input" type="text" name="" placeholder="Номер телефона...">
+							<label class="sf_block needed">
+								<b>Ваше имя</b>
+								<small>Имя будут видеть другие посетители сайта.</small>
+								<input class="input" type="text" name="" placeholder="...">
 							</label>
 							<label class="sf_block needed">
 								<b>Электронная почта</b>
-								<small>для получения заказов и вопросов с Выставки.</small>
-								<input class="input" type="email" name="" placeholder="Адрес эл. почты...">
+								<small>Адрес необходим для авторизации на сайте.</small>
+								<input class="input" type="email" name="" placeholder="...">
 							</label>
 						</div>
-						<div class="sf_line double">
-							<label class="sf_block">
-								<b>Сайт</b>
-								<small>Официальный сайт производителя (URL).</small>
-								<input class="input" type="url" name="" placeholder="Адрес сайта...">
-							</label>
-							<label class="sf_block">
-								<b>Skype</b>
-								<small>Аккаунт Скайп, если имеется.</small>
-								<input class="input" type="text" name="" placeholder="...">
-							</label>
-						</div>
-						<div class="sf_line double">
-							<label class="sf_block">
-								<b>WhatsApp</b>
-								<small>Контактный номер.</small>
-								<input class="input" type="phone" name="" placeholder="...">
-							</label>
-							<label class="sf_block">
-								<b>Instagram</b>
-								<small>Адрес страницы компании (URL).</small>
-								<input class="input" type="url" name="" placeholder="...">
-							</label>
-						</div>
-					</div>
-
-					<div class="sf_box">
-						<div class="sf_title"><b>Реквизиты</b></div>
 						<div class="sf_line double">
 							<label class="sf_block needed">
-								<b>Юридическое лицо</b>
-								<input class="input" type="text" name="" placeholder="Название...">
+								<b>Пароль</b>
+								<small>Пароль должен быть не менее 6 символов.</small>
+								<input class="input" type="password" name="" placeholder="...">
 							</label>
 							<label class="sf_block needed">
-								<b>ИНН</b>
-								<input class="input" type="text" name="" placeholder="Номер...">
+								<b>Повторите пароль</b>
+								<small>Введите пароль ещё раз.</small>
+								<input class="input" type="password" name="" placeholder="...">
 							</label>
-						</div>
-						<div class="sf_line double">
-							<label class="sf_block">
-								<b>КПП</b>
-								<input class="input" type="text" name="" placeholder="Номер...">
-							</label>
-							<label class="sf_block">
-								<b>ОГРН/ОГРНИП</b>
-								<input class="input" type="text" name="" placeholder="Номер...">
-							</label>
-						</div>
-					</div>
-
-					<div class="sf_box">
-						<div class="sf_title"><b>Изображения и видео</b></div>
-						<div class="sf_line">
-							<div class="media_list">
-								<div class="media_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="media_file"><img src="img/firm.jpg" alt="" title=""></div>
-									<input type="text" class="input" name="" placeholder="Описание...">
-									<div class="check_radio">
-										<input type="radio" name="" id="xxx">
-										<label for="xxx">Обложка</label>
-									</div>
-								</div>
-								<div class="media_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="media_file"><img src="img/firm2.jpg" alt="" title=""></div>
-									<input type="text" class="input" name="" placeholder="Описание...">
-									<div class="check_radio">
-										<input type="radio" name="" id="xxx">
-										<label for="xxx">Обложка</label>
-									</div>
-								</div>
-								<div class="media_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="media_file"><img src="img/firm1.jpg" alt="" title=""></div>
-									<input type="text" class="input" name="" placeholder="Описание...">
-									<div class="check_radio">
-										<input type="radio" name="" id="xxx">
-										<label for="xxx">Обложка</label>
-									</div>
-								</div>
-								<div class="media_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="media_file"><img src="img/firm2.jpg" alt="" title=""></div>
-									<input type="text" class="input" name="" placeholder="Описание...">
-									<div class="check_radio">
-										<input type="radio" name="" id="xxx">
-										<label for="xxx">Обложка</label>
-									</div>
-								</div>
-								<div class="media_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="media_file video"><img src="img/image.jpg" alt="" title=""></div>
-									<input type="text" class="input" name="" placeholder="Описание...">
-								</div>
-							</div>
-							<div class="sf_block needed">
-								<b>Загрузка изображений</b>
-								<small>Загрузите логотип, фото производства, персонала, награды, сертификаты.<br>Допустимы форматы .png, .jpeg, .gif.<br>Изображение не должно быть больше 4Мб и содержать контактных данных.</small>
-								<button type="" class="btn add_images">Добавить изображения</button>
-							</div>
-							<div class="sf_block">
-								<b>Загрузка видео</b>
-								<small>Добавьте видео о производстве или промо-ролики, указав их ссылку из YouTube.</small>
-								<div class="add_video">
-									<input type="url" class="input" placeholder="Ссылка на видео...">
-									<button type="" class="btn">Добавить</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="sf_box">
-						<div class="sf_title"><b>Прайс-лист и файлы</b></div>
-						<div class="sf_line">
-							<div class="files_list">
-								<div class="file_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="icon"><svg class="svg _icon_text_list"><use xlink:href="#icon_text_list"></use></svg></div>
-									<div class="text">
-										<span>Прайс-лист производителя</span>
-										<small>PDF 111.4 Кб • от 18.05.2021</small>
-									</div>
-								</div>
-								<div class="file_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="icon"><svg class="svg _icon_text_list"><use xlink:href="#icon_text_list"></use></svg></div>
-									<div class="text">
-										<span>Рекламный буклет</span>
-										<small>JPG 2.8 Мб • от 18.05.2021</small>
-									</div>
-								</div>
-								<div class="file_block">
-									<s class="uni_close" title="Удалить"></s>
-									<div class="icon"><svg class="svg _icon_text_list"><use xlink:href="#icon_text_list"></use></svg></div>
-									<div class="text">
-										<span>Техническая документация</span>
-										<small>PDF 1.5 Мб • от 18.05.2021</small>
-									</div>
-								</div>
-							</div>
-							<div class="sf_block">
-								<b>Загрузка файлов</b>
-								<small>Дополнительные документы, каталоги, коммерческие предложения потенциальным партнерам.<br>Форматы: .pdf, .doc, .xls. Размер до 5 Mb</small>
-								<div class="double_btns">
-									<button type="" class="btn">Добавить прайс-лист</button>
-									<button type="" class="btn">Добавить документ</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="sf_line">
-						<div class="confirmation">
-							<input type="checkbox" class="checkbox" id="mail_me" name="" checked="checked">
-							<label for="mail_me"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
-							<span class="text">Получать уведомления о заказах и вопросах на эл.почту</span>
 						</div>
 					</div>
 					<button type="" class="btn green form_submit">Сохранить и продолжить</button>
@@ -801,11 +628,11 @@
 						<b class="sbb_title">Этапы регистрации</b>
 					</div>
 					<div class="sbb_body">
-						<div class="reg_step">
-							<svg class="svg _icon_okey"><use xlink:href="#icon_okey"></use></svg>
+						<div class="reg_step active">
+							<svg class="svg _icon_pin"><use xlink:href="#icon_pin"></use></svg>
 							<span class="text">Шаг 1:<br>регистрация сотрудника</span>
 						</div>
-						<div class="reg_step active">
+						<div class="reg_step">
 							<svg class="svg _icon_pin"><use xlink:href="#icon_pin"></use></svg>
 							<span class="text">Шаг 2:<br>регистрация компании-производителя</span>
 						</div>
@@ -813,27 +640,6 @@
 							<svg class="svg _icon_pin"><use xlink:href="#icon_pin"></use></svg>
 							<span class="text">Шаг 3:<br>добавление продукции</span>
 						</div>
-					</div>
-				</div>
-
-				<div class="sb_block sb_small_text">
-					<div class="sbb_head">
-						<b class="sbb_title">Внимание!</b>
-					</div>
-					<div class="sbb_body">
-						<p>К размещению на Выставке допускаются только производители и только те, кто выпускает продукцию на территории России.</p>
-						<p>Заполняйте поля грамотно и аккуратно, следуйте подсказкам! От этого напрямую зависит, будут или нет у Вас заказы и обращения.</p>
-						<p>Добавьте в виде изображения сертификаты, награды, дипломы.</p>
-						<p>Убедитесь, что поля заполнены подробно и должным образом.</p>
-						<p>Мы удалим компанию, если:
-							<ul>
-								<li>вы не производитель;</li>
-								<li>продукция выпускается за пределами России;</li>
-								<li>представленная информация не соответствует действительности;</li>
-								<li>стенд заполнен некачественно.</li>
-							</ul>
-						</p>
-						<p>Помните: при показе посетителям Выставки той или иной компании действует рейтинг стендов, который также оценивает и учитывает качество представления информации!</p>
 					</div>
 				</div>
 

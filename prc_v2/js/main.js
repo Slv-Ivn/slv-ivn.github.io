@@ -123,6 +123,15 @@ $(document).ready(function(){
         $(this).parents('.sb_block.sb_news_rubric').toggleClass('active')
     });
 
+     //Показать меню в личном кабинете на мобильной версии
+	$('.central .call_cabinet_menu').click(function(){
+        $('.content .sidebar .sb_block.cabinet_links').toggleClass('active')
+    });
+
+    $('.content .sidebar .sb_block.cabinet_links .uni_close').click(function(){
+        $(this).parents('.sb_block.cabinet_links').toggleClass('active')
+    });
+
     //Модальное окно входа/регистрации
     $('.modwin.mw_sign_in .title span').click(function(){
     	$('.modwin.mw_sign_in .title span.active').removeClass('active');

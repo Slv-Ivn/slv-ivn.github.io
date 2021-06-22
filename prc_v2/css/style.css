@@ -5401,6 +5401,17 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 
 /* --- Баннеры в каталоге и прочем --- */
 
+.prc > .bns_space { text-align: center; }
+
+.sidebar .bns_space {	text-align: center; }
+
+.sidebar .bns_space .bns_item { 
+	display: block;
+	margin-bottom: 24px;
+}
+
+.central .bns_space { margin-bottom: 16px; }
+
 
 
 /* --- Лоадер (загрузка) --- */

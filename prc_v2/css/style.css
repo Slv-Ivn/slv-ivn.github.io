@@ -5401,6 +5401,9 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 
 /* --- Баннеры в каталоге и прочем --- */
 
+.bns_space,
+.bns_space .bns_item { position: relative; }
+
 .prc > .bns_space { text-align: center; }
 
 .sidebar .bns_space {	text-align: center; }
@@ -6175,6 +6178,10 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 	}
 
 	.special_form { max-width: 100%; }
+
+	.bns_space img { max-width: 100%; }
+
+	.prc > .bns_space { top: 56px; }
 
 }
 

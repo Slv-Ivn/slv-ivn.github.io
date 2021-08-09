@@ -175,7 +175,12 @@ $(document).ready(function(){
       .closest('.iv_bottom .iv_about').find('.tab_content').removeClass('active').eq($(this).index()).addClass('active');
   	});
 
-
+	//Модальное окно подключение платных услуг
+    $('.modwin.mw_services_list .help_link').click(function(){
+    	if($(this).text() == 'Показать описание'){ $(this).text('Скрыть описание');}
+    	else{ $(this).text('Показать описание'); }
+    	$(this).next('.help_text').toggleClass('active');
+    });
 
 
 	/* Последовательная анимация

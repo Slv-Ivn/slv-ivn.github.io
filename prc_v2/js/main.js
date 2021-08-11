@@ -182,6 +182,13 @@ $(document).ready(function(){
     	$(this).next('.help_text').toggleClass('active');
     });
 
+    //Скрытиый текст в тарифах
+    $('.cabinet_tariffs .ct_block .ctb_body .services_list .link.helper').click(function(){
+    	if($(this).text() == 'Показать описание'){ $(this).text('Скрыть описание');}
+    	else{ $(this).text('Показать описание'); }
+    	$(this).closest('.line').next('.help_info').toggleClass('active');
+    });
+
 
 	/* Последовательная анимация
 

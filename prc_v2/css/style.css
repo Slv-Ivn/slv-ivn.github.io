@@ -7404,6 +7404,12 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 	.cabinet_main .cm_recommendation .right { width: 100%; }
 	.cabinet_orders .items_orders .item_order { flex-wrap: wrap; }
 	.cabinet_orders .items_orders .item_order .text { margin: 16px 0 0; }
+	.cabinet_tariffs .ct_blocks { flex-wrap: wrap; }
+
+	.cabinet_tariffs .ct_block { 
+		width: 100%;
+		margin-top: 8px;
+	}
 
 }
 

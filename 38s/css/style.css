@@ -10,6 +10,7 @@
          url('/fonts/Quiza_Pro_Italic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -18,6 +19,7 @@
          url('/fonts/Quiza_Pro_Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -26,6 +28,7 @@
          url('/fonts/Neris_Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -34,6 +37,7 @@
          url('/fonts/Neris_Ligh_Italic.otf') format('opentype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -42,6 +46,7 @@
          url('/fonts/Neris_Black.otf') format('opentype');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -50,6 +55,7 @@
          url('/fonts/Neris_SemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -1964,11 +1970,9 @@ input:focus, textarea:focus {
 
 .price_table {
     position: relative;
-    max-width: 760px;
-    margin: 24px auto;
+    max-width: 880px;
+    margin: 20px auto;
 }
-
-.price_table .text_center { margin: 24px 0 16px 0; }
 
 .price_table table {
     position: relative;
@@ -1983,10 +1987,10 @@ input:focus, textarea:focus {
 .price_table table tr th,
 .price_table table tr td {
     position: relative;
+    min-width: 140px;
     padding: 10px 0;
     border-bottom: 1px solid #dff1fa;
     text-align: left;
-    white-space: nowrap;
 }
 
 .price_table table tr th {
@@ -1995,7 +1999,7 @@ input:focus, textarea:focus {
 
 .price_table table tr th:not(:last-child),
 .price_table table tr td:not(:last-child) {
-    border-right: 40px solid #fff;
+    border-right: 24px solid #fff;
 }
 
 .price_table table tr th:first-child,
@@ -2019,44 +2023,6 @@ input:focus, textarea:focus {
     margin: 5px 0;
     font-size: 13px;
 }
-
-.price_table.pt_action_tour > .text_center p {
-    font-family: 'Quiza Pro';
-}
-
-.price_table.pt_action_tour .pt_note {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #252525;
-}
-
-.price_table.pt_action_tour .pt_note p {
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-.price_table.pt_action_tour .pt_tour_terms {
-    margin-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #252525;
-}
-
-.price_table.pt_action_tour .pt_tour_terms ul li {
-    position: relative;
-    margin-top: 5px;
-    padding-left: 20px;
-}
-
-.price_table.pt_action_tour .pt_tour_terms ul li:before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 1px;
-    width: 8px;
-    height: 8px;
-    background: #ee1515;
-    border-radius: 2px;
-}
-
 
 
 .section.rest_june .block {

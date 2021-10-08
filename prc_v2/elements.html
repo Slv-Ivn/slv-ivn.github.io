@@ -658,7 +658,7 @@
 					    });
 					</script>
 				</button><br>
-				<button type="button" class="btn preview7" data-fancybox data-src="#ModWin_SignIn">Окно входа/регистрации</button><br>
+				<button type="button" class="btn preview7" data-fancybox data-src="#ModWin_SignIn">Окно входа/восстановления</button><br>
 				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			</div>
 
@@ -750,10 +750,7 @@
 
 	<div class="modwin mw_sign_in" id="ModWin_SignIn" style="display: none;">
 		<div class="modwin_head">
-			<b class="title">
-				<span class="point1 active">Вход</span>
-				<span class="point2">Регистрация</span>
-			</b>
+			<b class="title">Вход</b>
 		</div>
 		<div class="modwin_body">
 			<form action="" method="" class="mw_form_signin active">
@@ -762,28 +759,19 @@
 					<input class="input" type="email" name="" value="" placeholder="Адрес электронной почты">
 				</div>
 				<div class="form_element">
-					<label>Пароль</label>
+					<label>Пароль <small class="recovery_pass">Восстановление пароля</small></label>
 					<input class="input error" type="password" name="" value="" placeholder="Введите пароль">
 					<small class="error_msg">Вы ввели неверный пароль</small>
 				</div>
-			</form>
-			<form action="" method="" class="mw_form_reg">
-				<div class="form_element">
-					<label>Электронная почта</label>
-					<input class="input" type="email" name="" value="" placeholder="Адрес электронной почты">
-				</div>
-				<div class="form_element">
-					<label>Пароль</label>
-					<input class="input" type="password" name="" value="" placeholder="Введите пароль">
-				</div>
-				<div class="form_element">
-					<label>Повторите пароль</label>
-					<input class="input" type="password" name="" value="" placeholder="Введите пароль">
-				</div>
-			</form>
-			<div class="button_block">
 				<button type="submit" class="btn green" id="">Продолжить</button>
-			</div>
+			</form>
+			<form action="" method="" class="mw_form_recovery">
+				<div class="form_element">
+					<label>Электронная почта <small class="go_back">Вернуться назад</small></label>
+					<input class="input" type="email" name="" value="" placeholder="Адрес e-mail указанный при регистрации">
+				</div>
+				<button type="submit" class="btn green" id="">Напомнить пароль</button>
+			</form>
 		</div>
 	</div>
 	

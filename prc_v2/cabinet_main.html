@@ -772,7 +772,7 @@
 						<hr>
 						<ul class="links_list">
 							<li><span class="title">Связь с выставкой</span></li>
-							<li><a href="" class="link">Задать вопрос</a></li>
+							<li><a href="" class="link" data-fancybox data-src="#ModWin_AskPRC">Задать вопрос</a></li>
 							<li><a href="" class="link">Предложения и пожелания</a></li>
 						</ul>
 					</div>
@@ -877,6 +877,30 @@
 			<h3>Переходы на сайт</h3>
 			<p>Заинтересованные посетители, перешедшие на сайт Вашей компании.</p>
 			<p>Цена перехода рассчитывается при подключении платного тарифа.</p>
+		</div>
+	</div>
+
+	<div class="modwin" id="ModWin_AskPRC" style="display: none;">
+		<div class="modwin_head">
+			<b class="title">Обратиться к Выставке</b>
+		</div>
+		<div class="modwin_body">
+			<p>Адрес электронной почты Выставки: <a href="mailto:info@productcenter.ru">info@productcenter.ru</a></p>
+			<form action="" method="" class="ask_form send_msg">
+				<div class="inputs">
+					<input class="input" type="text" name="user_name" placeholder="Ваше имя">
+					<input class="input" type="text" name="email" placeholder="Электронная почта">
+				</div>
+				<textarea name="comment_text" placeholder="Текст сообщения..."></textarea>
+				<span class="confirmation">
+					<input type="checkbox" class="checkbox" id="policy-agree" name="policy-agree" checked="checked">
+					<label for="policy-agree"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+					<span class="text">Я соглашаюсь с <a target="_blank" href="">политикой конфиденциальности</a></span>
+				</span>
+				<div class="form_bottom">
+					<button type="submit" class="btn">Отправить сообщение</button>
+				</div>
+			</form>
 		</div>
 	</div>
 

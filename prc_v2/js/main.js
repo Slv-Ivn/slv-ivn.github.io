@@ -132,10 +132,9 @@ $(document).ready(function(){
         $(this).parents('.sb_block.cabinet_links').toggleClass('active')
     });
 
-    //Модальное окно входа/регистрации
-    $('.modwin.mw_sign_in .title span').click(function(){
-    	$('.modwin.mw_sign_in .title span.active').removeClass('active');
-    	$(this).addClass('active');
+    //Модальное окно входа/восстановления
+    $('.modwin.mw_sign_in .modwin_body .recovery_pass, .modwin.mw_sign_in .modwin_body .go_back').click(function(){
+    	$('.modwin.mw_sign_in .title').text($('.modwin.mw_sign_in .title').text() == 'Вход' ? 'Восстановление пароля' : 'Вход');
     	$('.modwin.mw_sign_in form').toggleClass('active');
     });
 
@@ -188,6 +187,12 @@ $(document).ready(function(){
     	else{ $(this).text('Показать описание'); }
     	$(this).closest('.line').next('.help_info').toggleClass('active');
     });
+
+    //Включение/выключение disabled у форм
+	$('.sf_box.extra_info .checkbox').click(function(){
+		if (this.checked) { $(this).parent('div').next('textarea').prop('disabled', false); }
+		else { $(this).parent('div').next('textarea').prop('disabled', true); }
+	});
 
 
 	/* Последовательная анимация

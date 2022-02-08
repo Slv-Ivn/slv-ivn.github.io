@@ -10,6 +10,7 @@
 	   url('../fonts/Roboto.woff') format('woff'),
   	   url('../fonts/Roboto.ttf') format('ttf');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,6 +20,7 @@
   	   url('../fonts/Roboto-Italic.ttf') format('ttf');
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +29,7 @@
 	   url('../fonts/Roboto-Medium.woff') format('woff'),
   	   url('../fonts/Roboto-Medium.ttf') format('ttf');
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +38,7 @@
 	   url('../fonts/Roboto-Bold.woff') format('woff'),
   	   url('../fonts/Roboto-Bold.ttf') format('ttf');
   font-weight: bold;
+  font-display: swap;
 }
 
 
@@ -1099,7 +1103,7 @@ svg.svg {
 
 .nav_menu .catalog_list {
 	position: absolute;
-	top: 44px;
+	top: 42px;
 	left: 0;
 	right: 0;
 	display: flex;
@@ -1109,7 +1113,6 @@ svg.svg {
 	padding: 8px 24px 12px 24px;
 	background: #fff;
 	border: 1px solid var(--border_color);
-	border-top: none;
 	border-radius: 0 0 4px 4px;
 	box-shadow: var(--main_shadow_hover);
 	opacity: 0;

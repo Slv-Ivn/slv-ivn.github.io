@@ -751,13 +751,11 @@ svg.svg {
 	border-color: var(--orange_border_color);;
 	box-shadow: 0;
 	vertical-align: middle;
-	transition: all .2s ease-in-out;
 }
 
 .search_block .btn .svg {
 	top: 1px;
 	fill: #C59500;
-	transition: all .2s ease-in-out;
 }
 
 .search_block .btn:hover { background: var(--orange_border_color); }
@@ -934,7 +932,6 @@ svg.svg {
 	position: relative;
 	height: 100%;
 	display: flex;
-	transition: all .2s ease-in-out;
 }
 
 .nav_menu .nav_links li > b.link_title {
@@ -968,7 +965,6 @@ svg.svg {
 	padding: 6px 12px;
 	background: rgba(102,163,238,.1);
 	border-radius: 4px;
-	transition: all .2s ease-in-out;
 }
 
 .nav_menu .buttons_block .favorites_link .svg {
@@ -995,7 +991,6 @@ svg.svg {
 	background: rgba(82,192,64,.1);
 	border-radius: 4px;
 	color: #33A920;
-	transition: all .2s ease-in-out;
 }
 
 .nav_menu .buttons_block .add_btn:before,
@@ -1025,7 +1020,6 @@ svg.svg {
 	background: rgba(102,163,238,.1);
 	border-radius: 4px;
 	color: #2E66AB;
-	transition: all .2s ease-in-out;
 }
 
 .nav_menu .buttons_block .personal_link .svg {
@@ -1199,7 +1193,6 @@ svg.svg {
 	width: 16px;
 	height: 14px;
 	fill: #66A3EE;
-	transition: all .2s ease-in-out;
 }
 
 .crumbs .home_link:hover .svg { fill: var(--red_color); }

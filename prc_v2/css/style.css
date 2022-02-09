@@ -988,6 +988,7 @@ svg.svg {
 	background: rgba(82,192,64,.1);
 	border-radius: 4px;
 	color: #33A920;
+	z-index: 105;
 }
 
 .nav_menu .buttons_block .add_btn:before,
@@ -1086,7 +1087,9 @@ svg.svg {
 .nav_menu .buttons_block .personal_link .drop_menu {
 	left: auto;
 	right: 0;
-	margin-top: 10px;
+	margin-top: 4px;
+    border-top: 5px solid #fff;
+
 }
 
 

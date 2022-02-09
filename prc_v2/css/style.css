@@ -10,6 +10,7 @@
 	   url('../fonts/Roboto.woff') format('woff'),
   	   url('../fonts/Roboto.ttf') format('ttf');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,6 +20,7 @@
   	   url('../fonts/Roboto-Italic.ttf') format('ttf');
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +29,7 @@
 	   url('../fonts/Roboto-Medium.woff') format('woff'),
   	   url('../fonts/Roboto-Medium.ttf') format('ttf');
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +38,7 @@
 	   url('../fonts/Roboto-Bold.woff') format('woff'),
   	   url('../fonts/Roboto-Bold.ttf') format('ttf');
   font-weight: bold;
+  font-display: swap;
 }
 
 
@@ -241,7 +245,6 @@ button, .btn {
 	text-align: center;
 	color: #2E66AB;
 	cursor: pointer;
-	transition: all .2s ease-in-out;
 }
 
 .btn.up_text { font-size: 13px; }
@@ -363,7 +366,6 @@ hr.big_line {
 	left: calc(50% - 26px);
 	opacity: .8;
 	z-index: 10;
-	transition: opacity .2s ease-in-out;
 }
 
 .video:before {
@@ -418,7 +420,6 @@ form .form_element {
 	font-family: 'Roboto';
 	font-size: 15px;
 	color: var(--text_color);
-	transition: all .2s ease-in-out;
 }
 
 textarea {
@@ -747,13 +748,11 @@ svg.svg {
 	border-color: var(--orange_border_color);;
 	box-shadow: 0;
 	vertical-align: middle;
-	transition: all .2s ease-in-out;
 }
 
 .search_block .btn .svg {
 	top: 1px;
 	fill: #C59500;
-	transition: all .2s ease-in-out;
 }
 
 .search_block .btn:hover { background: var(--orange_border_color); }
@@ -930,7 +929,6 @@ svg.svg {
 	position: relative;
 	height: 100%;
 	display: flex;
-	transition: all .2s ease-in-out;
 }
 
 .nav_menu .nav_links li > b.link_title {
@@ -964,7 +962,6 @@ svg.svg {
 	padding: 6px 12px;
 	background: rgba(102,163,238,.1);
 	border-radius: 4px;
-	transition: all .2s ease-in-out;
 }
 
 .nav_menu .buttons_block .favorites_link .svg {
@@ -991,7 +988,7 @@ svg.svg {
 	background: rgba(82,192,64,.1);
 	border-radius: 4px;
 	color: #33A920;
-	transition: all .2s ease-in-out;
+	z-index: 105;
 }
 
 .nav_menu .buttons_block .add_btn:before,
@@ -1021,7 +1018,6 @@ svg.svg {
 	background: rgba(102,163,238,.1);
 	border-radius: 4px;
 	color: #2E66AB;
-	transition: all .2s ease-in-out;
 }
 
 .nav_menu .buttons_block .personal_link .svg {
@@ -1052,7 +1048,7 @@ svg.svg {
 	box-shadow: var(--main_shadow_hover);
 	visibility: hidden;
 	opacity: 0;
-	transition: all .2s ease-in-out;
+	transition: opacity .25s ease-in-out;
 }
 
 .nav_menu .drop_menu:after {
@@ -1091,7 +1087,9 @@ svg.svg {
 .nav_menu .buttons_block .personal_link .drop_menu {
 	left: auto;
 	right: 0;
-	margin-top: 10px;
+	margin-top: 4px;
+    border-top: 5px solid #fff;
+
 }
 
 
@@ -1099,7 +1097,7 @@ svg.svg {
 
 .nav_menu .catalog_list {
 	position: absolute;
-	top: 44px;
+	top: 42px;
 	left: 0;
 	right: 0;
 	display: flex;
@@ -1109,7 +1107,6 @@ svg.svg {
 	padding: 8px 24px 12px 24px;
 	background: #fff;
 	border: 1px solid var(--border_color);
-	border-top: none;
 	border-radius: 0 0 4px 4px;
 	box-shadow: var(--main_shadow_hover);
 	opacity: 0;
@@ -1196,7 +1193,6 @@ svg.svg {
 	width: 16px;
 	height: 14px;
 	fill: #66A3EE;
-	transition: all .2s ease-in-out;
 }
 
 .crumbs .home_link:hover .svg { fill: var(--red_color); }
@@ -2148,7 +2144,7 @@ svg.svg {
 	height: 88px;
 	margin-right: 15px;
 	border-radius: 4px;
-	transition: all .2s ease-in-out;
+	transition: transform .2s ease-in-out;
 }
 
 .main_information .mi_side_block .prc_instagram .fotos a:last-child { margin-right: 0; }
@@ -2481,7 +2477,7 @@ svg.svg {
 .cards .card_item .ci_extra .btn {
 	width: 100%;
 	margin: 4px 0;
-	padding: 16px 8px;
+	padding: 12px 8px;
 	overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -3010,6 +3006,18 @@ svg.svg {
 }
 
 
+/* ------------------- */
+
+.catalog-see-also {
+	position: relative;
+	margin: 0 0 24px 0;
+	padding-left: 16px;
+    border-left: 2px solid var(--medium_blue_color);
+}
+
+/* ------------------- */
+
+
 /*—————————————————————————————————————————————— сайдбар */
 
 .content .sidebar {
@@ -3450,6 +3458,8 @@ svg.svg {
 	/*max-height: 436px;*/
 }
 
+.lSSlideWrapper { height: 360px; }
+
 .item_view .iv_head .iv_image .imgs_slider {
 	display: flex;
 	align-items: center;
@@ -3513,7 +3523,7 @@ svg.svg {
 .item_view .iv_head .iv_content .iv_main_block .iv_item_order {
 	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	padding: 6px;
 	background: rgba(96,198,80,.1);
 	border-radius: 4px;
@@ -4288,6 +4298,30 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 	border-radius: 4px;
 	object-fit: cover;
 }
+
+
+
+/* _____________________________________________ Страница без доступа */
+
+
+.access_block {
+	position: relative;
+	max-width: 400px;
+	margin: 24px auto 0 auto;
+	text-align: center;
+	font-size: 17px;
+}
+
+.access_block b {
+	display: block;
+	font-size: 24px;
+}
+
+.access_block .btn {
+	padding: 12px 24px;
+	margin: 8px 0 0 0;
+}
+
 
 
 /*—————————————————————————————————————————————— страница о проекте */
@@ -5297,7 +5331,10 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 
 .modwin.mw_uni_done .button_block .btn,
 .modwin.mw_uni_error .button_block .btn,
-.modwin.mw_confirm_action .button_block .btn { margin-bottom: 0; }
+.modwin.mw_confirm_action .button_block .btn {
+	margin-bottom: 0;
+	padding: 12px 24px;
+}
 
 
 /* --- Формы задать вопрос, сделать запрос, написать --- */
@@ -8047,7 +8084,8 @@ xmp {
 		top: -42px;
 		border-radius: 80px;
 	}
-
+	
+	.lSSlideWrapper,
 	.item_view .iv_head .iv_image .imgs_slider {
 		height: 240px;
 	}

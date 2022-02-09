@@ -245,7 +245,6 @@ button, .btn {
 	text-align: center;
 	color: #2E66AB;
 	cursor: pointer;
-	transition: all .2s ease-in-out;
 }
 
 .btn.up_text { font-size: 13px; }
@@ -367,7 +366,6 @@ hr.big_line {
 	left: calc(50% - 26px);
 	opacity: .8;
 	z-index: 10;
-	transition: opacity .2s ease-in-out;
 }
 
 .video:before {
@@ -422,7 +420,6 @@ form .form_element {
 	font-family: 'Roboto';
 	font-size: 15px;
 	color: var(--text_color);
-	transition: all .2s ease-in-out;
 }
 
 textarea {
@@ -2477,7 +2474,7 @@ svg.svg {
 .cards .card_item .ci_extra .btn {
 	width: 100%;
 	margin: 4px 0;
-	padding: 16px 8px;
+	padding: 12px 8px;
 	overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -3006,6 +3003,18 @@ svg.svg {
 }
 
 
+/* ------------------- */
+
+.catalog-see-also {
+	position: relative;
+	margin: 0 0 24px 0;
+	padding-left: 16px;
+    border-left: 2px solid var(--medium_blue_color);
+}
+
+/* ------------------- */
+
+
 /*—————————————————————————————————————————————— сайдбар */
 
 .content .sidebar {
@@ -3446,6 +3455,8 @@ svg.svg {
 	/*max-height: 436px;*/
 }
 
+.lSSlideWrapper { height: 360px; }
+
 .item_view .iv_head .iv_image .imgs_slider {
 	display: flex;
 	align-items: center;
@@ -3509,7 +3520,7 @@ svg.svg {
 .item_view .iv_head .iv_content .iv_main_block .iv_item_order {
 	position: relative;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	padding: 6px;
 	background: rgba(96,198,80,.1);
 	border-radius: 4px;
@@ -5293,7 +5304,10 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 
 .modwin.mw_uni_done .button_block .btn,
 .modwin.mw_uni_error .button_block .btn,
-.modwin.mw_confirm_action .button_block .btn { margin-bottom: 0; }
+.modwin.mw_confirm_action .button_block .btn {
+	margin-bottom: 0;
+	padding: 12px 24px;
+}
 
 
 /* --- Формы задать вопрос, сделать запрос, написать --- */
@@ -8043,7 +8057,8 @@ xmp {
 		top: -42px;
 		border-radius: 80px;
 	}
-
+	
+	.lSSlideWrapper,
 	.item_view .iv_head .iv_image .imgs_slider {
 		height: 240px;
 	}

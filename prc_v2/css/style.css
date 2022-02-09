@@ -1047,7 +1047,7 @@ svg.svg {
 	box-shadow: var(--main_shadow_hover);
 	visibility: hidden;
 	opacity: 0;
-	transition: all .2s ease-in-out;
+	transition: opacity .25s ease-in-out;
 }
 
 .nav_menu .drop_menu:after {
@@ -2141,7 +2141,7 @@ svg.svg {
 	height: 88px;
 	margin-right: 15px;
 	border-radius: 4px;
-	transition: all .2s ease-in-out;
+	transition: transform .2s ease-in-out;
 }
 
 .main_information .mi_side_block .prc_instagram .fotos a:last-child { margin-right: 0; }

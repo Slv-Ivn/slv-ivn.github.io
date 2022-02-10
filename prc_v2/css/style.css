@@ -792,11 +792,14 @@ svg.svg {
 
 .search_block.fixed {
 	position: fixed;
-	top: 0;
-	width: 100%;
-	margin: 0;
-	text-align: center;
-	z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 999;
 }
 
 .search_block.fixed form { 
@@ -1190,6 +1193,7 @@ svg.svg {
 }
 
 .crumbs .crumbs_list .home_link .svg {
+	top: 2px;
 	width: 16px;
 	height: 14px;
 	fill: #66A3EE;
@@ -3099,6 +3103,36 @@ svg.svg {
 	margin: 4px auto 0 auto;
 }
 
+.content .sidebar .sb_block.filter.fixed {
+	position: sticky;
+	top: 16px;
+	z-index: 120;
+}
+
+.content .sidebar .sb_block.filter.loading:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.8);
+	border-radius: 4px;
+	z-index: 174;
+}
+
+.content .sidebar .sb_block.filter.loading:after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 24px);
+	left: calc(50% - 24px);
+	width: 48px;
+	height: 48px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='icon_firm' viewBox='0 0 20 20'%3E%3Cpath d='M18.076 10A3.405 3.405 0 0 1 20 7.092a10.514 10.514 0 0 0-.824-1.99 3.22 3.22 0 0 1-3.227-1.05 3.112 3.112 0 0 1-.815-3.228A10.493 10.493 0 0 0 13.145 0a3.534 3.534 0 0 1-6.29 0 10.507 10.507 0 0 0-1.99.823A3.113 3.113 0 0 1 4.05 4.05 3.22 3.22 0 0 1 .825 5.103 10.5 10.5 0 0 0 0 7.093 3.405 3.405 0 0 1 1.924 10 3.77 3.77 0 0 1 0 13.146a10.51 10.51 0 0 0 .824 1.99 3.244 3.244 0 0 1 4.04 4.04 10.484 10.484 0 0 0 1.99.824 3.534 3.534 0 0 1 6.292 0 10.495 10.495 0 0 0 1.99-.824 3.112 3.112 0 0 1 .813-3.227 3.22 3.22 0 0 1 3.225-1.053 10.51 10.51 0 0 0 .824-1.99A3.404 3.404 0 0 1 18.075 10zM10 14.35A4.35 4.35 0 1 1 14.35 10 4.35 4.35 0 0 1 10 14.35z' fill='%2366a3ee'%3E%3C/path%3E%3C/svg%3E");
+	z-index: 175;
+	animation: Loader_animation 2s linear infinite;
+}
+
 .content .sidebar .sb_block .uni_close {
 	display: none;
 }
@@ -3810,6 +3844,39 @@ svg.svg {
 .item_view .iv_bottom .iv_about .item_files .dl_file {
 	width: 45%;
 	margin: 16px 0;
+}
+
+.item_view .manage_item {
+	position: relative;
+	margin: 0;
+	z-index: 10;
+}
+
+.item_view .manage_item div {
+	position: relative;
+    display: flex;
+}
+
+.item_view .manage_item div a {
+	position: relative;
+	top: 1px;
+    padding: 4px 12px;
+    background: #fff;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid var(--border_color);
+    box-shadow: var(--main_shadow), inset 0 -4px 4px 0 rgb(248 250 252);
+    font-size: 13px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item_view .manage_item div a:nth-child(2) { margin: 0 4px; }
+
+.item_view .manage_item div a:hover {
+	color: var(--red_color);
+	background: var(--yellow_bg_color);
 }
 
 

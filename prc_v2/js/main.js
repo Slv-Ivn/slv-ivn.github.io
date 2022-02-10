@@ -61,6 +61,27 @@ $(document).ready(function(){
             $('.search_block').removeClass('fixed'); }
     });
 
+    //Плавающий фильтр в каталогах
+	$(window).scroll(function(){
+        if($(this).scrollTop() >= 400){
+        $('.sb_block.filter').addClass('fixed'); }
+        else { 
+            $('.sb_block.filter').removeClass('fixed'); }
+    });
+
+    $(window).on('resize', function() {
+    	if($(window).width() < 980) {
+        	$('.sb_block.filter').removeClass('fixed');
+    	}
+	});
+
+    //Оверлей загрузки фильтра в каталогах
+	$('.sb_block.filter select').change(function(){
+	    $(this).find(':selected').parents('.sb_block.filter').addClass('loading')
+           setTimeout(function(){ 
+           	$('.sb_block.filter').removeClass('loading');}, 3000);
+	});
+
 	//Показать обрезанное содержимое блоков
 	$('.btn.show_content').click(function(){
 		$(this).hide();

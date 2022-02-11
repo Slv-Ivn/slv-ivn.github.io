@@ -80,8 +80,59 @@
 	</div>
 
 	<section class="main_map">
-		<div style="width: 100%; height: 520px; background: #ccc;">
-			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2256fc86901641b29d80628dd1e72c60420c56fc2d677f138763553d34238ec7&amp;source=constructor" width="100%" height="520" frameborder="0"></iframe>
+		<div class="map_filter">
+			<form action="" method="">
+				<div class="form_element">
+					<select name="" id="">
+						<option value="0">Выбрать регион...</option>
+						<option value="1">Мужские туфли Оксфорды из натуральной кожи</option>
+						<option value="2">Натуральная кожа</option>
+						<option value="3">Оксфорды из натуральной кожи</option>
+					</select>
+					<select name="" id="">
+						<option value="0">Выбрать город...</option>
+						<option value="1">Мужские туфли Оксфорды из натуральной кожи</option>
+					</select>
+				</div>
+				<div class="form_element">
+					<select name="" id="">
+						<option value="0">Выбрать отрасль...</option>
+						<option value="1">Мужские туфли Оксфорды из натуральной кожи</option>
+					</select>
+					<select name="" id="">
+						<option value="0">Выбрать подкатегорию...</option>
+						<option value="1">Мужские туфли Оксфорды из натуральной кожи</option>
+						<option value="2">Натуральная кожа</option>
+						<option value="3">Оксфорды из натуральной кожи</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="card_on_map">
+			<span class="uni_close" title="Закрыть"></span>
+			<div class="card_body">
+				<div class="image">
+					<img src="img/firm.jpg" title="" alt="">
+				</div>
+				<div class="text">
+					<a href="" class="link firm">Производитель здорового питания «Моя Земля»</a>
+					<span class="location"><svg class="svg _icon_location"><use xlink:href="#icon_location"></use></svg>Владивосток</span>
+					<small class="description">Компания «Моя Земля» — производитель и поставщик здорового питания с 2008 года...</small>
+					<div class="item_rating small">
+                        <i class="rating_stars">
+                            <i class="rating_stars_mask" style="width: 80%"></i>
+                        </i>
+                        <small class="grey_color text_short">28 отзывов</small>
+                    </div>
+				</div>
+			</div>
+			<div class="card_bottom">
+				<button type="button" class="btn white show_mw_order_price" data-fancybox="" data-src="#ModWin_OrderPrice">Заказать прайс-лист</button>
+				<button type="button" class="btn green show_mw_order_item" data-fancybox="" data-src="#ModWin_OrderItem">Заказать продукцию</button>
+			</div>
+		</div>
+		<div style="width: 100%; height: 600px; background: #ccc;">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2256fc86901641b29d80628dd1e72c60420c56fc2d677f138763553d34238ec7&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
 		</div>
 	</section>
 
@@ -489,6 +540,82 @@
 
 		</div>
 	</footer>
+
+	<div class="modwin mw_order_item" id="ModWin_OrderItem" style="display: none;">
+		<div class="modwin_head">
+			<b class="title">Отправить оптовый заказ производителю</b>
+			<div class="text">Пожалуйста укажите контактные данные, название вашей организации, интересующий объем продукции, а также другую информацию, которую Вы посчитаете важной.</div>
+		</div>
+		<div class="modwin_body">
+			<form action="" method="">
+				<div class="form_element">
+					<label>Имя</label>
+					<input class="input" type="text" name="name" value="" placeholder="Ваше имя">
+					<small class="error_msg" style="display: none;">Вы не указали имя</small>
+                </div>
+                <div class="form_element">
+					<label>Телефон</label>
+					<input class="input error" type="tel" name="phone" value="" placeholder="Контактный телефон">
+					<small class="error_msg" style="display: block;">Вы не указали контактные данные</small>
+				</div>
+				<div class="form_element">
+					<label>Электронная почта</label>
+					<input class="input" type="email" name="email" value="" placeholder="Адрес электронной почты">
+					<small class="error_msg" style="display: none;">Вы не указали контактные данные</small>
+				</div>
+				<div class="form_element">
+					<label>Отредактируйте текст заказа</label>
+					<textarea name="details">Здравствуйте. Планируем купить оптом вашу продукцию: Детский стиральный порошок гипоаллергенный «Весенняя Нежность». Пришлите пожалуйста прайс-каталог и условия сотрудничества. Россия, г. Москва</textarea>
+				</div>
+				<div class="button_block">
+					<button type="submit" class="btn green" id="">Отправить заказ</button>
+					<span class="confirmation">
+						<input type="checkbox" class="checkbox" id="policy-agree" name="policy-agree" checked="checked">
+						<label for="policy-agree"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+						<span class="text">Я соглашаюсь с <a target="_blank" href="">политикой конфиденциальности</a></span>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="modwin mw_order_price" id="ModWin_OrderPrice" style="display: none;">
+		<div class="modwin_head">
+			<b class="title">Запросить прайс-лист</b>
+			<div class="text">Пожалуйста заполните необходимые контактные данные.</div>
+		</div>
+		<div class="modwin_body">
+			<form action="" method="">
+				<div class="form_element">
+					<label>Имя</label>
+					<input class="input" type="text" name="name" value="" placeholder="Ваше имя">
+					<small class="error_msg" style="display: none;">Вы не указали имя</small>
+                </div>
+                <div class="form_element">
+					<label>Телефон <small>&nbsp;не обязательно</small></label>
+					<input class="input" type="tel" name="phone" value="" placeholder="Контактный телефон">
+					<small class="error_msg" style="display: none;">Вы не указали контактные данные</small>
+				</div>
+				<div class="form_element">
+					<label>Электронная почта</label>
+					<input class="input" type="email" name="email" value="" placeholder="Адрес электронной почты">
+					<small class="error_msg" style="display: none;">Вы не указали контактные данные</small>
+				</div>
+				<div class="form_element">
+					<label>Отредактируйте текст запроса</label>
+					<textarea name="details">Здравствуйте. Интересует опт. Пришлите, пожалуйста, прайс-каталог вашей продукции. Россия, г. Москва</textarea>
+				</div>
+				<div class="button_block">
+					<button type="submit" class="btn green" id="">Отправить заказ</button>
+					<span class="confirmation">
+						<input type="checkbox" class="checkbox" id="policy-agree1" name="policy-agree" checked="checked">
+						<label for="policy-agree1"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+						<span class="text">Я соглашаюсь с <a target="_blank" href="">политикой конфиденциальности</a></span>
+					</span>
+				</div>
+			</form>
+		</div>
+	</div>
 
 <div class="to_top" title="Вернуться наверх ↑"></div>
 

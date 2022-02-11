@@ -215,6 +215,12 @@ $(document).ready(function(){
 		else { $(this).parent('div').next('textarea').prop('disabled', true); }
 	});
 
+	 //Оверлей загрузки статистики в личном кабинете
+	$(function(){
+		setTimeout(function(){
+			$('.cabinet_main .cm_statistic').removeClass('loading');}, 3000);
+	});
+
 
 	/* Последовательная анимация
 

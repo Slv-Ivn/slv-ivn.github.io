@@ -361,7 +361,7 @@
         var list = $elem.find( ".bselect-option-list" );
         var len = list.find( "li:visible" ).length;
 
-        list.innerHeight( parseInt( list.css( "line-height" ), 10 ) * 2 * ( len < 6 ? len : 6 ) );
+        list.innerHeight( parseInt( list.css( "line-height" ), 10 ) * 2 * ( len < 5 ? len : 5 ) );
     }
 
     // Updates visual properties of the bselect after the plugin was initialized

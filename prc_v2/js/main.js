@@ -196,7 +196,7 @@ $(document).ready(function(){
   	});
 
 	//Модальное окно подключение платных услуг
-    $('.modwin.mw_services_list .help_link').click(function(){
+    $('.modwin.mw_services_list .help_link, .services_list .help_link').click(function(){
     	if($(this).text() == 'Показать описание'){ $(this).text('Скрыть описание');}
     	else{ $(this).text('Показать описание'); }
     	$(this).next('.help_text').toggleClass('active');

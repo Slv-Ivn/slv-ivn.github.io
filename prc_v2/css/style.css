@@ -5407,7 +5407,7 @@ form.ask_form.send_msg .inputs .input { width: 49%; }
 .special_form.add_news .sf_line .img_load {
 	position: relative;
 	width: 280px;
-	margin: 16px 0 0 0;
+	margin: 12px 0 0 0;
 }
 
 .special_form.add_news .sf_line .img_load .image {

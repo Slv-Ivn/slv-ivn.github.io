@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>Новости</title>
+	<title>Добавление новости</title>
 	<meta name="description" content="" />
 	<meta name="robots" content="index, follow" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -64,9 +64,9 @@
 				<li><a href="" class="link_title">Промышленная карта</a></li>
 				<li><a href="" class="link_title">Форум</a></li>
 				<li>
-					<b class="link_title">Новости</b>
+					<a href="" class="link_title">Новости</a>
 					<ul class="drop_menu" style="visibility: hidden;">
-						<li><b>Новости в России</b></li>
+						<li><a href="">Новости в России</a></li>
 						<li><a href="">Новости производителей</a></li>
 						<li><a href="">События проекта</a></li>
 					</ul>
@@ -550,143 +550,97 @@
 		<div class="space">
 
 			<div class="central">
-				<h1 class="main_title">Новости в России</h1>
-
-				<div class="rubrics_list_call">Выбрать рубрику новостей</div>
-				<div class="sort s_news">
-					<ul>
-						<li><a href="" class="sort_mark active">новые</a></li>
-						<li><a href="" class="sort_mark">популярные</a></li>
-					</ul>
-					<ul>
-						<li><span class="sort_mark active">48</span></li>
-						<li><span class="sort_mark">100</span></li>
-						<li><span class="sort_mark">300</span></li>
-					</ul>
+				<div class="call_cabinet_menu">Показать меню управления</div>
+				<h1 class="main_title">Добавление новости компании</h1>
+				<div class="main_descriptor">
+					<p>Новость — это сообщение о значимом событии в Вашей компании, а не объявление!</p>
+					<p>Событие месячной давности — не новость.</p>
+					<p>Рассказывайте о достигнутых успехах, полученных наградах, участии в конкурсах, внедрении новых технологий и т.п.</p>
+					<p>Новости не соответствующие этим требованиям и неаккуратно оформленные — удаляются.</p>
 				</div>
 
-				<div class="news">
-
-					<div class="news_date">02.03.2019</div>
+				<form action="" method="" name="" class="special_form add_news">
 					
-					<div class="news_item">
-						<div class="image">
-							<a href=""><img src="img/image.jpg" alt="" title=""></a>
+					<div class="sf_box">
+						<div class="sf_title"><b>Основная информация</b></div>
+						<div class="sf_line">
+							<label class="sf_block needed">
+								<b>Заголовок</b>
+								<small>Укажите заголовок добавляемой новости.</small>
+								<input class="input" type="text" name="" placeholder="...">
+							</label>
 						</div>
-						<div class="text">
-							<div class="text_head">
-								<a href="" class="n_rubric"><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg>Новые заводы и цеха</a>
-								<span class="n_comments"><svg class="svg _icon_msg"><use xlink:href="#icon_msg"></use></svg>38</span>
+						<div class="sf_line">
+							<div class="sf_block">
+								<b>Фотография</b>
+								<small>Загрузите фотографию к новости.</small>
+								<div class="img_load">
+									<div class="image">
+										<s class="uni_close" title="Удалить"></s>
+										<img src="img/image.jpg" title="" alt="">
+									</div>
+									<div class="btn">Загрузить фотографию</div>
+								</div>
 							</div>
-							<a href="" class="link">Линию производства алюминиевых профилей запустили в Крыму</a>
-							<div class="n_description">В рамках проекта по созданию технопарка компании «Современные фасадные системы» запущена линия порошковой покраски алюминиевого профиля. Запуск линии позволит выполнять покраску до 6 тысяч квадратных метров изделий в сутки...</div>
 						</div>
 					</div>
-
-					<div class="news_item">
-						<div class="image">
-							<a href=""><img src="img/image2.jpg" alt="" title=""></a>
-						</div>
-						<div class="text">
-							<div class="text_head">
-								<a href="" class="n_rubric"><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg>Новые заводы и цеха</a>
-								<span class="n_comments"><svg class="svg _icon_msg"><use xlink:href="#icon_msg"></use></svg>38</span>
+					<div class="sf_box">
+						<div class="sf_title"><b>Текстовая часть</b></div>
+						<div class="sf_line">
+							<div class="sf_block needed">
+								<b>Анонс новости</b>
+								<small>Напишите 1-2 предложения, которые коротко скажут о сути сообщения.<br>Анонс виден в списке новостей.</small>
+								<textarea name="" placeholder="Текст..."></textarea>
 							</div>
-							<a href="" class="link">В Красноярске открыт детский сад на 300 мест</a>
-							<div class="n_description">Детский сад № 89 в микрорайоне Нанжуль-Солнечный Красноярска построили в рамках регионального проекта «Содействие занятости женщин — доступность дошкольного образования для детей».В дошкольном учреждении 12 групп: 4 группы на 80 мест для...</div>
+						</div>
+						<div class="sf_line">
+							<div class="sf_block needed">
+								<b>Содержание новости</b>
+								<small>Грамотный, аккуратный текст, интересный потенциальному покупателю. Должен полностью раскрывать суть, без фраз «подробности на нашем сайте» и подобных.<br>Недопустимо указывать ссылки и контактные данные — ссылка на Ваш стенд вставляется автоматически.</small>
+								<textarea name="" placeholder="Текст..."></textarea>
+							</div>
 						</div>
 					</div>
-
-					<div class="news_date">01.03.2019</div>
-					
-					<div class="news_item">
-						<div class="image">
-							<a href=""><img src="img/image.jpg" alt="" title=""></a>
-						</div>
-						<div class="text">
-							<a href="" class="n_rubric"><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg>Новые заводы и цеха</a>
-							<a href="" class="link">Линию производства алюминиевых профилей запустили в Крыму</a>
-							<div class="n_description">В рамках проекта по созданию технопарка компании «Современные фасадные системы» запущена линия порошковой покраски алюминиевого профиля. Запуск линии позволит выполнять покраску до 6 тысяч квадратных метров изделий в сутки...</div>
-						</div>
+					<div class="sf_line">
+						<div class="confirmation">
+                            <input type="checkbox" class="checkbox" id="display" name="Display" value="1" checked="checked">
+                            <label for="notify_news"><svg class="svg_icon _okey"><use xlink:href="#icon_okey"></use></svg></label>
+                            <span class="text">Отображать новость на сайте</span>
+                        </div>
 					</div>
-
-					<div class="news_item">
-						<div class="image">
-							<a href=""><img src="img/image2.jpg" alt="" title=""></a>
-						</div>
-						<div class="text">
-							<a href="" class="n_rubric"><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg>Детские сады и школы</a>
-							<a href="" class="link">В Красноярске открыт детский сад на 300 мест</a>
-							<div class="n_description">Детский сад № 89 в микрорайоне Нанжуль-Солнечный Красноярска построили в рамках регионального проекта «Содействие занятости женщин — доступность дошкольного образования для детей».В дошкольном учреждении 12 групп: 4 группы на 80 мест для...</div>
-						</div>
-					</div>
-
-					<div class="news_item">
-						<div class="image">
-							<a href=""><img src="img/image.jpg" alt="" title=""></a>
-						</div>
-						<div class="text">
-							<a href="" class="n_rubric"><svg class="svg _icon_mark"><use xlink:href="#icon_mark"></use></svg>Новые заводы и цеха</a>
-							<a href="" class="link">Линию производства алюминиевых профилей запустили в Крыму</a>
-							<div class="n_description">В рамках проекта по созданию технопарка компании «Современные фасадные системы» запущена линия порошковой покраски алюминиевого профиля. Запуск линии позволит выполнять покраску до 6 тысяч квадратных метров изделий в сутки...</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="pagination">
-					<button type="button" class="btn white load_content up_text">Показать больше</button>
-					<ul class="page_links">
-						<li><a href="" class="pl_mark">Назад</a></li>
-						<li><a href="" class="pl_mark">1</a></li>
-						<li><span class="pl_mark">2</span></li>
-						<li><a href="" class="pl_mark">3</a></li>
-						<li><a href="" class="pl_mark">4</a></li>
-						<li><a href="" class="pl_mark">5</a></li>
-						<li><a href="" class="pl_mark">6</a></li>
-						<li><a href="" class="pl_mark">Вперёд</a></li>
-					</ul>
-				</div>
-
+					<button type="" class="btn green form_submit">Сохранить и продолжить</button>
+				</form>
 			</div>
 
 			<div class="sidebar">
 
-				<div class="sb_block sb_news_rubric">
+				<div class="sb_block cabinet_links">
 					<div class="sbb_head">
-						<b class="sbb_title">Рубрики</b>
+						<b class="sbb_title">Управление</b>
 						<s class="uni_close"></s>
 					</div>
 					<div class="sbb_body">
 						<ul class="links_list">
-							<li><a href="" class="link">Производство&thinsp;<sup>481</sup></a></li>
-							<li><a href="" class="link">Альтернативная энергетика&thinsp;<sup>311</sup></a></li>
-							<li><a href="" class="link">Наука и технологии&thinsp;<sup>85</sup></a></li>
-							<li><a href="" class="link">Производство&thinsp;<sup>481</sup></a></li>
-							<li><a href="" class="link">Альтернативная энергетика&thinsp;<sup>311</sup></a></li>
-							<li><a href="" class="link">Наука и технологии&thinsp;<sup>85</sup></a></li>
-							<li><a href="" class="link">Производство&thinsp;<sup>481</sup></a></li>
-							<li><a href="" class="link">Альтернативная энергетика&thinsp;<sup>311</sup></a></li>
-							<li><a href="" class="link">Наука и технологии&thinsp;<sup>85</sup></a></li>
-							<li><a href="" class="link">Производство&thinsp;<sup>481</sup></a></li>
-							<li><a href="" class="link">Альтернативная энергетика&thinsp;<sup>311</sup></a></li>
-							<li><a href="" class="link">Наука и технологии&thinsp;<sup>85</sup></a></li>
-							<li><a href="" class="link">Производство&thinsp;<sup>481</sup></a></li>
-							<li><a href="" class="link">Альтернативная энергетика&thinsp;<sup>311</sup></a></li>
-							<li><a href="" class="link">Наука и технологии&thinsp;<sup>85</sup></a></li>
+							<li><a href="" class="link">Личный кабинет</a></li>
+							<li><a href="" class="link">Статистика</a></li>
+							<li><a href="" class="link">Тарифные планы</a></li>
+							<li><a href="" class="link">Стенд компании</a></li>
+							<li><a href="" class="link">Профиль компании</a></li>
+							<li><a href="" class="link">Каталог товаров</a></li>
+							<li><a href="" class="link">Заказы товаров</a></li>
+							<li><a href="" class="link">Комментарии</a></li>
+							<li><a href="" class="link">Отзывы</a></li>
+							<li><a href="" class="link">Новости компании</a></li>
+							<li><b>Профиль сотрудника</b></li>
+							<li><a href="" class="link">Настройки</a></li>
+							<li><a href="" class="link">Спрос</a></li>
+							<li><a href="" class="link">Обмен ссылками</a></li>
 						</ul>
-					</div>
-				</div>
-
-				<div class="sb_block sb_forum_links">
-					<div class="sbb_head">
-						<b class="sbb_title">Новое на форуме</b>
-					</div>
-					<div class="sbb_body">
+						<hr>
 						<ul class="links_list">
-							<li><a href="" class="link">Электроламповый завод «Калашниково»</a></li>
-							<li><a href="" class="link">В Пермском крае производят инновационный светодиодный фитосветильник</a></li>
-							<li><a href="" class="link">Клей для термопистолета</a></li>
+							<li><span class="title">Связь с выставкой</span></li>
+							<li><a href="" class="link">Задать вопрос</a></li>
+							<li><a href="" class="link">Предложения и пожелания</a></li>
 						</ul>
 					</div>
 				</div>

@@ -589,7 +589,7 @@ input:focus, textarea:focus {
 }
 
 .about_38s .a_discription .text {
-    margin: 8px 0 0 40px;
+    margin: 0 0 0 40px;
 }
 
 .about_38s .a_discription .text h2 {
@@ -1007,6 +1007,41 @@ input:focus, textarea:focus {
 
 /* ------------------------------------------------------------ К меньшему разрешению экранов */
 
+
+@media screen and (max-width: 1160px) {
+
+    .our_atmosphere .oa_block {
+        max-width: 200px;
+    }
+
+    .about_38s .a_discription .image {
+        max-width: 420px;
+    }
+
+    .about_38s .a_bottom {
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .about_38s .a_bottom .mini_gallery {
+        order: 1;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .about_38s .a_bottom .mini_gallery .images {
+        justify-content: space-around;
+    }
+
+    .about_38s .a_residence,
+    .about_38s .a_entertainment {
+        order: 2;
+        width: 49%;
+        max-width: 100%;
+    }
+
+}
 
 
 @media screen and (max-width: 1118px) {

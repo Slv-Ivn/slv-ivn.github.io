@@ -130,11 +130,13 @@ $(document).ready(function(){
 
 	//Показать фильтр в каталоге на мобильной версии
 	$('.central .sort .filter_call').click(function(){
-        $('.content .sidebar .sb_block.filter').toggleClass('active')
+        $('.content .sidebar .sb_block.filter').toggleClass('active');
+        $('body').toggleClass('ovh');
     });
 
     $('.content .sidebar .sb_block.filter .uni_close').click(function(){
-        $(this).parents('.sb_block.filter').toggleClass('active')
+        $(this).parents('.sb_block.filter').toggleClass('active');
+        $('body').toggleClass('ovh');
     });
 
     //Показать выбор рубрики в новостях на мобильной версии

@@ -3534,7 +3534,7 @@ svg.svg {
 	/*max-height: 436px;*/
 }
 
-.lSSlideWrapper { height: 360px; }
+.lSSlideWrapper { min-height: 360px; }
 
 .item_view .iv_head .iv_image .imgs_slider {
 	display: flex;
@@ -7538,6 +7538,12 @@ xmp {
 
 	.nav_menu .nav_links > li:not(:last-child) {
 		margin-right: 8px;
+	}
+	
+	.nav_menu .buttons_block .favorites_link,
+	.nav_menu .buttons_block .add_btn,
+	.nav_menu .buttons_block .personal_link {
+		margin-left: 6px;
 	}
 
 	.last_on_main .lom_top,

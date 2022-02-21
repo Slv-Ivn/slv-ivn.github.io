@@ -7,7 +7,9 @@ $(document).ready(function(){
 
 
 	//Стилизация селектов
-	$('select').bselect();
+	$('select').customSelect({
+		search: true
+	});
 
 	$('.imgs_slider').lightSlider({
 	    gallery: true,

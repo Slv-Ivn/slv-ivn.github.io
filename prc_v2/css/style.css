@@ -171,6 +171,10 @@ h1.up_text, .h1.up_text {
 	font-size: 20px; 
 }
 
+.other_items_subtitle {
+	margin: 48px 0 24px 0;
+}
+
 .bolder {
 	font-family: 'Roboto';
 	font-weight: bold;
@@ -212,6 +216,14 @@ h1.main_title {
 
 .main_descriptor p {
 	margin: 4px 0;
+}
+
+.main_descriptor.attention {
+	margin-top: 8px;
+	padding: 8px 16px;
+	background: var(--red_color_opacity);
+	border-radius: 4px;
+	font-size: 17px;
 }
 
 sup {
@@ -3665,9 +3677,15 @@ svg.svg {
 	padding: 6px;
 	background: rgba(102,163,238,.12);
 	border-radius: 4px;
+	color: var(--link_color);
 }
 
 .iv_btns_block .iv_btn:last-child { margin-right: 0; }
+
+.iv_btns_block .iv_btn:hover {
+	color: var(--red_color);
+	cursor: pointer;
+}
 
 .iv_btns_block .iv_btn .icon {
 	position: relative;

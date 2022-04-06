@@ -6,10 +6,10 @@ $(document).ready(function(){
 	$('#svg_icons').load('img/all_icons.svg');
 
 
-	//Стилизация селектов
-	$('select').customSelect({
-		search: true
-	});
+	// //Стилизация селектов
+	// $('select').customSelect({
+	// 	search: true
+	// });
 
 	$('.imgs_slider').lightSlider({
 	    gallery: true,
@@ -225,6 +225,17 @@ $(document).ready(function(){
 			$('.cabinet_main .cm_statistic').removeClass('loading');}, 3000);
 	});
 
+	//Листинг фото в картичках товаров/компаний
+	$(function(){
+	   $('.cards .card_item .image .img_mark').hover(function(){
+	       var index= $(this).index();
+	       $(this).parents('.image a').find('img').eq(index).removeClass('hidden');
+	       $(this).parents('.image a').find('img').eq(index).addClass('visible');
+	   },function(){
+	       $(this).parents('.image a').find('img').addClass('hidden');
+	       $(this).parents('.image a').find('img').removeClass('visible');
+	    });
+	});
 
 	/* Последовательная анимация
 

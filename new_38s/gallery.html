@@ -52,7 +52,7 @@
 				<h1 class="main_title">Галерея Усадьбы «38 самураев»</h1>
 				<p class="main_descriptor">Фотографии и видео Усадьбы «38 самураев» (Развлечения, Дизайн, Море, Номера).</p>
 				<div class="add_gallery_item">
-					<button type="button" class="btn green">Добавить фотографии</button>
+					<button type="button" class="btn green" data-fancybox data-src="#window_add_photo">Добавить фотографии</button>
 					<span class="text">Отдыхали в Усадьбе «38 самураев» —<br>добавьте свои фото на сайт.</span>
 				</div>
 				<hr class="separator">
@@ -61,18 +61,22 @@
 					<a href="" class="ga_album">
 						<div class="image"><img src="img/foto4_small.jpg" alt="" title=""></div>
 						<b>Фотографии базы отдыха</b>
+						<small>160 фото и 34 видео</small>
 					</a>
 					<a href="" class="ga_album">
 						<div class="image"><img src="img/foto1_small.jpg" alt="" title=""></div>
 						<b>Фотографии отдыхающих</b>
+						<small>284 фото и 51 видео</small>
 					</a>
 					<a href="" class="ga_album">
 						<div class="image"><img src="img/foto2_small.jpg" alt="" title=""></div>
 						<b>Индустрия развлечений</b>
+						<small>75 фото и 12 видео</small>
 					</a>
 					<a href="" class="ga_album">
 						<div class="image"><img src="img/foto3_small.jpg" alt="" title=""></div>
 						<b>Море, пляж, красота!</b>
+						<small>92 фото и 18 видео</small>
 					</a>
 				</div>
 				<hr class="separator">
@@ -206,7 +210,6 @@
 							<div class="text">
 								<p>Большое спасибо за организацию отдыха.Все по семейному, красиво, уютно, спокойно. Для семейного отдыха ничего лучше и не придумаешь.</p>
 								<p>Очень понравился персонал, отзывчивый, улыбчивые, доброжелательные. Отдельное спасибо за питание, Кафе отличное...</p>
-								<span class="link show_all">Развернуть отзыв...</span>
 							</div>
 						</div>
 					</div>
@@ -236,6 +239,59 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="mod_win _add_photo" id="window_add_photo">
+			<div class="mw_head">
+				<b class="mw_title">Добавить фото/видео</b>
+			</div>
+			<div class="mw_content">
+				<form action="" method="" name="">
+					<div class="f_block">
+						<b>Выберите альбом</b>
+						<small>Укажите альбом для размещения материалов</small>
+						<div class="select">
+							<select name="" id="">
+								<option value="">Выбрать альбом...</option>
+								<option value="">Фотографии отдыхающих</option>
+								<option value="">Фотографии базы отдыха</option>
+								<option value="">Индустрия развлечений</option>
+								<option value="">Море, пляж, красота!</option>
+							</select>
+						</div>
+					</div>
+					<div class="f_block">
+						<b>Загрузить фотографии</b>
+						<small>Выберите загружаемые фото с устройства</small>
+						<button type="button" class="btn blue select_photos">Выбрать фотографии <span>•••</span></button>
+						<div class="loaded_items">
+							<span>Загруженные фотографии:</span>
+							<a href="" class="l_item"><img src="img/foto4_small.jpg" alt=""></a>
+							<a href="" class="l_item"><img src="img/foto2_small.jpg" alt=""></a>
+							<a href="" class="l_item"><img src="img/foto3_small.jpg" alt=""></a>
+							<a href="" class="l_item"><img src="img/foto2_small.jpg" alt=""></a>
+						</div>
+					</div>
+					<div class="f_block">
+						<b>Загрузить видео</b>
+						<small>Укажите ссылку на видео из YouTube</small>
+						<div class="video_load_block">
+							<input type="text" class="input" placeholder="url...">
+							<button type="button" class="btn blue">Загрузить</button>
+						</div>
+						<div class="loaded_items">
+							<span>Загруженные видео:</span>
+							<a href="" class="l_item"><img src="img/foto4_small.jpg" alt=""></a>
+							<a href="" class="l_item"><img src="img/foto2_small.jpg" alt=""></a>
+							<a href="" class="l_item"><img src="img/foto3_small.jpg" alt=""></a>
+							<a href="" class="l_item"><img src="img/foto2_small.jpg" alt=""></a>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="mw_bottom">
+				<buttton type="submit" class="btn green">Разместить на сайте <span>✓</span></buttton>
+			</div>
+		</div> 
 
 		<div class="to_top" title="Вернуться наверх ↑"></div>
 

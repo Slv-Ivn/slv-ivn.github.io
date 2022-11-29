@@ -56,7 +56,7 @@
     --light_color: #EEF7FF;
     --green_color: #74CD00;
     --yellow_color: #FFF9CC;
-    --elements_color: #DCEEFF;
+    --elements_color: #b3daff;
     --gradient_color: linear-gradient(270deg, #FDE8E8 0%, #F4E8FD 100%);
     --main_shadow: 0px 8px 16px rgba(0,0,0,.1);
     --btn_shadow:  0 2px 8px 0 rgba(0,0,0,.1);
@@ -282,7 +282,7 @@ button:hover,
     color: var(--blue_color);
 }
 
-input, textarea {
+input, textarea, select {
     position: relative;
     display: inline-block;
     width: auto;
@@ -310,6 +310,36 @@ textarea {
 }
 
 input[placeholder] { text-overflow: ellipsis; }
+
+input[type="radio"] {
+    flex-shrink: 0;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+}
+
+.select {
+    position: relative;
+}
+
+.select:after {
+    content: '↓';
+    position: absolute;
+    top: 0;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Neris';
+}
+
+.select select {
+    width: 100%;
+    padding-right: 40px;
+    appearance: none;
+}
 
 input:focus, textarea:focus {
     background: #fff !important;
@@ -814,6 +844,7 @@ i.review_rating .rr_mask {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    width: calc(100% + 16px);
     margin-left: -16px;
     padding-bottom: 24px;
     border-bottom: 2px solid var(--light_color);
@@ -1788,6 +1819,11 @@ i.review_rating .rr_mask {
     opacity: .8;
 }
 
+.content .gallery_albums .ga_album small {
+    font-size: 12px;
+    color: var(--small_text_color);
+}
+
 .content .list_photos {
     position: relative;
 }
@@ -2643,6 +2679,162 @@ i.review_rating .rr_mask {
 
 
 
+/* ------------------------------------------------------------ Модальные окна */
+
+
+.mod_win {
+    position: relative;
+    width: 480px;
+    padding: 0 !important;
+    border-radius: 4px;
+}
+
+.mod_win .mw_head {
+    position: relative;
+    padding: 16px;
+    border-bottom: 2px solid var(--light_color);
+}
+
+.mod_win .mw_head .mw_title {
+    position: relative;
+    display: block;
+    padding-right: 48px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.mod_win .fancybox-close-small {
+    margin-top: 10px;
+}
+
+.mod_win .mw_content {
+    position: relative;
+    padding: 16px;
+}
+
+.mod_win .mw_bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    border-top: 2px solid var(--light_color);
+}
+
+.mod_win .mw_bottom .btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 48px;
+    font-weight: 900;
+}
+
+.mod_win .mw_bottom .btn.green span {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 20px;
+}  
+
+.mod_win form .f_block:not(:last-child) {
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--light_color);
+}
+
+.mod_win form .f_block > b {
+    display: block;
+}
+
+.mod_win form .f_block > small {
+    display: block;
+    color: var(--small_text_color);
+}
+
+.mod_win form .f_block .select select {
+    height: 48px;
+}
+
+.mod_win form .f_block .btn.select_photos {
+    width: 100%;
+    height: 48px;
+    margin-top: 8px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.mod_win form .f_block .btn.select_photos span {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 20px;
+}
+
+.mod_win form .f_block .loaded_items {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: calc(100% + 8px);
+    margin: 12px 0 0 -8px;
+}
+
+.mod_win form .f_block .loaded_items > span {
+    width: 100%;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.mod_win form .f_block .loaded_items .l_item {
+    width: 72px;
+    height: 56px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.mod_win form .f_block .loaded_items .l_item img {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--btn_shadow);
+    object-fit: cover;
+}
+
+.mod_win form .f_block .loaded_items .l_item:hover {
+    transform: scale(1.1);
+    transition: transform .2s ease-in-out;
+}
+
+.mod_win form .f_block .video_load_block {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.mod_win form .f_block .video_load_block .input {
+    height: 48px;
+    width: 100%;
+    margin: 0 8px 0 0;
+}
+
+.mod_win form .f_block .video_load_block .btn {
+    height: 48px;
+    font-weight: 900;
+}
+
+.mod_win form .f_block .input,
+.mod_win form .f_block textarea {
+    width: 100%;
+    margin: 8px 0 0 0;
+}
+
+.mod_win form .f_block textarea {
+    height: 120px;
+}
+
+
+
 /* ------------------------------------------------------------ Кнопка наверх */
 
 
@@ -3112,19 +3304,29 @@ i.review_rating .rr_mask {
         width: calc(50% - 16px);
     }
 
+    .content .big_instagram .bi_shots {
+        display: block;
+    }
+
     .content .big_instagram .bi_shots .big_image {
         display: none;
     }
 
     .content .big_instagram .bi_shots .images {
-        margin-left: -16px;
+        margin-left: -12px;
+    }
+
+    .content .big_instagram .bi_shots .images .image {
+        margin-left: 12px;
     }
 
     .content .big_instagram .bi_shots .images,
     .content .prim_tour .images {
         flex-wrap: nowrap;
+        width: calc(100% + 52px);
         overflow-x: auto;
         overflow-y: hidden;
+        padding-right: 4px;
         padding-bottom: 12px;
         border-right: 2px solid var(--text_color);
     }
@@ -3195,12 +3397,18 @@ i.review_rating .rr_mask {
 
     .top_section .quality_points {
         flex-wrap: nowrap;
+        width: calc(100% + 32px);
+        margin: 16px 0 16px -16px;
+        padding: 8px 0;
         white-space: nowrap;
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-right: 2px solid var(--text_color);
     }
 
     .top_section .quality_points b {
         min-width: auto;
+        margin-top: 0;
     }
 
     .about_38s .a_discription .image:before {
@@ -3285,6 +3493,11 @@ i.review_rating .rr_mask {
         font-size: 14px;
         line-height: 1.2;
         white-space: normal;
+    }
+
+    .content .big_instagram .bi_shots .images,
+    .content .prim_tour .images {
+        width: calc(100% + 28px);
     }
 
 }

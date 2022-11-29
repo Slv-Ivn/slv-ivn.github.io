@@ -3479,7 +3479,8 @@ i.review_rating .rr_mask {
 
     .content .publication_text .images_list {
         flex-wrap: nowrap;
-        width: calc(100% + 32px);
+        width: calc(100% + 28px);
+        margin: 16px 0 24px -12px;;
         overflow-x: auto;
         overflow-y: hidden;
         padding-right: 4px;
@@ -3487,6 +3488,7 @@ i.review_rating .rr_mask {
     }
 
     .content .publication_text .images_list .image {
+        margin: 12px 0 0 12px;
         box-shadow: 0 2px 8px 0 rgb(0 0 0 / 20%);
     }
 

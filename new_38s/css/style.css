@@ -1786,6 +1786,12 @@ i.review_rating .rr_mask {
     box-shadow: var(--main_shadow);
 }
 
+.content .gallery_albums .ga_album > b {
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
 .content .gallery_albums .ga_album .image:before,
 .content .gallery_albums .ga_album .image:after { 
     content: '';
@@ -2684,6 +2690,7 @@ i.review_rating .rr_mask {
 
 .mod_win {
     position: relative;
+    display: none;
     width: 480px;
     padding: 0 !important;
     border-radius: 4px;
@@ -2725,13 +2732,13 @@ i.review_rating .rr_mask {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 48px;
+    height: 52px;
     font-weight: 900;
 }
 
 .mod_win .mw_bottom .btn.green span {
     position: absolute;
-    top: 10px;
+    top: 9px;
     right: 16px;
     font-size: 20px;
 }  
@@ -3328,7 +3335,6 @@ i.review_rating .rr_mask {
         overflow-y: hidden;
         padding-right: 4px;
         padding-bottom: 12px;
-        border-right: 2px solid var(--text_color);
     }
 
     .content .prim_tour .images .image img,
@@ -3399,11 +3405,10 @@ i.review_rating .rr_mask {
         flex-wrap: nowrap;
         width: calc(100% + 32px);
         margin: 16px 0 16px -16px;
-        padding: 8px 0;
+        padding: 8px 4px 8px 0;
         white-space: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
-        border-right: 2px solid var(--text_color);
     }
 
     .top_section .quality_points b {
@@ -3474,10 +3479,11 @@ i.review_rating .rr_mask {
 
     .content .publication_text .images_list {
         flex-wrap: nowrap;
+        width: calc(100% + 32px);
         overflow-x: auto;
         overflow-y: hidden;
+        padding-right: 4px;
         padding-bottom: 12px;
-        border-right: 2px solid var(--text_color);
     }
 
     .content .publication_text .images_list .image {

@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	//Фансибокс-оболочка
 	$('[data-fancybox').fancybox({
-		touch: false
+
 	});
 
 

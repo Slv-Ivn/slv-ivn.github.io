@@ -88,6 +88,7 @@ body {
     font: normal 16px/1.5 'Museo_Sans', 'Helvetica', 'Arial', sans-serif;
     background: #fff;
     color: #252525;
+    touch-action: manipulation;
 }
 
 header, section, menu, nav, aside, article, footer, .h1, .h2, .h3, .h4 { display: block; }
@@ -2690,7 +2691,9 @@ i.review_rating .rr_mask {
 .mod_win {
     position: relative;
     display: none;
-    width: 480px;
+    width: 100%;
+    max-width: 480px;
+    margin-top: -40px !important;
     padding: 0 !important;
     border-radius: 4px;
 }
@@ -2709,8 +2712,10 @@ i.review_rating .rr_mask {
     font-weight: 900;
 }
 
-.mod_win .fancybox-close-small {
-    margin-top: 10px;
+.mod_win.fancybox__content .carousel__button.is-close {
+    top: 12px;
+    right: 4px;
+    color: var(--red_color);
 }
 
 .mod_win .mw_content {
@@ -2723,7 +2728,8 @@ i.review_rating .rr_mask {
     display: flex;
     justify-content: center;
     padding: 16px;
-    border-top: 2px solid var(--light_color);
+    background: var(--light_color);
+    border-radius: 0 0 4px 4px;
 }
 
 .mod_win .mw_bottom .btn {
@@ -2781,33 +2787,37 @@ i.review_rating .rr_mask {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: calc(100% + 8px);
-    margin: 12px 0 0 -8px;
+    width: 100%;
+    margin: 12px 0 0;
 }
 
 .mod_win form .f_block .loaded_items > span {
     width: 100%;
-    margin-left: 8px;
     font-size: 14px;
 }
 
 .mod_win form .f_block .loaded_items .l_item {
-    width: 72px;
-    height: 56px;
-    margin-top: 8px;
-    margin-left: 8px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 4px 0;
 }
 
 .mod_win form .f_block .loaded_items .l_item img {
-    width: 100%;
-    height: 100%;
+    width: 80px;
+    height: 60px;
     box-shadow: var(--btn_shadow);
     object-fit: cover;
 }
 
-.mod_win form .f_block .loaded_items .l_item:hover {
-    transform: scale(1.1);
-    transition: transform .2s ease-in-out;
+.mod_win form .f_block .loaded_items .l_item .text {
+    width: 100%;
+    margin-left: 12px;
+}
+
+.mod_win form .f_block .loaded_items .l_item .text .input {
+    height: 40px;
+    margin: 2px 0 0 0;
 }
 
 .mod_win form .f_block .video_load_block {

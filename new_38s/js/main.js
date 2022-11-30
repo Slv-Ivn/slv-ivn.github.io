@@ -3,8 +3,8 @@ $(document).ready(function(){
 
 
 	//Фансибокс-оболочка
-	$('[data-fancybox').fancybox({
-
+	Fancybox.bind("[data-fancybox]", {
+		autoFocus: false,
 	});
 
 

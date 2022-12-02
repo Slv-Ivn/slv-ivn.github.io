@@ -2671,9 +2671,24 @@ i.review_rating .rr_mask {
     border-radius: 40px;
 }
 
+.footer .f_contacts .fc_block:nth-child(3) span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background: var(--whatsapp_color);
+    border-radius: 40px;
+}
+
 .footer .f_contacts .fc_block:nth-child(3) span:before {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iIzUwQUFGRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMjAgMEM4Ljk1NCAwIDAgOC45NTQgMCAyMHM4Ljk1NCAyMCAyMCAyMCAyMC04Ljk1NCAyMC0yMFMzMS4wNDYgMCAyMCAwWm01LjA1NSAyMi4yNTggNC4zNzUgMS44NzVhLjk0OC45NDggMCAwIDEgLjU0NyAxLjA3OGwtLjkzOCA0LjA2MmEuOTM4LjkzOCAwIDAgMS0uOTE0LjcyN0MxOC4xMjEgMzAgMTAgMjEuODk0IDEwIDExLjg3NWEuOTM4LjkzOCAwIDAgMSAuNzI3LS45MTRsNC4wNjItLjkzOGEuOTQ0Ljk0NCAwIDAgMSAxLjA3NC41NDNsMS44NzUgNC4zNzVhLjkzNS45MzUgMCAwIDEtLjI3IDEuMDk0bC0yLjM2NiAxLjkzOGExNC40NzkgMTQuNDc5IDAgMCAwIDYuOTIxIDYuOTIxbDEuOTM4LTIuMzY3YS45MzcuOTM3IDAgMCAxIDEuMDk0LS4yN1oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==);
-    opacity: .5;
+    top: 7px;
+    left: calc(50% - 13px);
+    width: 26px;
+    height: 26px;
+    background-image: var(--whatsapp_icon);
+    z-index: 1;
 }
 
 .footer .f_copyright {

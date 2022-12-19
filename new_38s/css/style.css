@@ -3744,6 +3744,10 @@ i.review_rating .rr_mask {
         margin-bottom: 8px;
     }
 
+    .content .aparts_result h2 {
+        margin-bottom: 24px;
+    }
+
     .content .aparts_result .ar_item {
         flex-wrap: wrap;
     }

@@ -76,8 +76,8 @@ $(document).ready(function(){
 
 	//Показать скрытый текст в номерах
 	$('.aparts_result .ar_item .link.show_all').click(function(){
-		$(this).hide();
-		$(this).parent().next('.ari_info').show();
+	    $(this).parent().next('.ari_info').toggle(100);
+	    $(this).text( $(this).text() == 'Показать описание...' ? 'Свернуть описание...' : 'Показать описание...' );
 	});
 
 	/* Последовательная анимация

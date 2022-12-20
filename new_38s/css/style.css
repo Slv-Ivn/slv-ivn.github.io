@@ -2293,7 +2293,6 @@ i.review_rating .rr_mask {
     left: -16px;
     font-size: 20px;
     line-height: 1;
-    color: var(--red_color);
 }
 
 .content .aparts_result .ar_group .group_name span {

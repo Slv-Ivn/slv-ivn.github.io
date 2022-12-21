@@ -2277,6 +2277,7 @@ i.review_rating .rr_mask {
 
 .content .aparts_result .other_dates a {
     font-family: 'Neris';
+    white-space: nowrap;
 }
 
 .content .aparts_result .ar_group .group_name {
@@ -2292,9 +2293,9 @@ i.review_rating .rr_mask {
 .content .aparts_result .ar_group .group_name:before {
     content: '↓';
     position: absolute;
-    top: 0px;
+    top: -1px;
     left: -6px;
-    font-size: 35px;
+    font-size: 36px;
     font-family: 'Museo_Sans';
     line-height: 1;
 }

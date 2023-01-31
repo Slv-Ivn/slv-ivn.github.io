@@ -710,6 +710,10 @@ form.as_form .btn {
     border-left: 2px solid var(--red_color_light);
 }
 
+.fp_content .about_38s .text p.hidden {
+    display: none;
+}
+
 .fp_content .features_38s {
     position: relative;
     display: flex;
@@ -952,6 +956,10 @@ form.as_form .btn {
 .main_visitor_reviews .visitor_review .vr_area {
     max-height: 300px;
     overflow: hidden;
+}
+
+.visitor_review .vr_area.show_full {
+    max-height: 100%;
 }
 
 .content .add_review {

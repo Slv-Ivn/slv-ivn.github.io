@@ -60,8 +60,14 @@ $(document).ready(function(){
 
      });
 
-	//Показать обрезанное содержимое блоков
-	$('.btn.show_content').click(function(){
+    //Показать скрытое содержимое в блоке об Усадьбе
+    $('.fp_content .about_38s .text .link.show_all').click(function(){
+        $(this).hide();
+        $(this).parent().find('p.hidden').removeClass('hidden');
+    });
+
+	//Показать обрезанное содержимое блоков отзывов
+	$('.visitor_review .vr_area .link.show_all').click(function(){
 		$(this).hide();
 		$(this).parent().addClass('show_full');
 	});

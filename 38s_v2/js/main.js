@@ -21,11 +21,20 @@ $(document).ready(function(){
 
     //Меню в шапке
 	$(window).scroll(function(){
-        if($(this).scrollTop() >= 40 && $(this).innerWidth() > 1020) {
+        if($(this).scrollTop() >= 360 && $(this).innerWidth() > 1020) {
         $('.header .top_line').addClass('touch'); }
         else { 
             $('.header .top_line').removeClass('touch'); }
     });
+
+    //Кнопка подбора номера в меню
+    $(window).scroll(function(){
+        if($(this).scrollTop() >= 360) {
+        $('.header .top_line .to_search').addClass('active'); }
+        else { 
+            $('.header .top_line .to_search').removeClass('active'); }
+    });
+
 
     //Выбор даты в калькуляторе
     $.fn.datepicker.setDefaults({

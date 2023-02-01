@@ -52,6 +52,7 @@
     --calendar_icon: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMzggNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTM0LjU5NiAxMi4zMDVIMjkuNjVsLTcuODg1LTcuNzU3QzIyLjc5OSAyLjQ3IDIxLjI5OSAwIDE5IDBjLTIuMzA3IDAtMy43OTUgMi40NzctMi43NjUgNC41NDlMOC4zNSAxMi4zMDVIMy40MDRDMS41MjcgMTIuMzA1IDAgMTMuODU0IDAgMTUuNzU4djIwLjc5QzAgMzguNDUgMS41MjcgNDAgMy40MDQgNDBoMzEuMTkyQzM2LjQ3MyA0MCAzOCAzOC40NSAzOCAzNi41NDd2LTIwLjc5YzAtMS45MDMtMS41MjctMy40NTItMy40MDQtMy40NTJaTTE5IDEuODgzYy42ODMgMCAxLjIzOC41NjQgMS4yMzggMS4yNTYgMCAuNjgtLjU0MyAxLjI1Ni0xLjIzOCAxLjI1Ni0uNjggMC0xLjIzOC0uNTYyLTEuMjM4LTEuMjU2IDAtLjY5Mi41NTUtMS4yNTYgMS4yMzgtMS4yNTZaTTE3LjUzIDUuOWMuOTQ4LjUyIDIuMDQ0LjQ5MSAyLjk0IDBsNi41MTMgNi40MDZIMTEuMDE3bDYuNTEyLTYuNDA2Wm0xOC42MTMgMzAuNjQ4YTEuNTYgMS41NiAwIDAgMS0xLjU0NyAxLjU3SDMuNDA0YTEuNTYgMS41NiAwIDAgMS0xLjU0Ny0xLjU3di0xNS44M2gzNC4yODZ2MTUuODNabTAtMTcuNzEzSDEuODU3di0zLjA3NmMwLS44NjYuNjk0LTEuNTcgMS41NDctMS41N2gzMS4xOTJhMS41NiAxLjU2IDAgMCAxIDEuNTQ3IDEuNTd2My4wNzZaIiBmaWxsPSIjNTBBQUZFIi8+PHBhdGggZD0iTTcuNDg4IDI3LjU0N2MxLjA5NCAwIDEuOTgtLjkgMS45OC0yLjAwOSAwLTEuMTEtLjg4Ni0yLjAwOS0xLjk4LTIuMDA5LTEuMDk0IDAtMS45OC45LTEuOTggMi4wMDkgMCAxLjExLjg4NiAyLjAwOSAxLjk4IDIuMDA5Wk0xNS4xNjQgMjcuNTQ3YzEuMDk0IDAgMS45OC0uOSAxLjk4LTIuMDA5IDAtMS4xMS0uODg2LTIuMDA5LTEuOTgtMi4wMDktMS4wOTQgMC0xLjk4LjktMS45OCAyLjAwOSAwIDEuMTEuODg2IDIuMDA5IDEuOTggMi4wMDlaTTIyLjgzNiAyNy41NDdjMS4wOTQgMCAxLjk4LS45IDEuOTgtMi4wMDkgMC0xLjExLS44ODYtMi4wMDktMS45OC0yLjAwOS0xLjA5NCAwLTEuOTguOS0xLjk4IDIuMDA5IDAgMS4xMS44ODYgMi4wMDkgMS45OCAyLjAwOVpNMzAuNTEyIDI3LjU0N2MxLjA5MyAwIDEuOTgtLjkgMS45OC0yLjAwOSAwLTEuMTEtLjg4Ni0yLjAwOS0xLjk4LTIuMDA5LTEuMDk0IDAtMS45OC45LTEuOTggMi4wMDkgMCAxLjExLjg4NiAyLjAwOSAxLjk4IDIuMDA5Wk03LjQ4OCAzNS4zMDVjMS4wOTQgMCAxLjk4LS45IDEuOTgtMi4wMSAwLTEuMTA5LS44ODYtMi4wMDgtMS45OC0yLjAwOC0xLjA5NCAwLTEuOTguOS0xLjk4IDIuMDA5IDAgMS4xMS44ODYgMi4wMDkgMS45OCAyLjAwOVpNMTUuMTY0IDM1LjMwNWMxLjA5NCAwIDEuOTgtLjkgMS45OC0yLjAxIDAtMS4xMDktLjg4Ni0yLjAwOC0xLjk4LTIuMDA4LTEuMDk0IDAtMS45OC45LTEuOTggMi4wMDkgMCAxLjExLjg4NiAyLjAwOSAxLjk4IDIuMDA5Wk0yMi44MzYgMzUuMzA1YzEuMDk0IDAgMS45OC0uOSAxLjk4LTIuMDEgMC0xLjEwOS0uODg2LTIuMDA4LTEuOTgtMi4wMDgtMS4wOTQgMC0xLjk4LjktMS45OCAyLjAwOSAwIDEuMTEuODg2IDIuMDA5IDEuOTggMi4wMDlaTTMwLjUxMiAzNS4zMDVjMS4wOTMgMCAxLjk4LS45IDEuOTgtMi4wMSAwLTEuMTA5LS44ODYtMi4wMDgtMS45OC0yLjAwOC0xLjA5NCAwLTEuOTguOS0xLjk4IDIuMDA5IDAgMS4xMS44ODYgMi4wMDkgMS45OCAyLjAwOVoiIGZpbGw9IiM1MEFBRkUiLz48L3N2Zz4=");
     --rating_star: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"%3E%3Cpath d="M10.95108.70746l1.65207,5.39122a.99645.99645,0,0,0,.95108.70746H19.0026a1.00514,1.00514,0,0,1,.6043,1.80154l-4.49236,3.46075a1.00871,1.00871,0,0,0-.34678,1.09408l1.69543,5.53271a.99733.99733,0,0,1-1.55538,1.09408L10.6043,16.474a.98886.98886,0,0,0-1.20861,0L5.09219,19.7893a.99733.99733,0,0,1-1.55538-1.09408l1.69543-5.53271a1.00871,1.00871,0,0,0-.34678-1.09408L.39309,8.60768A1.00514,1.00514,0,0,1,.9974,6.80614H6.44577a.99645.99645,0,0,0,.95108-.70746L9.04892.70746A.993.993,0,0,1,10.95108.70746Z" fill="%23bccee5"/%3E%3C/svg%3E');
     --rating_star_mask: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"%3E%3Cpath d="M10.95108.70746l1.65207,5.39122a.99645.99645,0,0,0,.95108.70746H19.0026a1.00514,1.00514,0,0,1,.6043,1.80154l-4.49236,3.46075a1.00871,1.00871,0,0,0-.34678,1.09408l1.69543,5.53271a.99733.99733,0,0,1-1.55538,1.09408L10.6043,16.474a.98886.98886,0,0,0-1.20861,0L5.09219,19.7893a.99733.99733,0,0,1-1.55538-1.09408l1.69543-5.53271a1.00871,1.00871,0,0,0-.34678-1.09408L.39309,8.60768A1.00514,1.00514,0,0,1,.9974,6.80614H6.44577a.99645.99645,0,0,0,.95108-.70746L9.04892.70746A.993.993,0,0,1,10.95108.70746Z" fill="%23FFCF3A"/%3E%3C/svg%3E');
+    --search_icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMCA4LjE1OGE4LjE1OCA4LjE1OCAwIDEgMSAxNC40NzcgNS4xNmw1LjI5NCA1LjMzNmEuNzkuNzkgMCAxIDEtMS4xMjEgMS4xMTNsLTUuMjg1LTUuMzI5QTguMTU4IDguMTU4IDAgMCAxIDAgOC4xNThabTguMTU4LTYuNTc5YTYuNTc5IDYuNTc5IDAgMSAwIDAgMTMuMTU4IDYuNTc5IDYuNTc5IDAgMCAwIDAtMTMuMTU4Wm0zLjcxNiAzLjkxNWEuNzkuNzkgMCAwIDEgMCAxLjExN2wtNC42MDUgNC42MDVhLjc5Ljc5IDAgMCAxLTEuMTE3IDBMNC4xOCA5LjI0MmEuNzkuNzkgMCAxIDEgMS4xMTYtMS4xMTZsMS40MTYgMS40MTUgNC4wNDYtNC4wNDdhLjc5Ljc5IDAgMCAxIDEuMTE3IDBaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=");
 }
 
 
@@ -386,6 +387,46 @@ form.as_form .btn {
     border-radius: 0 4px 4px 0;
 }
 
+/* Блоки ссылки  */
+
+.link_card {
+    position: relative;
+    padding: 10px;
+    background: var(--blue_light_color);
+    border-radius: var(--border_radius);
+}
+
+.link_card a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background: #fff;
+    border-radius: var(--border_radius);
+    box-shadow: var(--shadow_element);
+}
+
+.link_card .image {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 16px;
+    border-radius: var(--border_radius);
+    box-shadow: var(--shadow_element);
+}
+
+.link_card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link_card .text small {
+    display: block;
+    margin-top: 8px;
+    color: var(--text_color);
+}
+
 
 /* ------------------------------------------------------------ Шапка */
 
@@ -476,6 +517,25 @@ form.as_form .btn {
 .header .top_line .wa_icon:hover > i {
     transform: scale(1.1);
     transition: transform .2s linear;
+}
+
+.header .top_line .to_search {
+    flex-shrink: 0;
+    height: 40px;
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.header .top_line .to_search i {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-image: var(--search_icon);
+}
+
+.header .top_line .to_search.active {
+    display: flex !important;
 }
 
 .header .top_line .nav_menu {
@@ -780,10 +840,18 @@ form.as_form .btn {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid var(--red_color_light);
 }
 
-.fp_content .bottom_block .map {
+.fp_content .bottom_block .link_card {
+    width: calc(33% - 12px);
+}
+
+
+
+/*.fp_content .bottom_block .map {
     position: relative;
     width: calc(33% - 12px);
     height: 228px;
@@ -842,7 +910,7 @@ form.as_form .btn {
 .fp_content .bottom_block .map,
 .fp_content .bottom_block .aparts_search {
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%);
-}
+}*/
 
 
 /* ------------------------------------------------------------ Отзывы */
@@ -853,7 +921,7 @@ form.as_form .btn {
     max-width: 100%;
     margin-top: 16px;
     padding: 10px;
-    background: var(--blue_light_color);
+    background: var(--gradient_color);
     border-radius: 4px;
 }
 
@@ -1167,7 +1235,7 @@ width: 38px;
 border: 1px solid #fff;
 box-sizing: border-box;
 border-radius: 3px;
-line-height: 30px;
+line-height: 28px;
 }
 
 .datepicker-panel > ul > li:hover {
@@ -1214,7 +1282,7 @@ cursor: not-allowed;
 .datepicker-panel > ul > li[data-view="month next"],
 .datepicker-panel > ul > li[data-view="next"] {
 font-size: 20px;
-font-weight: bold;
+font-family: var(--font_bold);
 line-height: 26px;
 }
 
@@ -1222,7 +1290,7 @@ line-height: 26px;
 .datepicker-panel > ul > li[data-view="year current"],
 .datepicker-panel > ul > li[data-view="month current"] {
 width: 190px;
-font-weight: bold;
+font-family: var(--font_bold);
 }
 
 .datepicker-panel > ul[data-view="years"] > li,
@@ -1236,7 +1304,7 @@ width: 66.5px;
 .datepicker-panel > ul[data-view="week"] > li:hover {
 background-color: #fff;
 cursor: default;
-font-weight: bold;
+font-family: var(--font_bold);
 color: #677780;
 height: 24px;
 line-height: 24px;

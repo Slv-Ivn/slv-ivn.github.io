@@ -1881,13 +1881,13 @@ form.as_form .btn {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% + 8px);
-    margin: 16px 0 16px -8px;
+    margin: 8px 0 16px -8px;
 }
 
 .aparts_result .ar_list .ar_item .text .apart_points li {
     position: relative;
     display: flex;
-    margin-left: 8px;
+    margin: 8px 0 0 8px;
     padding: 4px 8px 4px 4px;
     background: var(--blue_color_light);
     border-radius: var(--border_radius);
@@ -1911,7 +1911,7 @@ form.as_form .btn {
 }
 
 .aparts_result .ar_list .ar_item .text .apart_description .block_text {
-    margin: 24px 0 0;
+    margin: 20px 0 0;
 }
 
 .aparts_result .ar_list .ar_item .text .apart_description .block_text b.sub_title {
@@ -1931,7 +1931,7 @@ form.as_form .btn {
 .aparts_result .ar_list .ar_item .text .apart_description .block_text b.sub_title .icon.i23 { background-image: var(--apart_icon23); }
 
 .aparts_result .ar_list .ar_item .text .apart_description .block_text p {
-    margin: 4px 0 12px 0;
+    margin: 4px 0 12px 33px;
 }
 
 .aparts_result .ar_list .ar_item .text .apart_description .show_hide {

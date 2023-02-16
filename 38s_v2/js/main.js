@@ -88,9 +88,9 @@ $(document).ready(function(){
 	});
 
 	//Показать скрытый текст в номерах
-	$('.aparts_result .ar_item .link.show_all').click(function(){
-	    $(this).parent().next('.ari_info').toggle(100);
-	    $(this).text( $(this).text() == 'Показать описание...' ? 'Свернуть описание...' : 'Показать описание...' );
+	$('.aparts_result .ar_item .link.show_hide').click(function(){
+	    $(this).text( $(this).text() == 'Показать описание номера •••' ? 'Свернуть описание •••' : 'Показать описание номера •••' );
+        $(this).prev('.visibility_block').toggleClass('hidden');
 	});
 
 	/* Последовательная анимация

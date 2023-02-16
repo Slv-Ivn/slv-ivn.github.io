@@ -2462,6 +2462,35 @@ form.as_form .btn {
     border-width: 2px;
 }
 
+.mod_win._order_apart .mw_head small {
+    display: block;
+    font-family: var(--font_bold);
+}
+
+.mod_win._order_apart .order_info {
+    position: relative;
+    display: flex;
+    margin-bottom: 24px;
+    flex-direction: column;
+    padding-left: 16px;
+    border-left: 2px solid var(--green_color);
+}
+
+.mod_win._order_apart .order_info:after {
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: -16px;
+    width: calc(100% + 32px);
+    height: 2px;
+    background: var(--blue_color_light);
+}
+
+.mod_win._order_apart .order_info > b {
+    font-size: 18px;
+    color: var(--green_text_color);
+}
+
 
 /* ------------------------------------------------------------ Кнопка наверх */
 

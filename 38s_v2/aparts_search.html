@@ -134,7 +134,7 @@
 							<span class="link show_hide">Показать описание номера •••</span>
 						</div>
 						<div class="bottom">
-							<button type="button" class="btn green">Бронировать</button>
+							<button type="button" class="btn green" data-fancybox data-src="#window_order_apart">Бронировать</button>
 							<div class="apart_price">
 								<b>175 000 ₽</b>
 								<span>Цена за период</span>
@@ -201,7 +201,7 @@
 							<span class="link show_hide">Показать описание номера •••</span>
 						</div>
 						<div class="bottom">
-							<button type="button" class="btn green">Бронировать</button>
+							<button type="button" class="btn green" data-fancybox data-src="#window_order_apart">Бронировать</button>
 							<div class="apart_price">
 								<b>175 000 ₽</b>
 								<span>Цена за период</span>
@@ -272,7 +272,7 @@
 							<span class="link show_hide">Показать описание номера •••</span>
 						</div>
 						<div class="bottom">
-							<button type="button" class="btn green">Бронировать</button>
+							<button type="button" class="btn green" data-fancybox data-src="#window_order_apart">Бронировать</button>
 							<div class="apart_price">
 								<b>210 000 ₽</b>
 								<span>Цена за период</span>
@@ -339,7 +339,7 @@
 							<span class="link show_hide">Показать описание номера •••</span>
 						</div>
 						<div class="bottom">
-							<button type="button" class="btn green">Бронировать</button>
+							<button type="button" class="btn green" data-fancybox data-src="#window_order_apart">Бронировать</button>
 							<div class="apart_price">
 								<b>210 000 ₽</b>
 								<span>Цена за период</span>
@@ -388,28 +388,34 @@
 		</div>
 	</footer>
 
-	<div class="mod_win _add_review" id="window_add_review">
-			<div class="mw_head">
-				<b class="mw_title">Написать отзыв об отдыхе</b>
+	<div class="mod_win _order_apart" id="window_order_apart" style="display: none;">
+		<div class="mw_head">
+			<b class="mw_title">Бронировать</b>
+			<small>Номер 508 • Семейный Люкс</small>
+		</div>
+		<div class="mw_content">
+			<div class="order_info">
+				<b>245 800 ₽</b>
+				<small>Цена за период: 5 × 49 160 ₽</small>
+				<small>Проживание 5 дней: 25.08.22—30.08.22</small>
 			</div>
-			<div class="mw_content">
-				<form action="" method="" name="">
-					<div class="f_block">
-						<b>Ваше имя</b>
-						<small>Напишите от лица кого будет этот отзыв</small>
-						<input class="input" type="text" placeholder="Имя, семья или гости...">
-					</div>
-					<div class="f_block">
-						<b>Ваш отзыв</b>
-						<small>Расскажите о своём отдыхе в Усадьбе</small>
-						<textarea name="" id="" placeholder="Текст отзыва..."></textarea>
-					</div>
-				</form>
-			</div>
-			<div class="mw_bottom">
-				<buttton type="submit" class="btn green">Разместить на сайте <span>✓</span></buttton>
-			</div>
-		</div> 
+			<form action="" method="" name="">
+				<div class="f_block">
+					<b>Ваше имя</b>
+					<small>Представьтесь, пожалуйста</small>
+					<input class="input" type="text" placeholder="ФИО..." tabindex="0">
+				</div>
+				<div class="f_block">
+					<b>Контактный телефон</b>
+					<small>Укажите телефон для связи с Вами</small>
+					<input class="input" type="text" placeholder="Номер телефона..." tabindex="0">
+				</div>
+			</form>
+		</div>
+		<div class="mw_bottom">
+			<buttton type="submit" class="btn green">Отправить заявку <span>✓</span></buttton>
+		</div>
+	</div>
 
 	<div class="to_top" title="Вернуться наверх ↑"></div>
 

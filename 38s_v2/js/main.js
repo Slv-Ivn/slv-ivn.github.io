@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     //Меню в шапке
 	$(window).scroll(function(){
-        if($(this).scrollTop() >= 360 && $(this).innerWidth() > 1020) {
+        if($(this).scrollTop() >= 360 && $(this)) {
         $('.header .top_line').addClass('touch'); }
         else { 
             $('.header .top_line').removeClass('touch'); }

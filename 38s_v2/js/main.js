@@ -93,6 +93,16 @@ $(document).ready(function(){
         $(this).prev('.visibility_block').toggleClass('hidden');
 	});
 
+    //Форма бронирования
+    $('.mod_win._order_apart .stage1 .btn.green').click(function(){
+        $('.mod_win._order_apart').find('.loader').addClass('active');
+        setTimeout(function() { 
+                $('.mod_win._order_apart').find('.loader').removeClass('active');
+            }, 2500);
+        $('.mod_win._order_apart').find('.stage1').addClass('hidden');
+        $('.mod_win._order_apart').find('.stage2').removeClass('hidden');
+    });
+
 	/* Последовательная анимация
 
 	    $(function() {

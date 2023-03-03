@@ -958,10 +958,6 @@ form.as_form .btn {
     margin-top: 40px;
 }
 
-.central.space {
-    flex-direction: row;
-}
-
 .central .content {
     position: relative;
     width: 100%;

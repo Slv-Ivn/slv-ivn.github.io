@@ -103,6 +103,16 @@ $(document).ready(function(){
         $('.mod_win._order_apart').find('.stage2').removeClass('hidden');
     });
 
+    //Оплата картой
+    $('.card_number').payment('formatCardNumber');
+    $('.card_expires').payment('formatCardExpiry');
+    $('.card_code').payment('formatCardCVC');
+
+    $('.mod_win._payment_transfer .form_switcher .fs_item').click(function(){
+        $('.mod_win._payment_transfer .form_switcher .fs_item').toggleClass('active');
+        $('.mod_win._payment_transfer form').toggleClass('active');
+    });
+
 	/* Последовательная анимация
 
 	    $(function() {

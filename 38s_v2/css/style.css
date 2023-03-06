@@ -2274,6 +2274,7 @@ form.as_form .btn {
 
 .booking_info {
     position: relative;
+    width: 100%;
     margin-left: 12px;
     padding-left: 24px;
     border-left: 2px solid var(--green_color);
@@ -2649,6 +2650,89 @@ form.as_form .btn {
 .mod_win .mw_content .mw_error p {
     margin: 8px 0;
 }
+
+.mod_win._payment_transfer form {
+    display: none;
+}
+
+.mod_win._payment_transfer form.active {
+    display: block;
+}
+
+.mod_win._payment_transfer form.card_payment .f_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mod_win._payment_transfer form.card_payment .input_block {
+    width: 100%;
+}
+
+.mod_win._payment_transfer form.card_payment .input_block_small {
+    width: calc(50% - 8px);
+    margin-top: 16px;
+}
+
+.mod_win._payment_transfer .form_switcher {
+    position: relative;
+    top: -6px;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    margin: 0 0 12px 0;
+    padding: 2px;
+    background: var(--blue_color_light);
+    border-radius: 0 0 4px 4px;
+}
+
+.mod_win._payment_transfer .form_switcher .fs_item {
+    position: relative;
+    padding: 8px;
+    background: #fff;
+    border-radius: var(--border_radius);
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--link_color);
+    cursor: pointer;
+}
+
+.mod_win._payment_transfer .form_switcher .fs_item.active {
+    background: var(--blue_color);
+    color: #fff;
+    box-shadow: var(--shadow_element);
+    pointer-events: none;
+}
+
+.mod_win._payment_transfer .payment_info {
+    position: relative;
+    margin: 0 0 24px 0;
+    padding-left: 16px;
+    border-left: 2px solid var(--green_color);
+}
+
+.mod_win._payment_transfer .payment_info:after { 
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -16px;
+    width: calc(100% + 32px);
+    height: 2px;
+    background: var(--blue_color_light);
+}
+
+.mod_win._payment_transfer .payment_info .money {
+    display: block;
+    font-size: 20px;
+    color: var(--green_text_color);
+}
+
+.mod_win._payment_transfer .payment_notice {
+    margin: 24px 0 8px 0;
+    padding-left: 16px;
+    border-left: 2px solid var(--green_color);
+}
+
 
 
 /* ------------------------------------------------------------ Кнопка наверх */

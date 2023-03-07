@@ -103,7 +103,7 @@ $(document).ready(function(){
         $('.mod_win._order_apart').find('.stage2').removeClass('hidden');
     });
 
-    //Оплата картой
+   /* //Оплата картой
     $('.card_number').payment('formatCardNumber');
     $('.card_expires').payment('formatCardExpiry');
     $('.card_code').payment('formatCardCVC');

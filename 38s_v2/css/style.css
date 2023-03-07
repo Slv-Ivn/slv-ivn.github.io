@@ -38,6 +38,7 @@
     --blue_color: #50AAFE;
     --blue_color_light: #EEF7FF;
     --green_color: #74CD00;
+    --green_color_light: #f1faeb;
     --yellow_color: #FFF9CC;
     --gradient_color: linear-gradient(270deg, #FDE8E8 0%, #F4E8FD 100%);
     --whatsapp_color: #25D366;
@@ -146,6 +147,10 @@ i, em, .italic { font-style: italic; }
 .red_color { color: var(--red_color); }
 
 .green_color { color: var(--green_text_color); }
+
+.blue_color { color: var(--blue_color); }
+
+.grey_text { color: var(--small_text_color); }
 
 h1, h2, h3, .h1, .h2, .h3, b, strong {
     font-family: var(--font_bold);
@@ -2275,9 +2280,7 @@ form.as_form .btn {
 .booking_info {
     position: relative;
     width: 100%;
-    margin-left: 12px;
-    padding-left: 24px;
-    border-left: 2px solid var(--green_color);
+    padding-left: 28px;
 }
 
 .booking_info .bi_block {
@@ -2302,20 +2305,19 @@ form.as_form .btn {
 .booking_info .bi_block .bi_title:after {
     content: '';
     position: absolute;
-    top: -2px;
-    left: -39px;
-    width: 28px;
-    height: 28px;
+    top: 4px;
+    left: -28px;
+    width: 18px;
+    height: 18px;
     background: var(--green_color);
-    border: 2px solid #fff;
     border-radius: 40px;
 }
 
 .booking_info .bi_block .bi_title:after {
-    top: 6px;
-    left: -31px;
-    width: 12px;
-    height: 12px;
+    top: 8px;
+    left: -24px;
+    width: 10px;
+    height: 10px;
     background: #fff;
     box-shadow: 0 2px 6px 0 rgb(0 0 0 / 25%);
 }
@@ -2328,11 +2330,20 @@ form.as_form .btn {
 .booking_info .bi_block .bi_text:before {
     content: '';
     position: absolute;
-    top: 12px;
-    left: -22px;
-    width: 12px;
-    height: 2px;
+    top: 9px;
+    left: -23px;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
     background: var(--green_color);
+}
+
+.booking_info .bi_block .bi_text .bi_sub_title {
+    display: block;
+}
+
+.booking_info .bi_block .bi_text ul li {
+    margin: 6px 0;
 }
 
 
@@ -2651,74 +2662,11 @@ form.as_form .btn {
     margin: 8px 0;
 }
 
-.mod_win._payment_transfer form {
-    display: none;
-}
-
-.mod_win._payment_transfer form.active {
-    display: block;
-}
-
-.mod_win._payment_transfer form.card_payment .f_block {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.mod_win._payment_transfer form.card_payment .input_block {
-    width: 100%;
-}
-
-.mod_win._payment_transfer form.card_payment .input_block_small {
-    width: calc(50% - 8px);
-    margin-top: 16px;
-}
-
-.mod_win._payment_transfer .form_switcher {
-    position: relative;
-    top: -6px;
-    display: flex;
-    align-items: center;
-    max-width: fit-content;
-    margin: 0 0 12px 0;
-    padding: 2px;
-    background: var(--blue_color_light);
-    border-radius: 0 0 4px 4px;
-}
-
-.mod_win._payment_transfer .form_switcher .fs_item {
-    position: relative;
-    padding: 8px;
-    background: #fff;
-    border-radius: var(--border_radius);
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--link_color);
-    cursor: pointer;
-}
-
-.mod_win._payment_transfer .form_switcher .fs_item.active {
-    background: var(--blue_color);
-    color: #fff;
-    box-shadow: var(--shadow_element);
-    pointer-events: none;
-}
-
 .mod_win._payment_transfer .payment_info {
     position: relative;
     margin: 0 0 24px 0;
     padding-left: 16px;
     border-left: 2px solid var(--green_color);
-}
-
-.mod_win._payment_transfer .payment_info:after { 
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: -16px;
-    width: calc(100% + 32px);
-    height: 2px;
-    background: var(--blue_color_light);
 }
 
 .mod_win._payment_transfer .payment_info .money {
@@ -2731,6 +2679,14 @@ form.as_form .btn {
     margin: 24px 0 8px 0;
     padding-left: 16px;
     border-left: 2px solid var(--green_color);
+}
+
+.mod_win._payment_transfer .pay_block {
+    position: relative;
+    margin: 16px 0 0 0;
+    padding: 16px;
+    background: var(--green_color_light);
+    border-radius: var(--border_radius);
 }
 
 

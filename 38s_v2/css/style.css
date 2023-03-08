@@ -2285,7 +2285,7 @@ form.as_form .btn {
 }
 
 .booking_info > h3 {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .booking_info .bi_block {
@@ -2384,6 +2384,7 @@ form.as_form .btn {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    line-height: 20px;
 }
 
 .booking_info .bi_block .bib_text .note_mark {

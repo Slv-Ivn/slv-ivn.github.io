@@ -2734,6 +2734,32 @@ form.as_form .btn {
     border-radius: var(--border_radius);
 }
 
+.mod_win._payment_transfer .pay_block .copy_icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin: 0 0 -5px 8px;
+    background: #fff;
+    border-radius: var(--border_radius);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.mod_win._payment_transfer .pay_block .copy_icon i {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZmlsbD0iIzUwQUFGRSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTAuMDU3IDUuOTQzdjguNjg2SDEuMzcxVjUuOTQzaDguNjg2Wm0xLjM3Mi0uMTM3YzAtLjY4Mi0uNTUzLTEuMjM1LTEuMjM1LTEuMjM1aC04Ljk2Qy41NTMgNC41NzEgMCA1LjEyNCAwIDUuODA2djguOTZDMCAxNS40NDcuNTUzIDE2IDEuMjM0IDE2aDguOTZjLjY4MiAwIDEuMjM1LS41NTMgMS4yMzUtMS4yMzR2LTguOTZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjNTBBQUZFIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiAxLjIzNEMxNiAuNTUzIDE1LjQ0NyAwIDE0Ljc2NiAwaC04Ljk2QzUuMTI0IDAgNC41Ny41NTMgNC41NyAxLjIzNHY0LjAyM2EuNjg2LjY4NiAwIDEgMCAxLjM3MiAwVjEuMzcxaDguNjg2djguNjg2aC0zLjg4NmEuNjg2LjY4NiAwIDEgMCAwIDEuMzcyaDQuMDIzYy42ODEgMCAxLjIzNC0uNTUzIDEuMjM0LTEuMjM1di04Ljk2WiIgY2xpcC1ydWxlPSJldmVub2RkIi8+PC9zdmc+");
+}
+
+.mod_win._payment_transfer .pay_block .copy_icon:hover {
+    filter: hue-rotate(150deg);
+    box-shadow: none;
+}
+
 
 
 /* ------------------------------------------------------------ Кнопка наверх */

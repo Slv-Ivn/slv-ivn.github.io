@@ -2909,6 +2909,62 @@ form.as_form .btn {
 }
 
 
+/* ------------------------------------------------------------ Ошибка 404 */
+
+.e404 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    margin: auto;
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.e404 .logo .image img {
+    width: 80px;
+    height: 80px;
+}
+
+.e404 .page_info {
+    position: relative;
+    margin: 24px 0;
+    padding: 24px 0 16px 0;
+    border-top: 2px solid var(--red_color_light);
+    border-bottom: 2px solid var(--red_color_light);
+}
+
+.e404 .page_info > b {
+    font-size: 28px;
+}
+
+.e404 .nav_links {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.e404 .nav_links li a {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    margin: 4px;
+    padding: 0 12px;
+    background: var(--red_color);
+    border-radius: var(--border_radius);
+    color: #fff;
+    text-shadow: var(--shadow_text);
+    white-space: nowrap;
+    font-family: var(--font_bold);
+}
+
+.e404 .nav_links li a:hover {
+    background: #252525;
+    color: var(--red_color);
+}
+
+
 /* ------------------------------------------------------------ Календарь datepicker */
 
 .datepicker-container {
@@ -3053,7 +3109,7 @@ border-bottom: 0;
 .datepicker-hide { display: none; }
 
 
-/* ------------------------------------------------------------ Календарь datepicker */
+/* ------------------------------------------------------------ К меньшему разрешению */
 
 @media screen and (max-width: 1060px) {
 
@@ -3534,6 +3590,14 @@ border-bottom: 0;
 
     .footer .f_contacts .fc_block {
         width: 100%;
+    }
+
+    .e404 .nav_links {
+        justify-content: flex-start;
+    }
+
+    .e404 .nav_links li {
+        width: 50%;
     }
 }
 

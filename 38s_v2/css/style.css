@@ -3216,6 +3216,7 @@ border-bottom: 0;
     .fp_content .about_38s .images {
         flex-wrap: nowrap;
         max-width: 100%;
+        margin-bottom: 0;
     }
 
     .fp_content .about_38s .images .img,

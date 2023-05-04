@@ -14,31 +14,45 @@
 		<div class="top_line">
 			<div class="space">
 				<div class="logo">
-					<div class="image"><img src="img/logo.png" title="" alt=""></div>
-					<b>Усадьба<br>38 самураев</b>
-				</div>
-				<a href="https://wa.me/79146576625" class="wa_icon" title="Бронировать отдых в WhatsApp">
-					<i></i>
-					<span>Бронируйте в WhatsApp<br>+7 914 657-66-25</span>
-				</a>
-				<div class="to_search" style="display: none">
-					<i></i>
-					<span>Подобрать<br>номер</span>
-				</div>
-				<div class="nav_menu">
-					<div class="sh_menu" title="Показать навигацию" style="display: none">
-						<span>Меню<br>навигации</span>
-						<i></i>
+                    <div class="image"><img src="img/logo.png" title="Усадьба  «38 Самураев»" alt="Усадьба  «38 Самураев» — отдых в Приморье"></div>
+                    <b>Усадьба<br>38 самураев</b>
+                </div>
+                <div class="nav_menu">
+					<div class="sh_menu" title="Показать навигацию" style="display: none"><i></i></div>
+					<div class="menu_shell">
+						<ul class="m_links">
+	                        <li><b>Главная</b></li>
+	                        <li><a href="/ceny-na-otdyh/">Номера и цены</a></li>
+	                        <li>
+	                        	<a href="/entertainment/">Развлечения</a>
+	                        	<div class="sublinks">
+	                        		<a href="">Подпункт</a>
+	                        		<a href="">Какой-то подпункт</a>
+	                        	</div>
+	                        </li>
+	                        <li><a href="/pitanie/">Питание</a></li>
+	                        <li class="h_item"><a href="/fotogalereya/">Галерея</a></li>
+	                        <li class="h_item"><a href="/otzyvy/">Отзывы</a></li>
+	                        <li class="h_item">
+	                        	<a href="/publikacii/">Публикации</a>
+	                        	<div class="sublinks">
+                        			<a href="">Подпункт</a>
+	                        		<a href="">Какой-то подпункт</a>
+	                        	</div>
+	                        </li>
+	                        <li><a href="/kontakty/">Контакты</a></li>
+	                    </ul>
 					</div>
-					<ul class="m_links">
-                        <li><b>Главная</b></li>
-                        <li><a href="/ceny-na-otdyh/">Номера и цены</a></li>
-                        <li><a href="/entertainment/">Развлечения</a></li>
-                        <li><a href="/pitanie/">Питание</a></li>
-                        <li class="h_item"><a href="/otzyvy/">Отзывы</a></li>
-                        <li class="h_item"><a href="/publikacii/">Публикации</a></li>
-                        <li><a href="/kontakty/">Контакты</a></li>
-                    </ul>
+				</div>
+				<div class="tl_btns">
+					<div class="to_search" id="select-number" style="display: none">
+	                    <i></i>
+	                    <span>Подобрать номер</span>
+	                </div>
+					<a target="_blank" href="https://wa.me/+79146576625" ym-goal="wa" class="wa_booking" title="Бронировать отдых в WhatsApp">
+	                    <i></i>
+	                    <span>Бронировать</span>
+	                </a>
 				</div>
 			</div> 
 		</div>
@@ -167,29 +181,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="bottom_block">
-				<a href="img/map.jpg" class="map" data-fancybox>
-					<img src="img/map_small.jpg" alt="Схема территории пляжа «Лебединое озеро» и Усадьбы «38 самураев»" title="Схема территории пляжа «Лебединое озеро» и Усадьбы «38 самураев»">
-					<span class="text"><b>Карта пляжа</b><small>Схема территории пляжа «Лебединое озеро» и Усадьбы «38 самураев»</small></span>
-				</a>
-				<div class="aparts_search">
-					<div class="text">
-						<b class="h2">Подобрать номер</b>
-						<p>Найти свободные номера в Усадьбе на берегу Японского моря в Приморье</p>
-					</div>
-					<form action="" class="as_form">
-						<div class="input">
-							<i></i>
-							<input type="text" name="arrival_d" placeholder="Дата заезда...">
-						</div>
-						<div class="input">
-							<i></i>
-							<input type="text" name="leave_d" placeholder="Дата выезда...">
-						</div>
-						<button class="btn">Найти номера<span class="arrow">→</span></button>
-					</form>
-				</div>
-			</div> -->
 			<div class="bottom_block">
 				<div class="link_card">
 					<a href="img/map.jpg" class="lc_map" data-fancybox>
@@ -215,56 +206,71 @@
 
 	<footer class="footer">
 		<div class="space">
-			<div class="left">
-				<div class="aparts_search">
-					<div class="text">
-						<b class="h2">Свободные номера и цены</b>
-						<p>Выберите даты заезда и выезда, программа покажет вам номера для бронирования и их стоимость:</p>
+			<div class="aparts_search">
+				<div class="text">
+					<b class="h2">Свободные номера и цены</b>
+					<p>Выберите даты заезда и выезда, программа покажет вам номера для бронирования и их стоимость:</p>
+				</div>
+				<form action="" class="as_form">
+					<div class="input">
+						<i></i>
+						<input type="text" name="arrival_d" placeholder="Дата заезда...">
 					</div>
-					<form action="" class="as_form">
-						<div class="input">
-							<i></i>
-							<input type="text" name="arrival_d" placeholder="Дата заезда...">
-						</div>
-						<div class="input">
-							<i></i>
-							<input type="text" name="leave_d" placeholder="Дата выезда...">
-						</div>
-						<button class="btn">Найти номера<span class="arrow">→</span></button>
-					</form>
-				</div>
+					<div class="input">
+						<i></i>
+						<input type="text" name="leave_d" placeholder="Дата выезда...">
+					</div>
+					<button class="btn">Найти номера<span class="arrow">→</span></button>
+				</form>
 			</div>
-			<div class="right">
-				<div class="f_navigation">
-					<b>Навигация</b>
-					<ul>
-	                    <li><b>Главная</b></li>
-	                    <li><a href="/ceny-na-otdyh/">Номера и цены</a></li>
-	                    <li><a href="/entertainment/">Развлечения</a></li>
-	                    <li><a href="/pitanie/">Питание</a></li>
-	                    <li><a href="/otzyvy/">Отзывы</a></li>
-	                    <li><a href="/publikacii/">Публикации</a></li>
-	                    <li><a href="/kontakty/">Контакты</a></li>
-	                </ul>
-				</div>
-				<div class="f_social">
-	                <a href="https://t.me/U38samuraev" ym-goal="telegram" target="_blank" class="fs_block">
-	                    <div class="telegram_icon"><i></i></div>
-	                    <span>Усадьба<br>в телеграм</span>
-	                </a>
-	                <a href="https://www.instagram.com/38samuraev/" ym-goal="insta" target="_blank" class="fs_block">
-	                    <div class="instagram_icon"><i></i></div>
-	                    <span>Усадьба<br>в инстаграм</span>
-	                </a>
-	                <a href="tel:+79146576625" ym-goal="phone" class="fs_block">
-	                    <div class="wa_icon"><i></i></div>
-	                    <span>Телефон<br>+7 914 657-66-25</span>
-	                </a>
-	            </div>
-				<div class="f_copyright">
-					© 2022, Усадьба «38 самураев».<br>Приморье, Партизанский район (г.Находка), пляж «Лебединое озеро».<br>Сайт информационный, не является публичной офертой.
-				</div>
+			<div class="f_navigation">
+				<b>Навигация</b>
+				<ul>
+                    <li><b>Главная</b></li>
+                    <li><a href="/ceny-na-otdyh/">Номера и цены</a></li>
+                    <li>
+                    	<a href="/entertainment/">Развлечения</a>
+                    	<div class="sublinks">
+                			<a href="">Подпункт</a>
+                    		<a href="">Какой-то подпункт</a>
+                    	</div>
+                    </li>
+                    <li><a href="/pitanie/">Питание</a></li>
+                    <li><a href="/fotogalereya/">Галерея</a></li>
+                    <li><a href="/otzyvy/">Отзывы</a></li>
+                    <li>
+                    	<a href="/publikacii/">Публикации</a>
+                    	<div class="sublinks">
+                			<a href="">Подпункт</a>
+                    		<a href="">Какой-то подпункт</a>
+                    	</div>
+                    </li>
+                    <li><a href="/kontakty/">Контакты</a></li>
+                </ul>
 			</div>
+			<div class="f_bottom">
+			<div class="f_social">
+                <a href="https://t.me/U38samuraev" ym-goal="telegram" target="_blank" class="fs_block">
+                    <div class="telegram_icon"><i></i></div>
+                    <span>Усадьба<br>в телеграм</span>
+                </a>
+                <a href="https://www.instagram.com/38samuraev/" ym-goal="insta" target="_blank" class="fs_block">
+                    <div class="instagram_icon"><i></i></div>
+                    <span>Усадьба<br>в инстаграм</span>
+                </a>
+                <a href="" ym-goal="" target="_blank" class="fs_block">
+                    <div class="instagram_icon"><i></i></div>
+                    <span>Усадьба<br>вконтакте</span>
+                </a>
+                <a href="tel:+79146576625" ym-goal="phone" class="fs_block">
+                    <div class="wa_icon"><i></i></div>
+                    <span>Телефон<br>+7 914 657-66-25</span>
+                </a>
+            </div>
+			<div class="f_copyright">
+				© 2022, Усадьба «38 самураев».<br>Приморье, Партизанский район (г.Находка), пляж «Лебединое озеро».<br>Сайт информационный, не является публичной офертой.
+			</div>
+		</div>
 		</div>
 	</footer>
 

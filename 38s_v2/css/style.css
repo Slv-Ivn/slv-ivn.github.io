@@ -40,6 +40,7 @@
     --green_color_light: #f1faeb;
     --yellow_color: #FFF9CC;
     --gradient_color: linear-gradient(270deg, #FDE8E8 0%, #F4E8FD 100%);
+    --dark_color_bg: #304454;
     --whatsapp_color: #25D366;
     --instagram_color: #FF83E5;
     --border_radius: 4px;
@@ -497,7 +498,8 @@ form.as_form .btn {
     right: 0;
     width: 100%;
     height: 60px;
-    background: #333;
+    background: var(--dark_color_bg);
+    border-bottom: 1px solid #252525;
     box-shadow: 0 12px 24px 0 rgb(0 0 0 / 15%);
     z-index: 101;
 }
@@ -532,44 +534,61 @@ form.as_form .btn {
     font-size: 14px;
     line-height: 18px;
     color: #fff;
+    font-family: inherit;
+    font-weight: normal;
 }
 
-.header .top_line .wa_icon {
+.header .top_line .tl_btns {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header .top_line .wa_booking {
     position: relative;
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    margin-left: 40px;
-}
-
-.header .top_line .wa_icon i {
-    width: 32px;
-    height: 32px;
-    background: none;
-    box-shadow: none;
-}
-
-.header .top_line .wa_icon i:after {
-    width: 32px;
-    height: 32px;
-}
-
-.header .top_line .wa_icon > span {
-    margin-left: 8px;
+    height: 36px;
+    padding: 0 8px;
+    background: var(--green_color);
+    border-radius: var(--border_radius);
     font-size: 14px;
     line-height: 18px;
-    font-family: var(--font_bold);
     color: #fff;
+    box-shadow: none;
+    cursor: pointer;
 }
 
-.header .top_line .wa_icon:hover > span {
-    color: var(--red_color);
+.header .top_line .wa_booking i {
+   position: relative;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    background-image: var(--whatsapp_icon);
+}
+
+.header .top_line .wa_booking span {
+    margin-left: 8px;
+}
+
+.header .top_line .wa_booking:hover {
+    background: #252525;
+    color: var(--green_color);
+    transition: all .2s ease;
 }
 
 .header .top_line .to_search {
+    position: relative;
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
-    margin-left: 40px;
-    font-family: var(--font_bold);
+    height: 36px;
+    margin-right: 24px;
+    padding: 0 8px;
+    background: var(--blue_color);
+    border-radius: var(--border_radius);
     font-size: 14px;
     line-height: 18px;
     color: #fff;
@@ -579,16 +598,20 @@ form.as_form .btn {
 
 .header .top_line .to_search i {
     position: relative;
-    top: 2px;
     flex-shrink: 0;
-    width: 32px;
-    height: 32px;
-    margin-right: 8px;
+    width: 22px;
+    height: 22px;
     background-image: var(--search_icon);
 }
 
-.header .top_line .to_search:hover > span {
-    color: var(--red_color);
+.header .top_line .to_search span {
+    margin-left: 8px;
+} 
+
+.header .top_line .to_search:hover {
+    background: #252525;
+    color: var(--blue_color);
+    transition: all .2s ease;
 }
 
 .header .top_line .to_search.active {
@@ -599,7 +622,8 @@ form.as_form .btn {
     position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
+    margin-left: 24px;
+    border-left: 1px solid rgb(255 255 255 / 80%);
 }
 
 .header .top_line .nav_menu .m_links {
@@ -612,7 +636,6 @@ form.as_form .btn {
     position: relative;
     margin-left: 24px;
     white-space: nowrap;
-    font-family: var(--font_bold);
 }
 
 .header .top_line .nav_menu .m_links li.h_item {
@@ -623,9 +646,10 @@ form.as_form .btn {
 .header .top_line .nav_menu .m_links li b {
     display: flex;
     align-items: center;
-    height: 36px;
     color: #fff;
     text-shadow: var(--shadow_text);
+    font-family: inherit;
+    font-weight: normal;
 }
 
 .header .top_line .nav_menu .m_links li b {
@@ -642,21 +666,12 @@ form.as_form .btn {
     margin-left: auto;
 }
 
-.header .top_line .nav_menu .sh_menu span {
-    font-family: var(--font_bold);
-    text-align: right;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-}
-
 .header .top_line .nav_menu .sh_menu i {
     position: relative;
     display: flex;
-    margin-left: 8px;
     width: 28px;
     height: 25px;
-    box-shadow: inset 0 3px 0 0 #fff;
+    box-shadow: inset 0 2px 0 0 #fff;
     transition: all .2s linear;
 }
 
@@ -667,7 +682,7 @@ form.as_form .btn {
     top: 11px;
     left: 0;
     width: 80%;
-    height: 3px;
+    height: 2px;
     background: #fff;
 }
 
@@ -685,8 +700,9 @@ form.as_form .btn {
 .header .top_line .nav_menu .sh_menu.active i:after {
     top: 0;
     left: 12px;
-    width: 3px;
+    width: 2px;
     height: 100%;
+    background: var(--red_color);
     transform: rotate(45deg);
 }
 
@@ -696,11 +712,16 @@ form.as_form .btn {
 
 .header .top_line .nav_menu .sh_menu:hover i {
     cursor: pointer;
-    filter: grayscale(1);
-    transition: filter .2s linear;
+    opacity: .8;
+    transition: opacity .2s linear;
 }
 
 /* Скрытое меню */
+
+.header .top_line.touch .nav_menu {
+    order: 3;
+    border: none;
+}
 
 .header .top_line.touch .nav_menu .sh_menu {
     display: flex !important;
@@ -708,15 +729,14 @@ form.as_form .btn {
 
 .header .top_line.touch .nav_menu .m_links {
     position: absolute;
-    top: 42px;
+    top: 43px;
     right: 0;
     display: none;
-    flex-direction: column;
     margin: 0;
-    padding: 12px 16px 8px 16px;
-    background: #333;
+    padding: 8px 16px 0 0;
+    background: var(--dark_color_bg);
     border-radius: 0 0 4px 4px;
-    box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 15%);
 }
 
 .header .top_line.touch .nav_menu .m_links.active {
@@ -724,7 +744,7 @@ form.as_form .btn {
 }
 
 .header .top_line.touch .nav_menu .m_links li {
-    margin: 0 0 6px 0;
+    margin: 0 0 8px 16px;
 }
 
 .header .top_line.touch .nav_menu .m_links li.h_item {
@@ -831,9 +851,8 @@ form.as_form .btn {
 
 .fp_content .about_38s .text {
     position: relative;
-    margin-left: 40px;
-    padding: 0 0 40px 40px;
-    border-left: 2px solid var(--blue_color_light);
+    margin-left: 60px;
+    padding: 0 0 40px;
 }
 
 .fp_content .about_38s .text p.hidden {
@@ -859,7 +878,7 @@ form.as_form .btn {
 
 .fp_content .features_38s .f_item img {
     width: 100%;
-    height: 320px;
+    height: 280px;
     box-shadow: var(--shadow_element);
     object-fit: cover;
 }
@@ -2228,7 +2247,6 @@ form.as_form .btn {
 
 .main_visitor_reviews .vr_title {
     width: 100%;
-    text-align: center;
     margin-bottom: 12px;
 }
 
@@ -2413,6 +2431,7 @@ form.as_form .btn {
     margin-top: 80px;
     padding-top: 40px;
     padding-bottom: 120px;
+    background: var(--dark_color_bg);
     border-top: 2px solid var(--blue_color_light);
     overflow: hidden;
 }
@@ -2431,7 +2450,7 @@ form.as_form .btn {
     box-shadow: 0 0 150px 0 rgb(255 210 0 / 50%);
 }*/
 
-.footer:after {
+/*.footer:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -2441,37 +2460,14 @@ form.as_form .btn {
     height: 60px;
     margin: auto;
     background: url('../img/waves_bg.png') left bottom repeat-x;
-}
-
-.footer .space {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.footer .left {
-    max-width: 420px;
-    margin-right: 8%;
-}
+}*/
 
 .footer .aparts_search .text b.h2 {
     font-size: 18px;
 }
 
-.footer form.as_form {
-    flex-wrap: wrap;
-}
-
-.footer form.as_form .input,
-.footer form.as_form .btn {
-    max-width: 100%;
-    border-radius: var(--border_radius);
-}
-
 .footer form.as_form .input input,
 .footer form.as_form .input:first-child input {
-    margin-bottom: 8px;
-    border-radius: var(--border_radius);
     border: 1px solid var(--blue_color);
 }
 
@@ -3136,37 +3132,102 @@ border-bottom: 0;
 .datepicker-hide { display: none; }
 
 
-/* ------------------------------------------------------------ К меньшему разрешению */
+/* ------------------------------------------------------------ Адаптивность */
+
+@media screen and (min-width: 1061px) {
+
+    .header .top_line .nav_menu .m_links li .sublinks {
+        position: absolute;
+        left: -12px;
+        display: none;
+        padding: 4px 12px;
+        background: var(--dark_color_bg);
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%);
+        font-size: 14px;
+    }
+
+    .header .top_line .nav_menu .m_links li .sublinks a {
+        margin: 4px 0;
+    }
+
+    .header .top_line .nav_menu .m_links li:hover > .sublinks {
+        display: block;
+    }
+
+}
 
 @media screen and (max-width: 1060px) {
+
+    .header .top_line .nav_menu {
+        order: 3;
+        border: none;
+    }
 
     .header .top_line .nav_menu .sh_menu {
         display: flex !important;
     }
 
-    .header .top_line .nav_menu .m_links {
-        position: absolute;
-        top: 42px;
+    .header .top_line .nav_menu .menu_shell {
+        position: fixed;
+        top: 60px;
+        left: 0;
         right: 0;
-        display: none;
+        height: 100%;
+        padding-bottom: 60px;
+        overflow-y: auto;
+    }
+
+    .header .top_line .nav_menu .m_links,
+    .header .top_line.touch .nav_menu .m_links {
+        position: relative;
         flex-direction: column;
+        top: auto;
+        display: none;
         margin: 0;
-        padding: 12px 16px 8px 16px;
-        background: #333;
+        padding: 12px 40px 16px 64px;
+        background: var(--dark_color_bg);
         border-radius: 0 0 4px 4px;
-        box-shadow: 0 8px 8px 0 rgb(0 0 0 / 20%);
+        box-shadow: 0 8px 16px 0 rgb(0 0 0 / 15%);
     }
 
     .header .top_line .nav_menu .m_links.active {
         display: flex;
     }
 
-    .header .top_line .nav_menu .m_links li {
-        margin: 0 0 6px 0;
+    .header .top_line .nav_menu .m_links li,
+    .header .top_line.touch .nav_menu .m_links li {
+        margin: 6px 0;
+        font-size: 18px;
+    }
+
+    .header .top_line .nav_menu .m_links > li:after,
+    .header .top_line.touch .nav_menu .m_links > li:after {
+        content: '';
+        position: absolute;
+        top: 12px;
+        left: -16px;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background: rgb(255 255 255 / 75%);
     }
 
     .header .top_line .nav_menu .m_links li.h_item {
         display: list-item;
+    }
+
+    .header .top_line .nav_menu .m_links li .sublinks {
+        position: relative;
+        font-size: 16px;
+    }
+
+    .header .top_line .nav_menu .m_links li .sublinks a {
+        margin: 8px 0;
+    }
+
+    .header .top_line .nav_menu .sh_menu {
+        display: flex !important;
     }
 
     .central .content {
@@ -3180,18 +3241,6 @@ border-bottom: 0;
 }
 
 @media screen and (max-width: 980px) {
-
-    .header .top_line .space {
-        justify-content: space-between;
-    }
-    
-    .header .top_line .wa_icon {
-        margin: 0;
-    }
-
-    .header .top_line .to_search {
-        margin: 0;
-    }
 
     .header .top_line .nav_menu {
         width: auto;
@@ -3338,6 +3387,11 @@ border-bottom: 0;
         padding: 0 8px;
     }
 
+    .header .top_line .nav_menu .m_links,
+    .header .top_line.touch .nav_menu .m_links {
+        padding: 12px 24px 16px 32px;
+    }
+
     .header .aparts_search .social_links {
         display: none;
     }
@@ -3463,7 +3517,7 @@ border-bottom: 0;
         padding: 0 16px;
     }
 
-    .header .top_line .wa_icon > span {
+    .header .top_line.touch .wa_booking > span {
         display: none;
     }
 
@@ -3536,11 +3590,6 @@ border-bottom: 0;
 
     .header .top_line.touch .logo b {
         display: none;
-    }
-
-    .header .top_line .nav_menu .m_links,
-    .header .top_line.touch .nav_menu .m_links {
-        right: -8px;
     }
 
     .fp_content h1 {

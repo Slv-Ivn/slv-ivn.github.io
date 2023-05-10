@@ -46,6 +46,7 @@
     --border_radius: 4px;
     --shadow_element: 0 2px 8px 0 rgb(0 0 0 / 5%);
     --shadow_text: 0 1px 1px rgb(0 0 0 / 10%);
+    --vk_icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZmlsbD0iIzE4NzZEMiIgZD0iTTIwIDBDOSAwIDAgOSAwIDIwczkgMjAgMjAgMjAgMjAtOSAyMC0yMFMzMSAwIDIwIDBaIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIxLjIgMjkuMmMtOSAwLTE0LjEtNi4xLTE0LjMtMTYuNGg0LjVjLjEgNy41IDMuNSAxMC43IDYuMSAxMS4zVjEyLjhoNC4ydjYuNWMyLjYtLjMgNS4zLTMuMiA2LjItNi41aDQuMmMtLjcgNC0zLjcgNy01LjggOC4yIDIuMSAxIDUuNSAzLjYgNi43IDguMmgtNC43Yy0xLTMuMS0zLjUtNS41LTYuOC01Ljl2NS45aC0uM1oiLz48L3N2Zz4=");
     --whatsapp_icon: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjY2IDEwLjQyNGMuMzY3LjAxLjc3NC4wMyAxLjE2Mi44OTQuMjU3LjU3NS42OSAxLjYzMyAxLjA0MyAyLjQ5Ni4yNzQuNjcuNSAxLjIyMy41NTYgMS4zMzYuMTMuMjU4LjIxLjU1Ni4wNC45MDNsLS4wNTcuMTE4Yy0uMTM1LjI4Mi0uMjMxLjQ4My0uNDYuNzQ2LS4wOTMuMTA4LS4xOS4yMjYtLjI4OC4zNDRhOC40NyA4LjQ3IDAgMCAxLS40ODYuNTZjLS4yNTkuMjU3LS41MjcuNTM1LS4yMjkgMS4wNTIuMjk4LjUxNiAxLjM0MSAyLjIxNCAyLjg4MiAzLjU4M2ExMy4zMTUgMTMuMzE1IDAgMCAwIDMuODIzIDIuNDJjLjE0LjA2LjI1NS4xMS4zNC4xNTIuNTE2LjI1OC44MjQuMjE4IDEuMTIyLS4xMy4yOTgtLjM0NyAxLjI5Mi0xLjUwOCAxLjY0LTIuMDI0LjMzNy0uNTE3LjY4NS0uNDM3IDEuMTYyLS4yNTkuNDc3LjE3OSAzLjAyIDEuNDMgMy41MzcgMS42ODhsLjI4Ni4xNGMuMzYuMTczLjYwNC4yOS43MDcuNDY2LjEzLjIxOC4xMyAxLjI1LS4yOTggMi40NjItLjQzNyAxLjIxLTIuNTQzIDIuMzczLTMuNDk3IDIuNDYybC0uMjczLjAzYy0uODc0LjEwNy0xLjk4My4yNDEtNS45MzctMS4zMi00Ljg3LTEuOTI0LTguMDg2LTYuNjk1LTguNzM3LTcuNjZhNS42NSA1LjY1IDAgMCAwLS4xMDUtLjE1NGwtLjAxMS0uMDE1Yy0uMjk2LS4zOTctMi4xMDUtMi44MjgtMi4xMDUtNS4zMzYgMC0yLjQgMS4xNzctMy42NDggMS43MTQtNC4yMThsLjA5NC0uMWMuNDc3LS41MTcgMS4wMzMtLjY0NiAxLjM4LS42NDYuMzQ5IDAgLjY5NyAwIC45OTUuMDFaIiBmaWxsPSIjZmZmIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0uMjAxIDM4Ljk3OGEuODA1LjgwNSAwIDAgMCAuOTc4Ljk5NWw5LjI1My0yLjQyNmEyMC4wMjQgMjAuMDI0IDAgMCAwIDkuNTU4IDIuNDMySDIwYzExLjAxOCAwIDIwLTguOTY1IDIwLTE5Ljk4NSAwLTUuMzQtMi4wNzctMTAuMzY0LTUuODUyLTE0LjEzN0ExOS44NzcgMTkuODc3IDAgMCAwIDIwIDBDOC45ODIgMCAwIDguOTY1IDAgMTkuOTg1YTE5Ljk3IDE5Ljk3IDAgMCAwIDIuNjczIDkuOTg3TC4yIDM4Ljk3OFptNS4zNzYtOC4yMDNhMy4wMzUgMy4wMzUgMCAwIDAtLjI5Ny0yLjMyIDE2Ljk0MSAxNi45NDEgMCAwIDEtMi4yNjctOC40N2MwLTkuMzM2IDcuNjE4LTE2Ljk2IDE2Ljk4Ny0xNi45NkExNi44NyAxNi44NyAwIDAgMSAzMi4wMjMgOGMzLjIwNiAzLjIwNSA0Ljk2NCA3LjQ1NiA0Ljk2NCAxMS45OTMgMCA5LjMzNS03LjYxOCAxNi45Ni0xNi45ODcgMTYuOTZoLS4wMWMtMi44NDUgMC01LjY0LS43MTctOC4xMjMtMi4wNjdhMy4wMDIgMy4wMDIgMCAwIDAtMi4xOTYtLjI2N2wtNS41NDggMS40NTUgMS40NTQtNS4zWiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==");
     --rubler_icon: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMCAwQzguOTU0IDAgMCA4Ljk1NCAwIDIwczguOTU0IDIwIDIwIDIwIDIwLTguOTU0IDIwLTIwUzMxLjA0NiAwIDIwIDBabTAgM0MxMC42MTEgMyAzIDEwLjYxMSAzIDIwczcuNjExIDE3IDE3IDE3IDE3LTcuNjExIDE3LTE3UzI5LjM4OSAzIDIwIDNaIiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTEzLjIyNCAxMSAxMyAxMy4xMTRsMi4yNjguNjE4LjM1LjQ1NXY1Ljk4NGwtMS44Mi0uMDY1LS4yNTUgMi42MzRoMi4wNzZ2Mi40NzFoLTEuODUybC0uMjg4IDIuNjAyIDIuMTQtLjA5OFYzMWgzLjYwOHYtMy4yODVsNC42OTUuMjYuMzgzLTIuNzY0aC01LjA3OHYtMi4yNzZjLjkyNy4yNiAxLjk4LjM5IDMuMTYyLjM5IDQuMDI0IDAgNi42MTEtMi41MDQgNi42MTEtNi4yNDRDMjkgMTIuODg2IDI2LjA2MiAxMSAyMi4xMDIgMTFjLTEuNTk3IDAtMy4yMjYuMDY1LTQuNzU5LjE2M0wxMy4yMjMgMTFabTYuMDAzIDMuNTQ1LjM1Mi0uMzljLjYzOS0uMTk2IDEuNDM3LS4yOTMgMi4zMzEtLjI5MyAyLjIwNCAwIDMuNDUgMS4xMzggMy40NSAzLjMxNyAwIDEuMDczLS4yMjQgMi4wODEtLjczNSAyLjgzLS43OTkuMzktMS43ODkuNjE3LTIuOTA2LjYxNy0uODk1IDAtMS43MjUtLjA2NS0yLjQ5Mi0uMjI4di01Ljg1M1oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=");
     --telegram_icon: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDAgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIwIDBDOC45NTQgMCAwIDguOTU0IDAgMjBzOC45NTQgMjAgMjAgMjAgMjAtOC45NTQgMjAtMjBTMzEuMDQ2IDAgMjAgMFoiIGZpbGw9IiM0MEIzRTAiLz48cGF0aCBkPSJtMjkuNzMyIDExLjUwNS0zLjU3MiAxOC4wMXMtLjUgMS4yNS0xLjg3NC42NWwtOC4yNDMtNi4zMi0yLjk5OC0xLjQ0OUw4IDIwLjY5N3MtLjc3NC0uMjc0LS44NS0uODc0Yy0uMDc0LS42Ljg3NS0uOTI0Ljg3NS0uOTI0bDIwLjA1OS03Ljg2OXMxLjY0OS0uNzI0IDEuNjQ5LjQ3NVoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTUuNDA5IDI5LjMxM3MtLjI0LS4wMjItLjU0LS45NzJjLS4zLS45NS0xLjgyNC01Ljk0NS0xLjgyNC01Ljk0NWwxMi4xMTUtNy42OTRzLjctLjQyNS42NzUgMGMwIDAgLjEyNS4wNzUtLjI1LjQyNXMtOS41MTcgOC41NjgtOS41MTcgOC41NjgiIGZpbGw9IiNEMkU1RjEiLz48cGF0aCBkPSJtMTkuMjAzIDI2LjI2OC0zLjI2IDIuOTczcy0uMjU1LjE5My0uNTM0LjA3MmwuNjI0LTUuNTIyIiBmaWxsPSIjQjVDRkU0Ii8+PC9zdmc+");
@@ -117,7 +118,7 @@ hr {
     position: relative;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     margin: 8px 0;
     background: var(--blue_color_light);
     border: none;
@@ -228,7 +229,8 @@ span.close:hover:after { background: #252525; }
 
 .wa_icon i,
 .instagram_icon i,
-.telegram_icon i {
+.telegram_icon i,
+.vk_icon i {
     position: relative;
     display: flex;
     justify-content: center;
@@ -253,6 +255,7 @@ span.close:hover:after { background: #252525; }
 .instagram_icon i { background: var(--instagram_color); }
 .instagram_icon i:after { background-image: var(--instagram_icon); }
 .telegram_icon i { background-image: var(--telegram_icon); }
+.vk_icon i { background-image: var(--vk_icon); }
 
 
 /* ------------------------------------------------------------ Элементы форм */
@@ -432,7 +435,7 @@ form.as_form .btn {
     background: #fff;
     border-radius: var(--border_radius);
     box-shadow: var(--shadow_element);
-    border: 2px solid var(--blue_color_light);
+    border: 1px solid var(--blue_color_light);
 }
 
 .link_card a.lc_map {
@@ -693,7 +696,7 @@ form.as_form .btn {
 }
 
 .header .top_line .nav_menu .sh_menu.active i {
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .header .top_line .nav_menu .sh_menu.active i:before,
@@ -750,6 +753,50 @@ form.as_form .btn {
 .header .top_line.touch .nav_menu .m_links li.h_item {
     display: list-item;
 }
+
+
+/* Белое меню */
+
+.header .top_line.wbg {
+    background: #fff;
+    border: none;
+}
+
+.header .top_line.wbg .logo b {
+    color: var(--text_color);
+}
+
+.header .top_line.wbg .nav_menu {
+    border-color: var(--text_color);
+}
+
+.header .top_line.wbg .nav_menu .m_links li a {
+    color: var(--link_color);
+}
+
+.header .top_line.wbg .nav_menu .m_links li a:hover {
+    color: var(--red_color);
+}
+
+.header .top_line.wbg .nav_menu .sh_menu i {
+    box-shadow: inset 0 2px 0 0 var(--blue_color);
+}
+
+.header .top_line.wbg .nav_menu .sh_menu i:before,
+.header .top_line.wbg .nav_menu .sh_menu i:after {
+    background: var(--blue_color);
+}
+
+.header .top_line.wbg .nav_menu .sh_menu.active i:before,
+.header .top_line.wbg .nav_menu .sh_menu.active i:after {
+    background: var(--red_color);
+}
+
+.header .top_line.wbg.touch .nav_menu .m_links {
+    background: #fff;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%);
+}
+
 
 /* Поиск номеров */
 
@@ -808,7 +855,7 @@ form.as_form .btn {
     display: flex;
     align-items: stretch;
     margin-top: 40px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .fp_content .about_38s .images {
@@ -873,7 +920,7 @@ form.as_form .btn {
     flex-direction: column;
     align-self: normal;
     width: calc(33% - 12px);
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .fp_content .features_38s .f_item img {
@@ -905,7 +952,7 @@ form.as_form .btn {
     justify-content: space-between;
     margin-top: 40px;
     padding-top: 40px;
-    border-top: 2px solid var(--blue_color_light);
+    border-top: 1px solid var(--blue_color_light);
 }
 
 .fp_content .bottom_block .link_card {
@@ -992,7 +1039,7 @@ form.as_form .btn {
     width: calc(100% - 304px);
     margin-left: 16px;
     padding-left: 40px;
-    border-left: 2px solid var(--blue_color_light);
+    border-left: 1px solid var(--blue_color_light);
 }
 
 .central .content p.main_descriptor {
@@ -1145,7 +1192,7 @@ form.as_form .btn {
     justify-content: space-between;
     margin: 24px 0 0 0;
     padding: 0 0 16px 0;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .content .publications .publication_item a.link {
@@ -1178,17 +1225,14 @@ form.as_form .btn {
 
 .content .publication_text {
     position: relative;
-    padding-bottom: 12px;
-    border-bottom: 2px solid var(--blue_color_light);
 }
 
-.content .publication_text .adm_links {
-    position: absolute;
-    top: -38px;
-    left: 0;
+.content .adm_links {
+    position: relative;
+    margin: 12px 0;
 }
 
-.content .publication_text .adm_links .link {
+.content .adm_links .link {
     padding: 4px 8px;
     background: var(--blue_color);
     border-radius: var(--border_radius);
@@ -1198,7 +1242,7 @@ form.as_form .btn {
     text-shadow: var(--shadow_text);
 }
 
-.content .publication_text .adm_links .link:hover {
+.content .adm_links .link:hover {
     background: var(--red_color);
 }
 
@@ -1254,7 +1298,7 @@ form.as_form .btn {
     margin: 16px 0 0 0;
     padding-bottom: 12px;
     background: #fff;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .content .other_publications ul li .link {
@@ -1282,7 +1326,7 @@ form.as_form .btn {
 
 .content .apart_info {
     margin-top: 40px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .content .food_block,
@@ -1291,7 +1335,7 @@ form.as_form .btn {
     position: relative;
     margin-top: 40px;
     padding-bottom: 12px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .content .food_block .fb_item {
@@ -1462,7 +1506,7 @@ form.as_form .btn {
 .content .price_table table tr td {
     position: relative;
     padding: 6px 8px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
     text-align: left;
 }
 
@@ -1483,7 +1527,7 @@ form.as_form .btn {
 
 .content .price_table table tr th:not(:last-child),
 .content .price_table table tr td:not(:last-child) {
-    border-right: 2px solid var(--blue_color_light);
+    border-right: 1px solid var(--blue_color_light);
 }
 
 .content .price_table table tr th:first-child,
@@ -1551,7 +1595,7 @@ form.as_form .btn {
 
 .content .big_instagram {
     position: relative;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .content .big_instagram .images_list .image {
@@ -1562,7 +1606,7 @@ form.as_form .btn {
 .content .prim_tour {
     position: relative;
     margin-top: 40px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .content .prim_tour h2 {
@@ -1605,7 +1649,7 @@ form.as_form .btn {
     bottom: -24px;
     left: 16px;
     width: calc(100% - 16px);
-    height: 2px;
+    height: 1px;
     background: var(--blue_color_light);
 }
 
@@ -1713,7 +1757,7 @@ form.as_form .btn {
     object-fit: cover;
 }
 
-.content .list_photos .lp_images .lp_image .image.video:before {
+.content .image.video:before {
     content: '';
     position: absolute;
     top: 8px;
@@ -1726,7 +1770,7 @@ form.as_form .btn {
     z-index: 1;
 }
 
-.content .list_photos .lp_images .lp_image .image.video:after {
+.content .image.video:after {
     content: '';
     position: absolute;
     top: 16px;
@@ -1853,7 +1897,7 @@ form.as_form .btn {
     position: relative;
     display: flex;
     margin-top: 24px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .aparts_result .ar_list .ar_item .images {
@@ -1927,7 +1971,7 @@ form.as_form .btn {
     position: relative;
     margin: 0 0 0 24px;
     padding: 0 0 24px 24px;
-    border-left: 2px solid var(--blue_color_light);
+    border-left: 1px solid var(--blue_color_light);
 }
 
 .aparts_result .ar_list .ar_item .text .apart_points {
@@ -2037,8 +2081,8 @@ form.as_form .btn {
     content: '';
     position: absolute;
     top: 0;
-    right: -18px;
-    width: 2px;
+    right: -17px;
+    width: 1px;
     height: 100%;
     background: var(--blue_color_light);
 }
@@ -2054,7 +2098,7 @@ form.as_form .btn {
     bottom: -16px;
     right: -16px;
     width: calc(100% + 16px);
-    height: 2px;
+    height: 1px;
     background: var(--blue_color_light);
 }
 
@@ -2079,10 +2123,11 @@ form.as_form .btn {
 
 .sidebar .sb_block .sb_vr_title a {
     display: block;
+    margin-bottom: 8px;
     padding: 16px;
     background: #fff;
     border-radius: 4px 4px 0 0;
-    border: 2px solid var(--blue_color_light);
+    border: 1px solid var(--blue_color_light);
 }
 
 .sidebar .sb_block .sb_vr_title a small {
@@ -2107,7 +2152,7 @@ form.as_form .btn {
     background: #fff;
     border-radius: var(--border_radius);
     box-shadow: var(--shadow_element);
-    border: 2px solid var(--blue_color_light);
+    border: 1px solid var(--blue_color_light);
 }
 
 .visitor_review .vr_area .head {
@@ -2145,7 +2190,7 @@ form.as_form .btn {
     top: 0;
     left: -16px;
     width: calc(100% + 32px);
-    height: 2px;
+    height: 1px;
     background: var(--blue_color_light);
 }
 
@@ -2193,7 +2238,7 @@ form.as_form .btn {
     left: -16px;
     right: 0;
     width: calc(100% + 32px);
-    height: 2px;
+    height: 1px;
     background: var(--blue_color_light);
 }
 
@@ -2241,7 +2286,7 @@ form.as_form .btn {
 }
 
 .main_visitor_reviews .visitor_review .vr_area {
-    max-height: 280px;
+    max-height: 240px;
     overflow: hidden;
 }
 
@@ -2338,7 +2383,7 @@ form.as_form .btn {
 .booking_info .bi_block .bib_text {
     position: relative;
     padding: 12px 16px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .booking_info .bi_block .bib_text:last-child {
@@ -2388,7 +2433,7 @@ form.as_form .btn {
 .booking_info .bi_block .bib_text .bib_price small {
     width: fit-content;
     padding-bottom: 4px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .booking_info .bi_block .bib_text .bib_status {
@@ -2430,10 +2475,10 @@ form.as_form .btn {
     position: relative;
     margin-top: 80px;
     padding-top: 40px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
     background: var(--dark_color_bg);
-    border-top: 2px solid var(--blue_color_light);
     overflow: hidden;
+    color: #fff;
 }
 
 /*.footer:before {
@@ -2462,31 +2507,30 @@ form.as_form .btn {
     background: url('../img/waves_bg.png') left bottom repeat-x;
 }*/
 
-.footer .aparts_search .text b.h2 {
-    font-size: 18px;
+.footer .f_top {
+    position: relative;
+    display: flex;
 }
 
-.footer form.as_form .input input,
-.footer form.as_form .input:first-child input {
-    border: 1px solid var(--blue_color);
+.footer .aparts_search .text b.h2 {
+    font-size: 16px;
 }
 
 .footer .f_navigation {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .footer .f_navigation ul {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .footer .f_navigation ul li {
     margin-top: 4px;
-}
-
-.footer .f_navigation ul li:not(:last-child) {
-    margin-right: 8px;
 }
 
 .footer .f_navigation ul li b {
@@ -2495,18 +2539,40 @@ form.as_form .btn {
     color: var(--red_color);
 }
 
+.footer .f_navigation ul li.group_title b {
+    display: block;
+    margin-bottom: 8px;
+    font-family: var(--font_bold);
+    color: #fff;
+}
+
+.footer .f_navigation ul li a {
+    color: #fff;
+}
+
+.footer .f_navigation ul li a:hover {
+    color: var(--red_color);
+}
+
+.footer .f_bottom {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
 .footer .f_social {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 24px;
 }
 
 .footer .f_social .fs_block {
     position: relative;
     display: flex;
-    margin-top: 24px;
-    margin-right: 8%;
+    margin-right: 24px;
     line-height: 20px;
 }
 
@@ -2514,13 +2580,39 @@ form.as_form .btn {
     margin-right: 0;
 }
 
-.footer .f_social .fs_block span {
-    margin-left: 16px;
+.footer .f_social .fs_block:hover {
+    transform: scale(.9);
+    transition: transform .2s ease;
 }
 
 .footer .f_copyright {
-    margin-top: 40px;
+    margin-right: auto;
     font-size: 14px;
+}
+
+/* Белый подвал */
+
+.footer.wbg {
+    background: #fff;
+    border-top: 1px solid var(--blue_color_light);
+    color: var(--text_color);
+}
+
+.footer.wbg .f_navigation ul li.group_title b {
+    color: var(--text_color);
+}
+
+.footer.wbg .f_navigation ul li a {
+    color: var(--link_color);
+}
+
+.footer.wbg .f_bottom {
+    border-color: var(--blue_color_light);
+}
+
+.footer.wbg form.as_form .input input,
+.footer.wbg form.as_form .input:first-child input {
+    border: 1px solid var(--blue_color);
 }
 
 
@@ -2540,7 +2632,7 @@ form.as_form .btn {
 .mod_win .mw_head {
     position: relative;
     padding: 16px;
-    border-bottom: 2px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .mod_win .mw_head .mw_title {
@@ -2590,7 +2682,7 @@ form.as_form .btn {
     bottom: -20px;
     left: -16px;
     width: calc(100% + 32px);
-    height: 2px;
+    height: 1px;
     background: var(--blue_color_light);
 }
 
@@ -2725,7 +2817,7 @@ form.as_form .btn {
     bottom: -16px;
     left: -16px;
     width: calc(100% + 32px);
-    height: 2px;
+    height: 1px;
     background: var(--blue_color_light);
 }
 
@@ -2834,7 +2926,7 @@ form.as_form .btn {
     bottom: -16px;
     left: -16px;
     width: calc(100% + 32px);
-    height: 2px;
+    height: 1px;
     background: var(--blue_color_light);
 }
 
@@ -2953,8 +3045,8 @@ form.as_form .btn {
     position: relative;
     margin: 24px 0;
     padding: 24px 0 16px 0;
-    border-top: 2px solid var(--blue_color_light);
-    border-bottom: 2px solid var(--blue_color_light);
+    border-top: 1px solid var(--blue_color_light);
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .e404 .page_info > b {
@@ -3147,12 +3239,46 @@ border-bottom: 0;
         font-size: 14px;
     }
 
+    .header .top_line.wbg .nav_menu .m_links li .sublinks {
+        background: #fff;
+        box-shadow: 0 8px 8px 0 rgb(0 0 0 / 10%);
+    }
+
     .header .top_line .nav_menu .m_links li .sublinks a {
         margin: 4px 0;
     }
 
     .header .top_line .nav_menu .m_links li:hover > .sublinks {
         display: block;
+    }
+
+    .footer .aparts_search {
+        flex-shrink: 0;
+        max-width: 320px;
+        margin-right: 40px;
+        padding-right: 40px;
+        border-right: 1px solid rgb(255 255 255 / 10%);
+    }
+
+    .footer form.as_form {
+        flex-wrap: wrap;
+    }
+
+    .footer form.as_form .input,
+    .footer form.as_form .btn {
+        max-width: 100%;
+        margin: 0;
+        border-radius: var(--border_radius);
+    }
+
+    .footer form.as_form .input input,
+    .footer form.as_form .input:first-child input {
+        margin-bottom: 8px;
+        border-radius: var(--border_radius);
+    }
+
+    .footer.wbg .aparts_search {
+        border-color: var(--blue_color_light);
     }
 
 }
@@ -3168,7 +3294,7 @@ border-bottom: 0;
         display: flex !important;
     }
 
-    .header .top_line .nav_menu .menu_shell {
+    .header .top_line .nav_menu .sh_menu.active + .menu_shell {
         position: fixed;
         top: 60px;
         left: 0;
@@ -3176,6 +3302,7 @@ border-bottom: 0;
         height: 100%;
         padding-bottom: 60px;
         overflow-y: auto;
+        border-top: 1px solid var(--blue_color_light);
     }
 
     .header .top_line .nav_menu .m_links,
@@ -3189,6 +3316,11 @@ border-bottom: 0;
         background: var(--dark_color_bg);
         border-radius: 0 0 4px 4px;
         box-shadow: 0 8px 16px 0 rgb(0 0 0 / 15%);
+    }
+
+    .header .top_line.wbg .nav_menu .m_links,
+    .header .top_line.wbg.touch .nav_menu .m_links {
+        background: #fff;
     }
 
     .header .top_line .nav_menu .m_links.active {
@@ -3211,6 +3343,11 @@ border-bottom: 0;
         height: 4px;
         border-radius: 2px;
         background: rgb(255 255 255 / 75%);
+    }
+
+    .header .top_line.wbg .nav_menu .m_links > li:after,
+    .header .top_line.wbg.touch .nav_menu .m_links > li:after {
+        background: var(--blue_color);
     }
 
     .header .top_line .nav_menu .m_links li.h_item {
@@ -3237,6 +3374,20 @@ border-bottom: 0;
 
     .sidebar {
         width: 264px;
+    }
+
+    .footer .f_top {
+        flex-direction: column;
+    }
+
+    .footer .f_navigation {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid rgb(255 255 255 / 10%);
+    }
+
+    .footer.wbg .f_navigation {
+        border-color: var(--blue_color_light);
     }
 }
 
@@ -3313,7 +3464,7 @@ border-bottom: 0;
         width: 100%;
         margin-top: 24px;
         padding-top: 40px;
-        border-top: 2px solid var(--blue_color_light);
+        border-top: 1px solid var(--blue_color_light);
     }
 
     .sidebar:after,
@@ -3496,13 +3647,13 @@ border-bottom: 0;
         margin-right: 16px;
     }
 
-    .footer .space {
+    .footer .f_bottom {
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .footer .left {
-        max-width: 100%;
-        margin: 0 0 60px 0;
+    .footer .f_social {
+        margin-bottom: 24px;
     }
 
 }
@@ -3528,6 +3679,7 @@ border-bottom: 0;
     form.as_form .input,
     form.as_form .btn {
         max-width: 100%;
+        margin: 0;
         border-radius: var(--border_radius);
     }
 
@@ -3582,6 +3734,18 @@ border-bottom: 0;
     .aparts_result .ar_list .ar_item .text .bottom .apart_price > span {
         font-size: 14px;
         line-height: 16px;
+    }
+
+    .footer .f_navigation {
+        flex-direction: column;
+    }
+
+    .footer .f_navigation ul:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .footer .f_navigation ul li {
+        margin-top: 8px;
     }
 
 }

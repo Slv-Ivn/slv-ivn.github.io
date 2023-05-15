@@ -3555,7 +3555,7 @@ border-bottom: 0;
 @media screen and (max-width: 780px) {
 
     .header .header_bg {
-        height: 320px;
+        height: 280px;
     }
 
     .header .top_line .space {
@@ -3692,6 +3692,10 @@ border-bottom: 0;
         display: none;
     }
 
+    .aparts_search .text {
+        margin-bottom: 16px;
+    }
+
     form.as_form {
         flex-wrap: wrap;
     }
@@ -3704,9 +3708,18 @@ border-bottom: 0;
     }
 
     form.as_form .input input,
+    form.as_form .btn {
+        height: 46px;
+    }
+
+    form.as_form .input input,
     form.as_form .input:first-child input {
         margin-bottom: 8px;
         border-radius: var(--border_radius);
+    }
+
+    form.as_form .input:after {
+        top: 10px;
     }
 
     .fp_content .about_38s .images {

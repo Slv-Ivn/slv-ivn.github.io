@@ -458,6 +458,11 @@ form.as_form .btn {
     object-fit: cover;
 }
 
+.link_card .text b {
+    font-family: inherit;
+    font-weight: normal;
+}
+
 .link_card .text small {
     display: block;
     margin-top: 4px;
@@ -811,8 +816,8 @@ form.as_form .btn {
 
 .header .aparts_search {
     position: relative;
-    margin-bottom: 24px;
-    padding: 24px 0 32px 0;
+    margin-bottom: 0;
+    padding: 24px 0 ;
     border-bottom: 1px solid var(--blue_color_light);
 }
 
@@ -855,7 +860,7 @@ form.as_form .btn {
 
 .fp_content {
     position: relative;
-    margin-top: 24px;
+    margin-top: 60px;
 }
 
 .fp_content h1 { 
@@ -952,6 +957,8 @@ form.as_form .btn {
     display: block;
     margin-top: 12px;
     color: var(--link_color);
+    font-family: inherit;
+    font-weight: normal;
 }
 
 .fp_content .features_38s .f_item:hover b {
@@ -963,77 +970,12 @@ form.as_form .btn {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 40px;
-    padding-top: 40px;
-    border-top: 1px solid var(--blue_color_light);
+    margin-top: 80px;
 }
 
 .fp_content .bottom_block .link_card {
     width: calc(33% - 12px);
 }
-
-
-
-/*.fp_content .bottom_block .map {
-    position: relative;
-    width: calc(33% - 12px);
-    height: 228px;
-    border-radius: var(--border_radius);
-    overflow: hidden;
-}
-
-.fp_content .bottom_block .map:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--border_radius);
-    background-image: linear-gradient(200deg, transparent, #FFF9CC 80%);
-}
-
-.fp_content .bottom_block .map img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.fp_content .bottom_block .map:hover img {
-    transform: scale(1.1);
-    transition: transform .2s linear;
-}
-
-.fp_content .bottom_block .map .text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 0 24px 24px 24px;
-    text-shadow: var(--shadow_text);
-    z-index: 5;
-}
-
-.fp_content .bottom_block .map .text small {
-    display: block;
-    margin-top: 8px;
-    color: var(--text_color);
-}
-
-.fp_content .bottom_block .aparts_search {
-    position: relative;
-    width: calc(67% - 12px);
-    padding: 34px 40px 40px 40px;
-    background: var(--gradient_color);
-    border-radius: var(--border_radius);
-}
-
-.fp_content .bottom_block .map,
-.fp_content .bottom_block .aparts_search {
-    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 5%);
-}*/
 
 
 /* ------------------------------------------------------------ Центральная часть / контент */
@@ -2178,6 +2120,8 @@ form.as_form .btn {
 
 .visitor_review .vr_area .head b {
     display: block;
+    font-family: inherit;
+    font-weight: normal;
 }
 
 .visitor_review .vr_area .head .date {
@@ -2292,6 +2236,8 @@ form.as_form .btn {
     align-items: flex-start;
     flex-wrap: wrap;
     margin-top: 80px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .main_visitor_reviews .visitor_review {
@@ -2305,13 +2251,19 @@ form.as_form .btn {
 
 .main_visitor_reviews .vr_title {
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
-.main_visitor_reviews .vr_title h2 { font-size: 24px; }
+.main_visitor_reviews .vr_title p { 
+    margin-bottom: 0;
+}
 
 .visitor_review .vr_area.show_full {
     max-height: 100%;
+}
+
+.main_visitor_reviews a.link_reviews {
+    margin-top: 24px;
 }
 
 .content .add_review {

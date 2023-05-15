@@ -477,21 +477,6 @@ form.as_form .btn {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 480px;
-}
-
-.header:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../img/header_bg.jpg') 50% 50% no-repeat;
-    background-size: cover;
-    z-index: -1;
 }
 
 .header .top_line {
@@ -798,12 +783,37 @@ form.as_form .btn {
 }
 
 
+/* Бэкграунд шапки */
+
+.header .header_bg {
+    position: relative;
+    max-width: 100%;
+    height: 450px;
+    margin-top: 60px;
+}
+
+.header .header_bg picture {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.header .header_bg picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+
 /* Поиск номеров */
 
 .header .aparts_search {
     position: relative;
-    margin-top: auto;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    padding: 24px 0 32px 0;
+    border-bottom: 1px solid var(--blue_color_light);
 }
 
 .header .aparts_search .space {
@@ -812,12 +822,15 @@ form.as_form .btn {
 
 .aparts_search .text {
     margin-bottom: 24px;
-    max-width: 680px;
 }
 
 .aparts_search .text p {
     margin: 4px 0 0 0;
     text-shadow: var(--shadow_text);
+}
+
+.header form.as_form .input input {
+    border: 1px solid var(--blue_color);
 }
 
 .header .aparts_search .social_links {
@@ -832,7 +845,7 @@ form.as_form .btn {
 }
 
 .header .aparts_search .social_links .s_link:hover {
-    transform: scale(1.1);
+    transform: scale(.9);
     transition: transform .2s linear;
 }
 
@@ -3232,11 +3245,17 @@ border-bottom: 0;
         position: absolute;
         left: -12px;
         display: none;
+        min-width: 120px;
         padding: 4px 12px;
         background: var(--dark_color_bg);
         border-radius: 0 0 4px 4px;
         box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%);
         font-size: 14px;
+    }
+
+    .header .top_line .nav_menu .m_links li:last-child .sublinks {
+        left: auto;
+        right: -16px;
     }
 
     .header .top_line.wbg .nav_menu .m_links li .sublinks {
@@ -3254,7 +3273,7 @@ border-bottom: 0;
 
     .footer .aparts_search {
         flex-shrink: 0;
-        max-width: 320px;
+        max-width: 340px;
         margin-right: 40px;
         padding-right: 40px;
         border-right: 1px solid rgb(255 255 255 / 10%);
@@ -3406,7 +3425,7 @@ border-bottom: 0;
     }
 
     .header .aparts_search .social_links {
-        bottom: 80px;
+        display: none;
     }
 
     .fp_content .about_38s {
@@ -3421,7 +3440,8 @@ border-bottom: 0;
 
     .fp_content .about_38s .images .img,
     .fp_content .about_38s .images .img:nth-child(odd) {
-        width: 210px;
+        width: 280px;
+        height: 200px;
         margin-right: 8px;
         margin-bottom: 16px;
     }
@@ -3659,10 +3679,6 @@ border-bottom: 0;
 }
 
 @media screen and (max-width: 620px) {
-
-    .header:after {
-        background: url('../img/header_bg_small.jpg') 40% 50% no-repeat;
-    }
 
     .space {
         padding: 0 16px;

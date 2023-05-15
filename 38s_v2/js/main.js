@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     //Меню в шапке
 	$(window).scroll(function(){
-        if($(this).scrollTop() >= 360 && $(this)) {
+        if($(this).scrollTop() >= 640 && $(this)) {
         $('.header .top_line').addClass('touch'); }
         else { 
             $('.header .top_line').removeClass('touch'); }
@@ -29,7 +29,7 @@ $(document).ready(function(){
 
     //Кнопка подбора номера в меню
     $(window).scroll(function(){
-        if($(this).scrollTop() >= 360) {
+        if($(this).scrollTop() >= 640) {
         $('.header .top_line .to_search').addClass('active'); }
         else { 
             $('.header .top_line .to_search').removeClass('active'); }

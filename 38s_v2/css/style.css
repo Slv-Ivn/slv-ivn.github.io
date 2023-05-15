@@ -3692,6 +3692,10 @@ border-bottom: 0;
         display: none;
     }
 
+    .header .aparts_search {
+        padding-top: 16px;
+    }
+
     .aparts_search .text {
         margin-bottom: 16px;
     }

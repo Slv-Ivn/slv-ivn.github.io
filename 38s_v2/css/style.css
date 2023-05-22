@@ -2536,8 +2536,8 @@ form.as_form .btn {
     color: var(--small_text_color);
 }
 
-.faq .faq_box .faq_items .faq_item .faq_ask:hover .link {
-    color: var(--red_color);
+.faq .faq_box .faq_items .faq_item .faq_ask .text .link {
+    color: var(--text_color);
 } 
 
 .faq .faq_box .faq_items .faq_item .faq_ask i.icon {
@@ -2564,6 +2564,11 @@ form.as_form .btn {
 .faq .faq_box .faq_items .faq_item .faq_ask i.icon:after {
     width: 2px;
     height: 100%;
+}
+
+.faq .faq_box .faq_items .faq_item .faq_ask:hover i.icon:before,
+.faq .faq_box .faq_items .faq_item .faq_ask:hover i.icon:after {
+    background: var(--red_color);
 }
 
 .faq .faq_box .faq_items .faq_item .faq_answer {
@@ -3684,6 +3689,7 @@ border-bottom: 0;
     .faq .faq_box .faq_sort ul li .link {
         border-radius: 0;
         margin: 0;
+        padding: 0 12px;
     }
 
     .faq .faq_box .faq_sort ul li:first-child .link {

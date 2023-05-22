@@ -103,6 +103,11 @@ $(document).ready(function(){
         $('.mod_win._order_apart').find('.stage2').removeClass('hidden');
     });
 
+    //Показать или скрыть ответ на вопрос в FAQ
+    $('.faq .faq_box .faq_items .faq_item').click(function(){
+        $(this).toggleClass('full');
+    });
+
    /* //Оплата картой
     $('.card_number').payment('formatCardNumber');
     $('.card_expires').payment('formatCardExpiry');

@@ -2707,19 +2707,19 @@ form.as_form .btn {
 .faq_ask_form form .f_block input,
 .faq_ask_form form .f_block textarea,
 .faq_ask_form form .f_block select {
-    max-width: 480px;
+    max-width: 420px;
     border: 1px solid var(--blue_color);
 }
 
+.faq_ask_form form .f_block .double_btns,
 .faq_ask_form form .f_block .select {
-    max-width: 480px;
+    max-width: 420px;
 }
 
 .faq_ask_form form .f_block .double_btns {
     position: relative;
     display: flex;
     justify-content: space-between;
-    max-width: 480px;
 }
 .faq_ask_form form .f_block .double_btns .btn {
     width: 48%;

@@ -10,10 +10,9 @@ $(document).ready(function(){
         svgPath: 'img/icons.svg',
         removeformatPasted: true,
         btns: [
-            ['formatting'],
-            ['strong', 'em', 'del'],
+            ['strong', 'em'],
             ['link'],
-            ['unorderedList', 'orderedList'],
+            ['unorderedList'],
             ['fullscreen'],
             ['viewHTML']
         ]

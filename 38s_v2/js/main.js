@@ -6,6 +6,19 @@ $(document).ready(function(){
 		autoFocus: false,
 	});
 
+    $('#ask_editor').trumbowyg({
+        svgPath: 'img/icons.svg',
+        removeformatPasted: true,
+        btns: [
+            ['formatting'],
+            ['strong', 'em', 'del'],
+            ['link'],
+            ['unorderedList', 'orderedList'],
+            ['fullscreen'],
+            ['viewHTML']
+        ]
+    });
+
 
 	//Кнопка вернуться наверх
 	$(window).scroll(function(){
@@ -106,6 +119,16 @@ $(document).ready(function(){
     //Показать или скрыть ответ на вопрос в FAQ
     $('.faq .faq_box .faq_items .faq_item').click(function(){
         $(this).toggleClass('full');
+    });
+
+    $('.faq .btn.add_ask').click(function(){
+        $('.faq .faq_box').hide();
+        $('.faq .faq_ask_form').show();
+    });
+
+    $('.faq .faq_ask_form .btn.green').click(function(){
+        $('.faq .faq_ask_form').hide();
+        $('.faq .faq_box').show();
     });
 
    /* //Оплата картой

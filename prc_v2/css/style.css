@@ -698,17 +698,6 @@ svg.svg {
     100% { transform: scale(1); opacity: 1; }
 }
 
-@keyframes catalog_fixed {
-    from {
-        height: 528.5px;
-        overflow: hidden;
-    }
-    to {
-        height: auto;
-        overflow: visible;
-    }
-}
-
 
 
 /* --- Шапка --- */
@@ -1753,6 +1742,10 @@ svg.svg {
     display: flex;
     justify-content: ;
     margin: 32px 0 28px;
+}
+
+.main_catalog .catalog_list:not(#items_rubrics) {
+    display: none;
 }
 
 .catalog_list .cl_column {
@@ -7597,15 +7590,6 @@ xmp {
 
 .check_prc_link small.success_msg {
   background: var(--green_color_opacity);
-}
-
-
-/*—————————————————————————————————————————————— Фикс каталога */
-
-@media screen and (min-width: 980px) {
-    .main_catalog {
-        animation: catalog_fixed 1s linear;
-    }
 }
 
 

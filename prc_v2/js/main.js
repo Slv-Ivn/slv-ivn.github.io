@@ -90,24 +90,36 @@ $(document).ready(function(){
 		$(this).parent().addClass('show_full');
 	});
 
-	//Показ скрытых ссылок в каталоге на главной
-	$('.main_catalog .show_links').click(function(){
-        $(this).toggleClass("active").next().slideToggle(240)
-	});
 
-	//Выподающее меню каталога
-	$('.nav_menu .nav_links .link_title.clh_firms').mouseover(function(){
+    //Каталог на главной
+    $('#items_regions, #firms_rubrics, #firms_regions').hide()
+    $('.catalog_tabs > div > span.link').on('click', function(){
+        $(this).parent().find('span').removeClass('active');
+        $(this).addClass('active');
+        
+        tab_id = $('.catalog_tabs span.active[data-rel]').data('rel')+'_'+$('.catalog_tabs span.active[data-type]').data('type');
+        $('.catalog_list').hide();
+        $("#"+tab_id).fadeTo(720,1).show().css('display', 'flex');
+    })
+
+    //Показ скрытых ссылок в каталоге на главной
+    $('.main_catalog .show_links').click(function(){
+        $(this).toggleClass("active").next().slideToggle(240)
+    });
+
+     //Выподающее меню каталога
+    $('.nav_menu .nav_links .link_title.clh_firms').mouseover(function(){
         $('.nav_menu .catalog_list.firms').addClass('active');
     });
     $('.nav_menu .nav_links .link_title.clh_firms').mouseout(function(){
-    	$('.nav_menu .catalog_list.firms').removeClass('active');
+        $('.nav_menu .catalog_list.firms').removeClass('active');
     });
 
     $('.nav_menu .nav_links .link_title.clh_products').mouseover(function(){
         $('.nav_menu .catalog_list.products').addClass('active');
     });
     $('.nav_menu .nav_links .link_title.clh_products').mouseout(function(){
-    	$('.nav_menu .catalog_list.products').removeClass('active');
+        $('.nav_menu .catalog_list.products').removeClass('active');
     });
 
 

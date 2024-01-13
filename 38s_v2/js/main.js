@@ -6,17 +6,17 @@ $(document).ready(function(){
 		autoFocus: false,
 	});
 
-    $('#ask_editor').trumbowyg({
-        svgPath: 'img/icons.svg',
-        removeformatPasted: true,
-        btns: [
-            ['strong', 'em'],
-            ['link'],
-            ['unorderedList'],
-            ['fullscreen'],
-            ['viewHTML']
-        ]
-    });
+    // $('#ask_editor').trumbowyg({
+    //     svgPath: 'img/icons.svg',
+    //     removeformatPasted: true,
+    //     btns: [
+    //         ['strong', 'em'],
+    //         ['link'],
+    //         ['unorderedList'],
+    //         ['fullscreen'],
+    //         ['viewHTML']
+    //     ]
+    // });
 
 
 	//Кнопка вернуться наверх

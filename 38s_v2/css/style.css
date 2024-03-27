@@ -352,6 +352,25 @@ input:focus, textarea:focus {
     cursor: pointer;
 }
 
+.policy-agree {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.policy-agree > input {
+    flex-shrink: 0;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin-right: 16px;
+}
+
+.policy-agree > small {
+    line-height: 18px;
+}
+
 
 /* ------------------------------------------------------------ Универсальные блоки */
 
@@ -4589,21 +4608,3 @@ border-bottom: 0;
         margin: 0 8px 0 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
